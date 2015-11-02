@@ -61,6 +61,51 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-mysql-start-error" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/11/02/mysql-start-error/" class="article-date">
+  <time datetime="2015-11-02T06:41:31.000Z" itemprop="datePublished">2015-11-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/11/02/mysql-start-error/">mysql start error</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="mysql_start_error_ERROR_2002_(HY000):_Can’t_connect_to_local_MySQL_server_through_socket_‘/var/run/mysqld/mysql-sock’_(2)">mysql start error ERROR 2002 (HY000): Can’t connect to local MySQL server through socket ‘/var/run/mysqld/mysql.sock’ (2)</h2><p>When I type mysql, it shows “<em>ERROR 2002 (HY000): Can’t connect to local MySQL server through socket ‘/var/run/mysqld/mysql.sock’ (2)”</em>.</p>
+<p>Then I try to start mysql service:<br><code>$ service mysql start</code></p>
+<p>But then I get error “<br>No directory, logging in with HOME=/<br>……</p>
+<ul>
+<li>MySQL Community Server 5.6.27 did not start. Please check logs for more details.<br>“</li>
+</ul>
+<p>Then I try to find the log file. It’s located in /var/lib/mysql/bejond.err</p>
+<p>Then I look at the log file and locate<br>“<br>InnoDB: No valid checkpoint found.<br>InnoDB: If this error appears when you are creating an InnoDB database,<br>InnoDB: the problem may be that during an earlier attempt you managed<br>InnoDB: to create the InnoDB data files, but log file creation failed.<br>InnoDB: If that is the case, please refer to<br>InnoDB: <a href="http://dev.mysql.com/doc/refman/5.6/en/error-creating-innodb.html" target="_blank" rel="external">http://dev.mysql.com/doc/refman/5.6/en/error-creating-innodb.html</a><br>“<br>Then I go to the link, find the note, if the error happends on start mysql,  delete all files      created by InnoDB: all      ibdata files and all      ib_logfile files.</p>
+<p>So I delete /var/lib/mysql/ibdata1, ib_logfile0, ib_logfile1. Then restart the service. It works!</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://bejondshao.github.io/2015/11/02/mysql-start-error/" data-id="cighkwptm0001v8ikssp9f4fx" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-How-to-check-bad-fix" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2015/07/16/How-to-check-bad-fix/" class="article-date">
@@ -94,7 +139,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://bejondshao.github.io/2015/07/16/How-to-check-bad-fix/" data-id="cic5wc7fm0000lnik7mbf100a" class="article-share-link">Share</a>
+      <a data-url="http://bejondshao.github.io/2015/07/16/How-to-check-bad-fix/" data-id="cighkwpt30000v8ikn5ozsvyr" class="article-share-link">Share</a>
       
       
     </footer>
@@ -139,7 +184,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://bejondshao.github.io/2015/07/07/hello-world/" data-id="cic5wc7g40001lnikinx6jqg5" class="article-share-link">Share</a>
+      <a data-url="http://bejondshao.github.io/2015/07/07/hello-world/" data-id="cighkwpto0002v8ikx9ji4kzf" class="article-share-link">Share</a>
       
       
     </footer>
@@ -164,7 +209,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">July 2015</a><span class="archive-list-count">2</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">July 2015</a><span class="archive-list-count">2</span></li></ul>
     </div>
   </div>
 
@@ -174,6 +219,10 @@
     <h3 class="widget-title">Recents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2015/11/02/mysql-start-error/">mysql start error</a>
+          </li>
         
           <li>
             <a href="/2015/07/16/How-to-check-bad-fix/">How to check bad fix</a>
