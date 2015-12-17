@@ -57,7 +57,9 @@ post_asset_folder: true
 举个栗子:
 本篇文章名叫what-is-LDAP, 创建它时,会创建同名文件夹,把LDAP.png放在那个文件夹下.
 引用时写 
-`{% asset_img LDAP.png DLAP organization %}`
+```
+{% asset_img LDAP.png DLAP organization %}
+```
 asset_img 表示要引用图片, LDAP.png是标题, 后面的是图片显示的标题.
 
 然后执行hexo generate (或者hexo g)
