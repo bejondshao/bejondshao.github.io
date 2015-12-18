@@ -36,7 +36,8 @@ external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
 post_asset_folder: true
-relative_link: true
+####### do not change it if you don't konw how it works
+relative_link: false
 future: true
 highlight:
   enable: true
@@ -107,8 +108,13 @@ widgets:
 links:
   Hexo: http://hexo.io
 
+# Don't Use Google APIs if you are in google-blocked areas
+use_google_apis: false  
+
 # Miscellaneous
 favicon: /favicon.png  
 
-# Don't Use Google APIs if you are in google-blocked areas
-use_google_apis: false
+
+
+####### add things before this line
+  
