@@ -92,6 +92,7 @@ scrollLoading: true
 
 # Sidebar
 social_links:
+  github: https://github.com/bejondshao
   weibo: http://weibo.com/lbxts
   wechat: /about/wechat.html
 widgets:
