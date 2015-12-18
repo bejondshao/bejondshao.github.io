@@ -4,8 +4,8 @@
 
 # Site
 title: Bejond IO
-subtitle:
-description:
+subtitle: 塞翁失马, 焉知非福
+description: Bejond个人博客, 之前选过第三方网站, 苦于广告太多. 还是自己搭建个网站好了 hia hia.
 author: Bejond Shao
 language:
 timezone:
@@ -26,6 +26,7 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+about_dir: about
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -78,7 +79,7 @@ deploy:
 menu:
   Home: /
   Categories:
-
+  About: /about/index.html
 
 # Content
 fancybox: true
@@ -91,8 +92,8 @@ scrollLoading: true
 
 # Sidebar
 social_links:
-  weibo:
-  rss:
+  weibo: http://weibo.com/lbxts
+  wechat: /about/wechat.html
 widgets:
 - recent_posts
 - category
