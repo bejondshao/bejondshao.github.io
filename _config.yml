@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo HAHA
+title: Bejond IO
 subtitle:
 description:
 author: Bejond Shao
@@ -63,7 +63,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: landscape
+theme: hueman
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
@@ -71,3 +71,39 @@ deploy:
   type: git
   repo: git@github.com:bejondshao/bejondshao.github.io.git
   branch: master
+  
+########### theme hueman
+
+# Header
+menu:
+  Home: /
+  Categories:
+
+
+# Content
+fancybox: true
+
+# Thumbnail
+thumbnail: false
+
+# Scroll Loading
+scrollLoading: true
+
+# Sidebar
+social_links:
+  weibo:
+  rss:
+widgets:
+- recent_posts
+- category
+- archive
+- tag
+- tagcloud
+- links
+
+# Links
+links:
+  Hexo: http://hexo.io
+
+# Miscellaneous
+favicon: /favicon.png  
