@@ -1,6 +1,9 @@
 title: what is LDAP
 date: 2015-11-19 09:24:33
 tags:
+- LDAP
+category:
+- Others
 ---
 LDAP是轻量目录访问协议(Lightweight Directory Access Protocol)的缩写，LDAP是从X.500目录访问协议的基础上发展过来的．
 特点：

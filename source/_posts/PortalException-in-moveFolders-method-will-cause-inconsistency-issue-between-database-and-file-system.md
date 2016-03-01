@@ -1,7 +1,7 @@
 layout: post
 title: PortalException in moveFolders method will cause inconsistency issue between database and file system
 date: 2015-12-18 19:35:54
-categories: 
+category: 
 - Liferay
 tags:
 - liferay

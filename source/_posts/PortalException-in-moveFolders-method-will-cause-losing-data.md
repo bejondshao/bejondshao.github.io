@@ -1,7 +1,7 @@
 layout: post
 title: PortalException in moveFolders method will cause losing data
 date: 2015-12-18 19:31:53
-categories: 
+category: 
 - Liferay
 tags:
 - liferay

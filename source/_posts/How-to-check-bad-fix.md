@@ -1,6 +1,9 @@
 title: How to check bad fix
 date: 2015-07-16 15:23:23
 tags:
+- backport
+category:
+- Liferay
 ---
 最近做了一个backport的票，backport就是别人以前修复了这个bug，我只需要将fix移植到客户的系统中。这是一个没有技术含量的票，遇到简单的票，三下五除二就解决了。但是遇到目标版本与master差别大时，也许backport后不好用。结果这次就遇到了，并且引起UI问题。
 

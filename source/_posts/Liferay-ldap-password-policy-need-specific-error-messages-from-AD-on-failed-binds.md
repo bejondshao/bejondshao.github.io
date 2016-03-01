@@ -1,7 +1,7 @@
 layout: post
 title: Liferay - ldap password policy - need specific error messages from AD on failed binds
 date: 2015-12-18 19:34:23
-categories: 
+category: 
 - Liferay
 tags:
 - liferay
