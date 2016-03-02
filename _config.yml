@@ -46,7 +46,7 @@ highlight:
   tab_replace:
 
 # Category & Tag
-default_category: uncategorized
+default_category: Others
 category_map:
 tag_map:
 
@@ -97,10 +97,10 @@ social_links:
   weibo: http://weibo.com/lbxts
   wechat: /about/wechat.html
 widgets:
-- recent_posts
+# - recent_posts
+- tag
 - category
 - archive
-- tag
 - tagcloud
 - links
 
