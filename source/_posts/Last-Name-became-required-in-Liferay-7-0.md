@@ -1,7 +1,7 @@
 title: Last Name became required in Liferay 7.0
 date: 2015-12-18 18:39:15
 tags:
-- liferay
+- Liferay
 categories:
 - Liferay
 

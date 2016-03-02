@@ -2,7 +2,7 @@ title: Liferay - LDAP configuration
 date: 2015-12-18 18:05:44
 comments: true
 tags:
-- liferay
+- Liferay
 - DLAP
 categories:
 - Liferay

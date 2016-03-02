@@ -4,7 +4,7 @@ date: 2015-12-18 19:31:53
 category: 
 - Liferay
 tags:
-- liferay
+- Liferay
 - document & library
 ---
 Sample Issue
