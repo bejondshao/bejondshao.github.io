@@ -5,7 +5,7 @@ tags:
 - java
 - encoding
 category:
-- SSH
+- Java
 ---
 
 @ jsp页面乱码, 在jps中加
