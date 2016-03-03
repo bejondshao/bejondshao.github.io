@@ -3,7 +3,7 @@ date: 2015-12-18 18:05:44
 comments: true
 tags:
 - Liferay
-- DLAP
+- LDAP
 categories:
 - Liferay
 

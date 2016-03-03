@@ -5,7 +5,7 @@ category:
 - Liferay
 tags:
 - Liferay
-- DLAP
+- LDAP
 ---
 Customer has configured Liferay with Microsoft Active directory through LDAP and have below queries regarding LDAP password policies:
 
