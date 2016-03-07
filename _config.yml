@@ -113,3 +113,6 @@ use_google_apis: false
 
 # Miscellaneous
 favicon: /favicon.png  
+# Duoshuo
+# duoshuo: celing
+duoshuo_shortname: celing
