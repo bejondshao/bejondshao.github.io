@@ -1,3 +1,6 @@
+<!-- 不蒜子游客统计 -->
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
 <footer id="footer">
   <% if (theme.sidebar === 'bottom'){ %>
     <%- partial('_partial/sidebar') %>
@@ -10,7 +13,11 @@
           <a href="<%- url_for() %>" class="logo"></a>
         </h1>
         <p>&copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %></p>
-        <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+        <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a>
+        <span id="busuanzi_container_site_uv">
+		  您是小站第<span id="busuanzi_value_site_uv"></span>个访问者
+		</span>
+        </p>
       </div>
     </div>
   </div>
