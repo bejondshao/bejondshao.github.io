@@ -101,12 +101,12 @@ widgets:
 - tag
 - category
 - archive
-- tagcloud
-- links
+#- tagcloud
+#- links
 
 # Links
-links:
-  Hexo: http://hexo.io
+#links:
+#  Hexo: http://hexo.io
 
 # Don't Use Google APIs if you are in google-blocked areas
 use_google_apis: false  
