@@ -2,7 +2,7 @@ layout: post
 title: Google hosts 更新(授之以渔)
 date: 2016-03-10 17:17:39
 tags:
-- hosts
+- Hosts
 - Google
 category:
 - Others

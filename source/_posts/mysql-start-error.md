@@ -1,8 +1,8 @@
 title: mysql start error
 date: 2015-11-02 14:41:31
 tags:
-- mysql
-- database
+- Mysql
+- Database
 category:
 - Database
 ---

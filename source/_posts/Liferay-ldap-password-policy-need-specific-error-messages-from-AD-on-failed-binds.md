@@ -1,11 +1,11 @@
 layout: post
 title: Liferay - ldap password policy - need specific error messages from AD on failed binds
 date: 2015-12-18 19:34:23
-category: 
-- Liferay
 tags:
 - Liferay
 - LDAP
+category: 
+- Liferay
 ---
 Customer has configured Liferay with Microsoft Active directory through LDAP and have below queries regarding LDAP password policies:
 

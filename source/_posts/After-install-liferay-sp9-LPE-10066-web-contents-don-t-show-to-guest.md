@@ -3,7 +3,6 @@ title: "After install liferay sp9(LPE-10066), web contents don't show to guest"
 date: 2015-04-23 16:15:04
 tags:
 - Liferay
-- web content
 category:
 - Liferay
 ---

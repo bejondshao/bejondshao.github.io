@@ -1,11 +1,10 @@
 layout: post
 title: PortalException in moveFolders method will cause inconsistency issue between database and file system
 date: 2015-12-18 19:35:54
-category: 
-- Liferay
 tags:
 - Liferay
-- document & library
+category: 
+- Liferay
 ---
 
 When we try to move folders from one repository to another one, if the source file is deleted in file system, the move process would be roll back due to transaction, while files before exception would be moved to new repository. This causes inconsistency.

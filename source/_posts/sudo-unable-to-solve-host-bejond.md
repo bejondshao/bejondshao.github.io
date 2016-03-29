@@ -2,7 +2,7 @@ layout: post
 title: 'sudo: unable to solve host hostname'
 date: 2016-03-10 17:12:44
 tags:
-- hosts
+- Hosts
 - Linux
 category:
 - Linux

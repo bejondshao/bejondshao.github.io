@@ -2,8 +2,8 @@ layout: post
 title: Java中文乱码问题
 date: 2016-03-01 17:03:00
 tags: 
-- java
-- encoding
+- Java
+- Encoding
 category:
 - Java
 ---

@@ -1,7 +1,8 @@
 title: How to check bad fix
 date: 2015-07-16 15:23:23
 tags:
-- backport
+- Backport
+- Liferay
 category:
 - Liferay
 ---
