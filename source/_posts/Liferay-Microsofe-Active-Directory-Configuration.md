@@ -27,7 +27,7 @@ or you can use user logon name eg:
 @ Credentials: password of the user.
 Click "Test LDAP Connection" to test if you can logon AD via this user.
 ###### Users section
-@ Authentication Search Filter: leave it as default `(mail=@email_address@)`.
+@ Authentication Search Filter: change it to `(userprincipalname=@email_address@)`.
 @ Import Search Filter: leave it as default `(objectClass=person)`
 ###### User Mapping section
 @ UUID: leave it blank.
@@ -38,7 +38,7 @@ javax.naming.InvalidNameException: sAMAccountName=ls15,ou=export,dc=mydomain,dc=
 ```
 But take care that, cn in AD is for "First Name + Last Name" by default, it contains whitespace, so it can't be imported to liferay as screen name. So you need to change it in AD.
 
-@ Email Address: it can be mapped with "mail" or "userprincipalname". "mail" is email in AD, "userprincipalname" is User logon name.
+@ Email Address: change it to `userprincipalname`. It can be mapped with "mail" or "userprincipalname". "mail" is email in AD, "userprincipalname" is User logon name. But if "Authentication Search Filter" is `(userprincipalname=@email_address@)`, then Email Address should be `userprincipalname`. Portal login with email, so this should be unified.
 @ Password: leave it as default `userPassword`.
 @ First Name: leave it as default `givenName`.
 @ Middle Name: leave it blank.
