@@ -35,6 +35,10 @@
       <div class="article-entry" itemprop="articleBody">
         <%- post.content %>
       </div>
+
+      <div class="article-entry" id="busuanzi_container_page_pv">
+  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+</div>
       <footer class="article-footer">
         <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link"><i class="fa fa-share"></i><%=__('article.share')%></a>
         <% if (post.comments && config.disqus_shortname){ %>
@@ -44,6 +48,7 @@
       </footer>
     </div>
   </article>
+  
   <% if (post.comments && config.disqus_shortname){ %>
     <section id="comments">
       <div id="disqus_thread">
