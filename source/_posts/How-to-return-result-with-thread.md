@@ -14,4 +14,4 @@ But how can we get a value from a thread? Like the thread info, running result, 
 
 From 《Thinking of Java》, we can make a class implement Callable<T>, and implement method call(). Method call() returns Object, which means we can get anything we want.
 
-Here is the code: https://github.com/bejondshao/personal/commit/754a5bb837e430fe2cb20cefad68abd33a330026
+Here is the code: https://github.com/bejondshao/personal/commit/e2855458790bf930d42e60acefa181b23bd4019e
