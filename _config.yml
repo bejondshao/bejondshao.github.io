@@ -110,6 +110,7 @@ widgets:
 
 # Don't Use Google APIs if you are in google-blocked areas
 use_google_apis: false  
+google_analytics: false
 
 # Miscellaneous
 favicon: /favicon.png  
