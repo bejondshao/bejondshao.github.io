@@ -73,6 +73,8 @@ deploy:
   type: git
   repo: git@github.com:bejondshao/bejondshao.github.io.git
   branch: master
+  name: Bejond Shao
+  email: bejond@163.com
   
 ########### theme hueman
 
@@ -109,10 +111,10 @@ widgets:
 #  Hexo: http://hexo.io
 
 # Don't Use Google APIs if you are in google-blocked areas
-use_google_apis: false  
+use_google_apis: false
 google_analytics: false
 
 # Miscellaneous
-favicon: /favicon.png  
+favicon: /favicon.png
 
 # duoshuo_shortname: celing
