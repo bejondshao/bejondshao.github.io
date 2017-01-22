@@ -2,7 +2,8 @@ layout: post
 title: Keycloak Java Adapter Configuration
 date: 2017-01-05 11:43:55
 tags:
-- Keycloak, Java
+- Keycloak
+- Java
 category: 
 - Keycloak
 ---
