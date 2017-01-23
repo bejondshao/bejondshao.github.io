@@ -25,7 +25,7 @@ category:
 
 User-Managed Access (UMA) is a profile of OAuth 2.0. UMA defines how resource owners can control protected-resource access by clients operated by arbitrary requesting parties, where the resources reside on any number of resource servers, and where a centralized authorization server governs access based on resource owner policies.
 
-来源： https://docs.kantarainitiative.org/uma/rec-uma-core.html
+来源： [User-Managed Access](https://docs.kantarainitiative.org/uma/rec-uma-core.html "User-Managed Access")
 
 @ AAT(Authorization API Token)
 
