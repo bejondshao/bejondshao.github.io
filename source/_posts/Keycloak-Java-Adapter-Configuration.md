@@ -46,7 +46,7 @@ category:
 
 @ allow-any-hostname, 如果Keycloak server要求HTTPS，并且这个属性设置为true。那么Keycloak server的颁发证书就通过truststore，但是host name验证就去掉了。这个设置只用在开发模式中，production环境应该设置成false。默认是false
 
-@ truststore, 指向keystore文件的路径。如果在路径前加classpath:，那么truststore会从部署的classpath找文件。用于向外与Keycloak server做HTTPS沟通。客户端创建HTTPS请求需要一种验证服务器主机的方式，truststore就是做这个工作的。keystore包含一到多个受信主机证书或凭证管理中心。你可以解压Keycloak server的SSL keystore的public certificate来创建truststore。如果ssl-required是none或disable-trust-manager是true，那么这个属性就是Required。
+@ truststore, 指向keystore文件的路径。如果在路径前加classpath:，那么truststore会从部署的classpath找文件。用于向外与Keycloak server做HTTPS沟通。客户端创建HTTPS请求需要一种验证服务器主机的方式，truststore就是做这个工作的。keystore包含一到多个受信主机证书或凭证管理中心。你可以解压Keycloak server的SSL keystore的public certificate来创建truststore。除非ssl-required是none或disable-trust-manager是true，那么这个属性就是Required。
 
 @ truststore-password, truststore keystore的密码。如果设定了truststore，并且truststore需要密码，那么这个属性就是Required。
 
