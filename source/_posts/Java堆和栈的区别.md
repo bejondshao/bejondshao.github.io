@@ -23,8 +23,8 @@ public class Test{
         test.foo(test);
       }
   
-    private void foo(Object object) {
-        String string = object.toString();
+    private void foo(Object obj) {
+        String string = obj.toString();
     }
 }
 ```
@@ -36,7 +36,7 @@ public class Test{
 * int a 是基本类型数据, 放在栈里. 
 * object是临时变量, 放在栈里, 创建的Object放在堆里, test也同object.
 * Line 9, 调用方法foo, 所以在栈申请一块空间给foo()
-* foo()的参数obj, 是一个对象的引用, 存在栈里. 由于传的是object, 所以obj指向object所引用的对象. 
+* foo()的参数obj, 是一个对象的地址（Java方法参数均为**值传递**，obj代表对象所在地址的**值**，详细分析）, 存在栈里. 由于传的是object, 所以obj指向object所引用的对象. 
 * string存在栈里, 它指向object.toString()返回的字符串, 字符串存在String Pool里.
 * 当然, fool()方法调用toString(), toString()也会在栈里申请空间.
 * 当toString()执行完成后, toString()的空间就释放了.
