@@ -24,7 +24,7 @@ Authentication method，Normal password，第一次连接服务器会询问
 Server Name，发邮件使用的服务器，一般是smtp协议，端口默认465
 User Name，发邮件时所使用的邮箱
 Authentication method，Normal password
-Connection Security，SSL/TLS
+Connection Security，选择STARTTLS，而不是SSL/TLS
 
 至此，收发邮件功能都好用了，开机自启动，再也不用每次到网页输入账号密码了。
 
