@@ -12,6 +12,7 @@ category:
 Account Name，随便写
 Your Name，就是发邮件时显示的名字
 Signature text，选中“Use HTML”即可插入html的签名。如果签名有图片，使用相对路径是不好用的，需要到263网页邮箱中，inspect element，找到图片网络路径，拷贝替换相对路径。
+或者根据[这篇文章](https://www.lifewire.com/add-image-to-thunderbird-signature-1173166)，将图片以base64的方式保存到html文件中，然后Signature选择file。
 
 ###### Server Settings
 {% asset_img 2.png [Server Settings] %}
