@@ -24,7 +24,6 @@ tags:
 2.如果你使用的是linux，执行
 
 ```
-
 $ ssh -D 7701 root@43.70.102.19
 
 ``` 
@@ -36,17 +35,16 @@ $ ssh -D 7701 root@43.70.102.19
 
 4.打开foxyproxy settings, 编辑Default proxy，在Proxy Details页签中，选中"Direct internet connection(no proxy)"，点击OK
 
-   {% asset_link disable-default-proxy.png [Disable default proxy] %}
+   {% asset_img disable-default-proxy.png [Disable default proxy] %}
 
 5.创建新的proxy，“Add new proxy", 名为”proxy“，打开Proxy Details页签， 选中"Manual Proxy Configuration", Server or IP Address填入127.0.0.1，port填入7701。选中SOCKS proxy, 选择SOCKS v5，点击OK
-
-    {% asset_link add-proxy.png [Add new proxy] %}
+{% asset_img add-proxy.png [Add new proxy] %}
 
 6.添加Pattern Subscriptions，这一步通过增加订阅pattern，用于过滤国内ip不使用ssh访问。
-点击“Add New Pattern Subscription”，选中Enable, Subscription URL填入“https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt“。在Proxies一栏中，点击”Add Porxies“，选中上一步创建的proxy。Refresh Rate填1440。Format选择FoxyProxy。Obfuscation选择Base64，点击OK。
-    {% asset_link add-pattern-subscriptions.png [Add Pattern Subscriptions] %}
-7.编辑proxy pattern, 打开URL Patterns, Add New Pattern。选中Enable, Pattern name随意，URL pattern填入”https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt“，URL Inclusion/Exclusion选中Whitelist。点击OK。
-    {% asset_link add-new-pattern.png [Add New Pattern] %}
+点击"Add New Pattern Subscription"，选中Enable, Subscription URL填入"https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt "。在Proxies一栏中，点击"Add Porxies"，选中上一步创建的proxy。Refresh Rate填1440。Format选择FoxyProxy。Obfuscation选择Base64，点击OK。
+{% asset_img add-pattern-subscriptions.png [Add Pattern Subscriptions] %}
+7.编辑proxy pattern, 打开URL Patterns, Add New Pattern。选中Enable, Pattern name随意，URL pattern填入"https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt "，URL Inclusion/Exclusion选中Whitelist。点击OK。
+{% asset_img add-new-pattern.png [Add New Pattern] %}
 8.右键foxyproxy，选中"Use proxies based on their pre-defined patterns and priorities"
 
 至此，就可以访问谷歌了。
