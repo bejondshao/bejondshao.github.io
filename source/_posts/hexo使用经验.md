@@ -33,6 +33,7 @@ $ git rm --cached package-lock.json
 编辑 .gitignore，在末尾填入package-lock.json
 ```
 $ cp ~/package-lock.json .
+$ rm -f ~/package-lock.json
 $ git add .
 $ git commit -m "source the text you want to add"
 $ git push origin -f source
