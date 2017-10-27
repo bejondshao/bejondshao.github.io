@@ -22,7 +22,7 @@ $ hexo g
 $ hexo d
 ```
 再访问试试
-@ 在不同系统下，比如OS X和Linux，package-lock.jso是不一样的。我建议把package-lock.json加入.gitignore中。
+@ 在不同系统下，比如OS X和Linux，package-lock.json是不一样的。我建议把package-lock.json加入.gitignore中。
 在package-lock.json所在目录执行一下命令：
 ```
 $ cp package-lock.json ~/package-lock.json

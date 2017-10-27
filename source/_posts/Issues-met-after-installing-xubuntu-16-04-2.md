@@ -26,7 +26,7 @@ $ sudo apt-get install wiznote
 `$ sudo ufw disable`
 
 @ 在/etc/下没有samba文件夹，需要安装samba (samba)
-`$ sudo apt-get purge samba samba-common system-config-samba winbind`
+`$ sudo apt-get install samba samba-common system-config-samba winbind`
 
 @ 安装smbtree (smbtree)
 `$ sudo apt install smbclient`
