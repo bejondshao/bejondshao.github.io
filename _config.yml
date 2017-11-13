@@ -75,46 +75,7 @@ deploy:
   branch: master
   name: Bejond Shao
   email: bejond@163.com
-  
-########### theme hueman
-
-# Header
-menu:
-  Home: /
-  Categories:
-  About: /about/index.html
-
-# Content
-fancybox: true
-
-# Thumbnail
-thumbnail: false
-
-# Scroll Loading
-scrollLoading: true
-
-# Sidebar
-social_links:
-  github: https://github.com/bejondshao
-  weibo: http://weibo.com/lbxts
-  wechat: /about/wechat.html
-widgets:
-# - recent_posts
-# - tag
-- category
-#- archive
-- tagcloud
-#- links
-
-# Links
-#links:
-#  Hexo: http://hexo.io
 
 # Don't Use Google APIs if you are in google-blocked areas
 use_google_apis: false
 google_analytics: false
-
-# Miscellaneous
-favicon: /favicon.png
-
-# duoshuo_shortname: celing
