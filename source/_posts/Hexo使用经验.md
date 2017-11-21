@@ -56,5 +56,5 @@ markdown_it_plus:
     quotes: “”‘’
     pre_class: highlight
 ```
-然后到https://emoji.codes/ 查找emoji code，粘贴到文章即可。
+然后到[这里](https://emoji.codes/) 查找emoji code，粘贴到文章即可。
 我一开始使用**hexo-renderer-markdown-it**插件会有两个问题，一个问题是段落之间如果不加空行，会合并成一段，也就是整篇文章都成了一段，导致以前的文章都需要作调整。二个问题是无法使用粗体标志，相信其他标志也无法完美使用，需要在```**```前加空格，很是麻烦，后来使用hexo-renderer-markdown-it-plus就没有这些问题。
