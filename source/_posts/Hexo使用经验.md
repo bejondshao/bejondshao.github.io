@@ -69,3 +69,6 @@ Hello World是要展示的文字，如果不填，默认取引用文章标题。
 
 @ Hexo文章插入图片
 详见{% post_link 如何在Hexo文章中插入图片 %}
+
+@ 主动推送Hexo博客链接到百度搜索
+详见[hexo-baidu-url-submit](https://www.npmjs.com/package/hexo-baidu-url-submit)
