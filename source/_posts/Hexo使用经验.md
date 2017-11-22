@@ -57,4 +57,15 @@ markdown_it_plus:
     pre_class: highlight
 ```
 然后到[这里](https://emoji.codes/) 查找emoji code，粘贴到文章即可。
-我一开始使用**hexo-renderer-markdown-it**插件会有两个问题，一个问题是段落之间如果不加空行，会合并成一段，也就是整篇文章都成了一段，导致以前的文章都需要作调整。二个问题是无法使用粗体标志，相信其他标志也无法完美使用，需要在```**```前加空格，很是麻烦，后来使用hexo-renderer-markdown-it-plus就没有这些问题。
+我一开始使用**hexo-renderer-markdown-it**插件会有两个问题，一个问题是段落之间如果不加空行，会合并成一段，也就是整篇文章都成了一段，导致以前的文章都需要作调整。二个问题是无法使用粗体标志，相信其他标志也无法完美使用，需要在`**`前加空格，很是麻烦，后来使用hexo-renderer-markdown-it-plus就没有这些问题。
+
+@ Hexo使用站内链接
+```
+{% post_link hello-world Hello World %}
+```
+hello-world是你的文章名称。如果文章不存在，这段代码将会被直接忽略。
+Hello World是要展示的文字，如果不填，默认取引用文章标题。
+示例：{% post_link hello-world Hello World %}
+
+@ Hexo文章插入图片
+详见{% post_link 如何在Hexo文章中插入图片 %}
