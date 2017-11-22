@@ -8,6 +8,7 @@ tags:
 category:
 - Others
 ---
+{% asset_img theme.png Hueman Theme %}
 ###### 下载hueman源码，将hueman源码包复制到themes文件夹下
 
 ###### 移植_config.yml

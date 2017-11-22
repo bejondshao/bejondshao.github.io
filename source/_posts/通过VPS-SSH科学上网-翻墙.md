@@ -28,8 +28,7 @@ category:
 
 ```
 $ ssh -D 7701 root@43.70.102.19
-
-``` 
+```
 
 -D是dynamic的意思，7701是SSH访问的端口（任意），root改成vps里的用户名，@后面的ip改成vps的固定ip。
 
