@@ -45,7 +45,7 @@ extends AttributeMap
 ```
 
 **存储有状态的信息**
-AttributeMap.attr(AttributeKey)允许你存储，访问和handler和context有状态的信息。请通过{% post_link ChannelHandlerContext %}获取多种存储信息的方式。
+AttributeMap.attr(AttributeKey)允许你存储，访问handler和context有状态的信息。请通过{% post_link ChannelHandlerContext %}获取多种存储信息的方式。
 
 **一个handler可以属于多个contexts**
 不难理解，一个ChannelHandler可以被添加到多个ChannelPipeline中。也就是说一个ChannelHandler实例可以有多个ChannelHandlerContext，因此如果一个ChannelHandler实例被多次添加到一个或多个ChannelPipelines中，那么它就可以被不同的ChannelHandlerContext调用。

@@ -19,7 +19,7 @@ extends java.lang.Iterable<java.util.Map.Entry<java.lang.String,ChannelHandler>>
 ChannelPipeline是个ChannelHandler的集合，用来处理拦截Channel中的inbound事件和outbound操作。ChannelPipeline实现了一个高级的[拦截过滤](http://www.oracle.com/technetwork/java/interceptingfilter-142169.html  )模式，给用户全面的控制一个事件是如何被处理的，以及多个ChannelHandlers在一个管道里是如何交互的。
 
 **创建一个pipeline**
-每个channel都有自己的pipeline，在创建channel时就自动创建的pipeline。
+每个channel都有自己的pipeline，在创建channel时就自动创建pipeline。
 
 **事件在pipeline中是怎么流通的**
 I/O事件由ChannelInboundHandler或ChannelOutboundHandler处理的，并调用{% post_link ChannelHandlerContext %}的事件传播方法（比如ChannelHandlerContext.fireChannelRead(Object), ChannelHandlerContext.write(Object)）传到最近的handler。
