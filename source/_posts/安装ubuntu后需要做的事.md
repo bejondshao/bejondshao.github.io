@@ -103,3 +103,30 @@ $ sudo apt-get update
 $ sudo apt-get install systemback
 ```
 
+@ docky（桌面panel工具）
+`$ sudo apt-get install docky`
+
+@ filezilla（ftp客户端）
+`$ sudo apt-get install filezilla`
+
+@ unar 解压中文名的windows下打包的zip文件无乱码
+`$ sudo apt-get install unar`
+
+@ [Nutstore](https://www.jianguoyun.com/s/downloads/linux)（跨平台网盘）
+
+@ 搜狗输入法（原文连接：http://blog.topspeedsnail.com/archives/6955）
+Linux版的搜狗输入法和Fcitx有冲突，在安装前移除fcitx：
+```
+$ sudo apt remove fcitx*
+$ sudo apt purge fcitx*
+$ sudo apt autoremove
+$ reboot
+```
+[官网](https://pinyin.sogou.com/linux/)下载安装包。
+安装输入法
+```
+$ sudo dpkg -i sogoupinyin*.deb
+$ sudo apt -f install
+$ reboot
+```
+
