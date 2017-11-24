@@ -120,6 +120,7 @@ Linux版的搜狗输入法和Fcitx有冲突，在安装前移除fcitx：
 $ sudo apt remove fcitx*
 $ sudo apt purge fcitx*
 $ sudo apt autoremove
+$ rm -rf .sogouinput/ .config/fcitx .config/fcitx-qimpanel/ .config/sogou-qimpanel/ .config/SogouPY .config/SogouPY.users/
 $ reboot
 ```
 [官网](https://pinyin.sogou.com/linux/)下载安装包。
@@ -129,4 +130,8 @@ $ sudo dpkg -i sogoupinyin*.deb
 $ sudo apt -f install
 $ reboot
 ```
+
+@ 谷歌拼音，如果上面搜狗输入法安装总是不起作用，无法输入中文或者输入后选项是乱码，只能使用谷歌输入法了。
+$ sudo apt-get install fcitx-googlepinyin
+安装后重启fcitx，在Configure里配置谷歌拼音。
 
