@@ -135,3 +135,57 @@ $ reboot
 $ sudo apt-get install fcitx-googlepinyin
 安装后重启fcitx，在Configure里配置谷歌拼音。
 
+@ cmake（C/C++编译打包工具）
+`sudo apt install cmake`
+
+@ fcitx-cloudpinyin（fcitx云拼音插件，非必须）
+1. 源码编译方式安装
+下载源码
+`git clone git@github.com:fcitx/fcitx-cloudpinyin.git`
+编译
+```
+cd fcitx-cloudpinyin
+mkdir _build
+cd _build
+cmake ..
+```
+如果执行cmake .. 报下面错：
+
+> CMake Error at CMakeLists.txt:5 (find_package):
+  By not providing "FindFcitx.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "Fcitx", but
+  CMake did not find one.
+
+>  Could not find a package configuration file provided by "Fcitx" (requested
+  version 4.2.8) with any of the following names:
+
+>    FcitxConfig.cmake
+>    fcitx-config.cmake
+
+>  Add the installation prefix of "Fcitx" to CMAKE_PREFIX_PATH or set
+  "Fcitx_DIR" to a directory containing one of the above files.  If "Fcitx"
+  provides a separate development package or SDK, be sure it has been
+  installed.
+
+需要安装fcitx-libs-dev
+`sudo apt-get install fcitx-libs-dev`
+再执行`cmake ..`遇到
+> -- Checking for module 'libcurl'
+  --   No package 'libcurl' found
+
+安装libcurl4-gnutls-dev
+`sudo apt-get install libcurl4-gnutls-dev`
+再执行`cmake ..`成功
+安装
+```
+make
+sudo make install
+```
+2. 命令行安装
+`sudo apt-get install fcitx-module-cloudpinyin`(我是安装好之后才找到这个方法的:joy:)
+安装成功后可以在add-on找到。
+{% asset_img cloudpinyin.png Cloudpinyin %}
+双击cloud-pinyin，修改search engine，使用Baidu，尤其是国内地名，百度比谷歌好用。
+{% asset_img cloudpinyin-config.png Cloudpinyin Config %}
+
+
