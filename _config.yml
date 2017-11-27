@@ -72,8 +72,8 @@ theme: hueman
 deploy:
 - type: git
   repo: git@github.com:bejondshao/bejondshao.github.io.git
-- type: git
-  repo: git@git.coding.net:bejond/bejond.git
+#- type: git
+#  repo: git@git.coding.net:bejond/bejond.git
   branch: master
   name: Bejond Shao
   email: bejond@163.com
