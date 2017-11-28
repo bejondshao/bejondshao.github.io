@@ -14,13 +14,14 @@ customize:
     highlight: androidstudio
     sidebar: left # sidebar position, options: left, right
     thumbnail: true # enable posts thumbnail, options: true, false
-    favicon: # path to favicon
+    favicon: /favicon.png # path to favicon
     social_links: # for more icons, please see http://fontawesome.io/icons/#brand
         #twitter: /
         #facebook: /
         #google-plus: /
-        github: https://github.com/bejondshao
-        weibo: http://weibo.com/lbxts
+        github-alt: https://github.com/bejondshao
+        #weibo: http://weibo.com/lbxts
+        linkedin-square: https://www.linkedin.com/in/bejondshao
         wechat: /about/wechat.html
 
 # Widgets
