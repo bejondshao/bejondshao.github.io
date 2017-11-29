@@ -12,7 +12,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://www.bejond.org
+url: http://tech.bejond.org
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -76,7 +76,7 @@ deploy:
 #  repo: git@git.coding.net:bejond/bejond.git
   branch: master
   name: Bejond Shao
-  email: bejond@163.com
+  email: a@bejond.org
 - type: baidu_url_submitter ## 这是新加的
 
 # Don't Use Google APIs if you are in google-blocked areas
@@ -98,7 +98,7 @@ markdown_it_plus:
     pre_class: highlight
 
 baidu_url_submit:
-  count: 5 ## 提交最新的一个链接
-  host: www.bejond.org ## 在百度站长平台中注册的域名
+  count: 105 ## 提交最新的一个链接
+  host: tech.bejond.org ## 在百度站长平台中注册的域名
   token: vb3SzfSuQQlcpbff ## 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!
   path: baidu_urls.txt ## 文本文档的地址， 新链接会保存在此文本文档里
