@@ -20,6 +20,7 @@ customize:
         #twitter: /
         #facebook: /
         #google-plus: /
+        # envelope: mailto:a@bejond.org
         github-alt: https://github.com/bejondshao
         #weibo: http://weibo.com/lbxts
         linkedin-square: https://www.linkedin.com/in/bejondshao
@@ -60,7 +61,7 @@ comment:
         placeholder: Just Do It # enter the comment box placeholder
 
 # Share
-share: default # options: jiathis, bdshare, addtoany, default
+share: none # options: jiathis, bdshare, addtoany, default
 
 # Plugins
 plugins:

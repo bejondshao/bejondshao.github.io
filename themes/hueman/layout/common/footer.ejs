@@ -9,7 +9,7 @@
                 <h1 class="logo-wrap">
                     <a href="<%- url_for() %>" class="logo"></a>
                 </h1>
-                <p>&copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %></p>
+                <p>&copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %> Contact Me: <a href="mailto:<%= config.email %>">a@bejond.org</a>
                 <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a>
                 	<span id="busuanzi_container_site_pv">
     					本站总访问量<span id="busuanzi_value_site_pv"></span>次

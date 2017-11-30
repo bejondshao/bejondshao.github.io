@@ -9,6 +9,7 @@ description: Bejond个人博客, 之前选过第三方网站, 苦于广告太多
 author: Bejond Shao
 language: zh-CN
 timezone:
+email: a@bejond.org
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
