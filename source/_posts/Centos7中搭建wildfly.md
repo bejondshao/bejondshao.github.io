@@ -64,7 +64,10 @@ $ sudo chown -R wildfly:wildfly /opt/wildfly
 6. 开启防火墙
 `$ sudo systemctl start firewalld.service`
 
-7. 重新加载防火墙配置
+7. 查看防火墙开放的端口
+`$ sudo firewall-cmd --zone=public --permanent --list-ports`
+
+8. 重新加载防火墙配置
 `$ sudo firewall-cmd --reload`
 
 Note: 如果重新加载防火墙配置没有应用配置，重启防火墙：
