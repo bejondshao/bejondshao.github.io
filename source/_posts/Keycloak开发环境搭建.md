@@ -88,5 +88,5 @@ d. 编辑keycloak-<version>/standalone/configuration/standalone.xml文件，更�
             </datasources>
 ```
 其中connection-url改为相应的server和数据库。
-5. 至此，配置完成，进入keycloak-<version>/bin/，启动standalone.sh（.bat）即可，访问http://localhost:8080/auth 。
+5. 至此，配置完成，进入keycloak-<version>/bin/，启动 standalone.sh（.bat）即可访问http://localhost:8080/auth 。
 

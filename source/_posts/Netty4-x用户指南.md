@@ -9,6 +9,7 @@ category:
 - Java
 ---
 [原文](https://github.com/netty/netty/wiki/User-guide-for-4.x)
+[完整翻译可参考](https://doc.yonyoucloud.com/doc/netty-4-user-guide/Architectural%20Overview/Architectural%20Overview.html)
 #### 序言
 ---------------------
 ##### 难题
@@ -32,4 +33,116 @@ Netty是一个能简单快速的开发网络应用协议的NIO客户端服务器
 
 {% asset_img architecture.png Architecture %}
 
-翻译到这里，我在官网没找到Architectural Overview 4.x相关章节，于是谷歌一下，我找到了[这个](https://doc.yonyoucloud.com/doc/netty-4-user-guide/Architectural%20Overview/Architectural%20Overview.html) 。幸好我没全翻译:joy:，不过在翻译前我已经读完这篇指南了，以后看官方文档前先看看有没有中文翻译，就酱:confused:，全文完。
+##### 写一个Discard服务器
+[DISCARD](http://tools.ietf.org/html/rfc863)协议接收消息然后忽略。
+
+```
+package io.netty.example.discard;
+
+import io.netty.buffer.ByteBuf;
+
+import io.netty.channel.ChannelHandlerContext;
+import io.netty.channel.ChannelInboundHandlerAdapter;
+
+/**
+ * Handles a server-side channel.
+ */
+public class DiscardServerHandler extends ChannelInboundHandlerAdapter { // (1)
+
+    @Override
+    public void channelRead(ChannelHandlerContext ctx, Object msg) { // (2)
+        // 直接忽略收到的信息。
+        ((ByteBuf) msg).release(); // (3)
+    }
+
+    @Override
+    public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) { // (4)
+        // 异常时关闭连接。
+        cause.printStackTrace();
+        ctx.close();
+    }
+}
+```
+1. DiscardServerHandler继承[ChannelInboundHandlerAdapter](http://netty.io/4.1/api/io/netty/channel/ChannelInboundHandlerAdapter.html)。ChannelInboundHandlerAdapter实现了[ChannelInboundHandler](http://netty.io/4.1/api/io/netty/channel/ChannelInboundHandler.html)。ChannelInboundHandler提供了多种事件处理方法的定义。有了ChannelInboundHandlerAdapter，只需要继承它就可以了，而不用实现ChannelInboundHandler。
+2. 在这重写channelRead()事件处理方法。当接收客户端的消息时，就会调用channelRead()。本例中，消息类型是[ByteBuf](http://netty.io/4.1/api/io/netty/buffer/ByteBuf.html)
+3. ByteBuf是一个引用计数对象，需要显式调用release()释放。需要注意，通常由handler释放传给handler的引用计数的对象。通常channelRead()像这样实现：
+```
+@Override
+public void channelRead(ChannelHandlerContext ctx, Object msg) {
+    try {
+        // 对msg的操作
+    } finally {
+        ReferenceCountUtil.release(msg);
+    }
+}
+```
+4. exceptionCaught()方法在Netty产生I/O异常时被调用。通常产生异常要记录并关闭通道。当然你也可能在关闭前发送响应code和message。
+
+现在创建一个Server和main()方法来启动服务器。
+```
+package io.netty.example.discard;
+
+import io.netty.bootstrap.ServerBootstrap;
+
+import io.netty.channel.ChannelFuture;
+import io.netty.channel.ChannelInitializer;
+import io.netty.channel.ChannelOption;
+import io.netty.channel.EventLoopGroup;
+import io.netty.channel.nio.NioEventLoopGroup;
+import io.netty.channel.socket.SocketChannel;
+import io.netty.channel.socket.nio.NioServerSocketChannel;
+
+/**
+ * Discards any incoming data.
+ */
+public class DiscardServer {
+
+    private int port;
+
+    public DiscardServer(int port) {
+        this.port = port;
+    }
+
+    public void run() throws Exception {
+        EventLoopGroup bossGroup = new NioEventLoopGroup(); // (1)
+        EventLoopGroup workerGroup = new NioEventLoopGroup();
+        try {
+            ServerBootstrap b = new ServerBootstrap(); // (2)
+            b.group(bossGroup, workerGroup)
+             .channel(NioServerSocketChannel.class) // (3)
+             .childHandler(new ChannelInitializer<SocketChannel>() { // (4)
+                 @Override
+                 public void initChannel(SocketChannel ch) throws Exception {
+                     ch.pipeline().addLast(new DiscardServerHandler());
+                 }
+             })
+             .option(ChannelOption.SO_BACKLOG, 128)          // (5)
+             .childOption(ChannelOption.SO_KEEPALIVE, true); // (6)
+
+            // 绑定开启接收接入的连接。
+            ChannelFuture f = b.bind(port).sync(); // (7)
+
+            // 等待直到服务器socket关闭。
+            // 这个例子里不会发生，但是你可以平滑的关闭服务器。
+            f.channel().closeFuture().sync();
+        } finally {
+            workerGroup.shutdownGracefully();
+            bossGroup.shutdownGracefully();
+        }
+    }
+
+    public static void main(String[] args) throws Exception {
+        int port;
+        if (args.length > 0) {
+            port = Integer.parseInt(args[0]);
+        } else {
+            port = 8080;
+        }
+        new DiscardServer(port).run();
+    }
+}
+```
+1. [NioEventLoopGroup](http://netty.io/4.1/api/io/netty/channel/nio/NioEventLoopGroup.html)是一个多线程循环事件处理器。Netty提供多种[EventLoopGroup](http://netty.io/4.1/api/io/netty/channel/EventLoopGroup.html)实现适应不同传输协议。在服务端，通常有两个NioEventLoopGroup，第一个为boss，接收接入的连接。第二个为worker，处理boss注册的连接。至于有多少线程可以处理Channels，取决于EventLoopGroup的实现，一般可以在构造器指定。如果不指定thread数，默认是用于Netty的处理器数的两倍。
+2. [ServerBootstrap](http://netty.io/4.1/api/io/netty/bootstrap/ServerBootstrap.html)是创建Server的工具类。可以用{% post_link Channel Channel %}直接创建Server。但直接用Channel构建比较繁琐，还是ServerBootstrap简单。
+3. 用[NioServerSocketChannel](http://netty.io/4.1/api/io/netty/channel/socket/nio/NioServerSocketChannel.html)初始化Channel，接收接入的连接。
+4. 这里的handler会赋一个新的被接收的Channel。[ChannelInitializer](http://netty.io/4.1/api/io/netty/channel/ChannelInitializer.html)是一个特殊的handler，用来替用户配置一个新的Channel。通常你会配置新Channel的{% post_link ChannelPipeline ChannelPipeline %}，添加些handlers比如DiscardServerHandler，来实现你的网络应用。
