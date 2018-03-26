@@ -6,7 +6,7 @@ tags:
 - DevOps
 - Istio
 category:
-- Others
+- DevOps
 ---
 Istio是用来连接，管理和保护微服务的平台。不改动应用代码，在环境中部署一个sidecar即可实现负载均衡，服务之间认证，监控等功能。Istio有控制面板，可以管理代理，拦截服务间通信。
 

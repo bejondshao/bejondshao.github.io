@@ -6,7 +6,7 @@ tags:
 - Consul
 - DevOps
 category:
-- Others
+- DevOps
 ---
 ##### Consul介绍
 
