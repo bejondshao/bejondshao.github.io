@@ -6,7 +6,7 @@ tags:
 - Grafana
 - Keycloak
 - DevOps
-Category:
+category:
 - DevOps
 ---
 ##### Keycloak配置
