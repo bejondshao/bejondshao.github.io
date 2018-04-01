@@ -75,3 +75,17 @@ Hello World是要展示的文字，如果不填，默认取引用文章标题。
 详见[hexo-baidu-url-submit](https://www.npmjs.com/package/hexo-baidu-url-submit)
 
 @ [hexo-admin](https://github.com/jaredly/hexo-admin)插件，可以本地可视化编辑文章
+* Metadata功能，可以在_config.yml里添加诸如默认category的功能（因为hexo的默认category功能好像不好用）
+```
+metadata:
+  categories: Others
+```
+* 发现原来一个文章可以添加多个categories，比如：
+
+```
+categories:
+- Others
+- SubCategory
+```
+
+其中SubCategory就是Others菜单的二级菜单。
