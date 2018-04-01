@@ -1,11 +1,12 @@
----
 layout: post
 title: Hexo使用经验
-date: 2017-10-27 19:38:52
 tags:
-- Hexo
+  - Hexo
 category:
-- Others
+  - Others
+categories:
+  - Others
+date: 2017-10-27 19:38:00
 ---
 本文仅做使用Hexo时遇到的问题汇总，如果对你有帮助，那就有吧:sweat_smile:。
 
@@ -72,3 +73,5 @@ Hello World是要展示的文字，如果不填，默认取引用文章标题。
 
 @ 主动推送Hexo博客链接到百度搜索
 详见[hexo-baidu-url-submit](https://www.npmjs.com/package/hexo-baidu-url-submit)
+
+@ [hexo-admin](https://github.com/jaredly/hexo-admin)插件，可以本地可视化编辑文章
