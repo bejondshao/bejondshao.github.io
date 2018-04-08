@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grafana和Keycloak集成
+title: Keycloak和Grafana集成实现单点登录
 date: 2018-03-26 11:26:12
 tags:
 - Grafana

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jenkins和Keycloak集成
+title: Keycloak和Jenkins集成实现单点登录
 date: 2018-03-26 17:06:08
 tags:
 - Jenkins
@@ -21,9 +21,7 @@ category:
 @ 安装
 
 ```
-
 sudo apt-get update
-
 sudo apt-get install jenkins
 
 ```
@@ -44,7 +42,7 @@ sudo apt-get install jenkins
 
 @ 重启Jenkins
 
-`sudu service restart jenkins`
+`sudo service restart jenkins`
 
 
 
