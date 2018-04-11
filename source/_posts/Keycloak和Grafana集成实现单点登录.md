@@ -41,41 +41,29 @@ sudo dpkg -i grafana_5.0.3_amd64.deb
 
 @ 访问http://localhost:3000即可看到登录界面
 
-##### 
+##### Grafana配置Oauth
 
 @ 编辑/etc/grafana/grafana.ini配置文件
 
 ```
 
 [auth.generic_oauth]
-
 enabled = true
-
 name = Kunlun
-
 allow_sign_up = true
-
 client_id = grafana
-
-// secret从keycloak的grafana client，Credentials页签的Secret获取。
-
+# secret从keycloak的grafana client，Credentials页签的Secret获取。
 client_secret = 9a134c1a-e8f2-46b0-b351-d2ffeccaa289
-
 ;scopes = user:email,read:org
-
 scopes = openid email name
-
 auth_url = http://localhost:8080/auth/realms/Kunlun/protocol/openid-connect/auth
-
 token_url = http://localhost:8080/auth/realms/Kunlun/protocol/openid-connect/token
-
 ;api_url = https://foo.bar/user
-
 ;team_ids =
-
 ;allowed_organizations =
 
 ```
+同时修改`[database]`和`[security]`节点内容。
 
 @ 重启服务
 
