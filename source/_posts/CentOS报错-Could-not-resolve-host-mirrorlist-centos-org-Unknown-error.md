@@ -113,5 +113,5 @@ $ sudo systemctl restart network
 $ sudo yum update
 ```
 
-参考文章： [[1]](https://www.cnblogs.com/xixihuang/p/5404517.html)
-
+参考文章： 
+[[1] CentOS报错](https://www.cnblogs.com/xixihuang/p/5404517.html)
