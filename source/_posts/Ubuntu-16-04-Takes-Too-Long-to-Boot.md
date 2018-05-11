@@ -52,6 +52,8 @@ AccuracySec=1h
 RandomizedDelaySec=30min
 ```
 This changes the "timer" that triggers apt-daily.service to run at a random time between 15 min and 45 min after boot.
+
+##### Attention: My system failed to boot after doing below `/etc/systemd/system.conf` actions, please prepare a USB installation before doing this. If it fails, you can use live system to revert, good luck:joy:
 And for others recommendations, I also change `/etc/systemd/system.conf` file. Uncomment
 ```
 #DefaultTimeoutStartSec=90s
