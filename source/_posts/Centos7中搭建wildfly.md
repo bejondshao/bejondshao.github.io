@@ -143,3 +143,6 @@ proxy_set_header X-Forwarded-Port "443";
 proxy_set_header X-SSL-Client-Cert $ssl_client_cert;
 }
 ```
+5 设置nginx服务为自启动
+
+参考[CentOS设置Nginx开机自启动](https://www.cnblogs.com/piscesLoveCc/p/5867900.html)
