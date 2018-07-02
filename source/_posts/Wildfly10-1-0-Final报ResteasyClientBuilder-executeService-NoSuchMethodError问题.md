@@ -1,5 +1,12 @@
-{}
-date: 2018-06-15 14:31:34
+title: Wildfly10.1.0.Final报ResteasyClientBuilder.execuetSrevice NoSuchMethodError问题
+tags:
+  - Wildfly
+  - Java
+  - resteasy-jaxrs
+categories:
+  - Java
+  - 服务器
+date: 2018-06-15 14:31:00
 ---
 ResteasyClientBuilder是一个支持Client pool，SSL context，异步执行的HttpClient Builder。在使用时遇到了奇怪的事情。我在`test`包下使用
 ```
