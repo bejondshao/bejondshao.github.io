@@ -229,7 +229,7 @@ ETag: W/"e180ee84f0671b1"
 
 @ Filter Request
 
-通过加查询条件，查询资源列表。SCIM支持equals, contains, starts with等等。对查询结果还可以排序，可以返回特定的属性以及返回指定数量的资源。         
+通过加查询条件，查询资源列表。SCIM支持equals, contains, starts with等等。对查询结果还可以排序，可以返回特定的属性以及返回指定数量的资源。
 
 * https://example.com/{resource}?ﬁlter={attribute} {op} {value} & sortBy={attributeName}&sortOrder={ascending|descending}&attributes={attributes}
 
@@ -259,3 +259,4 @@ ETag: W/"e180ee84f0671b1"
 @ SCIM不涉及验证（Authentication）和授权（Authorization），想要实现验证和授权功能，参考[RFC 7644 2. Authentication and Authorization](https://tools.ietf.org/html/rfc7644#section-2).
 
 [[1] simplecloud SCIM](http://www.simplecloud.info/)
+[[2] RFC 7644](https://tools.ietf.org/html/rfc7644)
