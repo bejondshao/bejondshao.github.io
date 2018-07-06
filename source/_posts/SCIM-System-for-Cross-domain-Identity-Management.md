@@ -256,5 +256,6 @@ ETag: W/"e180ee84f0671b1"
   ]
 }
 ```
+@ SCIM不涉及验证（Authentication）和授权（Authorization），想要实现验证和授权功能，参考[RFC 7644 2. Authentication and Authorization](https://tools.ietf.org/html/rfc7644#section-2).
 
 [[1] simplecloud SCIM](http://www.simplecloud.info/)
