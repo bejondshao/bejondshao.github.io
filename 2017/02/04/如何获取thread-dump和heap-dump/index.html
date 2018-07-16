@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>如何获取thread dump和heap dump | Bejond IO</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="Java,JVM" />
+    
+    <meta name="description" content="@ 远程到主机上 12$ ssh bejond@192.168.1.95bejond@192.168.1.95&amp;apos;s password: 输入登录密码，即可远程。 @ 获取服务器进程号： Note: 执行jps（下面jstack, jmap等命令相同）时需要用运行java应用的用户来执行。这些用户往往被创建为nologin。比如创建wildfly用户来运行java程序。 12[bejond">
+<meta name="keywords" content="Java,JVM">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何获取thread dump和heap dump">
+<meta property="og:url" content="http://tech.bejond.org/2017/02/04/如何获取thread-dump和heap-dump/index.html">
+<meta property="og:site_name" content="Bejond IO">
+<meta property="og:description" content="@ 远程到主机上 12$ ssh bejond@192.168.1.95bejond@192.168.1.95&amp;apos;s password: 输入登录密码，即可远程。 @ 获取服务器进程号： Note: 执行jps（下面jstack, jmap等命令相同）时需要用运行java应用的用户来执行。这些用户往往被创建为nologin。比如创建wildfly用户来运行java程序。 12[bejond">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://tech.bejond.org/2017/02/04/如何获取thread-dump和heap-dump/1.png">
+<meta property="og:updated_time" content="2018-06-25T17:56:57.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="如何获取thread dump和heap dump">
+<meta name="twitter:description" content="@ 远程到主机上 12$ ssh bejond@192.168.1.95bejond@192.168.1.95&amp;apos;s password: 输入登录密码，即可远程。 @ 获取服务器进程号： Note: 执行jps（下面jstack, jmap等命令相同）时需要用运行java应用的用户来执行。这些用户往往被创建为nologin。比如创建wildfly用户来运行java程序。 12[bejond">
+<meta name="twitter:image" content="http://tech.bejond.org/2017/02/04/如何获取thread-dump和heap-dump/1.png">
+    
+
+    
+
+    
+        <link rel="icon" href="/favicon2.png" />
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.0.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">好记性不如烂笔头</p>
+                        </h2>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">主页</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Database/">Database</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/DevOps/">DevOps</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Java/">Java</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Java/服务器/">服务器</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Keycloak/">Keycloak</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Liferay/">Liferay</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Linux/">Linux</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Linux/CentOS/">CentOS</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Linux/Ubuntu/">Ubuntu</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Others/">Others</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Python/">Python</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Tools/">Tools</a></li></ul>
+                                    
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="http://bejond.org/celing">侧聆</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/index.html">关于</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/resume.html">简历</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="想要查找什么..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/Java/">Java</a>
+    </h1>
+</div>
+                        <div class="main-body-content">
+                            <article id="post-如何获取thread-dump和heap-dump" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        如何获取thread dump和heap dump
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2017/02/04/如何获取thread-dump和heap-dump/" class="article-date">
+            <time datetime="2017-02-04T09:36:54.000Z" itemprop="datePublished">2017-02-04</time>
+        </a>
+    </div>
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/JVM/">JVM</a>, <a class="tag-link" href="/tags/Java/">Java</a>
+    </div>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <p>@ 远程到主机上</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ ssh bejond@192.168.1.95</span><br><span class="line">bejond@192.168.1.95&apos;s password:</span><br></pre></td></tr></table></figure>
+<p>输入登录密码，即可远程。</p>
+<p>@ 获取服务器进程号：<br>
+Note: 执行jps（下面jstack, jmap等命令相同）时需要用运行java应用的用户来执行。这些用户往往被创建为nologin。比如创建wildfly用户来运行java程序。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[bejond@centostest ~]$ sudo -u wildfly jps -l</span><br><span class="line">[sudo] password for bejond:</span><br></pre></td></tr></table></figure>
+<p>上面命令意思为bejond用户以wildfly用户的身份执行jps来查看wildfly用户所运行的程序。<br>
+输入bejond用户的登录密码即可。输入密码后输入结果：</p>
+<blockquote>
+<p>14273 /opt/wildfly/jboss-modules.jar<br>
+14602 sun.tools.jps.Jps</p>
+</blockquote>
+<p>这里看到进程号是14273。也可以使用<code>$ sudo -u wildfly jps -lv</code>，查看传递给JVM的参数。</p>
+<blockquote>
+<p>14273 /opt/wildfly/jboss-modules.jar -D[Standalone] -Xms1024m -Xmx1024m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -XX:-HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp/wildfly/ -Dcom.sun.xml.bind.v2.bytecode.ClassTailor.noOptimize=true -Dorg.jboss.boot.log.file=/opt/wildfly/standalone/log/server.log -Dlogging.configuration=file:/opt/wildfly/standalone/configuration/logging.properties<br>
+14584 sun.tools.jps.Jps -Dapplication.home=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64 -Xms8m</p>
+</blockquote>
+<p>Note: 如果jps提示command not found。在centos下安装的java默认没有devel包，执行<br>
+<code>$ sudo yum install java-1.8.0-openjdk-devel.x86_64</code>即可。</p>
+<p>@ 生成thread dump。Thread dump展示所有线程和stack traces。你可以查看在生成thread dump时服务器的工作状态。</p>
+<p>Note: 采集thread dump需要每隔10秒至少采集三次。也可以每隔5秒至少采集6次。这能体现服务器在这段时间的变化，比如哪个线程悬挂，可能是死锁，可能是等待其他线程返回。使用jstack命令生成thread dump，并保存到目录里。<br>
+<code>$ sudo -u wildfly jstack -l 14273 &gt; /tmp/threaddump.txt</code><br>
+Note: 保存文件位置要保存到/tmp中，因为/tmp文件夹允许任何用户进行读写，保存到其他文件夹会有可能保存失败。<br>
+Note: Windows系统下有个psexec软件，可以远程采集thread dump。但是需要在远程机器上配置客户端。</p>
+<p>@ 分析thread dump。</p>
+<ol>
+<li>将threaddump拷贝到本机（我使用Gigolo连接远程）。</li>
+<li>使用 <a href="https://www.ibm.com/developerworks/community/groups/service/html/communityview?communityUuid=2245aa39-fa5c-4475-b891-14c205f7333c" target="_blank" rel="noopener">IBM Thread and Monitor Dump Analyzer for Java</a> 工具分析，下载到本机，执行<br>
+<code>$ java -jar jca_xxx.jar</code></li>
+</ol>
+<img src="/2017/02/04/如何获取thread-dump和heap-dump/1.png" title="Thread Dump List">
+<img src="/2017/02/04/如何获取thread-dump和heap-dump/2.png" title="Thread Status Analysis">
+<p>如何分析thread dump这里暂不介绍了。</p>
+<p>@ 获取Heap dump</p>
+<p>Heap dump是java堆的一个快照。在发生OutOfMemory问题时，heap dump是非常重要的根据。比如堆中最大的对象有泄露内存的嫌疑。<br>
+使用jmap命令获取heap dump。远程到主机，执行<br>
+<code>$ sudo -u wildfly jmap -dump:format=b,file=/tmp/heapdump.hprof 14273</code><br>
+@ 使用Eclipse Memory Analyzer分析heap dump。</p>
+<ol>
+<li>找最大的对象</li>
+<li>找EMA建议的Leak Suspects，找的对象最好涉及到项目的类，而非第三方或JVM类。</li>
+</ol>
+<p>在找问题前先浏览server.log和boot.log文件。</p>
+<p>使用得手的工具，分析日志和dump会让你离找到问题根源更进一步。</p>
+<p>@ heap dump可以设定jvm参数，在触发OOM时自动生成：</p>
+<p>-XX:-HeapDumpOnOutOfMemoryError 参数表示当JVM发生OOM时，自动生成DUMP文件。</p>
+<p>-XX:HeapDumpPath=${目录}参数表示生成DUMP文件的路径，也可以指定文件名称，例如：XX:HeapDumpPath=/tmp/java_heapdump.hprof。如果不指定文件名，默认为：java_<pid><em><date></date></em><time>_heapDump.hprof。</time></pid></p>
+
+        </div>
+        <div class="article-entry" id="busuanzi_container_page_pv">
+            阅读<span id="busuanzi_value_page_pv"></span>次
+        </div>
+        <footer class="article-footer">
+            
+
+
+
+        </footer>
+    </div>
+</article>
+
+    <section id="comments">
+    
+    </section>
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>关注我 :</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github-alt" href="https://github.com/bejondshao" target="_blank">
+                        <i class="icon fa fa-github-alt"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="linkedin-square" href="https://www.linkedin.com/in/bejondshao" target="_blank">
+                        <i class="icon fa fa-linkedin-square"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="music" href="https://music.163.com/#/playlist?id=59530273" target="_blank">
+                        <i class="icon fa fa-music"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="wechat" href="/about/wechat.html" target="_blank">
+                        <i class="icon fa fa-wechat"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2017/02/07/Keycloak升级/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">下一篇</strong>
+        <p class="article-nav-title">
+        
+            Keycloak升级
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/2017/01/23/Keycloak客户端验证/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">上一篇</strong>
+        <p class="article-nav-title">Keycloak客户端验证</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">最新文章</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/07/06/SCIM-System-for-Cross-domain-Identity-Management/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/2018/07/06/SCIM-System-for-Cross-domain-Identity-Management/model.png)" alt="SCIM(System for Cross-domain Identity Management)" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Others/">Others</a></p>
+                            <p class="item-title"><a href="/2018/07/06/SCIM-System-for-Cross-domain-Identity-Management/" class="title">SCIM(System for Cross-domain Identity Management)</a></p>
+                            <p class="item-date"><time datetime="2018-07-06T07:51:00.000Z" itemprop="datePublished">2018-07-06</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/06/22/NoClassDefFoundError-Failed-to-link-org-jboss-resteasy-plugins-providers-yaml-i18n-LogMessages/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Java/">Java</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Java/服务器/">服务器</a></p>
+                            <p class="item-title"><a href="/2018/06/22/NoClassDefFoundError-Failed-to-link-org-jboss-resteasy-plugins-providers-yaml-i18n-LogMessages/" class="title">NoClassDefFoundError: Failed to link org/jboss/resteasy/plugins/providers/yaml/i18n/LogMessages</a></p>
+                            <p class="item-date"><time datetime="2018-06-22T06:48:00.000Z" itemprop="datePublished">2018-06-22</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/06/15/Wildfly10-1-0-Final报ResteasyClientBuilder-executeService-NoSuchMethodError问题/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/2018/06/15/Wildfly10-1-0-Final报ResteasyClientBuilder-executeService-NoSuchMethodError问题/wildfly10-resteasy-jaxrs.png)" alt="Wildfly10.1.0.Final报ResteasyClientBuilder.execuetSrevice NoSuchMethodError问题" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Java/">Java</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Java/服务器/">服务器</a></p>
+                            <p class="item-title"><a href="/2018/06/15/Wildfly10-1-0-Final报ResteasyClientBuilder-executeService-NoSuchMethodError问题/" class="title">Wildfly10.1.0.Final报ResteasyClientBuilder.execuetSrevice NoSuchMethodError问题</a></p>
+                            <p class="item-date"><time datetime="2018-06-15T06:31:00.000Z" itemprop="datePublished">2018-06-15</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/05/30/Intellij-debug模式启动很慢调整/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/2018/05/30/Intellij-debug模式启动很慢调整/intellij.png)" alt="Intellij debug模式启动很慢调整" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Tools/">Tools</a></p>
+                            <p class="item-title"><a href="/2018/05/30/Intellij-debug模式启动很慢调整/" class="title">Intellij debug模式启动很慢调整</a></p>
+                            <p class="item-date"><time datetime="2018-05-30T12:02:00.000Z" itemprop="datePublished">2018-05-30</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/05/16/Prometheus-metric-names定义规则/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/DevOps/">DevOps</a></p>
+                            <p class="item-title"><a href="/2018/05/16/Prometheus-metric-names定义规则/" class="title">Prometheus metric names定义规则</a></p>
+                            <p class="item-date"><time datetime="2018-05-16T10:13:00.000Z" itemprop="datePublished">2018-05-16</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">分类</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Database/">Database</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/DevOps/">DevOps</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Java/">Java</a><span class="category-list-count">29</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Java/服务器/">服务器</a><span class="category-list-count">2</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Keycloak/">Keycloak</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Liferay/">Liferay</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">8</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/CentOS/">CentOS</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/Ubuntu/">Ubuntu</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Others/">Others</a><span class="category-list-count">15</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tools/">Tools</a><span class="category-list-count">3</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">标签云</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/Active-Directory/" style="font-size: 10px;">Active Directory</a> <a href="/tags/Backport/" style="font-size: 10px;">Backport</a> <a href="/tags/CentOS/" style="font-size: 10px;">CentOS</a> <a href="/tags/Centos/" style="font-size: 10px;">Centos</a> <a href="/tags/Command/" style="font-size: 10px;">Command</a> <a href="/tags/Consul/" style="font-size: 10px;">Consul</a> <a href="/tags/Database/" style="font-size: 11.11px;">Database</a> <a href="/tags/DevOps/" style="font-size: 16.67px;">DevOps</a> <a href="/tags/Docker/" style="font-size: 11.11px;">Docker</a> <a href="/tags/Elasticsearch/" style="font-size: 10px;">Elasticsearch</a> <a href="/tags/Encoding/" style="font-size: 10px;">Encoding</a> <a href="/tags/Firefox/" style="font-size: 10px;">Firefox</a> <a href="/tags/Google/" style="font-size: 12.22px;">Google</a> <a href="/tags/Grafana/" style="font-size: 10px;">Grafana</a> <a href="/tags/Hexo/" style="font-size: 13.33px;">Hexo</a> <a href="/tags/Hosts/" style="font-size: 11.11px;">Hosts</a> <a href="/tags/Hueman/" style="font-size: 10px;">Hueman</a> <a href="/tags/IP/" style="font-size: 10px;">IP</a> <a href="/tags/Identity-Management/" style="font-size: 10px;">Identity Management</a> <a href="/tags/Intellij/" style="font-size: 11.11px;">Intellij</a> <a href="/tags/Istio/" style="font-size: 10px;">Istio</a> <a href="/tags/JVM/" style="font-size: 15.56px;">JVM</a> <a href="/tags/Java/" style="font-size: 20px;">Java</a> <a href="/tags/Java-8/" style="font-size: 10px;">Java 8</a> <a href="/tags/Jenkins/" style="font-size: 10px;">Jenkins</a> <a href="/tags/Keycloak/" style="font-size: 18.89px;">Keycloak</a> <a href="/tags/Keycloak-proxy/" style="font-size: 10px;">Keycloak proxy</a> <a href="/tags/Kibana/" style="font-size: 10px;">Kibana</a> <a href="/tags/LDAP/" style="font-size: 14.44px;">LDAP</a> <a href="/tags/Liferay/" style="font-size: 17.78px;">Liferay</a> <a href="/tags/Linux/" style="font-size: 16.67px;">Linux</a> <a href="/tags/Maven/" style="font-size: 10px;">Maven</a> <a href="/tags/Metric-names/" style="font-size: 10px;">Metric names</a> <a href="/tags/Mybatis/" style="font-size: 11.11px;">Mybatis</a> <a href="/tags/Mysql/" style="font-size: 10px;">Mysql</a> <a href="/tags/Netty/" style="font-size: 15.56px;">Netty</a> <a href="/tags/Prometheus/" style="font-size: 10px;">Prometheus</a> <a href="/tags/Proxy/" style="font-size: 10px;">Proxy</a> <a href="/tags/Python/" style="font-size: 10px;">Python</a> <a href="/tags/SCIM/" style="font-size: 10px;">SCIM</a> <a href="/tags/SSL/" style="font-size: 10px;">SSL</a> <a href="/tags/SVN/" style="font-size: 10px;">SVN</a> <a href="/tags/Spring-cloud/" style="font-size: 10px;">Spring cloud</a> <a href="/tags/Theme/" style="font-size: 10px;">Theme</a> <a href="/tags/Threads/" style="font-size: 10px;">Threads</a> <a href="/tags/Ubuntu/" style="font-size: 10px;">Ubuntu</a> <a href="/tags/Wildfly/" style="font-size: 15.56px;">Wildfly</a> <a href="/tags/iPhone/" style="font-size: 10px;">iPhone</a> <a href="/tags/pandas/" style="font-size: 10px;">pandas</a> <a href="/tags/resteasy-jaxrs/" style="font-size: 10px;">resteasy-jaxrs</a> <a href="/tags/wildfly/" style="font-size: 10px;">wildfly</a>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+                </div>
+            </div>
+        </div>
+        <!-- 不蒜子游客统计 -->
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+<footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2018 Bejond Shao Contact Me: <a href="mailto:a@bejond.org">a@bejond.org</a>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a>
+                	<span id="busuanzi_container_site_pv">
+    					总访问量<span id="busuanzi_value_site_pv"></span>次
+					</span>
+        			<span id="busuanzi_container_site_uv">
+		  				你是本站第<span id="busuanzi_value_site_uv"></span>位访客
+					</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+        
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>
