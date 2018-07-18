@@ -1,5 +1,5 @@
+http://tech.bejond.org/2018/07/18/Keycloak配置邮箱和忘记密码功能/
 http://tech.bejond.org/2018/07/18/Use-Maven-Profile-to-Change-Configuring-during-Packaging/
 http://tech.bejond.org/2018/07/06/SCIM-System-for-Cross-domain-Identity-Management/
 http://tech.bejond.org/2018/06/22/NoClassDefFoundError-Failed-to-link-org-jboss-resteasy-plugins-providers-yaml-i18n-LogMessages/
 http://tech.bejond.org/2018/06/15/Wildfly10-1-0-Final报ResteasyClientBuilder-executeService-NoSuchMethodError问题/
-http://tech.bejond.org/2018/05/30/Intellij-debug模式启动很慢调整/
