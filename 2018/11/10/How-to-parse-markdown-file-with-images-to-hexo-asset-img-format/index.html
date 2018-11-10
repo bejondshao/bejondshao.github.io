@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>How to parse markdown file with images to hexo asset_img format | Bejond IO</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="Hexo" />
+    
+    <meta name="description" content="In Hexo doc about asset folders, it shows two ways to insert image. One way is put images into one foler, like images and use them through ![This is title](/images/image.jpg). Another way is seperate">
+<meta name="keywords" content="Hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to parse markdown file with images to hexo asset_img format">
+<meta property="og:url" content="http://tech.bejond.org/2018/11/10/How-to-parse-markdown-file-with-images-to-hexo-asset-img-format/index.html">
+<meta property="og:site_name" content="Bejond IO">
+<meta property="og:description" content="In Hexo doc about asset folders, it shows two ways to insert image. One way is put images into one foler, like images and use them through ![This is title](/images/image.jpg). Another way is seperate">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-11-10T10:44:56.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="How to parse markdown file with images to hexo asset_img format">
+<meta name="twitter:description" content="In Hexo doc about asset folders, it shows two ways to insert image. One way is put images into one foler, like images and use them through ![This is title](/images/image.jpg). Another way is seperate">
+    
+
+    
+
+    
+        <link rel="icon" href="/favicon2.png" />
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.0.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">好记性不如烂笔头</p>
+                        </h2>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">主页</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Database/">Database</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/DevOps/">DevOps</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Java/">Java</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Java/服务器/">服务器</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Keycloak/">Keycloak</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Liferay/">Liferay</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Linux/">Linux</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Linux/CentOS/">CentOS</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Linux/Ubuntu/">Ubuntu</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Others/">Others</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Others/Hexo/">Hexo</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Python/">Python</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Tools/">Tools</a></li></ul>
+                                    
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="http://bejond.org">侧聆</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/index.html">关于</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/resume.html">简历</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="想要查找什么..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/Others/">Others</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/Others/Hexo/">Hexo</a>
+    </h1>
+</div>
+                        <div class="main-body-content">
+                            <article id="post-How-to-parse-markdown-file-with-images-to-hexo-asset-img-format" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        How to parse markdown file with images to hexo asset_img format
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2018/11/10/How-to-parse-markdown-file-with-images-to-hexo-asset-img-format/" class="article-date">
+            <time datetime="2018-11-10T07:24:00.000Z" itemprop="datePublished">2018-11-10</time>
+        </a>
+    </div>
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/Hexo/">Hexo</a>
+    </div>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <p>In Hexo doc about <a href="https://hexo.io/docs/asset-folders.html" target="_blank" rel="noopener">asset folders</a>, it shows two ways to insert image. One way is put images into one foler, like <code>images</code> and use them through <code>![This is title](/images/image.jpg)</code>. Another way is seperate images in each folder for each post. I think this is better for management and update, and we don’t need to pay much attention on image file names. In short words, when we enable <code>post_asset_folder: true</code>, then when we create post, there’s also created the same name folder to save images. We can use like <code></code>.</p>
+<p>What if I edit the markdown out of Hexo scope, we can only use <code>![This is title](/images/image.jpg)</code> to show to others. But when I want to post my article on Hexo site, I have edit the content of each image format, which is tedious. So the thing becomes clear. I need to change</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">1. </span>This is some content</span><br><span class="line">![](directory/regist.png)</span><br><span class="line"><span class="bullet">2. </span>This is some other content ![<span class="string">This is title</span>](<span class="link">directory (contains bracket</span>)/user_registered.png)</span><br></pre></td></tr></table></figure>
+<p>into</p>
+<figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>. This <span class="built_in">is</span> <span class="built_in">some</span> <span class="built_in">content</span></span><br><span class="line">&#123;<span class="symbol">%</span> asset_img regist.png <span class="symbol">%</span>&#125;</span><br><span class="line"><span class="number">2</span>. This <span class="built_in">is</span> <span class="built_in">some</span> other <span class="built_in">content</span> &#123;<span class="symbol">%</span> asset_img user_registered.png This <span class="built_in">is</span> <span class="built_in">title</span> <span class="symbol">%</span>&#125;</span><br></pre></td></tr></table></figure>
+<p>First, I don’t want to use advanced programing language. I just need a simple command to finish it. So <code>sed</code> can search and replace content in file.</p>
+<p>Second, I need to get file name in <code>![This is title](directory (contains bracket)/image.jpg)</code>, ignore directory name and parse file name into <code></code>.</p>
+<p>Let’s seperate <code>![This is title](directory (contains bracket)/image.jpg)</code> into parts: There’s a <code>!</code> in front, and append<code>[]</code>, and we need content in <code>[]</code> to be as title, then goes <code>()</code>, and always a <code>/</code> in <code>()</code>. It’s like <strong><code>![](a/b)</code></strong>, besides, <code>a</code> might contain bracket, because post title might contain bracket.</p>
+<ul>
+<li><code>!</code> matches the character <code>!</code> literally</li>
+<li><code>\[</code> matches the character <code>[</code> literally</li>
+<li>We need content inside <code>[]</code>, which is , we need content in front of <code>]</code>. So it should be: <code>([^]]*)</code>. (Explaination: <code>()</code> in regex means group, we can use the content in the group with <code>\1</code>, <code>\2</code> etc. <code>[abc]</code> means single character <code>a</code>, <code>b</code>, <code>c</code>. <code>[^abc]</code> means a character except <code>a</code>, <code>b</code>, <code>c</code>. <code>*</code> means matches 0 or more times.) So <code>([^]]*)</code> means we want the content as group 1, which the content should not contain <code>]</code>.<br>
+So right now, <code>!\[([^]]*)</code>, we have matched <code>![This is title</code>. Let’s continue.</li>
+<li><code>]</code> matches the character <code>]</code> literally</li>
+<li><code>\(</code> matches the character <code>(</code> literally</li>
+<li>We want to skip content before <code>/</code>, vice versa, we accept the characters which are not <code>/</code>, so it should be: <code>[^\/]*</code>.</li>
+<li><code>\/</code> matches the character <code>/</code> literally<br>
+So right now, <code>!\[([^]]*)]\([^\/]*\/</code>, we have matched <code>![This is title](directory (contains bracket)/</code>. Let’s continue.</li>
+<li>We want to keep file name, the content after <code>/</code>, in front of <code>)</code>, which means the content should not contain <code>)</code>. So we need <code>([^)]*)</code>, the content is kept as group 2.</li>
+<li>In the end, we add <code>\)</code>, matches the character <code>)</code>.<br>
+So the regex is : <code>!\[([^]]*)]\([^\/]*\/([^)]*)\)</code>.</li>
+</ul>
+<p>But <code>sed</code> uses Basic Regular Expressions (BRE) by default, which uses <code>\(</code> and <code>\)</code> for group capturing, not just <code>(</code> and <code>)</code> as used in Extended Regular Expressions (ERE). So you should be careful when treating <code>(</code> and <code>)</code>. If you want to match <code>(</code> literally in <code>sed</code>, just use <code>(</code>. If you need group, use <code>\(</code>. This is not good as we need to change the regex we created, it might cause mistakes. Good news is <code>sed</code> has a parameter <code>-E</code> to use Extended Regular Expressions.</p>
+<p>The syntax is:</p>
+<p><strong><code>sed -E -i.bak 's/!\[([^]]*)]\([^\/]*\/([^)]*)\)//g' file</code></strong></p>
+<p>or</p>
+<p><strong><code>sed -i.bak 's/!\[\([^]]*\)]([^\/]*\/\([^)]*\))//g' file</code></strong></p>
+<ul>
+<li><code>-i.bak</code> will backup original file into file.bak.</li>
+<li><code>'s/old-text/new-text/g'</code>, <code>s</code> is the substitute command of set for find and replace.</li>
+<li>group 1 is <code>([^]]*)</code>, group 2 is <code>([^)]*)</code></li>
+</ul>
+<p>So above command means find <code>old-text</code> and replace file content with <code>new-text</code>, also backup fileinto file.bak.</p>
+<p>And <a href="https://regex101.com/r/uIBKVu/3" target="_blank" rel="noopener">here</a> is online expression with example.</p>
+<p><a href="https://www.cyberciti.biz/faq/how-to-use-sed-to-find-and-replace-text-in-files-in-linux-unix-shell/" target="_blank" rel="noopener">[1]nixCraft - How to use sed to find and replace text in files in Linux / Unix shell</a></p>
+<p><a href="https://stackoverflow.com/questions/51406323/how-to-extract-string-in-file-and-replace-specific-pattern-text" target="_blank" rel="noopener">[2]Stackoverflow - How to extract string in file and replace specific pattern text</a></p>
+<p><a href="https://stackoverflow.com/questions/28072190/sed-error-1-not-defined-in-the-re-on-macosx-10-9-5" target="_blank" rel="noopener">[3]Stackoverflow - Sed error “\1 not defined in the RE” on MacOSX 10.9.5</a></p>
+<p><a href="https://stackoverflow.com/questions/24717676/bash-profile-sed-1-not-defined-in-the-re" target="_blank" rel="noopener">[4]Stackoverflow - .bash_profile sed: \1 not defined in the RE</a></p>
+
+        </div>
+        <div class="article-entry" id="busuanzi_container_page_pv">
+            阅读<span id="busuanzi_value_page_pv"></span>次
+        </div>
+        <footer class="article-footer">
+            
+
+
+
+        </footer>
+    </div>
+</article>
+
+    <section id="comments">
+    
+    </section>
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>关注我 :</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github-alt" href="https://github.com/bejondshao" target="_blank">
+                        <i class="icon fa fa-github-alt"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="linkedin-square" href="https://www.linkedin.com/in/bejondshao" target="_blank">
+                        <i class="icon fa fa-linkedin-square"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="music" href="https://music.163.com/#/playlist?id=59530273" target="_blank">
+                        <i class="icon fa fa-music"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="wechat" href="/about/wechat.html" target="_blank">
+                        <i class="icon fa fa-wechat"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2018/07/18/Keycloak配置LDAP-Active-Directory/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">上一篇</strong>
+        <p class="article-nav-title">Keycloak配置LDAP(Active Directory)</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">最新文章</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/11/10/How-to-parse-markdown-file-with-images-to-hexo-asset-img-format/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Others/">Others</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Others/Hexo/">Hexo</a></p>
+                            <p class="item-title"><a href="/2018/11/10/How-to-parse-markdown-file-with-images-to-hexo-asset-img-format/" class="title">How to parse markdown file with images to hexo asset_img format</a></p>
+                            <p class="item-date"><time datetime="2018-11-10T07:24:00.000Z" itemprop="datePublished">2018-11-10</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/07/18/Keycloak配置LDAP-Active-Directory/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/07/18/Keycloak配置LDAP-Active-Directory/" class="title">Keycloak配置LDAP(Active Directory)</a></p>
+                            <p class="item-date"><time datetime="2018-07-18T14:40:15.000Z" itemprop="datePublished">2018-07-18</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/07/18/Keycloak配置邮箱和忘记密码功能/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/2018/07/18/Keycloak配置邮箱和忘记密码功能/email.png)" alt="Keycloak配置邮箱和忘记密码功能" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Keycloak/">Keycloak</a></p>
+                            <p class="item-title"><a href="/2018/07/18/Keycloak配置邮箱和忘记密码功能/" class="title">Keycloak配置邮箱和忘记密码功能</a></p>
+                            <p class="item-date"><time datetime="2018-07-18T14:17:16.000Z" itemprop="datePublished">2018-07-18</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/07/18/Use-Maven-Profile-to-Change-Configuring-during-Packaging/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/2018/07/18/Use-Maven-Profile-to-Change-Configuring-during-Packaging/profiles.jpg)" alt="Use Maven Profile to Change Configuring during Packaging" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Tools/">Tools</a></p>
+                            <p class="item-title"><a href="/2018/07/18/Use-Maven-Profile-to-Change-Configuring-during-Packaging/" class="title">Use Maven Profile to Change Configuring during Packaging</a></p>
+                            <p class="item-date"><time datetime="2018-07-18T10:06:00.000Z" itemprop="datePublished">2018-07-18</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/07/06/SCIM-System-for-Cross-domain-Identity-Management/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/2018/07/06/SCIM-System-for-Cross-domain-Identity-Management/model.png)" alt="SCIM(System for Cross-domain Identity Management)" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Others/">Others</a></p>
+                            <p class="item-title"><a href="/2018/07/06/SCIM-System-for-Cross-domain-Identity-Management/" class="title">SCIM(System for Cross-domain Identity Management)</a></p>
+                            <p class="item-date"><time datetime="2018-07-06T07:51:00.000Z" itemprop="datePublished">2018-07-06</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">分类</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Database/">Database</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/DevOps/">DevOps</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Java/">Java</a><span class="category-list-count">29</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Java/服务器/">服务器</a><span class="category-list-count">2</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Keycloak/">Keycloak</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Liferay/">Liferay</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">8</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/CentOS/">CentOS</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/Ubuntu/">Ubuntu</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Others/">Others</a><span class="category-list-count">16</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Others/Hexo/">Hexo</a><span class="category-list-count">4</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tools/">Tools</a><span class="category-list-count">4</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">标签云</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/Active-Directory/" style="font-size: 10px;">Active Directory</a> <a href="/tags/Backport/" style="font-size: 10px;">Backport</a> <a href="/tags/CentOS/" style="font-size: 10px;">CentOS</a> <a href="/tags/Centos/" style="font-size: 10px;">Centos</a> <a href="/tags/Command/" style="font-size: 10px;">Command</a> <a href="/tags/Consul/" style="font-size: 10px;">Consul</a> <a href="/tags/Database/" style="font-size: 11.25px;">Database</a> <a href="/tags/DevOps/" style="font-size: 16.25px;">DevOps</a> <a href="/tags/Docker/" style="font-size: 11.25px;">Docker</a> <a href="/tags/Elasticsearch/" style="font-size: 10px;">Elasticsearch</a> <a href="/tags/Encoding/" style="font-size: 10px;">Encoding</a> <a href="/tags/Firefox/" style="font-size: 10px;">Firefox</a> <a href="/tags/Google/" style="font-size: 12.5px;">Google</a> <a href="/tags/Grafana/" style="font-size: 10px;">Grafana</a> <a href="/tags/Hexo/" style="font-size: 13.75px;">Hexo</a> <a href="/tags/Hosts/" style="font-size: 11.25px;">Hosts</a> <a href="/tags/Hueman/" style="font-size: 10px;">Hueman</a> <a href="/tags/IP/" style="font-size: 10px;">IP</a> <a href="/tags/Identity-Management/" style="font-size: 10px;">Identity Management</a> <a href="/tags/Intellij/" style="font-size: 11.25px;">Intellij</a> <a href="/tags/Istio/" style="font-size: 10px;">Istio</a> <a href="/tags/JVM/" style="font-size: 15px;">JVM</a> <a href="/tags/Java/" style="font-size: 20px;">Java</a> <a href="/tags/Java-8/" style="font-size: 10px;">Java 8</a> <a href="/tags/Jenkins/" style="font-size: 10px;">Jenkins</a> <a href="/tags/Keycloak/" style="font-size: 18.75px;">Keycloak</a> <a href="/tags/Keycloak-proxy/" style="font-size: 10px;">Keycloak proxy</a> <a href="/tags/Kibana/" style="font-size: 10px;">Kibana</a> <a href="/tags/LDAP/" style="font-size: 13.75px;">LDAP</a> <a href="/tags/Liferay/" style="font-size: 17.5px;">Liferay</a> <a href="/tags/Linux/" style="font-size: 16.25px;">Linux</a> <a href="/tags/Maven/" style="font-size: 10px;">Maven</a> <a href="/tags/Metric-names/" style="font-size: 10px;">Metric names</a> <a href="/tags/Mybatis/" style="font-size: 11.25px;">Mybatis</a> <a href="/tags/Mysql/" style="font-size: 10px;">Mysql</a> <a href="/tags/Netty/" style="font-size: 15px;">Netty</a> <a href="/tags/Prometheus/" style="font-size: 10px;">Prometheus</a> <a href="/tags/Proxy/" style="font-size: 10px;">Proxy</a> <a href="/tags/Python/" style="font-size: 10px;">Python</a> <a href="/tags/SCIM/" style="font-size: 10px;">SCIM</a> <a href="/tags/SSL/" style="font-size: 10px;">SSL</a> <a href="/tags/SVN/" style="font-size: 10px;">SVN</a> <a href="/tags/Security/" style="font-size: 10px;">Security</a> <a href="/tags/Spring-cloud/" style="font-size: 10px;">Spring cloud</a> <a href="/tags/Theme/" style="font-size: 10px;">Theme</a> <a href="/tags/Threads/" style="font-size: 10px;">Threads</a> <a href="/tags/Ubuntu/" style="font-size: 10px;">Ubuntu</a> <a href="/tags/Wildfly/" style="font-size: 15px;">Wildfly</a> <a href="/tags/iPhone/" style="font-size: 10px;">iPhone</a> <a href="/tags/maven/" style="font-size: 10px;">maven</a> <a href="/tags/pandas/" style="font-size: 10px;">pandas</a> <a href="/tags/resteasy-jaxrs/" style="font-size: 10px;">resteasy-jaxrs</a> <a href="/tags/wildfly/" style="font-size: 10px;">wildfly</a>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+                </div>
+            </div>
+        </div>
+        <!-- 不蒜子游客统计 -->
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+<footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2018 Bejond Shao Contact Me: <a href="mailto:a@bejond.org">a@bejond.org</a>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a>
+                	<span id="busuanzi_container_site_pv">
+    					总访问量<span id="busuanzi_value_site_pv"></span>次
+					</span>
+        			<span id="busuanzi_container_site_uv">
+		  				你是本站第<span id="busuanzi_value_site_uv"></span>位访客
+					</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+        
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>
