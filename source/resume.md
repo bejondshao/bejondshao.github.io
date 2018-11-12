@@ -1,4 +1,4 @@
-邵帅 • 男 • 1990-10 • 辽宁 大连 • <a@bejond.org> • +86 18640902787
+邵帅 • 男 • 1990-10 • 辽宁 大连 • <a@bejond.org> • +86 1864090xxxx
 
 ------
 四年半Java后台研发经验，曾就职于Liferay，服务于开源框架[Liferay（CMS）]((https://github.com/liferay/liferay-portal))的维护和支持，服务于亚太，欧美客户，英语六级，英文听说读写流利。
