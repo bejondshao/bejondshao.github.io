@@ -17,10 +17,12 @@
 <meta property="og:site_name" content="Bejond IO">
 <meta property="og:description" content="In Hexo doc about asset folders, it shows two ways to insert image. One way is put images into one foler, like images and use them through ![This is title](/images/image.jpg). Another way is seperate">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-10T10:44:56.000Z">
+<meta property="og:image" content="http://tech.bejond.org/2018/11/10/How-to-parse-markdown-file-with-images-to-hexo-asset-img-format/a.jpg">
+<meta property="og:updated_time" content="2018-11-12T12:34:21.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="How to parse markdown file with images to hexo asset_img format">
 <meta name="twitter:description" content="In Hexo doc about asset folders, it shows two ways to insert image. One way is put images into one foler, like images and use them through ![This is title](/images/image.jpg). Another way is seperate">
+<meta name="twitter:image" content="http://tech.bejond.org/2018/11/10/How-to-parse-markdown-file-with-images-to-hexo-asset-img-format/a.jpg">
     
 
     
@@ -177,7 +179,8 @@
         
         
         <div class="article-entry" itemprop="articleBody">
-            <p>In Hexo doc about <a href="https://hexo.io/docs/asset-folders.html" target="_blank" rel="noopener">asset folders</a>, it shows two ways to insert image. One way is put images into one foler, like <code>images</code> and use them through <code>![This is title](/images/image.jpg)</code>. Another way is seperate images in each folder for each post. I think this is better for management and update, and we don’t need to pay much attention on image file names. In short words, when we enable <code>post_asset_folder: true</code>, then when we create post, there’s also created the same name folder to save images. We can use like <code></code>.</p>
+            <img src="/2018/11/10/How-to-parse-markdown-file-with-images-to-hexo-asset-img-format/a.jpg">
+<p>In Hexo doc about <a href="https://hexo.io/docs/asset-folders.html" target="_blank" rel="noopener">asset folders</a>, it shows two ways to insert image. One way is put images into one foler, like <code>images</code> and use them through <code>![This is title](/images/image.jpg)</code>. Another way is seperate images in each folder for each post. I think this is better for management and update, and we don’t need to pay much attention on image file names. In short words, when we enable <code>post_asset_folder: true</code>, then when we create post, there’s also created the same name folder to save images. We can use like <code></code>.</p>
 <p>What if I edit the markdown out of Hexo scope, we can only use <code>![This is title](/images/image.jpg)</code> to show to others. But when I want to post my article on Hexo site, I have edit the content of each image format, which is tedious. So the thing becomes clear. I need to change</p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">1. </span>This is some content</span><br><span class="line">![](directory/regist.png)</span><br><span class="line"><span class="bullet">2. </span>This is some other content ![<span class="string">This is title</span>](<span class="link">directory (contains bracket</span>)/user_registered.png)</span><br></pre></td></tr></table></figure>
 <p>into</p>
@@ -201,9 +204,9 @@ So the regex is : <code>!\[([^]]*)]\([^\/]*\/([^)]*)\)</code>.</li>
 </ul>
 <p>But <code>sed</code> uses Basic Regular Expressions (BRE) by default, which uses <code>\(</code> and <code>\)</code> for group capturing, not just <code>(</code> and <code>)</code> as used in Extended Regular Expressions (ERE). So you should be careful when treating <code>(</code> and <code>)</code>. If you want to match <code>(</code> literally in <code>sed</code>, just use <code>(</code>. If you need group, use <code>\(</code>. This is not good as we need to change the regex we created, it might cause mistakes. Good news is <code>sed</code> has a parameter <code>-E</code> to use Extended Regular Expressions.</p>
 <p>The syntax is:</p>
-<p><strong><code>sed -E -i.bak 's/!\[([^]]*)]\([^\/]*\/([^)]*)\)//g' file</code></strong></p>
+<figure class="highlight taggerscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed -E -i.bak 's/!<span class="symbol">\[</span>([^]]*)]<span class="symbol">\(</span>[^<span class="symbol">\/</span>]*<span class="symbol">\/</span>([^)]*)<span class="symbol">\)</span>/&#123;<span class="variable">% asset_img \2 \1 %</span>&#125;/g' file</span><br></pre></td></tr></table></figure>
 <p>or</p>
-<p><strong><code>sed -i.bak 's/!\[\([^]]*\)]([^\/]*\/\([^)]*\))//g' file</code></strong></p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed -i.bak 's/!\[<span class="string">\([^</span>]]<span class="emphasis">*\)]([^\/]*</span>\/\([^)]*\))/&#123;% asset_img \2 \1 %&#125;/g' file</span><br></pre></td></tr></table></figure>
 <ul>
 <li><code>-i.bak</code> will backup original file into file.bak.</li>
 <li><code>'s/old-text/new-text/g'</code>, <code>s</code> is the substitute command of set for find and replace.</li>
@@ -280,6 +283,16 @@ So the regex is : <code>!\[([^]]*)]\([^\/]*\/([^)]*)\)</code>.</li>
         
 <nav id="article-nav">
     
+        <a href="/2018/11/10/Keycloak配置LDAP(Active Directory)/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">下一篇</strong>
+        <p class="article-nav-title">
+        
+            (no title)
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
     
         <a href="/2018/07/18/Keycloak配置LDAP-Active-Directory/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">上一篇</strong>
@@ -302,10 +315,30 @@ So the regex is : <code>!\[([^]]*)]\([^\/]*\/([^)]*)\)</code>.</li>
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2018/11/10/How-to-parse-markdown-file-with-images-to-hexo-asset-img-format/" class="thumbnail">
+                            <a href="/2018/11/10/Keycloak配置LDAP(Active Directory)/" class="thumbnail">
     
     
         <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/11/10/Keycloak配置LDAP(Active Directory)/" class="title"></a></p>
+                            <p class="item-date"><time datetime="2018-11-10T09:53:09.000Z" itemprop="datePublished">2018-11-10</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/11/10/How-to-parse-markdown-file-with-images-to-hexo-asset-img-format/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/2018/11/10/How-to-parse-markdown-file-with-images-to-hexo-asset-img-format/a.jpg)" alt="How to parse markdown file with images to hexo asset_img format" class="thumbnail-image"></span>
     
     
 </a>
@@ -325,7 +358,7 @@ So the regex is : <code>!\[([^]]*)]\([^\/]*\/([^)]*)\)</code>.</li>
                             <a href="/2018/07/18/Keycloak配置LDAP-Active-Directory/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(/2018/07/18/Keycloak配置LDAP-Active-Directory/ldaps-work.png)" alt="Keycloak配置LDAP(Active Directory)" class="thumbnail-image"></span>
     
     
 </a>
@@ -333,9 +366,9 @@ So the regex is : <code>!\[([^]]*)]\([^\/]*\/([^)]*)\)</code>.</li>
                         </div>
                         
                         <div class="item-inner">
-                            <p class="item-category"></p>
+                            <p class="item-category"><a class="article-category-link" href="/categories/Keycloak/">Keycloak</a></p>
                             <p class="item-title"><a href="/2018/07/18/Keycloak配置LDAP-Active-Directory/" class="title">Keycloak配置LDAP(Active Directory)</a></p>
-                            <p class="item-date"><time datetime="2018-07-18T14:40:15.000Z" itemprop="datePublished">2018-07-18</time></p>
+                            <p class="item-date"><time datetime="2018-07-18T14:40:00.000Z" itemprop="datePublished">2018-07-18</time></p>
                         </div>
                     </li>
                 
@@ -379,26 +412,6 @@ So the regex is : <code>!\[([^]]*)]\([^\/]*\/([^)]*)\)</code>.</li>
                         </div>
                     </li>
                 
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2018/07/06/SCIM-System-for-Cross-domain-Identity-Management/" class="thumbnail">
-    
-    
-        <span style="background-image:url(/2018/07/06/SCIM-System-for-Cross-domain-Identity-Management/model.png)" alt="SCIM(System for Cross-domain Identity Management)" class="thumbnail-image"></span>
-    
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/Others/">Others</a></p>
-                            <p class="item-title"><a href="/2018/07/06/SCIM-System-for-Cross-domain-Identity-Management/" class="title">SCIM(System for Cross-domain Identity Management)</a></p>
-                            <p class="item-date"><time datetime="2018-07-06T07:51:00.000Z" itemprop="datePublished">2018-07-06</time></p>
-                        </div>
-                    </li>
-                
             </ul>
         </div>
     </div>
@@ -408,7 +421,7 @@ So the regex is : <code>!\[([^]]*)]\([^\/]*\/([^)]*)\)</code>.</li>
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">分类</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Database/">Database</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/DevOps/">DevOps</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Java/">Java</a><span class="category-list-count">29</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Java/服务器/">服务器</a><span class="category-list-count">2</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Keycloak/">Keycloak</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Liferay/">Liferay</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">8</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/CentOS/">CentOS</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/Ubuntu/">Ubuntu</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Others/">Others</a><span class="category-list-count">16</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Others/Hexo/">Hexo</a><span class="category-list-count">4</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tools/">Tools</a><span class="category-list-count">4</span></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Database/">Database</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/DevOps/">DevOps</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Java/">Java</a><span class="category-list-count">29</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Java/服务器/">服务器</a><span class="category-list-count">2</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Keycloak/">Keycloak</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Liferay/">Liferay</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">8</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/CentOS/">CentOS</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/Ubuntu/">Ubuntu</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Others/">Others</a><span class="category-list-count">16</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Others/Hexo/">Hexo</a><span class="category-list-count">4</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tools/">Tools</a><span class="category-list-count">4</span></li></ul>
         </div>
     </div>
 
