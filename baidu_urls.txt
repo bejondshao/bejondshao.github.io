@@ -1,5 +1,5 @@
-http://tech.bejond.org/2018/11/10/Keycloak配置LDAP(Active Directory)/
 http://tech.bejond.org/2018/11/10/How-to-parse-markdown-file-with-images-to-hexo-asset-img-format/
 http://tech.bejond.org/2018/07/18/Keycloak配置LDAP-Active-Directory/
 http://tech.bejond.org/2018/07/18/Keycloak配置邮箱和忘记密码功能/
 http://tech.bejond.org/2018/07/18/Use-Maven-Profile-to-Change-Configuring-during-Packaging/
+http://tech.bejond.org/2018/07/06/SCIM-System-for-Cross-domain-Identity-Management/

@@ -160,54 +160,6 @@
         <article class="article article-summary">
     <div class="article-summary-inner">
         
-        <a href="/2017/12/14/SunCertPathBuilderException-unable-to-find-valid-certification-path-to-requested-target/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-    
-        
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-</span>
-
-
-    
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/Java/">Java</a>
-            </div>
-            <div class="date"><time datetime="2017-12-14T03:47:22.000Z" itemprop="datePublished">2017-12-14</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2017/12/14/SunCertPathBuilderException-unable-to-find-valid-certification-path-to-requested-target/">SunCertPathBuilderException: unable to find valid certification path to requested target</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            原文
-产生SunCertPathBuilderException: unable to find valid certification path to requested target的原因是要以SSL方式连接目标，而目标的证书是自签名的，所以会导致这个问题。
-通常异常如下：
-
-javax.net.ssl.SSLHandshakeException: sun.security.validator
-        </p>
-    </div>
-</article>
-    
-
-    
-    
-    
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
         <a href="/2017/12/14/Netty开发环境搭建/" class="thumbnail">
     
     
@@ -252,14 +204,10 @@ Note: 此步骤必须，因为build整个项目需要使用dev-tools。感觉net
     </div>
 </article>
     
-        </div>
-    
 
     
     
     
-    
-        <div class="article-row">
     
         <article class="article article-summary">
     <div class="article-summary-inner">
@@ -311,10 +259,14 @@ $ netstat -tulpn
     </div>
 </article>
     
+        </div>
+    
 
     
     
     
+    
+        <div class="article-row">
     
         <article class="article article-summary">
     <div class="article-summary-inner">
@@ -359,14 +311,10 @@ $ netstat -tulpn
     </div>
 </article>
     
-        </div>
-    
 
     
     
     
-    
-        <div class="article-row">
     
         <article class="article article-summary">
     <div class="article-summary-inner">
@@ -420,10 +368,14 @@ config.trim_on_minimize
     </div>
 </article>
     
+        </div>
+    
 
     
     
     
+    
+        <div class="article-row">
     
         <article class="article article-summary">
     <div class="article-summary-inner">
@@ -463,6 +415,63 @@ config.trim_on_minimize
  概念
 正向代理是一个位于客户端和目标服务器之间的代理服务器(中间服务器)。为了从目标服务器取得内容，客户端向代理服务器发送一个请求，并且指定目标服务器，之后代理向目标服务器转交并且将获得的内容返回给客户端。正向代理的情况下客户端必须要进行一些特别的设置才能使用。
 反向代理正好相反。对于客户端来说，反向代理就好像真实服务器。并且客户端不需要进行任何设置。客户端向反向代理发送请求，接着反向代理
+        </p>
+    </div>
+</article>
+    
+
+    
+    
+    
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/2017/12/11/Keycloak应用所需工作/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            <a class="article-category-link" href="/categories/Java/">Java</a>
+            </div>
+            <div class="date"><time datetime="2017-12-11T09:46:44.000Z" itemprop="datePublished">2017-12-11</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/2017/12/11/Keycloak应用所需工作/">Keycloak应用所需工作</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            一、学习并了解keycloak项目以及相关概念，验证流程等
+二、部署配置keyclaok服务器
+
+下载并解压最新keyclaok
+配置keyclaok数据库和数据库驱动
+配置项目服务器中的adapter
+
+三、禁用现有项目中的权限模块，注释相关权限验证代码
+
+pickedlink
+.Net相关权限模块
+User，Role等model可暂时保留，待keycloak应用成功后移除。
+
+四、在keycl
         </p>
     </div>
 </article>
@@ -531,26 +540,6 @@ config.trim_on_minimize
         <h3 class="widget-title">最新文章</h3>
         <div class="widget">
             <ul id="recent-post" class="">
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2018/11/10/Keycloak配置LDAP(Active Directory)/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2018/11/10/Keycloak配置LDAP(Active Directory)/" class="title"></a></p>
-                            <p class="item-date"><time datetime="2018-11-10T09:53:09.000Z" itemprop="datePublished">2018-11-10</time></p>
-                        </div>
-                    </li>
                 
                     <li>
                         
@@ -629,6 +618,26 @@ config.trim_on_minimize
                             <p class="item-category"><a class="article-category-link" href="/categories/Tools/">Tools</a></p>
                             <p class="item-title"><a href="/2018/07/18/Use-Maven-Profile-to-Change-Configuring-during-Packaging/" class="title">Use Maven Profile to Change Configuring during Packaging</a></p>
                             <p class="item-date"><time datetime="2018-07-18T10:06:00.000Z" itemprop="datePublished">2018-07-18</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/07/06/SCIM-System-for-Cross-domain-Identity-Management/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/2018/07/06/SCIM-System-for-Cross-domain-Identity-Management/model.png)" alt="SCIM(System for Cross-domain Identity Management)" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Others/">Others</a></p>
+                            <p class="item-title"><a href="/2018/07/06/SCIM-System-for-Cross-domain-Identity-Management/" class="title">SCIM(System for Cross-domain Identity Management)</a></p>
+                            <p class="item-date"><time datetime="2018-07-06T07:51:00.000Z" itemprop="datePublished">2018-07-06</time></p>
                         </div>
                     </li>
                 
