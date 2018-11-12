@@ -6,6 +6,7 @@ category:
   - Others
 categories:
   - Others
+  - Hexo
 date: 2017-10-27 19:38:00
 ---
 本文仅做使用Hexo时遇到的问题汇总，如果对你有帮助，那就有吧:sweat_smile:。

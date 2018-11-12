@@ -1,12 +1,14 @@
----
 layout: post
 title: 如何将hexo与theme代码分开提交
-date: 2017-11-30 22:29:14
 tags:
-- Hexo
-- Theme
+  - Hexo
+  - Theme
 category:
-- Others
+  - Others
+categories:
+  - Others
+  - Hexo
+date: 2017-11-30 22:29:00
 ---
 ###### 说在前面
 Hexo博客静态页面是用hexo-deployer-git插件自动提交到bejondshao.github.io库中的master分支的。为了保存文章和自定义内容，我将Hexo框架，文章和自定义内容保存在source分支下。平时编辑提交都在source分支做，执行hexo deploy时hexo-deployer-git自动将静态内容提交到master，不必手动切换分支，很方便。

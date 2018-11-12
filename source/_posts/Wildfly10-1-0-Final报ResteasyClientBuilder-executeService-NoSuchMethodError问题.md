@@ -64,4 +64,4 @@ new ResteasyClientBuilder().asyncExecutor(Executors.newCachedThreadPool());
 
 需要注意，`asyncExecutor(ExecutorService asyncExecutor)`在新版本的`resteasy-client`包里已经过期，用`executorService(ExecutorService executorService)`代替。从这个例子也能看出程序设计的问题，低版本方法名定义得随意，到了后期调整为新的名字。实际上`executorService`直接调用的`asyncExecutor`，又将`asyncExecutor`标记为`Deprecated`。
 
-补充： 在这个例子里如果不使用`executorService(ExecutorService executorService)`，`ResteasyClient.build()`就会创建10线程固定大小的线程池。那么设定`connectionPoolSize(int size)`就不会起
+补充： 在这个例子里如果不使用`executorService(ExecutorService executorService)`，`ResteasyClient.build()`就会创建10线程固定大小的线程池。那么设定`connectionPoolSize(int size)`就不会起作用。
