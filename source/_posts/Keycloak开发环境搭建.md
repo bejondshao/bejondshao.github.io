@@ -90,3 +90,18 @@ d. 编辑keycloak-<version>/standalone/configuration/standalone.xml文件，更�
 其中connection-url改为相应的server和数据库。
 5. 至此，配置完成，进入keycloak-<version>/bin/，启动 standalone.sh（.bat）即可访问http://localhost:8080/auth 。
 
+6. 如果在启动时出现
+
+```
+Caused by: org.jboss.modules.ModuleNotFoundException: org.keycloak.keycloak-server-subsystem
+	at org.jboss.modules.ModuleLoader.loadModule(ModuleLoader.java:294)
+	at org.jboss.modules.ModuleLoader.loadModule(ModuleLoader.java:280)
+	at org.jboss.as.controller.parsing.DeferredExtensionContext.loadModule(DeferredExtensionContext.java:111)
+	... 10 more
+
+```
+问题，参考[Stackoverflow解答](https://stackoverflow.com/a/45700683/3908814)，需要在keycloak-<version>/modules/目录下创建文件layers.conf，内容如下：
+```
+layers=keycloak
+```
+下面有人解释说：这样做是在wildfly中开启keycloak subsystem模块。否则所有的keycloak类都无法被加载。这个文件在编译时没有被拷贝，很是奇怪。
