@@ -288,9 +288,9 @@ http://jingyan.baidu.com/article/9989c7463cf43cf648ecfe21.html?st=5&amp;os=1&amp
 
         <p class="article-excerpt">
             @ mybatis-config.xml
-123   &lt;mappers&gt;	&lt;mapper resource="mybatis/xml/GuestInfoMapper.xml" /&gt;&lt;/mappers&gt;
+123   &lt;mappers&gt;	&lt;mapper resource="mybatis/xml/UserMapper.xml" /&gt;&lt;/mappers&gt;
 @ 添加GuestInfoMapper接口
-12   public interface GuestInfoMapper &#123;void updateGues
+12   public interface UserMapper &#123;void updateUserByUserNumb
         </p>
     </div>
 </article>
@@ -640,9 +640,11 @@ Note: 执行jps（下面jstack, jmap等命令相同）时需要用运行java应�
                 </div>
             </div>
         </div>
-        <!-- 不蒜子游客统计 -->
+        <!--
+<!-- 不蒜子游客统计 -->
 <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
+-->
 <footer id="footer">
     <div class="container">
         <div class="container-inner">
@@ -651,14 +653,16 @@ Note: 执行jps（下面jstack, jmap等命令相同）时需要用运行java应�
                 <h1 class="logo-wrap">
                     <a href="/" class="logo"></a>
                 </h1>
-                <p>&copy; 2019 Bejond Shao Contact Me: <a href="mailto:a@bejond.org">a@bejond.org</a>
+                <p>&copy; 2015 - 2019 Bejond Shao Contact Me: <a href="mailto:a@bejond.org">a@bejond.org</a>
                 <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a>
+                	<!--
                 	<span id="busuanzi_container_site_pv">
     					总访问量<span id="busuanzi_value_site_pv"></span>次
 					</span>
         			<span id="busuanzi_container_site_uv">
 		  				你是本站第<span id="busuanzi_value_site_uv"></span>位访客
 					</span>
+					-->
                 </p>
             </div>
         </div>

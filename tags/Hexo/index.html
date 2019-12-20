@@ -412,11 +412,12 @@ https://hexo.io/docs/asset-folders.html
 
 编辑_config.yml
 
-true```1234这样hexo会在每次使用hexo new title命令时在文章源文件目录下创建同名文件夹来存储资源.2. 在markdown文章里如何引用?
+1post_asset_folder: true
+这样hexo会在每次使用hexo new title命令时在文章源文件目录下创建同名文件夹来存储资源.
 
+在markdown文章里如何引用?
 
-
-1234举个栗子:本篇文章名叫what-is-LDAP, 创建它时,会创建同名文件夹,把LDAP.
+123&#123;% asset_path slug %&#125;&#12
         </p>
     </div>
 </article>
@@ -610,9 +611,11 @@ true```1234这样hexo会在每次使用hexo new title命令时在文章源文件
                 </div>
             </div>
         </div>
-        <!-- 不蒜子游客统计 -->
+        <!--
+<!-- 不蒜子游客统计 -->
 <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
+-->
 <footer id="footer">
     <div class="container">
         <div class="container-inner">
@@ -621,14 +624,16 @@ true```1234这样hexo会在每次使用hexo new title命令时在文章源文件
                 <h1 class="logo-wrap">
                     <a href="/" class="logo"></a>
                 </h1>
-                <p>&copy; 2019 Bejond Shao Contact Me: <a href="mailto:a@bejond.org">a@bejond.org</a>
+                <p>&copy; 2015 - 2019 Bejond Shao Contact Me: <a href="mailto:a@bejond.org">a@bejond.org</a>
                 <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a>
+                	<!--
                 	<span id="busuanzi_container_site_pv">
     					总访问量<span id="busuanzi_value_site_pv"></span>次
 					</span>
         			<span id="busuanzi_container_site_uv">
 		  				你是本站第<span id="busuanzi_value_site_uv"></span>位访客
 					</span>
+					-->
                 </p>
             </div>
         </div>

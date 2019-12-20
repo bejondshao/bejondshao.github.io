@@ -9,18 +9,18 @@
     
         <meta name="keywords" content="Java,Mybatis" />
     
-    <meta name="description" content="@ mybatis-config.xml 123   &amp;lt;mappers&amp;gt;	&amp;lt;mapper resource=&quot;mybatis/xml/GuestInfoMapper.xml&quot; /&amp;gt;&amp;lt;/mappers&amp;gt; @ 添加GuestInfoMapper接口 12   public interface GuestInfoMapper &amp;#123;void updateGues">
+    <meta name="description" content="@ mybatis-config.xml 123   &amp;lt;mappers&amp;gt;	&amp;lt;mapper resource=&quot;mybatis/xml/UserMapper.xml&quot; /&amp;gt;&amp;lt;/mappers&amp;gt; @ 添加GuestInfoMapper接口 12   public interface UserMapper &amp;#123;void updateUserByUserNumb">
 <meta name="keywords" content="Java,Mybatis">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Mybatis更新数据库示例">
 <meta property="og:url" content="http://tech.bejond.org/2017/03/30/Mybatis更新数据库示例/index.html">
 <meta property="og:site_name" content="Bejond IO">
-<meta property="og:description" content="@ mybatis-config.xml 123   &amp;lt;mappers&amp;gt;	&amp;lt;mapper resource=&quot;mybatis/xml/GuestInfoMapper.xml&quot; /&amp;gt;&amp;lt;/mappers&amp;gt; @ 添加GuestInfoMapper接口 12   public interface GuestInfoMapper &amp;#123;void updateGues">
+<meta property="og:description" content="@ mybatis-config.xml 123   &amp;lt;mappers&amp;gt;	&amp;lt;mapper resource=&quot;mybatis/xml/UserMapper.xml&quot; /&amp;gt;&amp;lt;/mappers&amp;gt; @ 添加GuestInfoMapper接口 12   public interface UserMapper &amp;#123;void updateUserByUserNumb">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-06-25T17:56:57.000Z">
+<meta property="og:updated_time" content="2019-12-20T11:38:39.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mybatis更新数据库示例">
-<meta name="twitter:description" content="@ mybatis-config.xml 123   &amp;lt;mappers&amp;gt;	&amp;lt;mapper resource=&quot;mybatis/xml/GuestInfoMapper.xml&quot; /&amp;gt;&amp;lt;/mappers&amp;gt; @ 添加GuestInfoMapper接口 12   public interface GuestInfoMapper &amp;#123;void updateGues">
+<meta name="twitter:description" content="@ mybatis-config.xml 123   &amp;lt;mappers&amp;gt;	&amp;lt;mapper resource=&quot;mybatis/xml/UserMapper.xml&quot; /&amp;gt;&amp;lt;/mappers&amp;gt; @ 添加GuestInfoMapper接口 12   public interface UserMapper &amp;#123;void updateUserByUserNumb">
     
 
     
@@ -174,20 +174,22 @@
         
         <div class="article-entry" itemprop="articleBody">
             <p>@ mybatis-config.xml</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">   <span class="tag">&lt;<span class="name">mappers</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">mapper</span> <span class="attr">resource</span>=<span class="string">"mybatis/xml/GuestInfoMapper.xml"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mappers</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">   <span class="tag">&lt;<span class="name">mappers</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">mapper</span> <span class="attr">resource</span>=<span class="string">"mybatis/xml/UserMapper.xml"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mappers</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>@ 添加GuestInfoMapper接口</p>
-<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">   public<span class="built_in"> interface </span>GuestInfoMapper &#123;</span><br><span class="line">void updateGuestInfoByGuestNumber(UpdateGuestInfo updateGuestInfo);</span><br></pre></td></tr></table></figure>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">   public<span class="built_in"> interface </span>UserMapper &#123;</span><br><span class="line">void updateUserByUserNumber(UpdateUser updateUser);</span><br></pre></td></tr></table></figure>
 <p>@ 编写model类，用于包装参数</p>
-<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> mybatis.model;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UpdateGuestInfo</span> </span>&#123;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">String</span> guestNumber;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">String</span> firstName;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">String</span> lastName;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">String</span> documentType;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">String</span> documentTypeColumn;</span><br></pre></td></tr></table></figure>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> mybatis.model;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UpdateUser</span> </span>&#123;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">String</span> userNumber;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">String</span> firstName;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">String</span> docType;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">String</span> docTypeColumn;</span><br></pre></td></tr></table></figure>
 <p>@ 添加Mapper.xml，编写sql<br>
-GuestInfoMapper.xml</p>
-<figure class="highlight nix"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;update <span class="attr">id="updateGuestInfoByGuestNumber"</span> <span class="attr">parameterType="cn.shijinet.kunlun.kiosk.mybatis.model.UpdateGuestInfo"&gt;</span></span><br><span class="line">		UPDATE NAME</span><br><span class="line">		SET</span><br><span class="line">			<span class="attr">xlast_name</span> = <span class="comment">#&#123;lastName&#125;,</span></span><br><span class="line">			<span class="attr">xfirst_name</span> = <span class="comment">#&#123;firstName&#125;,</span></span><br><span class="line">			<span class="attr">sxname</span> = <span class="comment">#&#123;lastName&#125;,</span></span><br><span class="line">			<span class="attr">sxfirst_name</span> = <span class="comment">#&#123;firstName&#125;,</span></span><br><span class="line">			$&#123;documentTypeColumn&#125; = <span class="comment">#&#123;documentType&#125;</span></span><br><span class="line">		WHERE</span><br><span class="line">			<span class="attr">name_id</span> = <span class="comment">#&#123;guestNumber&#125;</span></span><br><span class="line">	&lt;/update&gt;</span><br></pre></td></tr></table></figure>
+UserMapper.xml</p>
+<figure class="highlight dust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">update</span> <span class="attr">id</span>=<span class="string">"updateUserByUserNumber"</span> <span class="attr">parameterType</span>=<span class="string">"mybatis.model.UpdateUser"</span>&gt;</span></span></span><br><span class="line"><span class="xml">		UPDATE NAME</span></span><br><span class="line"><span class="xml">		SET</span></span><br><span class="line"><span class="xml">			firstname = #</span><span class="template-variable">&#123;firstName&#125;</span><span class="xml">,</span></span><br><span class="line"><span class="xml">			sfirstname = #</span><span class="template-variable">&#123;firstName&#125;</span><span class="xml">,</span></span><br><span class="line"><span class="xml">			$</span><span class="template-variable">&#123;docTypeColumn&#125;</span><span class="xml"> = #</span><span class="template-variable">&#123;docType&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">		WHERE</span></span><br><span class="line"><span class="xml">			name_id = #</span><span class="template-variable">&#123;userNumber&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">	<span class="tag">&lt;/<span class="name">update</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
 <p>@ 调用接口方法，注意update时需要commit</p>
-<figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">SqlSession session = sqlSession.get()<span class="comment">;</span></span><br><span class="line">		GuestInfoMapper mapper = session.getMapper(GuestInfoMapper.class)<span class="comment">;</span></span><br><span class="line">		mapper.updateGuestInfoByGuestNumber(updateGuestInfo)<span class="comment">;</span></span><br><span class="line">		session.commit()<span class="comment">;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">SqlSession session = sqlSession.get()<span class="comment">;</span></span><br><span class="line">		UserMapper mapper = session.getMapper(UserMapper.class)<span class="comment">;</span></span><br><span class="line">		mapper.updateUserByUserNumber(updateUser)<span class="comment">;</span></span><br><span class="line">		session.commit()<span class="comment">;</span></span><br></pre></td></tr></table></figure>
         </div>
+        <!--
         <div class="article-entry" id="busuanzi_container_page_pv">
             阅读<span id="busuanzi_value_page_pv"></span>次
         </div>
+        -->
         <footer class="article-footer">
             
 
@@ -408,9 +410,11 @@ GuestInfoMapper.xml</p>
                 </div>
             </div>
         </div>
-        <!-- 不蒜子游客统计 -->
+        <!--
+<!-- 不蒜子游客统计 -->
 <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
+-->
 <footer id="footer">
     <div class="container">
         <div class="container-inner">
@@ -419,14 +423,16 @@ GuestInfoMapper.xml</p>
                 <h1 class="logo-wrap">
                     <a href="/" class="logo"></a>
                 </h1>
-                <p>&copy; 2019 Bejond Shao Contact Me: <a href="mailto:a@bejond.org">a@bejond.org</a>
+                <p>&copy; 2015 - 2019 Bejond Shao Contact Me: <a href="mailto:a@bejond.org">a@bejond.org</a>
                 <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a>
+                	<!--
                 	<span id="busuanzi_container_site_pv">
     					总访问量<span id="busuanzi_value_site_pv"></span>次
 					</span>
         			<span id="busuanzi_container_site_uv">
 		  				你是本站第<span id="busuanzi_value_site_uv"></span>位访客
 					</span>
+					-->
                 </p>
             </div>
         </div>
