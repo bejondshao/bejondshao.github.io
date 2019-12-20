@@ -76,3 +76,5 @@ mybatis连接数据库查询报
 
 
 原因是数据库重启，导致connection pool中的connections都失效了，而mybatis在开库查询数据库内容时使用的旧的数据库，重启应用即可解决。
+或者每次都创建新的connection再关闭，不使用connection pool，这样会浪费一些时间。
+更好的方式是使用connection pool，使用异常拦截，出现异常时通过connection pool的factory创建新的connection。
