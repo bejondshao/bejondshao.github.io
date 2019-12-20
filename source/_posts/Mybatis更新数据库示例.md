@@ -10,44 +10,41 @@ category:
 @ mybatis-config.xml
 ```
     <mappers>
-		<mapper resource="mybatis/xml/GuestInfoMapper.xml" />
+		<mapper resource="mybatis/xml/UserMapper.xml" />
 	</mappers>
 ```
 @ 添加GuestInfoMapper接口
 ```
-    public interface GuestInfoMapper {
-	void updateGuestInfoByGuestNumber(UpdateGuestInfo updateGuestInfo);
+    public interface UserMapper {
+	void updateUserByUserNumber(UpdateUser updateUser);
 ```
 @ 编写model类，用于包装参数
 
 ```
 package mybatis.model;
-public class UpdateGuestInfo {
-	private String guestNumber;
+public class UpdateUser {
+	private String userNumber;
 	private String firstName;
-	private String lastName;
-	private String documentType;
-	private String documentTypeColumn;
+	private String docType;
+	private String docTypeColumn;
 ```
 @ 添加Mapper.xml，编写sql
-GuestInfoMapper.xml
+UserMapper.xml
 ```
-<update id="updateGuestInfoByGuestNumber" parameterType="cn.shijinet.kunlun.kiosk.mybatis.model.UpdateGuestInfo">
+<update id="updateUserByUserNumber" parameterType="mybatis.model.UpdateUser">
 		UPDATE NAME
 		SET
-			xlast_name = #{lastName},
-			xfirst_name = #{firstName},
-			sxname = #{lastName},
-			sxfirst_name = #{firstName},
-			${documentTypeColumn} = #{documentType}
+			firstname = #{firstName},
+			sfirstname = #{firstName},
+			${docTypeColumn} = #{docType}
 		WHERE
-			name_id = #{guestNumber}
+			name_id = #{userNumber}
 	</update>
 ```
 @ 调用接口方法，注意update时需要commit
 ```
 SqlSession session = sqlSession.get();
-		GuestInfoMapper mapper = session.getMapper(GuestInfoMapper.class);
-		mapper.updateGuestInfoByGuestNumber(updateGuestInfo);
+		UserMapper mapper = session.getMapper(UserMapper.class);
+		mapper.updateUserByUserNumber(updateUser);
 		session.commit();
 ```

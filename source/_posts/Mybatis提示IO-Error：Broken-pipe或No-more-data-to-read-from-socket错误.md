@@ -13,9 +13,9 @@ mybatis连接数据库查询报
 
 18:07:25,819 ERROR [stderr] (default task-40) ### Error querying database.  Cause: java.sql.SQLRecoverableException: IO Error: Broken pipe (Write failed)
 
-18:07:25,819 ERROR [stderr] (default task-40) ### The error may exist in cn/shijinet/kunlun/kiosk/mybatis/xml/QueryInfoMapper.xml
+18:07:25,819 ERROR [stderr] (default task-40) ### The error may exist in mybatis/xml/QueryInfoMapper.xml
 
-18:07:25,819 ERROR [stderr] (default task-40) ### The error may involve cn.shijinet.kunlun.kiosk.mybatis.mapper.QueryInfoMapper.queryInfoFromOpera-Inline
+18:07:25,819 ERROR [stderr] (default task-40) ### The error may involve mybatis.mapper.QueryInfoMapper.queryInfoFromOpera-Inline
 
 18:07:25,819 ERROR [stderr] (default task-40) ### The error occurred while setting parameters
 
@@ -37,7 +37,7 @@ mybatis连接数据库查询报
 
 18:07:25,822 ERROR [stderr] (default task-40) 	at com.sun.proxy.$Proxy330.queryInfoFromOpera(Unknown Source)
 
-18:07:25,822 ERROR [stderr] (default task-40) 	at cn.shijinet.kunlun.kiosk.mybatis.QueryInfo.queryInfoFromOpera(QueryInfo.java:42)
+18:07:25,822 ERROR [stderr] (default task-40) 	at mybatis.QueryInfo.queryInfoFromOpera(QueryInfo.java:42)
 
 ﻿
 
@@ -51,9 +51,9 @@ mybatis连接数据库查询报
 
 2017-12-12 17:41:35,733 ERROR [stderr] (default task-17) ### Error querying database.  Cause: java.sql.SQLRecoverableException: No more data to read from socket
 
-2017-12-12 17:41:35,733 ERROR [stderr] (default task-17) ### The error may exist in cn/shijinet/kunlun/kiosk/mybatis/xml/QueryInfoMapper.xml
+2017-12-12 17:41:35,733 ERROR [stderr] (default task-17) ### The error may exist in  mybatis/xml/QueryInfoMapper.xml
 
-2017-12-12 17:41:35,733 ERROR [stderr] (default task-17) ### The error may involve cn.shijinet.kunlun.kiosk.mybatis.mapper.QueryInfoMapper.queryInfoFromOpera-Inline
+2017-12-12 17:41:35,733 ERROR [stderr] (default task-17) ### The error may involve  mybatis.mapper.QueryInfoMapper.queryInfoFromOpera-Inline
 
 2017-12-12 17:41:35,733 ERROR [stderr] (default task-17) ### The error occurred while setting parameters
 
