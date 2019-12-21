@@ -90,3 +90,20 @@ categories:
 ```
 
 其中SubCategory就是Others菜单的二级菜单。
+
+* hexo升级
+```
+$ npm update hexo
+$ npm install -g --save hexo
+```
+会安装hexo的依赖，如果有warn提示其他包过期，需要使用`npm update xxx`方法更新包，不一定需要安装。另外需要注意package.json中使用的插件是否与当前hexo版本兼容。我一般不升级，因为升级都往往有些意料不到的问题，尤其用开源工具以及其他开源插件。不过还是要感谢做这些工具的开发者，他们是推动技术发展的贡献者。
+
+* hexo主题升级
+参考{% post_link 如何将hexo与theme代码分开提交 如何将hexo与theme代码分开提交 %}
+
+
+
+
+
+
+
