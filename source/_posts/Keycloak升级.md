@@ -1,11 +1,14 @@
 layout: post
 title: Keycloak升级
-date: 2017-02-07 13:42:02
 tags:
-- Java
-- Keycloak
+  - Java
+  - Keycloak
 category:
-- Keycloak
+  - Keycloak
+categories:
+  - DevOps
+  - Keycloak
+date: 2017-02-07 13:42:00
 ---
 @ 升级需要考虑database，keycloak-server.json, providers, themes，adapter，driver和applications。
 

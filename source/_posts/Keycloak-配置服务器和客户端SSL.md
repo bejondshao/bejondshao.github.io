@@ -1,11 +1,14 @@
 layout: post
 title: Keycloak-配置服务器和客户端SSL
-date: 2017-02-15 17:16:09
 tags:
-- Keycloak
-- Java
-category: 
-- Keycloak
+  - Java
+  - Keycloak
+category:
+  - Keycloak
+categories:
+  - DevOps
+  - Keycloak
+date: 2017-02-15 17:16:00
 ---
 @ SSL配置原理[参考](https://docs.oracle.com/cd/E54932_01/doc.705/e54936/cssg_create_ssl_cert.htm)
 @ 在每个realm配置中，有HTTPS应用范围配置。

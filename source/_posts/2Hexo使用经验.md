@@ -131,7 +131,7 @@ hexo g && hexo d
 ```
 0 3 * * * /absolute_path/to/script
 ```
-每天早晨三点执行上面更新脚本。参考[博客](https://blog.csdn.net/xingyue0422/article/details/83012000)。为了防止某次提交出现网络问题，可以设置每隔10分钟执行。本地测试举例：
+每天早晨三点执行上面更新脚本。参考[博客](https://blog.csdn.net/xingyue0422/article/details/83012000)和[博客](https://blog.csdn.net/iteye_4528/article/details/82033239)。为了防止某次提交出现网络问题，可以设置每隔10分钟执行。本地测试举例：
 
 ```
 */10 * * * * /bin/bash /Users/alpha/abc/abc.sh 2>LOG_FILE > /Users/alpha/abc/abc.txt
@@ -149,4 +149,3 @@ hexo g && hexo d
 * 脚本里的`HOME, LOGNAME, PATH, LANG, SHELL, PWD`需要设定。不设定的话，后面的`hexo`相关的命令不会执行，即只能将源码推到资源库，但是没法更新网站。
 * 执行计划任务时电脑不可以是sleep或关机。
 * 脚本可能会有时不时无法将源码推到资源库的情况，有可能是执行`git pull`时出错，检查网络或者`.git/config`。也可能是执行`git push`出错，检查当前git用户是否有权限向资源库推送，必要时在github资源库上添加Collaborator。
-

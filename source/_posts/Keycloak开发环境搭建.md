@@ -1,12 +1,14 @@
----
 layout: post
 title: Keycloak开发环境搭建
-date: 2017-11-01 09:55:43
 tags:
-- Java
-- Keycloak
+  - Java
+  - Keycloak
 category:
-- Keycloak
+  - Keycloak
+categories:
+  - DevOps
+  - Keycloak
+date: 2017-11-01 09:55:00
 ---
 1. 克隆Keycloak源码
 `git clone git@github.com:keycloak/keycloak.git`

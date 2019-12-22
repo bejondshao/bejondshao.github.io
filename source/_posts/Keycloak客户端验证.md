@@ -1,11 +1,15 @@
 layout: post
 title: Keycloak客户端验证
-date: 2017-01-23 18:25:25
 tags:
-- Java
-- Keycloak
+  - Java
+  - Keycloak
+  - DevOps
 category:
-- Keycloak
+  - Keycloak
+categories:
+  - DevOps
+  - Keycloak
+date: 2017-01-23 18:25:00
 ---
 @ 当机密的OIDC客户端需要向keycloak发送请求（比如请求token, refresh token)，就需要被Keycloak验证。有两种方法：
 1. Clinet ID和Client Secret

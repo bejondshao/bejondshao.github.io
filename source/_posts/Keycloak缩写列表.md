@@ -1,11 +1,14 @@
 layout: post
 title: Keycloak缩写列表
-date: 2017-01-23 18:21:46
 tags:
-- Java
-- Keycloak
+  - Java
+  - Keycloak
 category:
-- Keycloak
+  - Keycloak
+categories:
+  - DevOps
+  - Keycloak
+date: 2017-01-23 18:21:00
 ---
 @ ABAC(Attribute-based access control)
 
