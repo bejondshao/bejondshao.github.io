@@ -109,6 +109,7 @@ cd ~/abc/bejondshao.github.io
 git status
 git add .
 git commit -m "source post"
+git pull --rebase origin source
 git push origin source
 hexo clean && hexo g && hexo d
 ```
@@ -127,9 +128,9 @@ hexo clean && hexo g && hexo d
 每天早晨三点执行上面更新脚本。参考[Stackoverflow回答](https://stackoverflow.com/a/34754109/3908814)。
 本地测试举例
 ```
-0 8 * * * /bin/bash /Users/alpha/abc/hexo_deploy.sh 2>LOG_FILE > /Users/alpha/abc/hexo_deploy.txt
+0 8 * * * /bin/bash /Users/alpha/abc/abc.sh 2>LOG_FILE > /Users/alpha/abc/abc.txt
 ```
 
-需要注意脚本路径需要是绝对路径，脚本内的路径可以设定PATH，但是如无必要，建议使用绝对路径。
+需要注意脚本路径需要是绝对路径，脚本内的路径可以设定PATH，但是如无必要，建议使用绝对路径。执行计划任务时电脑不可以是sleep或关机。
 
 
