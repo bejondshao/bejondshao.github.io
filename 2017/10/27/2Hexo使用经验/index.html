@@ -17,7 +17,7 @@
 <meta property="og:site_name" content="Bejond IO">
 <meta property="og:description" content="本文仅做使用Hexo时遇到的问题汇总，如果对你有帮助，那就有吧😅。 @ Hexo官方安装方式 $ npm install hexo-cli -g 注意是是普通用户，如果安装时遇到权限问题，请想尽办法解决。不要用root安装，会出各种奇怪的问题。 @ 安装后，写好文章，在执行 hexo deploy 后,出现 error deployer not found:git 的错误。 $ npm inst">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-12-22T10:48:42.000Z">
+<meta property="og:updated_time" content="2019-12-22T12:00:33.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo使用经验">
 <meta name="twitter:description" content="本文仅做使用Hexo时遇到的问题汇总，如果对你有帮助，那就有吧😅。 @ Hexo官方安装方式 $ npm install hexo-cli -g 注意是是普通用户，如果安装时遇到权限问题，请想尽办法解决。不要用root安装，会出各种奇怪的问题。 @ 安装后，写好文章，在执行 hexo deploy 后,出现 error deployer not found:git 的错误。 $ npm inst">
@@ -243,10 +243,40 @@ Hello World是要展示的文字，如果不填，默认取引用文章标题。
 <p><code>2&gt;LOG_FILE &gt; /Users/alpha/abc/abc.txt</code>是记录脚本执行输出内容，方便查看脚本是否执行，执行的情况。</p>
 <p><strong>注意:</strong></p>
 <ul>
-<li>脚本路径需要是绝对路径，脚本内的路径可以设定PATH，但是如无必要，建议使用绝对路径。</li>
-<li>脚本里的<code>HOME, LOGNAME, PATH, LANG, SHELL, PWD</code>需要设定。不设定的话，后面的<code>hexo</code>相关的命令不会执行，即只能将源码推到资源库，但是没法更新网站。</li>
-<li>执行计划任务时电脑不可以是sleep或关机。</li>
-<li>脚本可能会有时不时无法将源码推到资源库的情况，有可能是执行<code>git pull</code>时出错，检查网络或者<code>.git/config</code>。也可能是执行<code>git push</code>出错，检查当前git用户是否有权限向资源库推送，必要时在github资源库上添加Collaborator。</li>
+<li>
+<p>脚本路径需要是绝对路径，脚本内的路径可以设定PATH，但是如无必要，建议使用绝对路径。</p>
+</li>
+<li>
+<p>脚本里的<code>HOME, LOGNAME, PATH, LANG, SHELL, PWD</code>需要设定。不设定的话，后面的<code>hexo</code>相关的命令不会执行，即只能将源码推到资源库，但是没法更新网站。</p>
+</li>
+<li>
+<p>执行计划任务时电脑不可以是sleep或关机。</p>
+</li>
+<li>
+<p>脚本可能会有时不时无法将源码推到资源库的情况，有可能是执行<code>git pull</code>时出错，检查网络或者<code>.git/config</code>。也可能是执行<code>git push</code>出错，检查当前git用户是否有权限向资源库推送，必要时在github资源库上添加Collaborator。</p>
+</li>
+<li>
+<p>hexo server可以</p>
+</li>
+<li>
+<p>脚本可能会有时不时无法将源码推到资源库的情况，有可能是执行<code>git pull</code>时出错，检查网络或者<code>.git/config</code>。也可能是执行<code>git push</code>出错，检查当前git用户是否有权限向资源库推送，必要时在github资源库上添加Collaborator。启动</p>
+</li>
+<li>
+<p>脚本可能会有时不时无法将源码推到资源库的情况，有可能是执行<code>git pull</code>时出错，检查网络或者<code>.git/config</code>。也可能是执行<code>git push</code>出错，检查当前git用户是否有权限向资源库推送，必要时在github资源库上添加Collaborator。多个</p>
+</li>
+<li>
+<p>脚本可能会有时不时无法将源码推到资源库的情况，有可能是执行<code>git pull</code>时出错，检查网络或者<code>.git/config</code>。也可能是执行<code>git push</code>出错，检查当前git用户是否有权限向资源库推送，必要时在github资源库上添加Collaborator。</p>
+</li>
+<li>
+<p>Hexo server可以启动多个服务，使用命令：<br>
+<code>hexo s -p 4001</code></p>
+</li>
+<li>
+<p>Hexo admin插件可以设置登录账号密码，在Settings里，输入值后可以贴到_config.yml里，每次访问就需要登录。在家用不着，如果你想把hexo server部署到服务器，可以发布出去，在任意浏览器访问后台发布内容，这个功能就很有必要。</p>
+</li>
+<li>
+<p>还可以使用路由器申请DDNS，申请一个二级域名，如果有个人域名可以指向该域名。然后再开启虚拟服务器，就可以访问域名加端口，访问本机的应用，当然也可以访问到Hexo admin。省去租服务器的钱了。但是要注意，小打小闹可以，如果做涉及到广告商业或者其他用途，</p>
+</li>
 </ul>
 
         </div>
