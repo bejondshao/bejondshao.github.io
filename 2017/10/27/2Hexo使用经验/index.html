@@ -17,7 +17,7 @@
 <meta property="og:site_name" content="Bejond IO">
 <meta property="og:description" content="本文仅做使用Hexo时遇到的问题汇总，如果对你有帮助，那就有吧😅。 @ Hexo官方安装方式 $ npm install hexo-cli -g 注意是是普通用户，如果安装时遇到权限问题，请想尽办法解决。不要用root安装，会出各种奇怪的问题。 @ 安装后，写好文章，在执行 hexo deploy 后,出现 error deployer not found:git 的错误。 $ npm inst">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-12-22T09:17:57.000Z">
+<meta property="og:updated_time" content="2019-12-22T09:33:48.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo使用经验">
 <meta name="twitter:description" content="本文仅做使用Hexo时遇到的问题汇总，如果对你有帮助，那就有吧😅。 @ Hexo官方安装方式 $ npm install hexo-cli -g 注意是是普通用户，如果安装时遇到权限问题，请想尽办法解决。不要用root安装，会出各种奇怪的问题。 @ 安装后，写好文章，在执行 hexo deploy 后,出现 error deployer not found:git 的错误。 $ npm inst">
@@ -227,7 +227,7 @@ Hello World是要展示的文字，如果不填，默认取引用文章标题。
 <p>一键提交更新网站脚本</p>
 </li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="comment"># bejondshao.github.io</span></span><br><span class="line"><span class="built_in">cd</span> ~/abc/bejondshao.github.io</span><br><span class="line">git status</span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">"source post"</span></span><br><span class="line">git pull --rebase origin <span class="built_in">source</span></span><br><span class="line">git push origin <span class="built_in">source</span></span><br><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/bin/bash</span></span><br><span class="line"><span class="comment"># bejondshao.github.io</span></span><br><span class="line"><span class="attribute">HOME</span>=/root</span><br><span class="line"><span class="attribute">LOGNAME</span>=root</span><br><span class="line"><span class="attribute">PATH</span>=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin</span><br><span class="line"><span class="attribute">LANG</span>=en_US.UTF-8</span><br><span class="line"><span class="attribute">SHELL</span>=/bin/sh</span><br><span class="line"><span class="attribute">PWD</span>=/root</span><br><span class="line">cd /absolute_path/<span class="keyword">to</span>/bejondshao.github.io</span><br><span class="line">git status</span><br><span class="line">git <span class="builtin-name">add</span> .</span><br><span class="line">git commit -m <span class="string">"source post"</span></span><br><span class="line">git pull --rebase origin source</span><br><span class="line">git push origin source</span><br><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 <p>存为abc.sh将文件赋予执行权限</p>
 <p><code>$ sudo chmod +x abc.sh</code></p>
 <ul>
@@ -246,7 +246,8 @@ Hello World是要展示的文字，如果不填，默认取引用文章标题。
 测试4：45<br>
 test sh 5:02<br>
 test crontab 5:06<br>
-test crontab 5:17</p>
+test crontab 5:17<br>
+test crontab 5:31</p>
 
         </div>
         <!--
