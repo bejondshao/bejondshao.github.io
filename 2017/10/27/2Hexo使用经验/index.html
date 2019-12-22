@@ -17,7 +17,7 @@
 <meta property="og:site_name" content="Bejond IO">
 <meta property="og:description" content="本文仅做使用Hexo时遇到的问题汇总，如果对你有帮助，那就有吧😅。 @ Hexo官方安装方式 $ npm install hexo-cli -g 注意是是普通用户，如果安装时遇到权限问题，请想尽办法解决。不要用root安装，会出各种奇怪的问题。 @ 安装后，写好文章，在执行 hexo deploy 后,出现 error deployer not found:git 的错误。 $ npm inst">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-12-22T09:54:11.000Z">
+<meta property="og:updated_time" content="2019-12-22T10:05:14.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo使用经验">
 <meta name="twitter:description" content="本文仅做使用Hexo时遇到的问题汇总，如果对你有帮助，那就有吧😅。 @ Hexo官方安装方式 $ npm install hexo-cli -g 注意是是普通用户，如果安装时遇到权限问题，请想尽办法解决。不要用root安装，会出各种奇怪的问题。 @ 安装后，写好文章，在执行 hexo deploy 后,出现 error deployer not found:git 的错误。 $ npm inst">
@@ -227,7 +227,7 @@ Hello World是要展示的文字，如果不填，默认取引用文章标题。
 <p>一键提交更新网站脚本</p>
 </li>
 </ul>
-<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/bin/bash</span></span><br><span class="line"><span class="comment"># bejondshao.github.io</span></span><br><span class="line"><span class="attribute">HOME</span>=/root</span><br><span class="line"><span class="attribute">LOGNAME</span>=root</span><br><span class="line"><span class="attribute">PATH</span>=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin</span><br><span class="line"><span class="attribute">LANG</span>=en_US.UTF-8</span><br><span class="line"><span class="attribute">SHELL</span>=/bin/bash</span><br><span class="line"><span class="attribute">PWD</span>=/root</span><br><span class="line">cd /absolute_path/<span class="keyword">to</span>/bejondshao.github.io</span><br><span class="line">git status</span><br><span class="line">git <span class="builtin-name">add</span> .</span><br><span class="line">git commit -m <span class="string">"source post"</span></span><br><span class="line">git pull --rebase origin source</span><br><span class="line">git push origin source</span><br><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/bin/bash</span></span><br><span class="line"><span class="comment"># bejondshao.github.io</span></span><br><span class="line"><span class="attribute">HOME</span>=/root</span><br><span class="line"><span class="attribute">LOGNAME</span>=root</span><br><span class="line"><span class="attribute">PATH</span>=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin</span><br><span class="line"><span class="attribute">LANG</span>=en_US.UTF-8</span><br><span class="line"><span class="attribute">SHELL</span>=/bin/bash</span><br><span class="line"><span class="attribute">PWD</span>=/root</span><br><span class="line">cd /absolute_path/<span class="keyword">to</span>/bejondshao.github.io</span><br><span class="line">git status</span><br><span class="line">git <span class="builtin-name">add</span> .</span><br><span class="line">git commit -m <span class="string">"source post"</span></span><br><span class="line">git pull --rebase origin source</span><br><span class="line">git push origin source</span><br><span class="line">hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
 <p>存为abc.sh将文件赋予执行权限</p>
 <p><code>$ sudo chmod +x abc.sh</code></p>
 <ul>
@@ -239,8 +239,9 @@ Hello World是要展示的文字，如果不填，默认取引用文章标题。
 <p>每天早晨三点执行上面更新脚本。参考<a href="https://blog.csdn.net/xingyue0422/article/details/83012000" target="_blank" rel="noopener">博客</a>。<br>
 本地测试举例</p>
 <figure class="highlight basic"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">0 </span><span class="number">8</span> * * * /bin/bash /Users/alpha/abc/abc.sh <span class="number">2</span>&gt;LOG_FILE &gt; /Users/alpha/abc/abc.txt</span><br></pre></td></tr></table></figure>
-<p><code>/bin/bash</code>是使用bash执行脚本。crontab默认使用<code>/bin/sh</code>执行脚本。<br>
-<code>2&gt;LOG_FILE &gt; /Users/alpha/abc/abc.txt</code>是记录脚本执行输出内容，方便查看脚本是否执行，执行的情况。</p>
+<p><code>/bin/bash</code>是使用bash执行脚本。crontab默认使用<code>/bin/sh</code>执行脚本。如果使用默认的shell，可以这样配置：</p>
+<figure class="highlight basic"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">0 </span><span class="number">8</span> * * * /Users/alpha/abc/abc.sh <span class="number">2</span>&gt;LOG_FILE &gt; /Users/alpha/abc/abc.txt</span><br></pre></td></tr></table></figure>
+<p><code>2&gt;LOG_FILE &gt; /Users/alpha/abc/abc.txt</code>是记录脚本执行输出内容，方便查看脚本是否执行，执行的情况。</p>
 <p><strong>注意:</strong></p>
 <ul>
 <li>脚本路径需要是绝对路径，脚本内的路径可以设定PATH，但是如无必要，建议使用绝对路径。</li>
