@@ -109,7 +109,7 @@ HOME=/root
 LOGNAME=root
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 LANG=en_US.UTF-8
-SHELL=/bin/sh
+SHELL=/bin/bash
 PWD=/root
 cd /absolute_path/to/bejondshao.github.io
 git status
