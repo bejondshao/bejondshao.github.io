@@ -105,7 +105,13 @@ $ npm install -g --save hexo
 ```
 #!/bin/bash
 # bejondshao.github.io
-cd ~/abc/bejondshao.github.io
+HOME=/root
+LOGNAME=root
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+LANG=en_US.UTF-8
+SHELL=/bin/sh
+PWD=/root
+cd /absolute_path/to/bejondshao.github.io
 git status
 git add .
 git commit -m "source post"
@@ -142,3 +148,4 @@ hexo d
 test sh 5:02
 test crontab 5:06
 test crontab 5:17
+test crontab 5:31
