@@ -127,9 +127,9 @@ hexo clean && hexo g && hexo d
 每天早晨三点执行上面更新脚本。参考[Stackoverflow回答](https://stackoverflow.com/a/34754109/3908814)。
 本地测试举例
 ```
-0 8 * * * /bin/bash /Users/alpha/abc/hexo_deploy.sh 2>LOG_FILE > /Users/alpha/source/other/localshell/hexo_deploy.txt
+0 8 * * * /bin/bash /Users/alpha/abc/hexo_deploy.sh 2>LOG_FILE > /Users/alpha/abc/hexo_deploy.txt
 ```
 
-需要注意
+需要注意脚本路径需要是绝对路径，脚本内的路径可以设定PATH，但是如无必要，建议使用绝对路径。
 
 
