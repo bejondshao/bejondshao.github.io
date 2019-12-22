@@ -111,7 +111,9 @@ git add .
 git commit -m "source post"
 git pull --rebase origin source
 git push origin source
-hexo clean && hexo g && hexo d
+hexo clean
+hexo g
+hexo d
 ```
 存为abc.sh将文件赋予执行权限
 
@@ -139,3 +141,4 @@ hexo clean && hexo g && hexo d
 测试4：45
 test sh 5:02
 test crontab 5:06
+test crontab 5:17
