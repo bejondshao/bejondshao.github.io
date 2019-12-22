@@ -17,7 +17,7 @@
 <meta property="og:site_name" content="Bejond IO">
 <meta property="og:description" content="本文仅做使用Hexo时遇到的问题汇总，如果对你有帮助，那就有吧😅。 @ Hexo官方安装方式 $ npm install hexo-cli -g 注意是是普通用户，如果安装时遇到权限问题，请想尽办法解决。不要用root安装，会出各种奇怪的问题。 @ 安装后，写好文章，在执行 hexo deploy 后,出现 error deployer not found:git 的错误。 $ npm inst">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-12-22T09:45:42.000Z">
+<meta property="og:updated_time" content="2019-12-22T09:50:09.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo使用经验">
 <meta name="twitter:description" content="本文仅做使用Hexo时遇到的问题汇总，如果对你有帮助，那就有吧😅。 @ Hexo官方安装方式 $ npm install hexo-cli -g 注意是是普通用户，如果安装时遇到权限问题，请想尽办法解决。不要用root安装，会出各种奇怪的问题。 @ 安装后，写好文章，在执行 hexo deploy 后,出现 error deployer not found:git 的错误。 $ npm inst">
@@ -246,6 +246,7 @@ Hello World是要展示的文字，如果不填，默认取引用文章标题。
 <li>脚本路径需要是绝对路径，脚本内的路径可以设定PATH，但是如无必要，建议使用绝对路径。</li>
 <li>脚本里的<code>HOME, LOGNAME, PATH, LANG, SHELL, PWD</code>需要设定。不设定的话，后面的<code>hexo</code>相关的命令不会执行，即只能将源码推到资源库，但是没法更新网站。</li>
 <li>执行计划任务时电脑不可以是sleep或关机。</li>
+<li>脚本可能会有时不时无法将源码推到资源库的情况，有可能是执行<code>git pull</code>时出错，检查网络或者<code>.git/config</code>。也可能是执行<code>git push</code>出错，检查当前git用户是否有权限向资源库推送，必要时在github资源库上添加Collaborator。</li>
 </ul>
 
         </div>
