@@ -76,6 +76,7 @@ Hello World是要展示的文字，如果不填，默认取引用文章标题。
 详见[hexo-baidu-url-submit](https://www.npmjs.com/package/hexo-baidu-url-submit)
 
 @ [hexo-admin](https://github.com/jaredly/hexo-admin)插件，可以本地可视化编辑文章
+
 * Metadata功能，可以在_config.yml里添加诸如默认category的功能（因为hexo的默认category功能好像不好用）
 ```
 metadata:
@@ -96,7 +97,7 @@ categories:
 $ npm update hexo
 $ npm install -g --save hexo
 ```
-会安装hexo的依赖，如果有warn提示其他包过期，需要使用`npm update xxx`方法更新包，不一定需要安装。另外需要注意package.json中使用的插件是否与当前hexo版本兼容。我一般不升级，因为升级都往往有些意料不到的问题，尤其用开源工具以及其他开源插件。不过还是要感谢做这些工具的开发者，他们是推动技术发展的贡献者。
+会安装hexo的依赖，如果有warn提示其他包过期，需要使用`npm update xxx`方法更新包，不一定需要安装。另外需要注意package.json中使用的插件是否与当前hexo版本兼容。我一般不升级，因为升级都往往有些意料不到的问题，尤其用开源工具以及其他开源插件。不过还是要感谢做这些工具的开发者，他们是技术发展的推动者和贡献者。
 
 * hexo主题升级
 参考{% post_link 如何将hexo与theme代码分开提交 如何将hexo与theme代码分开提交 %}。
@@ -158,9 +159,9 @@ hexo g && hexo d
 * Hexo server可以启动多个服务，使用命令：
 `hexo s -p 4001`
 
-* Hexo admin插件可以设置登录账号密码，在Settings里，输入值后可以贴到_config.yml里，每次访问就需要登录。在家用不着，如果你想把hexo server部署到服务器，可以发布出去，在任意浏览器访问后台发布内容，这个功能就很有必要。
+* hexo-admin插件可以设置登录账号密码，在Settings里，输入值后可以贴到_config.yml里，每次访问就需要登录。在家用不着，如果你想把hexo server部署到服务器，可以发布出去，在任意浏览器访问后台发布内容，这个功能就很有必要。
 
-* 还可以使用路由器申请DDNS，申请一个二级域名，如果有个人域名可以指向该域名。然后再开启虚拟服务器，就可以访问域名加端口，访问本机的应用，当然也可以访问到Hexo admin。省去租服务器的钱了。但是要注意，小打小闹可以，如果做涉及到广告
+* 还可以使用路由器申请DDNS，申请一个二级域名，如果有个人域名可以指向该域名。然后再开启虚拟服务器，就可以访问域名加端口，访问本机的应用，当然也可以访问到hexo-admin。省去租服务器的钱了。但是要注意，小打小闹可以，如果做涉及到广告商业或者其他用途，宽带商会发函警告的，我见网上有人被发函了，理由就是私自架设Web服务。我只是研究了下，的确行得通。但是没有使用，因为我没有外网访问服务的需求。
 
 
 
