@@ -106,3 +106,8 @@ baidu_url_submit:
 
 metadata:
   categories: Others
+# hexo-admin authentification
+admin:
+  username: bejond
+  password_hash: $2a$10$vu06WfAjA6hDG689.4b.8uQByzDct2p2V2VV3/RFnUAGYe.tgZHMi
+  secret: bejond
