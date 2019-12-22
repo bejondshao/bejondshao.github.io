@@ -1,10 +1,12 @@
 title: mysql start error
-date: 2015-11-02 14:41:31
 tags:
-- Mysql
-- Database
+  - Mysql
+  - Database
 category:
-- Database
+  - Database
+categories:
+  - Others
+date: 2015-11-02 14:41:00
 ---
 ## mysql start error ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysql.sock' (2)
 
