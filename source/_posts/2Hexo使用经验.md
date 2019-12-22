@@ -99,11 +99,30 @@ $ npm install -g --save hexo
 会安装hexo的依赖，如果有warn提示其他包过期，需要使用`npm update xxx`方法更新包，不一定需要安装。另外需要注意package.json中使用的插件是否与当前hexo版本兼容。我一般不升级，因为升级都往往有些意料不到的问题，尤其用开源工具以及其他开源插件。不过还是要感谢做这些工具的开发者，他们是推动技术发展的贡献者。
 
 * hexo主题升级
-参考{% post_link 如何将hexo与theme代码分开提交 如何将hexo与theme代码分开提交 %}
+参考{% post_link 如何将hexo与theme代码分开提交 如何将hexo与theme代码分开提交 %}。
 
+* 一键提交更新网站脚本
+```
+#!/bin/bash
+# bejondshao.github.io
+cd ~/abc/bejondshao.github.io
+git status
+git add .
+git commit -m "source post"
+git push origin source
+hexo clean && hexo g && hexo d
+```
+存为abc.sh将文件赋予执行权限
 
+`$ sudo chmod +x abc.sh`
 
+* 每日定时执行脚本
 
+`$ sudo crontab -e`
 
-
+然后编辑，设定
+```
+0 3 * * * /path/to/script
+```
+每天早晨三点执行上面更新脚本。参考[Stackoverflow回答](https://stackoverflow.com/a/34754109/3908814)。
 
