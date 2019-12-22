@@ -117,9 +117,7 @@ git add .
 git commit -m "source post"
 git pull --rebase origin source
 git push origin source
-hexo clean
-hexo g
-hexo d
+hexo g && hexo d
 ```
 存为abc.sh将文件赋予执行权限
 
@@ -138,7 +136,12 @@ hexo d
 ```
 0 8 * * * /bin/bash /Users/alpha/abc/abc.sh 2>LOG_FILE > /Users/alpha/abc/abc.txt
 ```
-`/bin/bash`是使用bash执行脚本。crontab默认使用`/bin/sh`执行脚本。
+
+`/bin/bash`是使用bash执行脚本。crontab默认使用`/bin/sh`执行脚本。如果使用默认的shell，可以这样配置：
+```
+0 8 * * * /Users/alpha/abc/abc.sh 2>LOG_FILE > /Users/alpha/abc/abc.txt
+```
+
 `2>LOG_FILE > /Users/alpha/abc/abc.txt`是记录脚本执行输出内容，方便查看脚本是否执行，执行的情况。
 
 **注意:**  
