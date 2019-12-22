@@ -1,13 +1,13 @@
----
 layout: post
 title: Keycloak配置邮箱和忘记密码功能
-date: 2018-07-18 22:17:16
 tags:
-- Keycloak
-- Java
-- Security
+  - Java
+  - Keycloak
+  - Security
 categories:
-- Keycloak
+  - DevOps
+  - Keycloak
+date: 2018-07-18 22:17:00
 ---
 服务系统中的发送邮件功能都是依靠某个邮件服务器来发邮件的。一般是用第三方的smtp邮件服务器，比如`smtp.gmail.com`, `smtp.163.com`。本文以163邮箱为例。
 

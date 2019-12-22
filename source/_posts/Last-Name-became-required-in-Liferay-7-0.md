@@ -1,10 +1,10 @@
 title: Last Name became required in Liferay 7.0
-date: 2015-12-18 18:39:15
 tags:
-- Liferay
+  - Liferay
 categories:
-- Liferay
-
+  - Java
+  - Liferay
+date: 2015-12-18 18:39:00
 ---
 
 Last name is not required in Liferay 6.2.10, while becomes required in Liferay 7.0. How to make this field required?

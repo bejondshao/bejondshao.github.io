@@ -1,11 +1,14 @@
 layout: post
 title: Keycloak Clustering
-date: 2017-01-22 17:50:49
 tags:
-- Java
-- Keycloak
+  - Java
+  - Keycloak
 category:
-- Keycloak
+  - Keycloak
+categories:
+  - DevOps
+  - Keycloak
+date: 2017-01-22 17:50:00
 ---
 @ Standalone Clustered Configuration
 打包好的包邮预定好的给云部署的服务器配置文件，/standalone/configuration/standalone-ha.xml。里面包括所有基本设置，包括网络，数据库，缓存和discovery。配置里有一点没配置。你要配置共享的数据库连接才能启动云架构。同时也需要在云之上部署负载均衡。

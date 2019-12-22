@@ -3,6 +3,7 @@ title: Keycloak和Kibana集成实现单点登录
 author: Bejond Shao
 categories:
   - DevOps
+  - Keycloak
 tags:
   - Keycloak
   - Kibana

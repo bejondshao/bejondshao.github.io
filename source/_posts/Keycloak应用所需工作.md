@@ -1,12 +1,14 @@
----
 layout: post
 title: Keycloak应用所需工作
-date: 2017-12-11 17:46:44
 tags:
-- Java
-- Keycloak
+  - Java
+  - Keycloak
 category:
-- Java
+  - Java
+categories:
+  - DevOps
+  - Keycloak
+date: 2017-12-11 17:46:00
 ---
 
 一、学习并了解keycloak项目以及相关概念，验证流程等

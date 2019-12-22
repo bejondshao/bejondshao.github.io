@@ -1,11 +1,14 @@
 layout: post
 title: Keycloak Java Adapter Configuration
-date: 2017-01-05 11:43:55
 tags:
-- Keycloak
-- Java
-category: 
-- Keycloak
+  - Java
+  - Keycloak
+category:
+  - Keycloak
+categories:
+  - DevOps
+  - Keycloak
+date: 2017-01-05 11:43:00
 ---
 @ keycloak adapter可以在war包里添加keycloak.json配置，也可以在standalone.xml里配置。 开发过程推荐使用keycloak.json，生产环境推荐使用standalone.xml。 下面是standalone的配置格式：
 ```<subsystem xmlns="urn:jboss:domain:keycloak:1.1"></subsystem>```

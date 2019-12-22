@@ -1,11 +1,14 @@
 layout: post
 title: Keycloak多realm控制
-date: 2017-01-22 18:05:00
 tags:
-- Java
-- Keycloak
+  - Java
+  - Keycloak
 category:
-- Keycloak
+  - Keycloak
+categories:
+  - DevOps
+  - Keycloak
+date: 2017-01-22 18:05:00
 ---
 
 @ 一个应用可以被多个realms保护，这些realms可以是一个keycloak server，也可以是多个。

@@ -1,12 +1,15 @@
 layout: post
 title: Liferay - Microsofe Active Directory Configuration
-date: 2016-03-24 14:18:08
 tags:
-- Liferay
-- LDAP
-- Active Directory
+  - Liferay
+  - LDAP
+  - Active Directory
 category:
-- Liferay
+  - Liferay
+categories:
+  - Java
+  - Liferay
+date: 2016-03-24 14:18:00
 ---
 Before config this, please view properties in AD. http://bejondshao.github.io/2016/03/23/Research-LDAP-Properties-for-the-User-Object/
 

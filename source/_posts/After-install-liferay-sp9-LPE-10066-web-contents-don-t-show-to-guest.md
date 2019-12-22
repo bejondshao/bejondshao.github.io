@@ -1,10 +1,13 @@
 layout: post
-title: "After install liferay sp9(LPE-10066), web contents don't show to guest"
-date: 2015-04-23 16:15:04
+title: 'After install liferay sp9(LPE-10066), web contents don''t show to guest'
 tags:
-- Liferay
+  - Liferay
 category:
-- Liferay
+  - Liferay
+categories:
+  - Java
+  - Liferay
+date: 2015-04-23 16:15:00
 ---
 Recently, some customers met an issue that after installing sp9 or any conponent that contains LPE-10066 ( LPS-40597), web contents won't show to guest or site member.
 

@@ -1,12 +1,14 @@
----
 layout: post
 title: Keycloak和Jenkins集成实现单点登录
-date: 2018-03-26 17:06:08
 tags:
-- Jenkins
-- Keycloak
+  - Keycloak
+  - Jenkins
 category:
-- DevOps
+  - DevOps
+categories:
+  - DevOps
+  - Keycloak
+date: 2018-03-26 17:06:00
 ---
 ##### 安装Jenkins（[参考](https://pkg.jenkins.io/debian-stable/ )）
 

@@ -1,12 +1,14 @@
----
 layout: post
 title: Keycloak基本功能
-date: 2017-12-07 18:09:10
 tags:
-- Keycloak
-- Java
+  - Java
+  - Keycloak
 category:
-- Java
+  - Java
+categories:
+  - DevOps
+  - Keycloak
+date: 2017-12-07 18:09:00
 ---
 Keycloak是一个致力于解决应用和服务身份验证与访问管理的开源工具。可以通过简单的配置达到保护应用和服务的目的。
 

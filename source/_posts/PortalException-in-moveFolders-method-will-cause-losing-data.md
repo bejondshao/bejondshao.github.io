@@ -1,10 +1,13 @@
 layout: post
 title: PortalException in moveFolders method will cause losing data
-date: 2015-12-18 19:31:53
 tags:
-- Liferay
-category: 
-- Liferay
+  - Liferay
+category:
+  - Liferay
+categories:
+  - Java
+  - Liferay
+date: 2015-12-18 19:31:00
 ---
 Sample Issue
 

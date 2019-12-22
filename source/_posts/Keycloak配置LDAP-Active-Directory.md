@@ -2,7 +2,9 @@ layout: post
 title: Keycloak配置LDAP(Active Directory)
 tags:
   - Keycloak
+  - DevOps
 categories:
+  - DevOps
   - Keycloak
 date: 2018-07-18 22:40:00
 ---

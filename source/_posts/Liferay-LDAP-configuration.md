@@ -1,12 +1,12 @@
 title: Liferay - LDAP configuration
-date: 2015-12-18 18:05:44
 comments: true
 tags:
-- Liferay
-- LDAP
+  - Liferay
+  - LDAP
 categories:
-- Liferay
-
+  - Java
+  - Liferay
+date: 2015-12-18 18:05:00
 ---
 1) Concept http://www.jianshu.com/p/a41b41977f95
 2) Install LDAP. 
