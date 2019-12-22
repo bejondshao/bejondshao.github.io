@@ -133,7 +133,7 @@ hexo d
 ```
 0 3 * * * /absolute_path/to/script
 ```
-每天早晨三点执行上面更新脚本。参考[Stackoverflow回答](https://stackoverflow.com/a/34754109/3908814)。
+每天早晨三点执行上面更新脚本。参考[博客](https://blog.csdn.net/xingyue0422/article/details/83012000)。
 本地测试举例
 ```
 0 8 * * * /bin/bash /Users/alpha/abc/abc.sh 2>LOG_FILE > /Users/alpha/abc/abc.txt
@@ -145,3 +145,5 @@ hexo d
 * 脚本路径需要是绝对路径，脚本内的路径可以设定PATH，但是如无必要，建议使用绝对路径。
 * 脚本里的`HOME, LOGNAME, PATH, LANG, SHELL, PWD`需要设定。不设定的话，后面的`hexo`相关的命令不会执行，即只能将源码推到资源库，但是没法更新网站。
 * 执行计划任务时电脑不可以是sleep或关机。
+* 脚本可能会有时不时无法将源码推到资源库的情况，有可能是执行`git pull`时出错，检查网络或者`.git/config`。也可能是执行`git push`出错，检查当前git用户是否有权限向资源库推送，必要时在github资源库上添加Collaborator。
+
