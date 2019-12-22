@@ -141,11 +141,7 @@ hexo d
 `/bin/bash`是使用bash执行脚本。crontab默认使用`/bin/sh`执行脚本。
 `2>LOG_FILE > /Users/alpha/abc/abc.txt`是记录脚本执行输出内容，方便查看脚本是否执行，执行的情况。
 
-需要注意脚本路径需要是绝对路径，脚本内的路径可以设定PATH，但是如无必要，建议使用绝对路径。执行计划任务时电脑不可以是sleep或关机。
-
-测试4.38
-测试4：45
-test sh 5:02
-test crontab 5:06
-test crontab 5:17
-test crontab 5:31
+**注意:**  
+* 脚本路径需要是绝对路径，脚本内的路径可以设定PATH，但是如无必要，建议使用绝对路径。
+* 脚本里的`HOME, LOGNAME, PATH, LANG, SHELL, PWD`需要设定。不设定的话，后面的`hexo`相关的命令不会执行，即只能将源码推到资源库，但是没法更新网站。
+* 执行计划任务时电脑不可以是sleep或关机。
