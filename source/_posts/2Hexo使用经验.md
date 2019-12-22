@@ -122,7 +122,14 @@ hexo clean && hexo g && hexo d
 
 然后编辑，设定
 ```
-0 3 * * * /path/to/script
+0 3 * * * /absolute_path/to/script
 ```
 每天早晨三点执行上面更新脚本。参考[Stackoverflow回答](https://stackoverflow.com/a/34754109/3908814)。
+本地测试举例
+```
+0 8 * * * /bin/bash /Users/alpha/abc/hexo_deploy.sh 2>LOG_FILE > /Users/alpha/source/other/localshell/hexo_deploy.txt
+```
+
+需要注意
+
 
