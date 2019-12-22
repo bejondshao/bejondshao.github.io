@@ -151,12 +151,8 @@ hexo g && hexo d
   * 执行计划任务时电脑不可以是sleep或关机。
   * 脚本可能会有时不时无法将源码推到资源库的情况，有可能是执行`git pull`时出错，检查网络或者`.git/config`。也可能是执行`git push`出错，检查当前git用户是否有权限向资源库推送，必要时在github资源库上添加Collaborator。
 
-* hexo server可以
-* 脚本可能会有时不时无法将源码推到资源库的情况，有可能是执行`git pull`时出错，检查网络或者`.git/config`。也可能是执行`git push`出错，检查当前git用户是否有权限向资源库推送，必要时在github资源库上添加Collaborator。启动
-* 脚本可能会有时不时无法将源码推到资源库的情况，有可能是执行`git pull`时出错，检查网络或者`.git/config`。也可能是执行`git push`出错，检查当前git用户是否有权限向资源库推送，必要时在github资源库上添加Collaborator。多个
-* 脚本可能会有时不时无法将源码推到资源库的情况，有可能是执行`git pull`时出错，检查网络或者`.git/config`。也可能是执行`git push`出错，检查当前git用户是否有权限向资源库推送，必要时在github资源库上添加Collaborator。
+* Hexo server可以启动多个服务，指定另外一个端口即可，使用命令：
 
-* Hexo server可以启动多个服务，使用命令：
 `hexo s -p 4001`
 
 * hexo-admin插件可以设置登录账号密码，在Settings里，输入值后可以贴到_config.yml里，每次访问就需要登录。在家用不着，如果你想把hexo server部署到服务器，可以发布出去，在任意浏览器访问后台发布内容，这个功能就很有必要。
