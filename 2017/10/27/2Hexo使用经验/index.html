@@ -17,7 +17,7 @@
 <meta property="og:site_name" content="Bejond IO">
 <meta property="og:description" content="本文仅做使用Hexo时遇到的问题汇总，如果对你有帮助，那就有吧😅。 @ Hexo官方安装方式 $ npm install hexo-cli -g 注意是是普通用户，如果安装时遇到权限问题，请想尽办法解决。不要用root安装，会出各种奇怪的问题。 @ 安装后，写好文章，在执行 hexo deploy 后,出现 error deployer not found:git 的错误。 $ npm inst">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-12-22T10:05:14.000Z">
+<meta property="og:updated_time" content="2019-12-22T10:09:12.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo使用经验">
 <meta name="twitter:description" content="本文仅做使用Hexo时遇到的问题汇总，如果对你有帮助，那就有吧😅。 @ Hexo官方安装方式 $ npm install hexo-cli -g 注意是是普通用户，如果安装时遇到权限问题，请想尽办法解决。不要用root安装，会出各种奇怪的问题。 @ 安装后，写好文章，在执行 hexo deploy 后,出现 error deployer not found:git 的错误。 $ npm inst">
@@ -236,11 +236,10 @@ Hello World是要展示的文字，如果不填，默认取引用文章标题。
 <p><code>$ sudo crontab -e</code></p>
 <p>然后编辑，设定</p>
 <figure class="highlight basic"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">0 </span><span class="number">3</span> * * * /absolute_path/<span class="keyword">to</span>/script</span><br></pre></td></tr></table></figure>
-<p>每天早晨三点执行上面更新脚本。参考<a href="https://blog.csdn.net/xingyue0422/article/details/83012000" target="_blank" rel="noopener">博客</a>。<br>
-本地测试举例</p>
-<figure class="highlight basic"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">0 </span><span class="number">8</span> * * * /bin/bash /Users/alpha/abc/abc.sh <span class="number">2</span>&gt;LOG_FILE &gt; /Users/alpha/abc/abc.txt</span><br></pre></td></tr></table></figure>
+<p>每天早晨三点执行上面更新脚本。参考<a href="https://blog.csdn.net/xingyue0422/article/details/83012000" target="_blank" rel="noopener">博客</a>。为了防止某次提交出现网络问题，可以设置每个10分钟执行。本地测试举例：</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">*<span class="regexp">/10 * * * * /</span>bin<span class="regexp">/bash /</span>Users<span class="regexp">/alpha/</span>abc<span class="regexp">/abc.sh 2&gt;LOG_FILE &gt; /</span>Users<span class="regexp">/alpha/</span>abc<span class="regexp">/abc.txt</span></span><br></pre></td></tr></table></figure>
 <p><code>/bin/bash</code>是使用bash执行脚本。crontab默认使用<code>/bin/sh</code>执行脚本。如果使用默认的shell，可以这样配置：</p>
-<figure class="highlight basic"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">0 </span><span class="number">8</span> * * * /Users/alpha/abc/abc.sh <span class="number">2</span>&gt;LOG_FILE &gt; /Users/alpha/abc/abc.txt</span><br></pre></td></tr></table></figure>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">*/<span class="number">10</span> * * * * /Users/alpha/<span class="keyword">abc</span>/<span class="keyword">abc</span>.<span class="keyword">sh</span> <span class="number">2</span>&gt;LOG_FILE &gt; /Users/alpha/<span class="keyword">abc</span>/<span class="keyword">abc</span>.txt</span><br></pre></td></tr></table></figure>
 <p><code>2&gt;LOG_FILE &gt; /Users/alpha/abc/abc.txt</code>是记录脚本执行输出内容，方便查看脚本是否执行，执行的情况。</p>
 <p><strong>注意:</strong></p>
 <ul>
