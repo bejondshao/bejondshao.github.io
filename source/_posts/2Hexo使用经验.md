@@ -131,7 +131,7 @@ hexo g && hexo d
 ```
 0 3 * * * /absolute_path/to/script
 ```
-每天早晨三点执行上面更新脚本。参考[博客](https://blog.csdn.net/xingyue0422/article/details/83012000)。为了防止某次提交出现网络问题，可以设置每个10分钟执行。本地测试举例：
+每天早晨三点执行上面更新脚本。参考[博客](https://blog.csdn.net/xingyue0422/article/details/83012000)。为了防止某次提交出现网络问题，可以设置每隔10分钟执行。本地测试举例：
 
 ```
 */10 * * * * /bin/bash /Users/alpha/abc/abc.sh 2>LOG_FILE > /Users/alpha/abc/abc.txt
