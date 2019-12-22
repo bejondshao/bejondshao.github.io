@@ -3,24 +3,20 @@
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
     
-    <title>Ubuntu 16.04 Takes Too Long to Boot | Bejond IO</title>
+    <title>分类: DevOps | Bejond IO</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-        <meta name="keywords" content="Linux,Ubuntu">
-    
-    <meta name="description" content="This issue might happen to any ubuntu versions. It happends ubuntu 16.04 is widely used. It takes around 1 minute to boot. I’m afraid I’m using a fake ubuntu, especially a fake xubuntu😂. Here are som">
-<meta name="keywords" content="Linux,Ubuntu">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Ubuntu 16.04 Takes Too Long to Boot">
-<meta property="og:url" content="http://tech.bejond.org/2018/05/10/Ubuntu-16-04-Takes-Too-Long-to-Boot/index.html">
+    <meta name="description" content="自律然后自由">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bejond IO">
+<meta property="og:url" content="http://tech.bejond.org/categories/DevOps/page/4/index.html">
 <meta property="og:site_name" content="Bejond IO">
-<meta property="og:description" content="This issue might happen to any ubuntu versions. It happends ubuntu 16.04 is widely used. It takes around 1 minute to boot. I’m afraid I’m using a fake ubuntu, especially a fake xubuntu😂. Here are som">
+<meta property="og:description" content="自律然后自由">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-06-25T17:56:57.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Ubuntu 16.04 Takes Too Long to Boot">
-<meta name="twitter:description" content="This issue might happen to any ubuntu versions. It happends ubuntu 16.04 is widely used. It takes around 1 minute to boot. I’m afraid I’m using a fake ubuntu, especially a fake xubuntu😂. Here are som">
+<meta name="twitter:title" content="Bejond IO">
+<meta name="twitter:description" content="自律然后自由">
     
 
     
@@ -137,95 +133,227 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    <a class="page-title-link" href="/categories/Linux/">Linux</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/Linux/Ubuntu/">Ubuntu</a>
+    <i class="icon fa fa-folder-open"></i>分类: <em class="page-title-link">DevOps</em>
     </h1>
 </div>
                         <div class="main-body-content">
-                            <article id="post-Ubuntu-16-04-Takes-Too-Long-to-Boot" class="article article-single article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
+                            
+
+    
+    
         
-            <header class="article-header">
-                
+        
+        <section class="archives-wrap">
+            <div class="archive-year-wrap">
+                <a href="/archives/2017" class="archive-year"><i class="icon fa fa-calendar-o"></i>2017</a>
+            </div>
+            <div class="archives">
+    
+    
+    
+        <div class="article-row">
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/2017/01/23/Keycloak缩写列表/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            <a class="article-category-link" href="/categories/DevOps/">DevOps</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/DevOps/Keycloak/">Keycloak</a>
+            </div>
+            <div class="date"><time datetime="2017-01-23T10:21:00.000Z" itemprop="datePublished">2017-01-23</time></div>
+        </div>
+        
     
         <h1 class="article-title" itemprop="name">
-        Ubuntu 16.04 Takes Too Long to Boot
+        <a href="/2017/01/23/Keycloak缩写列表/">Keycloak缩写列表</a>
         </h1>
     
 
-            </header>
-        
-        
-            <div class="article-meta">
-                
-    <div class="article-date">
-        <a href="/2018/05/10/Ubuntu-16-04-Takes-Too-Long-to-Boot/" class="article-date">
-            <time datetime="2018-05-10T02:40:00.000Z" itemprop="datePublished">2018-05-10</time>
-        </a>
-    </div>
-
-                
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/Linux/">Linux</a>, <a class="tag-link" href="/tags/Ubuntu/">Ubuntu</a>
-    </div>
-
-            </div>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-            <p>This issue might happen to any ubuntu versions. It happends ubuntu 16.04 is widely used. It takes around 1 minute to boot. I’m afraid I’m using a fake ubuntu, especially a fake xubuntu😂.<br>
-Here are some ways to speed up booting:</p>
-<ol>
-<li>Check out services that start up on booting.</li>
-</ol>
-<p><code>$ sudo systemd-analyze blame</code><br>
-And the list:</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">25<span class="selector-class">.661s</span> <span class="selector-tag">apt-daily</span><span class="selector-class">.service</span></span><br><span class="line">19<span class="selector-class">.036s</span> <span class="selector-tag">apt-daily-upgrade</span><span class="selector-class">.service</span></span><br><span class="line"> 8<span class="selector-class">.411s</span> <span class="selector-tag">vmware-USBArbitrator</span><span class="selector-class">.service</span></span><br><span class="line"> 8<span class="selector-class">.395s</span> <span class="selector-tag">gpu-manager</span><span class="selector-class">.service</span></span><br><span class="line"> 8<span class="selector-class">.390s</span> <span class="selector-tag">ModemManager</span><span class="selector-class">.service</span></span><br><span class="line"> 7<span class="selector-class">.347s</span> <span class="selector-tag">dev-sda9</span><span class="selector-class">.device</span></span><br><span class="line"> 6<span class="selector-class">.647s</span> <span class="selector-tag">NetworkManager-wait-online</span><span class="selector-class">.service</span></span><br><span class="line"> 6<span class="selector-class">.459s</span> <span class="selector-tag">grub-common</span><span class="selector-class">.service</span></span><br><span class="line"> 6<span class="selector-class">.122s</span> <span class="selector-tag">alsa-restore</span><span class="selector-class">.service</span></span><br><span class="line"> 5<span class="selector-class">.664s</span> <span class="selector-tag">NetworkManager</span><span class="selector-class">.service</span></span><br><span class="line"> 5<span class="selector-class">.459s</span> <span class="selector-tag">accounts-daemon</span><span class="selector-class">.service</span></span><br><span class="line"> 5<span class="selector-class">.325s</span> <span class="selector-tag">nmbd</span><span class="selector-class">.service</span></span><br><span class="line"> 4<span class="selector-class">.398s</span> <span class="selector-tag">snapd</span><span class="selector-class">.service</span></span><br><span class="line"> 4<span class="selector-class">.384s</span> <span class="selector-tag">teamviewerd</span><span class="selector-class">.service</span></span><br><span class="line"> 4<span class="selector-class">.186s</span> <span class="selector-tag">apport</span><span class="selector-class">.service</span></span><br><span class="line"> 4<span class="selector-class">.180s</span> <span class="selector-tag">systemd-logind</span><span class="selector-class">.service</span></span><br><span class="line"> 4<span class="selector-class">.010s</span> <span class="selector-tag">networking</span><span class="selector-class">.service</span></span><br><span class="line"> 3<span class="selector-class">.958s</span> <span class="selector-tag">lm-sensors</span><span class="selector-class">.service</span></span><br><span class="line"> 3<span class="selector-class">.926s</span> <span class="selector-tag">rsyslog</span><span class="selector-class">.service</span></span><br><span class="line"> 2<span class="selector-class">.873s</span> <span class="selector-tag">winbind</span><span class="selector-class">.service</span></span><br><span class="line"> 2<span class="selector-class">.816s</span> <span class="selector-tag">avahi-daemon</span><span class="selector-class">.service</span></span><br><span class="line"> 2<span class="selector-class">.723s</span> <span class="selector-tag">udisks2</span><span class="selector-class">.service</span></span><br><span class="line"> 2<span class="selector-class">.549s</span> <span class="selector-tag">thermald</span><span class="selector-class">.service</span></span><br></pre></td></tr></table></figure>
-<p>@ <code>apt-daily.service</code><br>
-This is <a href="https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=844453" target="_blank" rel="noopener">Debian bug #844453</a>. apt-daily.service shouldn’t be run during boot, but only some time afterward. One workaround is edit <code>apt-daily.timer</code><br>
-<code>$ sudo systemctl edit apt-daily.timer</code><br>
-and paste the following text into the editor window:</p>
-<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># apt-daily timer configuration override</span></span><br><span class="line"><span class="section">[Timer]</span></span><br><span class="line"><span class="attr">OnBootSec</span>=<span class="number">15</span>min</span><br><span class="line"><span class="attr">OnUnitActiveSec</span>=<span class="number">1</span>d</span><br><span class="line"><span class="attr">AccuracySec</span>=<span class="number">1</span>h</span><br><span class="line"><span class="attr">RandomizedDelaySec</span>=<span class="number">30</span>min</span><br></pre></td></tr></table></figure>
-<p>This changes the “timer” that triggers apt-daily.service to run at a random time between 15 min and 45 min after boot.</p>
-<h5 id="attention-my-system-failed-to-boot-after-doing-below-etcsystemdsystemconf-actions-please-prepare-a-usb-installation-before-doing-this-if-it-fails-you-can-use-live-system-to-revert-good-luck"><a class="markdownIt-Anchor" href="#attention-my-system-failed-to-boot-after-doing-below-etcsystemdsystemconf-actions-please-prepare-a-usb-installation-before-doing-this-if-it-fails-you-can-use-live-system-to-revert-good-luck"></a> Attention: My system failed to boot after doing below <code>/etc/systemd/system.conf</code> actions, please prepare a USB installation before doing this. If it fails, you can use live system to revert, good luck😂</h5>
-<p>And for others recommendations, I also change <code>/etc/systemd/system.conf</code> file. Uncomment</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">DefaultTimeoutStartSec=90s</span></span><br><span class="line"><span class="meta">#</span><span class="bash">DefaultTimeoutStopSec=90s</span></span><br></pre></td></tr></table></figure>
-<p>and change to</p>
-<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">DefaultTimeoutStartSec</span>=<span class="number">10</span>s</span><br><span class="line"><span class="attr">DefaultTimeoutStopSec</span>=<span class="number">10</span>s</span><br></pre></td></tr></table></figure>
-<p>@ <code>apt-daily-upgrade.service</code> helps daily apt upgrade and clean. I don’t see I need to enable it. So I disable it by:<br>
-<code>$ sudo systemctl disable apt-daily-upgrade.service</code><br>
-or you can also treat this service just like <code>apt-daily.service</code> by running:<br>
-<code>$ sudo systemctl edit apt-daily-upgrade.timer</code> and paste settings above.<br>
-@ For <code>vmware-USBArbitrator.service</code> I tried to disable it but failed. I disabled <code>vmware.service</code> and <code>vmware-workstation-server.service</code></p>
-<ol start="2">
-<li>If your booting is extremely slow, like several minutes. It probably has problem about disk alaising. Please refer <a href="https://askubuntu.com/a/809350/817986" target="_blank" rel="noopener">here</a>.</li>
-</ol>
-<p><strong>References:</strong><br>
-<a href="https://askubuntu.com/a/897432/817986" target="_blank" rel="noopener">[1] Stackoverflow</a><br>
-<a href="https://askubuntu.com/a/888199/817986" target="_blank" rel="noopener">[2] Stackoverflow</a><br>
-<a href="https://askubuntu.com/a/816378/817986" target="_blank" rel="noopener">[3] <code>systemctl mask</code> vs <code>systemctl disable</code></a></p>
-<p><strong>Extends:</strong><br>
-<a href="https://linux.cn/article-5926-1.html" target="_blank" rel="noopener">[1] systemctl 命令完全指南<br>
-</a></p>
-
-        </div>
-        <!--
-        <div class="article-entry" id="busuanzi_container_page_pv">
-            阅读<span id="busuanzi_value_page_pv"></span>次
-        </div>
-        -->
-        <footer class="article-footer">
-            
-
-
-
-        </footer>
+        <p class="article-excerpt">
+            @ ABAC(Attribute-based access control)
+@ RBAC(Role-based access control)
+@ UBAC(User-based access control)
+@ CBAC(Context-based access control)
+@ TBAC(Time-based access control)
+@ ACMs(Access control 
+        </p>
     </div>
 </article>
-
-    <section id="comments">
     
-    </section>
+
+    
+    
+    
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/2017/01/22/Keycloak多realm控制/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/2017/01/22/Keycloak多realm控制/resolver.jpg)" alt="Keycloak多realm控制" class="thumbnail-image"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            <a class="article-category-link" href="/categories/DevOps/">DevOps</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/DevOps/Keycloak/">Keycloak</a>
+            </div>
+            <div class="date"><time datetime="2017-01-22T10:05:00.000Z" itemprop="datePublished">2017-01-22</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/2017/01/22/Keycloak多realm控制/">Keycloak多realm控制</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            @ 一个应用可以被多个realms保护，这些realms可以是一个keycloak server，也可以是多个。
+也就需要多个keycloak.json，不同的名称。
+@ 首先需要实现org.keycloak.adapters.KeycloakConfigResolver
+
+@ 然后在web.xml里配置新的Resolver
+1234567&lt;web-app&gt;. . .&lt;conte
+        </p>
+    </div>
+</article>
+    
+        </div>
+    
+
+    
+    
+    
+    
+        <div class="article-row">
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/2017/01/22/Keycloak-Clustering/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            <a class="article-category-link" href="/categories/DevOps/">DevOps</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/DevOps/Keycloak/">Keycloak</a>
+            </div>
+            <div class="date"><time datetime="2017-01-22T09:50:00.000Z" itemprop="datePublished">2017-01-22</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/2017/01/22/Keycloak-Clustering/">Keycloak Clustering</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            @ Standalone Clustered Configuration
+打包好的包邮预定好的给云部署的服务器配置文件，/standalone/configuration/standalone-ha.xml。里面包括所有基本设置，包括网络，数据库，缓存和discovery。配置里有一点没配置。你要配置共享的数据库连接才能启动云架构。同时也需要在云之上部署负载均衡。
+启动脚本
+1\bin\stand
+        </p>
+    </div>
+</article>
+    
+
+    
+    
+    
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/2017/01/05/Keycloak-Java-Adapter-Configuration/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            <a class="article-category-link" href="/categories/DevOps/">DevOps</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/DevOps/Keycloak/">Keycloak</a>
+            </div>
+            <div class="date"><time datetime="2017-01-05T03:43:00.000Z" itemprop="datePublished">2017-01-05</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/2017/01/05/Keycloak-Java-Adapter-Configuration/">Keycloak Java Adapter Configuration</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            @ keycloak adapter可以在war包里添加keycloak.json配置，也可以在standalone.xml里配置。 开发过程推荐使用keycloak.json，生产环境推荐使用standalone.xml。 下面是standalone的配置格式：
+&lt;subsystem xmlns=&quot;urn:jboss:domain:keycloak:1.1&quot;&gt;&l
+        </p>
+    </div>
+</article>
+    
+        </div>
+    
+
+
+    </div></section>
+
+
+    <nav id="page-nav">
+        <span class="pages">第 4 页，共 4 页</span>
+        <a class="extend prev" rel="prev" href="/categories/DevOps/page/3/">&laquo;</a><a class="page-number" href="/categories/DevOps/">1</a><a class="page-number" href="/categories/DevOps/page/2/">2</a><a class="page-number" href="/categories/DevOps/page/3/">3</a><span class="page-number current">4</span>
+    </nav>
+
 
 
                         </div>
@@ -270,29 +398,6 @@ or you can also treat this service just like <code>apt-daily.service</code> by r
             
         </ul>
     </div>
-    
-        
-<nav id="article-nav">
-    
-        <a href="/2018/05/16/Prometheus-metric-names定义规则/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">下一篇</strong>
-        <p class="article-nav-title">
-        
-            Prometheus metric names定义规则
-        
-        </p>
-        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
-    
-    
-        <a href="/2018/05/09/CentOS报错-Could-not-resolve-host-mirrorlist-centos-org-Unknown-error/" id="article-nav-older" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">上一篇</strong>
-        <p class="article-nav-title">CentOS报错: Could not resolve host: mirrorlist.centos.org; Unknown error</p>
-        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
-        </a>
-    
-</nav>
-
     
     <div class="widgets-container">
         
