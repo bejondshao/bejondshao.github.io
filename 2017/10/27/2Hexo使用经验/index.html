@@ -17,7 +17,7 @@
 <meta property="og:site_name" content="Bejond IO">
 <meta property="og:description" content="本文仅做使用Hexo时遇到的问题汇总，如果对你有帮助，那就有吧😅。 @ Hexo官方安装方式 $ npm install hexo-cli -g 注意是是普通用户，如果安装时遇到权限问题，请想尽办法解决。不要用root安装，会出各种奇怪的问题。 @ 安装后，写好文章，在执行 hexo deploy 后,出现 error deployer not found:git 的错误。 $ npm inst">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-12-21T16:43:22.000Z">
+<meta property="og:updated_time" content="2019-12-21T17:46:45.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo使用经验">
 <meta name="twitter:description" content="本文仅做使用Hexo时遇到的问题汇总，如果对你有帮助，那就有吧😅。 @ Hexo官方安装方式 $ npm install hexo-cli -g 注意是是普通用户，如果安装时遇到权限问题，请想尽办法解决。不要用root安装，会出各种奇怪的问题。 @ 安装后，写好文章，在执行 hexo deploy 后,出现 error deployer not found:git 的错误。 $ npm inst">
@@ -219,9 +219,24 @@ Hello World是要展示的文字，如果不填，默认取引用文章标题。
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm update hexo</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> npm install -g --save hexo</span></span><br></pre></td></tr></table></figure>
 <p>会安装hexo的依赖，如果有warn提示其他包过期，需要使用<code>npm update xxx</code>方法更新包，不一定需要安装。另外需要注意package.json中使用的插件是否与当前hexo版本兼容。我一般不升级，因为升级都往往有些意料不到的问题，尤其用开源工具以及其他开源插件。不过还是要感谢做这些工具的开发者，他们是推动技术发展的贡献者。</p>
 <ul>
-<li>hexo主题升级<br>
-参考<a href="/2017/11/30/如何将hexo与theme代码分开提交/" title="如何将hexo与theme代码分开提交">如何将hexo与theme代码分开提交</a></li>
+<li>
+<p>hexo主题升级<br>
+参考<a href="/2017/11/30/如何将hexo与theme代码分开提交/" title="如何将hexo与theme代码分开提交">如何将hexo与theme代码分开提交</a>。</p>
+</li>
+<li>
+<p>一键提交更新网站脚本</p>
+</li>
 </ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="comment"># bejondshao.github.io</span></span><br><span class="line"><span class="built_in">cd</span> ~/abc/bejondshao.github.io</span><br><span class="line">git status</span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">"source post"</span></span><br><span class="line">git push origin <span class="built_in">source</span></span><br><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
+<p>存为abc.sh将文件赋予执行权限</p>
+<p><code>$ sudo chmod +x abc.sh</code></p>
+<ul>
+<li>每日定时执行脚本</li>
+</ul>
+<p><code>$ sudo crontab -e</code></p>
+<p>然后编辑，设定</p>
+<figure class="highlight basic"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">0 </span><span class="number">3</span> * * * /path/<span class="keyword">to</span>/script</span><br></pre></td></tr></table></figure>
+<p>每天早晨三点执行上面更新脚本。参考<a href="https://stackoverflow.com/a/34754109/3908814" target="_blank" rel="noopener">Stackoverflow回答</a>。</p>
 
         </div>
         <!--
