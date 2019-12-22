@@ -130,7 +130,7 @@ hexo clean && hexo g && hexo d
 ```
 0 8 * * * /bin/bash /Users/alpha/abc/abc.sh 2>LOG_FILE > /Users/alpha/abc/abc.txt
 ```
+`/bin/bash`是使用bash执行脚本。crontab默认使用`/bin/sh`执行脚本。
+`2>LOG_FILE > /Users/alpha/abc/abc.txt`是记录脚本执行输出内容，方便查看脚本是否执行，执行的情况。
 
 需要注意脚本路径需要是绝对路径，脚本内的路径可以设定PATH，但是如无必要，建议使用绝对路径。执行计划任务时电脑不可以是sleep或关机。
-
-
