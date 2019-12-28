@@ -106,6 +106,7 @@ baidu_url_submit:
 
 metadata:
   categories: Others
+  comments: true
 
 # hexo-admin authentification
 #admin:

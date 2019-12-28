@@ -75,7 +75,16 @@ Hello World是要展示的文字，如果不填，默认取引用文章标题。
 @ 主动推送Hexo博客链接到百度搜索
 详见[hexo-baidu-url-submit](https://www.npmjs.com/package/hexo-baidu-url-submit)
 
-@ [hexo-admin](https://github.com/jaredly/hexo-admin)插件，可以本地可视化编辑文章
+@ [hexo-admin](https://github.com/jaredly/hexo-admin)插件，可以本地可视化编辑文章。
+  * hexo-admin可配置文章自定义参数，在博客_config.yml里添加
+  ```
+  metadata:
+    categories: 杂记
+    comments: true
+  ```
+即可，需要重启hexo生效。
+{% asset_img  %}
+`categories`配置创建文章的默认类别，该属性是数组，如果想配置文章到默认的二级类别则为`categories: [杂记,生活]`。`comments`为是否开启文章评论功能，添加后即可在hexo-admin后台设定属性（comments即便不设定，如果博客开启评论功能，也是所有文章默认都开启的，这样配置则方便在hexo-admin设置某篇文章不开启comment，就不需要手动修改文章源文件了。）。这些默认值需要通过hexo-admin方式创建文章才会设定默认值。如果是通过`hexo new abc`来创建文章，则打开hexo-admin文章这些配置默认值不生效，需要手动设定。
 
 * Metadata功能，可以在_config.yml里添加诸如默认category的功能（因为hexo的默认category功能好像不好用）
 ```
@@ -159,5 +168,22 @@ hexo g && hexo d
 
 * 还可以使用路由器申请DDNS，申请一个二级域名，如果有个人域名可以指向该域名。然后再开启虚拟服务器，就可以访问域名加端口，访问本机的应用，当然也可以访问到hexo-admin。省去租服务器的钱了。但是要注意，偶尔用用可以，如果做涉及到广告商业或者其他用途，被宽带商监测到会发函警告的，我见网上有人被发函了，理由就是私自架设Web服务。
 
+* Comment
 
-
+评论功能我以前没开启，后来想开启，大概看了有几种方式: 
+ 1. 第三方评论服务（Disqus，有言，多说等，优点是可注册授权，缺点是服务不稳定。）
+ * Staticman（以pull request的方式在github的资源库创建issues，好处是不需要注册登录，可手动审核评论，坏处是没法注册登录。本想使用这种方式，但是配置时官方服务失效，作罢。）
+ * git issues（有gitment, ghpages-ghcomments等，在github的资源库创建issues。其他人评论则以comment的形式出现，没有验证博主是否有权利删除他人评论。需要注册登录github。）
+ * [Valine](https://valine.js.org/)（使用[LeanCloud](https://leancloud.cn/)作为数据库存储。好处是不需要注册，绝大多数Hexo主题都已支持，可以直接启动配置项即可。另外建议结合[Valine-Admin](https://github.com/DesertsP/Valine-Admin)一起使用，可视化管理评论。）
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
