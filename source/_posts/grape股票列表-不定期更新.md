@@ -9,7 +9,7 @@ categories:
 date: 2019-11-05 23:13:00
 ---
 {% asset_img k.png %}
-我的[grape](https://github.com/bejondshao/grape)本地运行的结果，选股策略描述后续补充吧。先做个记录。
+[grape](https://github.com/bejondshao/grape)本地运行的结果，选股策略描述后续补充吧。先做个记录。
 **声明：grape选股策略在不断调整和丰富，股票列表仅记录用，不作为任何投资建议。依据列表选股投资导致亏损本人概不负责。**
 
 2019-11-05
