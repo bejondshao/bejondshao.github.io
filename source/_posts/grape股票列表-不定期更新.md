@@ -8,7 +8,6 @@ categories:
   - ''
 date: 2019-11-05 23:13:00
 comments: false
-layout: false
 ---
 {% asset_img k.png %}
 我的[grape](https://github.com/bejondshao/grape)本地运行的结果，选股策略描述后续补充吧。先做个记录。
