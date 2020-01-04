@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://tech.bejond.org/"/>
-  <updated>2019-12-20T11:38:40.000Z</updated>
+  <updated>2020-01-04T02:27:26.000Z</updated>
   <id>http://tech.bejond.org/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>grape股票列表-2020</title>
+    <link href="http://tech.bejond.org/2020/01/04/grape%E8%82%A1%E7%A5%A8%E5%88%97%E8%A1%A8-2020/"/>
+    <id>http://tech.bejond.org/2020/01/04/grape%E8%82%A1%E7%A5%A8%E5%88%97%E8%A1%A8-2020/</id>
+    <published>2020-01-04T02:27:26.000Z</published>
+    <updated>2020-01-04T02:27:26.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://github.com/bejondshao/grape" target="_blank" rel="noopener">grape</a>本地运行的结果。<br><strong>声明：grape选股策略在不断调整和丰富，股票列表仅记录用，不作为任何投资建议。依据列表选股投资导致亏损本人概不负责。</strong></p><table><thead><tr><th>code</th><th>name</th><th>date</th><th>industry</th><th>area</th><th>close</th></tr></thead><tbody><tr><td>600021</td><td>上海电力</td><td>2019-12-30</td><td>火力发电</td><td>上海</td><td>7.95</td></tr><tr><td>002561</td><td>徐家汇</td><td>2019-12-30</td><td>百货</td><td>上海</td><td>8.15</td></tr><tr><td>600886</td><td>国投电力</td><td>2019-12-30</td><td>水力发电</td><td>北京</td><td>9.15</td></tr><tr><td>601699</td><td>潞安环能</td><td>2019-12-30</td><td>煤炭开采</td><td>山西</td><td>7.24</td></tr><tr><td>600269</td><td>赣粤高速</td><td>2019-12-30</td><td>路桥</td><td>江西</td><td>4.12</td></tr><tr><td>600827</td><td>百联股份</td><td>2019-12-30</td><td>超市连锁</td><td>上海</td><td>8.97</td></tr><tr><td>600803</td><td>新奥股份</td><td>2019-12-30</td><td>农药化肥</td><td>河北</td><td>10.63</td></tr><tr><td>601199</td><td>江南水务</td><td>2019-12-30</td><td>水务</td><td>江苏</td><td>3.79</td></tr><tr><td>600533</td><td>栖霞建设</td><td>2019-12-30</td><td>区域地产</td><td>江苏</td><td>3.35</td></tr><tr><td>601368</td><td>绿城水务</td><td>2019-12-30</td><td>水务</td><td>广西</td><td>5.86</td></tr><tr><td>601211</td><td>国泰君安</td><td>2019-12-30</td><td>证券</td><td>上海</td><td>18.68</td></tr><tr><td>600332</td><td>白云山</td><td>2019-12-31</td><td>中成药</td><td>广东</td><td>35.61</td></tr><tr><td>600998</td><td>九州通</td><td>2019-12-31</td><td>医药商业</td><td>湖北</td><td>14.15</td></tr><tr><td>000582</td><td>北部湾港</td><td>2019-12-31</td><td>港口</td><td>广西</td><td>8.95</td></tr><tr><td>601607</td><td>上海医药</td><td>2019-12-31</td><td>医药商业</td><td>上海</td><td>18.37</td></tr><tr><td>600039</td><td>四川路桥</td><td>2019-12-31</td><td>建筑工程</td><td>四川</td><td>3.36</td></tr><tr><td>002004</td><td>华邦健康</td><td>2019-12-31</td><td>化学制药</td><td>重庆</td><td>4.94</td></tr><tr><td>600785</td><td>新华百货</td><td>2019-12-31</td><td>百货</td><td>宁夏</td><td>15.02</td></tr><tr><td>000899</td><td>赣能股份</td><td>2019-12-31</td><td>火力发电</td><td>江西</td><td>4.87</td></tr><tr><td>600033</td><td>福建高速</td><td>2019-12-31</td><td>路桥</td><td>福建</td><td>3.07</td></tr><tr><td>600419</td><td>天润乳业</td><td>2020-01-02</td><td>乳制品</td><td>新疆</td><td>14.15</td></tr><tr><td>300154</td><td>瑞凌股份</td><td>2020-01-02</td><td>元器件</td><td>深圳</td><td>5.72</td></tr><tr><td>002763</td><td>汇洁股份</td><td>2020-01-02</td><td>服饰</td><td>深圳</td><td>8.8</td></tr><tr><td>002444</td><td>巨星科技</td><td>2020-01-02</td><td>轻工机械</td><td>浙江</td><td>11.0</td></tr><tr><td>002539</td><td>云图控股</td><td>2020-01-02</td><td>农药化肥</td><td>四川</td><td>4.98</td></tr><tr><td>600598</td><td>北大荒</td><td>2020-01-02</td><td>种植业</td><td>黑龙江</td><td>9.96</td></tr><tr><td>600461</td><td>洪城水业</td><td>2020-01-02</td><td>水务</td><td>江西</td><td>6.07</td></tr><tr><td>600229</td><td>城市传媒</td><td>2020-01-02</td><td>出版业</td><td>山东</td><td>7.43</td></tr><tr><td>002789</td><td>建艺集团</td><td>2020-01-02</td><td>装修装饰</td><td>深圳</td><td>16.8</td></tr><tr><td>000719</td><td>中原传媒</td><td>2020-01-02</td><td>出版业</td><td>河南</td><td>7.26</td></tr><tr><td>600835</td><td>上海机电</td><td>2020-01-02</td><td>运输设备</td><td>上海</td><td>16.92</td></tr><tr><td>002097</td><td>山河智能</td><td>2020-01-02</td><td>工程机械</td><td>湖南</td><td>5.96</td></tr><tr><td>000718</td><td>苏宁环球</td><td>2020-01-02</td><td>区域地产</td><td>吉林</td><td>3.95</td></tr><tr><td>601333</td><td>广深铁路</td><td>2020-01-02</td><td>铁路</td><td>深圳</td><td>3.09</td></tr></tbody></table>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://github.com/bejondshao/grape&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;grape&lt;/a&gt;本地运行的结果。&lt;br&gt;
+&lt;strong&gt;声明：grape选股策略在不断调整和丰富，股票列表仅记录用，
+      
+    
+    </summary>
+    
+    
+      <category term="股票" scheme="http://tech.bejond.org/categories/%E8%82%A1%E7%A5%A8/"/>
+    
+      <category term="2020" scheme="http://tech.bejond.org/categories/%E8%82%A1%E7%A5%A8/2020/"/>
+    
+    
+      <category term="grape" scheme="http://tech.bejond.org/tags/grape/"/>
+    
+      <category term="股票" scheme="http://tech.bejond.org/tags/%E8%82%A1%E7%A5%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>验证股票之股东人数</title>
@@ -136,9 +167,9 @@
       <category term="2019" scheme="http://tech.bejond.org/categories/%E8%82%A1%E7%A5%A8/2019/"/>
     
     
-      <category term="股票" scheme="http://tech.bejond.org/tags/%E8%82%A1%E7%A5%A8/"/>
-    
       <category term="grape" scheme="http://tech.bejond.org/tags/grape/"/>
+    
+      <category term="股票" scheme="http://tech.bejond.org/tags/%E8%82%A1%E7%A5%A8/"/>
     
   </entry>
   
@@ -597,36 +628,6 @@
     
     
       <category term="Java" scheme="http://tech.bejond.org/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Keycloak和Jenkins集成实现单点登录</title>
-    <link href="http://tech.bejond.org/2018/03/26/Keycloak%E5%92%8CJenkins%E9%9B%86%E6%88%90%E5%AE%9E%E7%8E%B0%E5%8D%95%E7%82%B9%E7%99%BB%E5%BD%95/"/>
-    <id>http://tech.bejond.org/2018/03/26/Keycloak%E5%92%8CJenkins%E9%9B%86%E6%88%90%E5%AE%9E%E7%8E%B0%E5%8D%95%E7%82%B9%E7%99%BB%E5%BD%95/</id>
-    <published>2018-03-26T09:06:00.000Z</published>
-    <updated>2019-12-22T10:39:05.000Z</updated>
-    
-    <content type="html"><![CDATA[<h5 id="安装jenkins参考"><a class="markdownIt-Anchor" href="#安装jenkins参考"></a> 安装Jenkins（<a href="https://pkg.jenkins.io/debian-stable/" target="_blank" rel="noopener">参考</a>）</h5><p>@ 将key添加到系统中</p><p><code>wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -</code></p><p>@ 将下面一行添加到/etc/apt/sources.list中：</p><p><code>deb https://pkg.jenkins.io/debian-stable binary/</code></p><p>@ 安装</p><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-<span class="builtin-name">get</span> update</span><br><span class="line">sudo apt-<span class="builtin-name">get</span> install jenkins</span><br></pre></td></tr></table></figure><h5 id="配置jenkins"><a class="markdownIt-Anchor" href="#配置jenkins"></a> 配置Jenkins</h5><p>@ 修改Jenkins运行端口，编辑/etc/default/jenkins文件，将HTTP_PORT改为另外一个端口，比如8880</p><p>@ 启动Jenkins</p><p><code>sudo service start jenkins</code></p><p>@ 打开http://localhost:8880  ，就可以访问，刚开启，会询问admin初始密码，到<code>/var/lib/jenkins/secrets/initialAdminPassword</code>拷贝过来即可。</p><p>@ 下载<a href="https://github.com/jenkinsci/keycloak-plugin/releases" target="_blank" rel="noopener">keycloak-plugin</a>到本地。</p><p>@ 打开http://localhost:8880/pluginManager/advanced ，使用Upload Plugin，上传keycloak-plugin，并安装。</p><p>@ 重启Jenkins</p><p><code>sudo service restart jenkins</code></p><h5 id="配置keycloak"><a class="markdownIt-Anchor" href="#配置keycloak"></a> 配置Keycloak</h5><p>@ 创建Client，名称jenkins，保存。</p><img src="/2018/03/26/Keycloak和Jenkins集成实现单点登录/client.png" class="Client"><p>@ 打开jenkins client的Installation页签，选择Keycloak OIDC JSON，拷贝内容留作到Jenkins的配置</p><img src="/2018/03/26/Keycloak和Jenkins集成实现单点登录/installation.png" class="Installation"><p>@ 在Realm中创建用于登录的用户。</p><p>@ 访问 <a href="http://localhost:8880/configure" target="_blank" rel="noopener">http://localhost:8880/configure</a> ，找到Keycloak JSON框，将Keycloak OIDC JSON内容拷贝到这里，保存。</p><img src="/2018/03/26/Keycloak和Jenkins集成实现单点登录/jenkins-configure.png" class="Jenkins Configure"><p>@ 访问http://localhost:8880/configureSecurity/ ， 勾选&quot;Enable security&quot;，Security Realm选择&quot;Keycloak Authentication Plugin&quot;，保存。</p><img src="/2018/03/26/Keycloak和Jenkins集成实现单点登录/jenkins-configureSecurity.png" class="Configure Security"><p>@ 登出管理员用户，点击log in。会跳转到Keycloak登录界面，验证Keycloak用户成功后，跳回Jenkins。至此完成单点登录。</p><p>@ 点击log out，即跳转到Keycloak登录页，说明可以实现Jenkins登出，同时使Keycloak的session失效。</p><h5 id="遗留问题"><a class="markdownIt-Anchor" href="#遗留问题"></a> 遗留问题</h5><ol><li><p>在Keycloak主动使session失效，Jenkins用户仍可以访问Jenkins功能。</p></li><li><p>而如果在http://localhost:8880/configure 配置页选中&quot;Validate Token on each request&quot;，并选中&quot;Keep login session open until access token times out?&quot;，其效果仍然和问题1一样。如果取消选中&quot;Keep login session open until access token times out?&quot;，则在Keycloak使session失效后，Jenkins请求页面会一直卡住，无法做其他操作。只能重启Jenkins服务。</p></li></ol><img src="/2018/03/26/Keycloak和Jenkins集成实现单点登录/check-validate-token.png" class="Validate token"><img src="/2018/03/26/Keycloak和Jenkins集成实现单点登录/jenkins-configureSecurity2.png" class="Configure Security"><ol start="3"><li>不要在开启Keycloak验证后Authorization选&quot;Legacy mode&quot;。</li></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h5 id=&quot;安装jenkins参考&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#安装jenkins参考&quot;&gt;&lt;/a&gt; 安装Jenkins（&lt;a href=&quot;https://pkg.jenkins.io/debian-stable/&quot; target=
-      
-    
-    </summary>
-    
-    
-      <category term="DevOps" scheme="http://tech.bejond.org/categories/DevOps/"/>
-    
-      <category term="Keycloak" scheme="http://tech.bejond.org/categories/DevOps/Keycloak/"/>
-    
-    
-      <category term="Keycloak" scheme="http://tech.bejond.org/tags/Keycloak/"/>
-    
-      <category term="Jenkins" scheme="http://tech.bejond.org/tags/Jenkins/"/>
     
   </entry>
   
