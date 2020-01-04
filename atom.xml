@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://tech.bejond.org/"/>
-  <updated>2019-12-20T11:38:40.000Z</updated>
+  <updated>2020-01-04T14:48:55.000Z</updated>
   <id>http://tech.bejond.org/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>grape股票列表-2020</title>
+    <link href="http://tech.bejond.org/2020/01/04/grape%E8%82%A1%E7%A5%A8%E5%88%97%E8%A1%A8-2020/"/>
+    <id>http://tech.bejond.org/2020/01/04/grape%E8%82%A1%E7%A5%A8%E5%88%97%E8%A1%A8-2020/</id>
+    <published>2020-01-04T14:48:55.000Z</published>
+    <updated>2020-01-04T14:48:55.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://github.com/bejondshao/grape" target="_blank" rel="noopener">grape</a>本地运行的结果。<br><strong>声明：grape选股策略在不断调整和丰富，股票列表仅记录用，不作为任何投资建议。依据列表选股投资导致亏损本人概不负责。</strong></p><table><thead><tr><th>code</th><th>name</th><th>date</th><th>industry</th><th>area</th><th>close</th></tr></thead><tbody></tbody></table>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://github.com/bejondshao/grape&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;grape&lt;/a&gt;本地运行的结果。&lt;br&gt;
+&lt;strong&gt;声明：grape选股策略在不断调整和丰富，股票列表仅记录用，
+      
+    
+    </summary>
+    
+    
+      <category term="股票" scheme="http://tech.bejond.org/categories/%E8%82%A1%E7%A5%A8/"/>
+    
+      <category term="2020" scheme="http://tech.bejond.org/categories/%E8%82%A1%E7%A5%A8/2020/"/>
+    
+    
+      <category term="grape" scheme="http://tech.bejond.org/tags/grape/"/>
+    
+      <category term="股票" scheme="http://tech.bejond.org/tags/%E8%82%A1%E7%A5%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>验证股票之股东人数</title>
@@ -136,9 +167,9 @@
       <category term="2019" scheme="http://tech.bejond.org/categories/%E8%82%A1%E7%A5%A8/2019/"/>
     
     
-      <category term="股票" scheme="http://tech.bejond.org/tags/%E8%82%A1%E7%A5%A8/"/>
-    
       <category term="grape" scheme="http://tech.bejond.org/tags/grape/"/>
+    
+      <category term="股票" scheme="http://tech.bejond.org/tags/%E8%82%A1%E7%A5%A8/"/>
     
   </entry>
   
@@ -597,36 +628,6 @@
     
     
       <category term="Java" scheme="http://tech.bejond.org/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Keycloak和Jenkins集成实现单点登录</title>
-    <link href="http://tech.bejond.org/2018/03/26/Keycloak%E5%92%8CJenkins%E9%9B%86%E6%88%90%E5%AE%9E%E7%8E%B0%E5%8D%95%E7%82%B9%E7%99%BB%E5%BD%95/"/>
-    <id>http://tech.bejond.org/2018/03/26/Keycloak%E5%92%8CJenkins%E9%9B%86%E6%88%90%E5%AE%9E%E7%8E%B0%E5%8D%95%E7%82%B9%E7%99%BB%E5%BD%95/</id>
-    <published>2018-03-26T09:06:00.000Z</published>
-    <updated>2019-12-22T10:39:05.000Z</updated>
-    
-    <content type="html"><![CDATA[<h5 id="安装jenkins参考"><a class="markdownIt-Anchor" href="#安装jenkins参考"></a> 安装Jenkins（<a href="https://pkg.jenkins.io/debian-stable/" target="_blank" rel="noopener">参考</a>）</h5><p>@ 将key添加到系统中</p><p><code>wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -</code></p><p>@ 将下面一行添加到/etc/apt/sources.list中：</p><p><code>deb https://pkg.jenkins.io/debian-stable binary/</code></p><p>@ 安装</p><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-<span class="builtin-name">get</span> update</span><br><span class="line">sudo apt-<span class="builtin-name">get</span> install jenkins</span><br></pre></td></tr></table></figure><h5 id="配置jenkins"><a class="markdownIt-Anchor" href="#配置jenkins"></a> 配置Jenkins</h5><p>@ 修改Jenkins运行端口，编辑/etc/default/jenkins文件，将HTTP_PORT改为另外一个端口，比如8880</p><p>@ 启动Jenkins</p><p><code>sudo service start jenkins</code></p><p>@ 打开http://localhost:8880  ，就可以访问，刚开启，会询问admin初始密码，到<code>/var/lib/jenkins/secrets/initialAdminPassword</code>拷贝过来即可。</p><p>@ 下载<a href="https://github.com/jenkinsci/keycloak-plugin/releases" target="_blank" rel="noopener">keycloak-plugin</a>到本地。</p><p>@ 打开http://localhost:8880/pluginManager/advanced ，使用Upload Plugin，上传keycloak-plugin，并安装。</p><p>@ 重启Jenkins</p><p><code>sudo service restart jenkins</code></p><h5 id="配置keycloak"><a class="markdownIt-Anchor" href="#配置keycloak"></a> 配置Keycloak</h5><p>@ 创建Client，名称jenkins，保存。</p><img src="/2018/03/26/Keycloak和Jenkins集成实现单点登录/client.png" class="Client"><p>@ 打开jenkins client的Installation页签，选择Keycloak OIDC JSON，拷贝内容留作到Jenkins的配置</p><img src="/2018/03/26/Keycloak和Jenkins集成实现单点登录/installation.png" class="Installation"><p>@ 在Realm中创建用于登录的用户。</p><p>@ 访问 <a href="http://localhost:8880/configure" target="_blank" rel="noopener">http://localhost:8880/configure</a> ，找到Keycloak JSON框，将Keycloak OIDC JSON内容拷贝到这里，保存。</p><img src="/2018/03/26/Keycloak和Jenkins集成实现单点登录/jenkins-configure.png" class="Jenkins Configure"><p>@ 访问http://localhost:8880/configureSecurity/ ， 勾选&quot;Enable security&quot;，Security Realm选择&quot;Keycloak Authentication Plugin&quot;，保存。</p><img src="/2018/03/26/Keycloak和Jenkins集成实现单点登录/jenkins-configureSecurity.png" class="Configure Security"><p>@ 登出管理员用户，点击log in。会跳转到Keycloak登录界面，验证Keycloak用户成功后，跳回Jenkins。至此完成单点登录。</p><p>@ 点击log out，即跳转到Keycloak登录页，说明可以实现Jenkins登出，同时使Keycloak的session失效。</p><h5 id="遗留问题"><a class="markdownIt-Anchor" href="#遗留问题"></a> 遗留问题</h5><ol><li><p>在Keycloak主动使session失效，Jenkins用户仍可以访问Jenkins功能。</p></li><li><p>而如果在http://localhost:8880/configure 配置页选中&quot;Validate Token on each request&quot;，并选中&quot;Keep login session open until access token times out?&quot;，其效果仍然和问题1一样。如果取消选中&quot;Keep login session open until access token times out?&quot;，则在Keycloak使session失效后，Jenkins请求页面会一直卡住，无法做其他操作。只能重启Jenkins服务。</p></li></ol><img src="/2018/03/26/Keycloak和Jenkins集成实现单点登录/check-validate-token.png" class="Validate token"><img src="/2018/03/26/Keycloak和Jenkins集成实现单点登录/jenkins-configureSecurity2.png" class="Configure Security"><ol start="3"><li>不要在开启Keycloak验证后Authorization选&quot;Legacy mode&quot;。</li></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h5 id=&quot;安装jenkins参考&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#安装jenkins参考&quot;&gt;&lt;/a&gt; 安装Jenkins（&lt;a href=&quot;https://pkg.jenkins.io/debian-stable/&quot; target=
-      
-    
-    </summary>
-    
-    
-      <category term="DevOps" scheme="http://tech.bejond.org/categories/DevOps/"/>
-    
-      <category term="Keycloak" scheme="http://tech.bejond.org/categories/DevOps/Keycloak/"/>
-    
-    
-      <category term="Keycloak" scheme="http://tech.bejond.org/tags/Keycloak/"/>
-    
-      <category term="Jenkins" scheme="http://tech.bejond.org/tags/Jenkins/"/>
     
   </entry>
   
