@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://tech.bejond.org/"/>
-  <updated>2019-12-20T11:38:40.000Z</updated>
+  <updated>2020-01-05T05:46:54.000Z</updated>
   <id>http://tech.bejond.org/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>grape股票列表-2020</title>
+    <link href="http://tech.bejond.org/2020/01/05/grape%E8%82%A1%E7%A5%A8%E5%88%97%E8%A1%A8-2020/"/>
+    <id>http://tech.bejond.org/2020/01/05/grape%E8%82%A1%E7%A5%A8%E5%88%97%E8%A1%A8-2020/</id>
+    <published>2020-01-05T05:46:54.000Z</published>
+    <updated>2020-01-05T05:46:54.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://github.com/bejondshao/grape" target="_blank" rel="noopener">grape</a>本地运行的结果。<br><strong>声明：grape选股策略在不断调整和丰富，股票列表仅记录用，不作为任何投资建议。依据列表选股投资导致亏损本人概不负责。</strong></p><table><thead><tr><th>code</th><th>name</th><th>date</th><th>industry</th><th>area</th><th>close</th></tr></thead><tbody><tr><td><a href="https://xueqiu.com/s/sh601211" target="_blank" rel="noopener">601211</a></td><td><a href="https://www.lixinger.com/analytics/company/sh/601211/601211/detail/shareholders/nolimit" target="_blank" rel="noopener">国泰君安</a></td><td>2019-12-30</td><td>证券</td><td>上海</td><td>18.68</td></tr><tr><td><a href="https://xueqiu.com/s/sh601368" target="_blank" rel="noopener">601368</a></td><td><a href="https://www.lixinger.com/analytics/company/sh/601368/601368/detail/shareholders/nolimit" target="_blank" rel="noopener">绿城水务</a></td><td>2019-12-30</td><td>水务</td><td>广西</td><td>5.86</td></tr><tr><td><a href="https://xueqiu.com/s/sh600827" target="_blank" rel="noopener">600827</a></td><td><a href="https://www.lixinger.com/analytics/company/sh/600827/600827/detail/shareholders/nolimit" target="_blank" rel="noopener">百联股份</a></td><td>2019-12-30</td><td>超市连锁</td><td>上海</td><td>8.97</td></tr><tr><td><a href="https://xueqiu.com/s/sh600269" target="_blank" rel="noopener">600269</a></td><td><a href="https://www.lixinger.com/analytics/company/sh/600269/600269/detail/shareholders/nolimit" target="_blank" rel="noopener">赣粤高速</a></td><td>2019-12-30</td><td>路桥</td><td>江西</td><td>4.12</td></tr><tr><td><a href="https://xueqiu.com/s/sh600803" target="_blank" rel="noopener">600803</a></td><td><a href="https://www.lixinger.com/analytics/company/sh/600803/600803/detail/shareholders/nolimit" target="_blank" rel="noopener">新奥股份</a></td><td>2019-12-30</td><td>农药化肥</td><td>河北</td><td>10.63</td></tr><tr><td><a href="https://xueqiu.com/s/sz002561" target="_blank" rel="noopener">002561</a></td><td><a href="https://www.lixinger.com/analytics/company/sz/002561/256/detail/shareholders/nolimit" target="_blank" rel="noopener">徐家汇</a></td><td>2019-12-30</td><td>百货</td><td>上海</td><td>8.15</td></tr><tr><td><a href="https://xueqiu.com/s/sh601699" target="_blank" rel="noopener">601699</a></td><td><a href="https://www.lixinger.com/analytics/company/sh/601699/601699/detail/shareholders/nolimit" target="_blank" rel="noopener">潞安环能</a></td><td>2019-12-30</td><td>煤炭开采</td><td>山西</td><td>7.24</td></tr><tr><td><a href="https://xueqiu.com/s/sh600021" target="_blank" rel="noopener">600021</a></td><td><a href="https://www.lixinger.com/analytics/company/sh/600021/600021/detail/shareholders/nolimit" target="_blank" rel="noopener">上海电力</a></td><td>2019-12-30</td><td>火力发电</td><td>上海</td><td>7.95</td></tr><tr><td><a href="https://xueqiu.com/s/sh601199" target="_blank" rel="noopener">601199</a></td><td><a href="https://www.lixinger.com/analytics/company/sh/601199/601199/detail/shareholders/nolimit" target="_blank" rel="noopener">江南水务</a></td><td>2019-12-30</td><td>水务</td><td>江苏</td><td>3.79</td></tr><tr><td><a href="https://xueqiu.com/s/sh600533" target="_blank" rel="noopener">600533</a></td><td><a href="https://www.lixinger.com/analytics/company/sh/600533/600533/detail/shareholders/nolimit" target="_blank" rel="noopener">栖霞建设</a></td><td>2019-12-30</td><td>区域地产</td><td>江苏</td><td>3.35</td></tr><tr><td><a href="https://xueqiu.com/s/sh600886" target="_blank" rel="noopener">600886</a></td><td><a href="https://www.lixinger.com/analytics/company/sh/600886/600886/detail/shareholders/nolimit" target="_blank" rel="noopener">国投电力</a></td><td>2019-12-30</td><td>水力发电</td><td>北京</td><td>9.15</td></tr><tr><td><a href="https://xueqiu.com/s/sh600998" target="_blank" rel="noopener">600998</a></td><td><a href="https://www.lixinger.com/analytics/company/sh/600998/600998/detail/shareholders/nolimit" target="_blank" rel="noopener">九州通</a></td><td>2019-12-31</td><td>医药商业</td><td>湖北</td><td>14.15</td></tr><tr><td><a href="https://xueqiu.com/s/sz002004" target="_blank" rel="noopener">002004</a></td><td><a href="https://www.lixinger.com/analytics/company/sz/002004/200/detail/shareholders/nolimit" target="_blank" rel="noopener">华邦健康</a></td><td>2019-12-31</td><td>化学制药</td><td>重庆</td><td>4.94</td></tr><tr><td><a href="https://xueqiu.com/s/sz000582" target="_blank" rel="noopener">000582</a></td><td><a href="https://www.lixinger.com/analytics/company/sz/000582/058/detail/shareholders/nolimit" target="_blank" rel="noopener">北部湾港</a></td><td>2019-12-31</td><td>港口</td><td>广西</td><td>8.95</td></tr><tr><td><a href="https://xueqiu.com/s/sh600033" target="_blank" rel="noopener">600033</a></td><td><a href="https://www.lixinger.com/analytics/company/sh/600033/600033/detail/shareholders/nolimit" target="_blank" rel="noopener">福建高速</a></td><td>2019-12-31</td><td>路桥</td><td>福建</td><td>3.07</td></tr><tr><td><a href="https://xueqiu.com/s/sz000899" target="_blank" rel="noopener">000899</a></td><td><a href="https://www.lixinger.com/analytics/company/sz/000899/089/detail/shareholders/nolimit" target="_blank" rel="noopener">赣能股份</a></td><td>2019-12-31</td><td>火力发电</td><td>江西</td><td>4.87</td></tr><tr><td><a href="https://xueqiu.com/s/sh600785" target="_blank" rel="noopener">600785</a></td><td><a href="https://www.lixinger.com/analytics/company/sh/600785/600785/detail/shareholders/nolimit" target="_blank" rel="noopener">新华百货</a></td><td>2019-12-31</td><td>百货</td><td>宁夏</td><td>15.02</td></tr><tr><td><a href="https://xueqiu.com/s/sh601607" target="_blank" rel="noopener">601607</a></td><td><a href="https://www.lixinger.com/analytics/company/sh/601607/601607/detail/shareholders/nolimit" target="_blank" rel="noopener">上海医药</a></td><td>2019-12-31</td><td>医药商业</td><td>上海</td><td>18.37</td></tr><tr><td><a href="https://xueqiu.com/s/sh600332" target="_blank" rel="noopener">600332</a></td><td><a href="https://www.lixinger.com/analytics/company/sh/600332/600332/detail/shareholders/nolimit" target="_blank" rel="noopener">白云山</a></td><td>2019-12-31</td><td>中成药</td><td>广东</td><td>35.61</td></tr><tr><td><a href="https://xueqiu.com/s/sh600039" target="_blank" rel="noopener">600039</a></td><td><a href="https://www.lixinger.com/analytics/company/sh/600039/600039/detail/shareholders/nolimit" target="_blank" rel="noopener">四川路桥</a></td><td>2019-12-31</td><td>建筑工程</td><td>四川</td><td>3.36</td></tr><tr><td><a href="https://xueqiu.com/s/sh600598" target="_blank" rel="noopener">600598</a></td><td><a href="https://www.lixinger.com/analytics/company/sh/600598/600598/detail/shareholders/nolimit" target="_blank" rel="noopener">北大荒</a></td><td>2020-01-02</td><td>种植业</td><td>黑龙江</td><td>9.96</td></tr><tr><td><a href="https://xueqiu.com/s/sh600419" target="_blank" rel="noopener">600419</a></td><td><a href="https://www.lixinger.com/analytics/company/sh/600419/600419/detail/shareholders/nolimit" target="_blank" rel="noopener">天润乳业</a></td><td>2020-01-02</td><td>乳制品</td><td>新疆</td><td>14.15</td></tr><tr><td><a href="https://xueqiu.com/s/sz002763" target="_blank" rel="noopener">002763</a></td><td><a href="https://www.lixinger.com/analytics/company/sz/002763/276/detail/shareholders/nolimit" target="_blank" rel="noopener">汇洁股份</a></td><td>2020-01-02</td><td>服饰</td><td>深圳</td><td>8.8</td></tr><tr><td><a href="https://xueqiu.com/s/sh600229" target="_blank" rel="noopener">600229</a></td><td><a href="https://www.lixinger.com/analytics/company/sh/600229/600229/detail/shareholders/nolimit" target="_blank" rel="noopener">城市传媒</a></td><td>2020-01-02</td><td>出版业</td><td>山东</td><td>7.43</td></tr><tr><td><a href="https://xueqiu.com/s/sz000718" target="_blank" rel="noopener">000718</a></td><td><a href="https://www.lixinger.com/analytics/company/sz/000718/071/detail/shareholders/nolimit" target="_blank" rel="noopener">苏宁环球</a></td><td>2020-01-02</td><td>区域地产</td><td>吉林</td><td>3.95</td></tr><tr><td><a href="https://xueqiu.com/s/sh601333" target="_blank" rel="noopener">601333</a></td><td><a href="https://www.lixinger.com/analytics/company/sh/601333/601333/detail/shareholders/nolimit" target="_blank" rel="noopener">广深铁路</a></td><td>2020-01-02</td><td>铁路</td><td>深圳</td><td>3.09</td></tr><tr><td><a href="https://xueqiu.com/s/sz002444" target="_blank" rel="noopener">002444</a></td><td><a href="https://www.lixinger.com/analytics/company/sz/002444/244/detail/shareholders/nolimit" target="_blank" rel="noopener">巨星科技</a></td><td>2020-01-02</td><td>轻工机械</td><td>浙江</td><td>11.0</td></tr><tr><td><a href="https://xueqiu.com/s/sz002539" target="_blank" rel="noopener">002539</a></td><td><a href="https://www.lixinger.com/analytics/company/sz/002539/253/detail/shareholders/nolimit" target="_blank" rel="noopener">云图控股</a></td><td>2020-01-02</td><td>农药化肥</td><td>四川</td><td>4.98</td></tr><tr><td><a href="https://xueqiu.com/s/sz300154" target="_blank" rel="noopener">300154</a></td><td><a href="https://www.lixinger.com/analytics/company/sz/300154/300154/detail/shareholders/nolimit" target="_blank" rel="noopener">瑞凌股份</a></td><td>2020-01-02</td><td>元器件</td><td>深圳</td><td>5.72</td></tr><tr><td><a href="https://xueqiu.com/s/sz002097" target="_blank" rel="noopener">002097</a></td><td><a href="https://www.lixinger.com/analytics/company/sz/002097/209/detail/shareholders/nolimit" target="_blank" rel="noopener">山河智能</a></td><td>2020-01-02</td><td>工程机械</td><td>湖南</td><td>5.96</td></tr><tr><td><a href="https://xueqiu.com/s/sz002789" target="_blank" rel="noopener">002789</a></td><td><a href="https://www.lixinger.com/analytics/company/sz/002789/278/detail/shareholders/nolimit" target="_blank" rel="noopener">建艺集团</a></td><td>2020-01-02</td><td>装修装饰</td><td>深圳</td><td>16.8</td></tr><tr><td><a href="https://xueqiu.com/s/sh600461" target="_blank" rel="noopener">600461</a></td><td><a href="https://www.lixinger.com/analytics/company/sh/600461/600461/detail/shareholders/nolimit" target="_blank" rel="noopener">洪城水业</a></td><td>2020-01-02</td><td>水务</td><td>江西</td><td>6.07</td></tr><tr><td><a href="https://xueqiu.com/s/sz000719" target="_blank" rel="noopener">000719</a></td><td><a href="https://www.lixinger.com/analytics/company/sz/000719/071/detail/shareholders/nolimit" target="_blank" rel="noopener">中原传媒</a></td><td>2020-01-02</td><td>出版业</td><td>河南</td><td>7.26</td></tr><tr><td><a href="https://xueqiu.com/s/sh600835" target="_blank" rel="noopener">600835</a></td><td><a href="https://www.lixinger.com/analytics/company/sh/600835/600835/detail/shareholders/nolimit" target="_blank" rel="noopener">上海机电</a></td><td>2020-01-02</td><td>运输设备</td><td>上海</td><td>16.92</td></tr><tr><td><a href="https://xueqiu.com/s/sh600373" target="_blank" rel="noopener">600373</a></td><td><a href="https://www.lixinger.com/analytics/company/sh/600373/600373/detail/shareholders/nolimit" target="_blank" rel="noopener">中文传媒</a></td><td>2020-01-03</td><td>出版业</td><td>江西</td><td>14.55</td></tr><tr><td><a href="https://xueqiu.com/s/sz000997" target="_blank" rel="noopener">000997</a></td><td><a href="https://www.lixinger.com/analytics/company/sz/000997/099/detail/shareholders/nolimit" target="_blank" rel="noopener">新 大 陆</a></td><td>2020-01-03</td><td>软件服务</td><td>福建</td><td>16.92</td></tr><tr><td><a href="https://xueqiu.com/s/sh600697" target="_blank" rel="noopener">600697</a></td><td><a href="https://www.lixinger.com/analytics/company/sh/600697/600697/detail/shareholders/nolimit" target="_blank" rel="noopener">欧亚集团</a></td><td>2020-01-03</td><td>百货</td><td>吉林</td><td>18.25</td></tr><tr><td><a href="https://xueqiu.com/s/sh603588" target="_blank" rel="noopener">603588</a></td><td><a href="https://www.lixinger.com/analytics/company/sh/603588/603588/detail/shareholders/nolimit" target="_blank" rel="noopener">高能环境</a></td><td>2020-01-03</td><td>环境保护</td><td>北京</td><td>9.66</td></tr></tbody></table>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://github.com/bejondshao/grape&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;grape&lt;/a&gt;本地运行的结果。&lt;br&gt;
+&lt;strong&gt;声明：grape选股策略在不断调整和丰富，股票列表仅记录用，
+      
+    
+    </summary>
+    
+    
+      <category term="股票" scheme="http://tech.bejond.org/categories/%E8%82%A1%E7%A5%A8/"/>
+    
+      <category term="2020" scheme="http://tech.bejond.org/categories/%E8%82%A1%E7%A5%A8/2020/"/>
+    
+    
+      <category term="grape" scheme="http://tech.bejond.org/tags/grape/"/>
+    
+      <category term="股票" scheme="http://tech.bejond.org/tags/%E8%82%A1%E7%A5%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>验证股票之股东人数</title>
@@ -136,9 +167,9 @@
       <category term="2019" scheme="http://tech.bejond.org/categories/%E8%82%A1%E7%A5%A8/2019/"/>
     
     
-      <category term="股票" scheme="http://tech.bejond.org/tags/%E8%82%A1%E7%A5%A8/"/>
-    
       <category term="grape" scheme="http://tech.bejond.org/tags/grape/"/>
+    
+      <category term="股票" scheme="http://tech.bejond.org/tags/%E8%82%A1%E7%A5%A8/"/>
     
   </entry>
   
@@ -597,36 +628,6 @@
     
     
       <category term="Java" scheme="http://tech.bejond.org/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Keycloak和Jenkins集成实现单点登录</title>
-    <link href="http://tech.bejond.org/2018/03/26/Keycloak%E5%92%8CJenkins%E9%9B%86%E6%88%90%E5%AE%9E%E7%8E%B0%E5%8D%95%E7%82%B9%E7%99%BB%E5%BD%95/"/>
-    <id>http://tech.bejond.org/2018/03/26/Keycloak%E5%92%8CJenkins%E9%9B%86%E6%88%90%E5%AE%9E%E7%8E%B0%E5%8D%95%E7%82%B9%E7%99%BB%E5%BD%95/</id>
-    <published>2018-03-26T09:06:00.000Z</published>
-    <updated>2019-12-22T10:39:05.000Z</updated>
-    
-    <content type="html"><![CDATA[<h5 id="安装jenkins参考"><a class="markdownIt-Anchor" href="#安装jenkins参考"></a> 安装Jenkins（<a href="https://pkg.jenkins.io/debian-stable/" target="_blank" rel="noopener">参考</a>）</h5><p>@ 将key添加到系统中</p><p><code>wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -</code></p><p>@ 将下面一行添加到/etc/apt/sources.list中：</p><p><code>deb https://pkg.jenkins.io/debian-stable binary/</code></p><p>@ 安装</p><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-<span class="builtin-name">get</span> update</span><br><span class="line">sudo apt-<span class="builtin-name">get</span> install jenkins</span><br></pre></td></tr></table></figure><h5 id="配置jenkins"><a class="markdownIt-Anchor" href="#配置jenkins"></a> 配置Jenkins</h5><p>@ 修改Jenkins运行端口，编辑/etc/default/jenkins文件，将HTTP_PORT改为另外一个端口，比如8880</p><p>@ 启动Jenkins</p><p><code>sudo service start jenkins</code></p><p>@ 打开http://localhost:8880  ，就可以访问，刚开启，会询问admin初始密码，到<code>/var/lib/jenkins/secrets/initialAdminPassword</code>拷贝过来即可。</p><p>@ 下载<a href="https://github.com/jenkinsci/keycloak-plugin/releases" target="_blank" rel="noopener">keycloak-plugin</a>到本地。</p><p>@ 打开http://localhost:8880/pluginManager/advanced ，使用Upload Plugin，上传keycloak-plugin，并安装。</p><p>@ 重启Jenkins</p><p><code>sudo service restart jenkins</code></p><h5 id="配置keycloak"><a class="markdownIt-Anchor" href="#配置keycloak"></a> 配置Keycloak</h5><p>@ 创建Client，名称jenkins，保存。</p><img src="/2018/03/26/Keycloak和Jenkins集成实现单点登录/client.png" class="Client"><p>@ 打开jenkins client的Installation页签，选择Keycloak OIDC JSON，拷贝内容留作到Jenkins的配置</p><img src="/2018/03/26/Keycloak和Jenkins集成实现单点登录/installation.png" class="Installation"><p>@ 在Realm中创建用于登录的用户。</p><p>@ 访问 <a href="http://localhost:8880/configure" target="_blank" rel="noopener">http://localhost:8880/configure</a> ，找到Keycloak JSON框，将Keycloak OIDC JSON内容拷贝到这里，保存。</p><img src="/2018/03/26/Keycloak和Jenkins集成实现单点登录/jenkins-configure.png" class="Jenkins Configure"><p>@ 访问http://localhost:8880/configureSecurity/ ， 勾选&quot;Enable security&quot;，Security Realm选择&quot;Keycloak Authentication Plugin&quot;，保存。</p><img src="/2018/03/26/Keycloak和Jenkins集成实现单点登录/jenkins-configureSecurity.png" class="Configure Security"><p>@ 登出管理员用户，点击log in。会跳转到Keycloak登录界面，验证Keycloak用户成功后，跳回Jenkins。至此完成单点登录。</p><p>@ 点击log out，即跳转到Keycloak登录页，说明可以实现Jenkins登出，同时使Keycloak的session失效。</p><h5 id="遗留问题"><a class="markdownIt-Anchor" href="#遗留问题"></a> 遗留问题</h5><ol><li><p>在Keycloak主动使session失效，Jenkins用户仍可以访问Jenkins功能。</p></li><li><p>而如果在http://localhost:8880/configure 配置页选中&quot;Validate Token on each request&quot;，并选中&quot;Keep login session open until access token times out?&quot;，其效果仍然和问题1一样。如果取消选中&quot;Keep login session open until access token times out?&quot;，则在Keycloak使session失效后，Jenkins请求页面会一直卡住，无法做其他操作。只能重启Jenkins服务。</p></li></ol><img src="/2018/03/26/Keycloak和Jenkins集成实现单点登录/check-validate-token.png" class="Validate token"><img src="/2018/03/26/Keycloak和Jenkins集成实现单点登录/jenkins-configureSecurity2.png" class="Configure Security"><ol start="3"><li>不要在开启Keycloak验证后Authorization选&quot;Legacy mode&quot;。</li></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h5 id=&quot;安装jenkins参考&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#安装jenkins参考&quot;&gt;&lt;/a&gt; 安装Jenkins（&lt;a href=&quot;https://pkg.jenkins.io/debian-stable/&quot; target=
-      
-    
-    </summary>
-    
-    
-      <category term="DevOps" scheme="http://tech.bejond.org/categories/DevOps/"/>
-    
-      <category term="Keycloak" scheme="http://tech.bejond.org/categories/DevOps/Keycloak/"/>
-    
-    
-      <category term="Keycloak" scheme="http://tech.bejond.org/tags/Keycloak/"/>
-    
-      <category term="Jenkins" scheme="http://tech.bejond.org/tags/Jenkins/"/>
     
   </entry>
   
