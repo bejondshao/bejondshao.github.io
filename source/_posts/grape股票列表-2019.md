@@ -1,10 +1,10 @@
-title: grape股票列表(不定期更新)
+title: grape股票列表-2019
 tags:
   - grape
   - 股票
 categories:
   - 股票
-  - '2019'
+  - 选股
   - ''
 date: 2019-11-05 23:13:00
 comments: false
