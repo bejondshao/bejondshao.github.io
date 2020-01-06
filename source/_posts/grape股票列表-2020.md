@@ -53,3 +53,8 @@ comments: false
 |[000997](https://xueqiu.com/s/sz000997)|[新 大 陆](https://www.lixinger.com/analytics/company/sz/000997/099/detail/shareholders/nolimit)|2020-01-03|软件服务|福建|16.92|
 |[600697](https://xueqiu.com/s/sh600697)|[欧亚集团](https://www.lixinger.com/analytics/company/sh/600697/600697/detail/shareholders/nolimit)|2020-01-03|百货|吉林|18.25|
 |[603588](https://xueqiu.com/s/sh603588)|[高能环境](https://www.lixinger.com/analytics/company/sh/603588/603588/detail/shareholders/nolimit)|2020-01-03|环境保护|北京|9.66|
+|[600886](https://xueqiu.com/s/sh600886)|[国投电力](https://www.lixinger.com/analytics/company/sh/600886/600886/detail/shareholders/nolimit)|2020-01-02|水力发电|北京|9.14|
+|[002345](https://xueqiu.com/s/sz002345)|[潮宏基](https://www.lixinger.com/analytics/company/sz/002345/234/detail/shareholders/nolimit)|2020-01-06|服饰|广东|4.41|
+|[002085](https://xueqiu.com/s/sz002085)|[万丰奥威](https://www.lixinger.com/analytics/company/sz/002085/208/detail/shareholders/nolimit)|2020-01-06|汽车配件|浙江|7.29|
+|[601098](https://xueqiu.com/s/sh601098)|[中南传媒](https://www.lixinger.com/analytics/company/sh/601098/601098/detail/shareholders/nolimit)|2020-01-06|出版业|湖南|12.23|
+|[300388](https://xueqiu.com/s/sz300388)|[国祯环保](https://www.lixinger.com/analytics/company/sz/300388/300388/detail/shareholders/nolimit)|2020-01-06|环境保护|安徽|10.43|
