@@ -58,3 +58,8 @@ comments: false
 |[002085](https://xueqiu.com/s/sz002085)|[万丰奥威](https://www.lixinger.com/analytics/company/sz/002085/208/detail/shareholders/nolimit)|2020-01-06|汽车配件|浙江|7.29|
 |[601098](https://xueqiu.com/s/sh601098)|[中南传媒](https://www.lixinger.com/analytics/company/sh/601098/601098/detail/shareholders/nolimit)|2020-01-06|出版业|湖南|12.23|
 |[300388](https://xueqiu.com/s/sz300388)|[国祯环保](https://www.lixinger.com/analytics/company/sz/300388/300388/detail/shareholders/nolimit)|2020-01-06|环境保护|安徽|10.43|
+|[600757](https://xueqiu.com/s/sh600757)|[长江传媒](https://www.lixinger.com/analytics/company/sh/600757/600757/detail/shareholders/nolimit)|2020-01-07|出版业|湖北|6.52|
+|[600998](https://xueqiu.com/s/sh600998)|[九州通](https://www.lixinger.com/analytics/company/sh/600998/600998/detail/shareholders/nolimit)|2020-01-07|医药商业|湖北|14.39|
+|[002004](https://xueqiu.com/s/sz002004)|[华邦健康](https://www.lixinger.com/analytics/company/sz/002004/200/detail/shareholders/nolimit)|2020-01-07|化学制药|重庆|5.04|
+|[000573](https://xueqiu.com/s/sz000573)|[粤宏远Ａ](https://www.lixinger.com/analytics/company/sz/000573/057/detail/shareholders/nolimit)|2020-01-07|区域地产|广东|3.17|
+|[600612](https://xueqiu.com/s/sh600612)|[老凤祥](https://www.lixinger.com/analytics/company/sh/600612/600612/detail/shareholders/nolimit)|2020-01-07|服饰|上海|49.7|
