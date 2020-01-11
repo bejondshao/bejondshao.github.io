@@ -133,3 +133,10 @@ comments: false
 |[002331](https://xueqiu.com/s/sz002331)|[皖通科技](https://www.lixinger.com/analytics/company/sz/002331/2331/detail/shareholders/nolimit)|2020-01-09|软件服务|安徽|10.29|
 |[603607](https://xueqiu.com/s/sh603607)|[京华激光](https://www.lixinger.com/analytics/company/sh/603607/603607/detail/shareholders/nolimit)|2020-01-09|造纸|浙江|22.2|
 |[000543](https://xueqiu.com/s/sz000543)|[皖能电力](https://www.lixinger.com/analytics/company/sz/000543/543/detail/shareholders/nolimit)|2020-01-09|火力发电|安徽|4.67|
+|[601886](https://xueqiu.com/s/sh601886)|[江河集团](https://www.lixinger.com/analytics/company/sh/601886/601886/detail/shareholders/nolimit)|2020-01-10|装修装饰|北京|7.98|
+|[600057](https://xueqiu.com/s/sh600057)|[厦门象屿](https://www.lixinger.com/analytics/company/sh/600057/600057/detail/shareholders/nolimit)|2020-01-10|仓储物流|福建|4.41|
+|[600755](https://xueqiu.com/s/sh600755)|[厦门国贸](https://www.lixinger.com/analytics/company/sh/600755/600755/detail/shareholders/nolimit)|2020-01-10|商贸代理|福建|7.7|
+|[600033](https://xueqiu.com/s/sh600033)|[福建高速](https://www.lixinger.com/analytics/company/sh/600033/600033/detail/shareholders/nolimit)|2020-01-10|路桥|福建|3.16|
+|[002561](https://xueqiu.com/s/sz002561)|[徐家汇](https://www.lixinger.com/analytics/company/sz/002561/2561/detail/shareholders/nolimit)|2020-01-10|百货|上海|8.34|
+|[600015](https://xueqiu.com/s/sh600015)|[华夏银行](https://www.lixinger.com/analytics/company/sh/600015/600015/detail/shareholders/nolimit)|2020-01-10|银行|北京|7.66|
+|[601199](https://xueqiu.com/s/sh601199)|[江南水务](https://www.lixinger.com/analytics/company/sh/601199/601199/detail/shareholders/nolimit)|2020-01-10|水务|江苏|3.85|
