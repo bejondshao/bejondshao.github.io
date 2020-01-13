@@ -140,3 +140,25 @@ comments: false
 |[002561](https://xueqiu.com/s/sz002561)|[徐家汇](https://www.lixinger.com/analytics/company/sz/002561/2561/detail/shareholders/nolimit)|2020-01-10|百货|上海|8.34|
 |[600015](https://xueqiu.com/s/sh600015)|[华夏银行](https://www.lixinger.com/analytics/company/sh/600015/600015/detail/shareholders/nolimit)|2020-01-10|银行|北京|7.66|
 |[601199](https://xueqiu.com/s/sh601199)|[江南水务](https://www.lixinger.com/analytics/company/sh/601199/601199/detail/shareholders/nolimit)|2020-01-10|水务|江苏|3.85|
+|[603856](https://xueqiu.com/s/sh603856)|[东宏股份](https://www.lixinger.com/analytics/company/sh/603856/603856/detail/shareholders/nolimit)|2020-01-09|塑料|山东|10.5|
+|[600835](https://xueqiu.com/s/sh600835)|[上海机电](https://www.lixinger.com/analytics/company/sh/600835/600835/detail/shareholders/nolimit)|2020-01-13|运输设备|上海|17.12|
+|[002478](https://xueqiu.com/s/sz002478)|[常宝股份](https://www.lixinger.com/analytics/company/sz/002478/2478/detail/shareholders/nolimit)|2020-01-13|钢加工|江苏|6.1|
+|[600697](https://xueqiu.com/s/sh600697)|[欧亚集团](https://www.lixinger.com/analytics/company/sh/600697/600697/detail/shareholders/nolimit)|2020-01-13|百货|吉林|18.22|
+|[002394](https://xueqiu.com/s/sz002394)|[联发股份](https://www.lixinger.com/analytics/company/sz/002394/2394/detail/shareholders/nolimit)|2020-01-13|纺织|江苏|9.62|
+|[601188](https://xueqiu.com/s/sh601188)|[龙江交通](https://www.lixinger.com/analytics/company/sh/601188/601188/detail/shareholders/nolimit)|2020-01-13|路桥|黑龙江|3.06|
+|[000524](https://xueqiu.com/s/sz000524)|[岭南控股](https://www.lixinger.com/analytics/company/sz/000524/524/detail/shareholders/nolimit)|2020-01-13|酒店餐饮|广东|7.55|
+|[601336](https://xueqiu.com/s/sh601336)|[新华保险](https://www.lixinger.com/analytics/company/sh/601336/601336/detail/shareholders/nolimit)|2020-01-13|保险|北京|51.25|
+|[601328](https://xueqiu.com/s/sh601328)|[交通银行](https://www.lixinger.com/analytics/company/sh/601328/601328/detail/shareholders/nolimit)|2020-01-13|银行|上海|5.65|
+|[600908](https://xueqiu.com/s/sh600908)|[无锡银行](https://www.lixinger.com/analytics/company/sh/600908/600908/detail/shareholders/nolimit)|2020-01-13|银行|江苏|5.52|
+|[600269](https://xueqiu.com/s/sh600269)|[赣粤高速](https://www.lixinger.com/analytics/company/sh/600269/600269/detail/shareholders/nolimit)|2020-01-13|路桥|江西|4.16|
+|[600350](https://xueqiu.com/s/sh600350)|[山东高速](https://www.lixinger.com/analytics/company/sh/600350/600350/detail/shareholders/nolimit)|2020-01-13|路桥|山东|4.87|
+|[603689](https://xueqiu.com/s/sh603689)|[皖天然气](https://www.lixinger.com/analytics/company/sh/603689/603689/detail/shareholders/nolimit)|2020-01-13|供气供热|安徽|11.5|
+|[600533](https://xueqiu.com/s/sh600533)|[栖霞建设](https://www.lixinger.com/analytics/company/sh/600533/600533/detail/shareholders/nolimit)|2020-01-13|区域地产|江苏|3.41|
+|[000402](https://xueqiu.com/s/sz000402)|[金 融 街](https://www.lixinger.com/analytics/company/sz/000402/402/detail/shareholders/nolimit)|2020-01-13|全国地产|北京|7.98|
+|[601607](https://xueqiu.com/s/sh601607)|[上海医药](https://www.lixinger.com/analytics/company/sh/601607/601607/detail/shareholders/nolimit)|2020-01-13|医药商业|上海|18.53|
+|[601005](https://xueqiu.com/s/sh601005)|[重庆钢铁](https://www.lixinger.com/analytics/company/sh/601005/601005/detail/shareholders/nolimit)|2020-01-13|普钢|重庆|1.84|
+|[600021](https://xueqiu.com/s/sh600021)|[上海电力](https://www.lixinger.com/analytics/company/sh/600021/600021/detail/shareholders/nolimit)|2020-01-13|火力发电|上海|8.11|
+|[601088](https://xueqiu.com/s/sh601088)|[中国神华](https://www.lixinger.com/analytics/company/sh/601088/601088/detail/shareholders/nolimit)|2020-01-13|煤炭开采|北京|18.19|
+|[601677](https://xueqiu.com/s/sh601677)|[明泰铝业](https://www.lixinger.com/analytics/company/sh/601677/601677/detail/shareholders/nolimit)|2020-01-13|铝|河南|11.48|
+|[000718](https://xueqiu.com/s/sz000718)|[苏宁环球](https://www.lixinger.com/analytics/company/sz/000718/718/detail/shareholders/nolimit)|2020-01-13|区域地产|吉林|3.78|
+|[002015](https://xueqiu.com/s/sz002015)|[协鑫能科](https://www.lixinger.com/analytics/company/sz/002015/2015/detail/shareholders/nolimit)|2020-01-13|新型电力|江苏|6.22|
