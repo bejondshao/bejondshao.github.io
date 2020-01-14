@@ -162,3 +162,15 @@ comments: false
 |[601677](https://xueqiu.com/s/sh601677)|[明泰铝业](https://www.lixinger.com/analytics/company/sh/601677/601677/detail/shareholders/nolimit)|2020-01-13|铝|河南|11.48|
 |[000718](https://xueqiu.com/s/sz000718)|[苏宁环球](https://www.lixinger.com/analytics/company/sz/000718/718/detail/shareholders/nolimit)|2020-01-13|区域地产|吉林|3.78|
 |[002015](https://xueqiu.com/s/sz002015)|[协鑫能科](https://www.lixinger.com/analytics/company/sz/002015/2015/detail/shareholders/nolimit)|2020-01-13|新型电力|江苏|6.22|
+|[000987](https://xueqiu.com/s/sz000987)|[越秀金控](https://www.lixinger.com/analytics/company/sz/000987/987/detail/shareholders/nolimit)|2020-01-14|多元金融|广东|9.99|
+|[000617](https://xueqiu.com/s/sz000617)|[中油资本](https://www.lixinger.com/analytics/company/sz/000617/617/detail/shareholders/nolimit)|2020-01-14|多元金融|新疆|12.18|
+|[000967](https://xueqiu.com/s/sz000967)|[盈峰环境](https://www.lixinger.com/analytics/company/sz/000967/967/detail/shareholders/nolimit)|2020-01-14|环境保护|浙江|6.6|
+|[002011](https://xueqiu.com/s/sz002011)|[盾安环境](https://www.lixinger.com/analytics/company/sz/002011/2011/detail/shareholders/nolimit)|2020-01-14|工程机械|浙江|5.17|
+|[000828](https://xueqiu.com/s/sz000828)|[东莞控股](https://www.lixinger.com/analytics/company/sz/000828/828/detail/shareholders/nolimit)|2020-01-14|路桥|广东|8.4|
+|[601390](https://xueqiu.com/s/sh601390)|[中国中铁](https://www.lixinger.com/analytics/company/sh/601390/601390/detail/shareholders/nolimit)|2020-01-14|建筑工程|北京|5.96|
+|[601699](https://xueqiu.com/s/sh601699)|[潞安环能](https://www.lixinger.com/analytics/company/sh/601699/601699/detail/shareholders/nolimit)|2020-01-14|煤炭开采|山西|7.2|
+|[600475](https://xueqiu.com/s/sh600475)|[华光股份](https://www.lixinger.com/analytics/company/sh/600475/600475/detail/shareholders/nolimit)|2020-01-14|专用机械|江苏|10.27|
+|[600168](https://xueqiu.com/s/sh600168)|[武汉控股](https://www.lixinger.com/analytics/company/sh/600168/600168/detail/shareholders/nolimit)|2020-01-14|水务|湖北|6.9|
+|[000726](https://xueqiu.com/s/sz000726)|[鲁 泰Ａ](https://www.lixinger.com/analytics/company/sz/000726/726/detail/shareholders/nolimit)|2020-01-14|纺织|山东|9.26|
+|[002443](https://xueqiu.com/s/sz002443)|[金洲管道](https://www.lixinger.com/analytics/company/sz/002443/2443/detail/shareholders/nolimit)|2020-01-14|钢加工|浙江|6.84|
+|[600803](https://xueqiu.com/s/sh600803)|[新奥股份](https://www.lixinger.com/analytics/company/sh/600803/600803/detail/shareholders/nolimit)|2020-01-14|农药化肥|河北|11.04|
