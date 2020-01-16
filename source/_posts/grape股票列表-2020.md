@@ -174,3 +174,5 @@ comments: false
 |[000726](https://xueqiu.com/s/sz000726)|[鲁 泰Ａ](https://www.lixinger.com/analytics/company/sz/000726/726/detail/shareholders/nolimit)|2020-01-14|纺织|山东|9.26|
 |[002443](https://xueqiu.com/s/sz002443)|[金洲管道](https://www.lixinger.com/analytics/company/sz/002443/2443/detail/shareholders/nolimit)|2020-01-14|钢加工|浙江|6.84||[603359](https://xueqiu.com/s/sh603359)|[东珠生态](https://www.lixinger.com/analytics/company/sh/603359/603359/detail/shareholders/nolimit)|2020-01-15|建筑工程|江苏|16.95|
 |[000703](https://xueqiu.com/s/sz000703)|[恒逸石化](https://www.lixinger.com/analytics/company/sz/000703/703/detail/shareholders/nolimit)|2020-01-15|化纤|广西|14.22|
+|[600790](https://xueqiu.com/s/sh600790)|[轻纺城](https://www.lixinger.com/analytics/company/sh/600790/600790/detail/shareholders/nolimit)|2020-01-16|商品城|浙江|3.62|
+|[002101](https://xueqiu.com/s/sz002101)|[广东鸿图](https://www.lixinger.com/analytics/company/sz/002101/2101/detail/shareholders/nolimit)|2020-01-16|汽车配件|广东|8.2|
