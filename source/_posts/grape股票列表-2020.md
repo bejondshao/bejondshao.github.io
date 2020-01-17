@@ -176,3 +176,15 @@ comments: false
 |[000703](https://xueqiu.com/s/sz000703)|[恒逸石化](https://www.lixinger.com/analytics/company/sz/000703/703/detail/shareholders/nolimit)|2020-01-15|化纤|广西|14.22|
 |[600790](https://xueqiu.com/s/sh600790)|[轻纺城](https://www.lixinger.com/analytics/company/sh/600790/600790/detail/shareholders/nolimit)|2020-01-16|商品城|浙江|3.62|
 |[002101](https://xueqiu.com/s/sz002101)|[广东鸿图](https://www.lixinger.com/analytics/company/sz/002101/2101/detail/shareholders/nolimit)|2020-01-16|汽车配件|广东|8.2|
+|[603937](https://xueqiu.com/s/sh603937)|[丽岛新材](https://www.lixinger.com/analytics/company/sh/603937/603937/detail/shareholders/nolimit)|2020-01-13|铝|江苏|11.33|
+|[000960](https://xueqiu.com/s/sz000960)|[锡业股份](https://www.lixinger.com/analytics/company/sz/000960/960/detail/shareholders/nolimit)|2020-01-13|小金属|云南|10.56|
+|[000869](https://xueqiu.com/s/sz000869)|[张 裕Ａ](https://www.lixinger.com/analytics/company/sz/000869/869/detail/shareholders/nolimit)|2020-01-13|红黄酒|山东|29.28|
+|[300218](https://xueqiu.com/s/sz300218)|[安利股份](https://www.lixinger.com/analytics/company/sz/300218/300218/detail/shareholders/nolimit)|2020-01-13|塑料|安徽|8.1|
+|[601518](https://xueqiu.com/s/sh601518)|[吉林高速](https://www.lixinger.com/analytics/company/sh/601518/601518/detail/shareholders/nolimit)|2020-01-13|路桥|吉林|2.7|
+|[600639](https://xueqiu.com/s/sh600639)|[浦东金桥](https://www.lixinger.com/analytics/company/sh/600639/600639/detail/shareholders/nolimit)|2020-01-13|园区开发|上海|14.13|
+|[002574](https://xueqiu.com/s/sz002574)|[明牌珠宝](https://www.lixinger.com/analytics/company/sz/002574/2574/detail/shareholders/nolimit)|2020-01-14|服饰|浙江|5.26|
+|[002448](https://xueqiu.com/s/sz002448)|[中原内配](https://www.lixinger.com/analytics/company/sz/002448/2448/detail/shareholders/nolimit)|2020-01-14|汽车配件|河南|6.02|
+|[002743](https://xueqiu.com/s/sz002743)|[富煌钢构](https://www.lixinger.com/analytics/company/sz/002743/2743/detail/shareholders/nolimit)|2020-01-14|钢加工|安徽|6.53|
+|[300148](https://xueqiu.com/s/sz300148)|[天舟文化](https://www.lixinger.com/analytics/company/sz/300148/300148/detail/shareholders/nolimit)|2020-01-16|出版业|湖南|4.47|
+|[000541](https://xueqiu.com/s/sz000541)|[佛山照明](https://www.lixinger.com/analytics/company/sz/000541/541/detail/shareholders/nolimit)|2020-01-17|家用电器|广东|5.09|
+|[002102](https://xueqiu.com/s/sz002102)|[ST冠福](https://www.lixinger.com/analytics/company/sz/002102/2102/detail/shareholders/nolimit)|2020-01-17|化学制药|福建|2.2|
