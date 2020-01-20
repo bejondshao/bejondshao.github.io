@@ -188,3 +188,7 @@ comments: false
 |[300148](https://xueqiu.com/s/sz300148)|[天舟文化](https://www.lixinger.com/analytics/company/sz/300148/300148/detail/shareholders/nolimit)|2020-01-16|出版业|湖南|4.47|
 |[000541](https://xueqiu.com/s/sz000541)|[佛山照明](https://www.lixinger.com/analytics/company/sz/000541/541/detail/shareholders/nolimit)|2020-01-17|家用电器|广东|5.09|
 |[002102](https://xueqiu.com/s/sz002102)|[ST冠福](https://www.lixinger.com/analytics/company/sz/002102/2102/detail/shareholders/nolimit)|2020-01-17|化学制药|福建|2.2|
+|[600865](https://xueqiu.com/s/sh600865)|[百大集团](https://www.lixinger.com/analytics/company/sh/600865/600865/detail/shareholders/nolimit)|2020-01-20|百货|浙江|6.72|
+|[600056](https://xueqiu.com/s/sh600056)|[中国医药](https://www.lixinger.com/analytics/company/sh/600056/600056/detail/shareholders/nolimit)|2020-01-20|医药商业|北京|13.35|
+|[600979](https://xueqiu.com/s/sh600979)|[广安爱众](https://www.lixinger.com/analytics/company/sh/600979/600979/detail/shareholders/nolimit)|2020-01-20|水力发电|四川|4.18|
+|[002392](https://xueqiu.com/s/sz002392)|[北京利尔](https://www.lixinger.com/analytics/company/sz/002392/2392/detail/shareholders/nolimit)|2020-01-20|其他建材|北京|3.89|
