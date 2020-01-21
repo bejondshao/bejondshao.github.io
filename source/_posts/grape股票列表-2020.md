@@ -192,3 +192,6 @@ comments: false
 |[600056](https://xueqiu.com/s/sh600056)|[中国医药](https://www.lixinger.com/analytics/company/sh/600056/600056/detail/shareholders/nolimit)|2020-01-20|医药商业|北京|13.35|
 |[600979](https://xueqiu.com/s/sh600979)|[广安爱众](https://www.lixinger.com/analytics/company/sh/600979/600979/detail/shareholders/nolimit)|2020-01-20|水力发电|四川|4.18|
 |[002392](https://xueqiu.com/s/sz002392)|[北京利尔](https://www.lixinger.com/analytics/company/sz/002392/2392/detail/shareholders/nolimit)|2020-01-20|其他建材|北京|3.89|
+|[000950](https://xueqiu.com/s/sz000950)|[重药控股](https://www.lixinger.com/analytics/company/sz/000950/950/detail/shareholders/nolimit)|2020-01-21|医药商业|重庆|6.23|
+|[600587](https://xueqiu.com/s/sh600587)|[新华医疗](https://www.lixinger.com/analytics/company/sh/600587/600587/detail/shareholders/nolimit)|2020-01-21|医疗保健|山东|15.99|
+|[600603](https://xueqiu.com/s/sh600603)|[广汇物流](https://www.lixinger.com/analytics/company/sh/600603/600603/detail/shareholders/nolimit)|2020-01-21|仓储物流|四川|5.4|
