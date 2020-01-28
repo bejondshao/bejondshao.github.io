@@ -195,3 +195,11 @@ comments: false
 |[000950](https://xueqiu.com/s/sz000950)|[重药控股](https://www.lixinger.com/analytics/company/sz/000950/950/detail/shareholders/nolimit)|2020-01-21|医药商业|重庆|6.23|
 |[600587](https://xueqiu.com/s/sh600587)|[新华医疗](https://www.lixinger.com/analytics/company/sh/600587/600587/detail/shareholders/nolimit)|2020-01-21|医疗保健|山东|15.99|
 |[600603](https://xueqiu.com/s/sh600603)|[广汇物流](https://www.lixinger.com/analytics/company/sh/600603/600603/detail/shareholders/nolimit)|2020-01-21|仓储物流|四川|5.4|
+|[603955](https://xueqiu.com/s/sh603955)|[大千生态](https://www.lixinger.com/analytics/company/sh/603955/603955/detail/shareholders/nolimit)|2020-01-22|环境保护|江苏|16.28|
+|[601369](https://xueqiu.com/s/sh601369)|[陕鼓动力](https://www.lixinger.com/analytics/company/sh/601369/601369/detail/shareholders/nolimit)|2020-01-22|机械基件|陕西|6.65|
+|[600153](https://xueqiu.com/s/sh600153)|[建发股份](https://www.lixinger.com/analytics/company/sh/600153/600153/detail/shareholders/nolimit)|2020-01-22|商贸代理|福建|8.87|
+|[603161](https://xueqiu.com/s/sh603161)|[科华控股](https://www.lixinger.com/analytics/company/sh/603161/603161/detail/shareholders/nolimit)|2020-01-22|汽车配件|江苏|13.71|
+|[600037](https://xueqiu.com/s/sh600037)|[歌华有线](https://www.lixinger.com/analytics/company/sh/600037/600037/detail/shareholders/nolimit)|2020-01-22|影视音像|北京|9.59|
+|[002144](https://xueqiu.com/s/sz002144)|[宏达高科](https://www.lixinger.com/analytics/company/sz/002144/2144/detail/shareholders/nolimit)|2020-01-22|纺织|浙江|10.18|
+|[002612](https://xueqiu.com/s/sz002612)|[朗姿股份](https://www.lixinger.com/analytics/company/sz/002612/2612/detail/shareholders/nolimit)|2020-01-22|服饰|北京|9.04|
+|[000153](https://xueqiu.com/s/sz000153)|[丰原药业](https://www.lixinger.com/analytics/company/sz/000153/153/detail/shareholders/nolimit)|2020-01-23|化学制药|安徽|6.87|
