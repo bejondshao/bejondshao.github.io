@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://tech.bejond.org/"/>
-  <updated>2020-01-28T09:01:26.000Z</updated>
+  <updated>2020-02-04T03:33:50.000Z</updated>
   <id>http://tech.bejond.org/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于股市的思考</title>
+    <link href="http://tech.bejond.org/2020/02/04/%E5%85%B3%E4%BA%8E%E8%82%A1%E5%B8%82%E7%9A%84%E6%80%9D%E8%80%83/"/>
+    <id>http://tech.bejond.org/2020/02/04/%E5%85%B3%E4%BA%8E%E8%82%A1%E5%B8%82%E7%9A%84%E6%80%9D%E8%80%83/</id>
+    <published>2020-02-04T02:46:00.000Z</published>
+    <updated>2020-02-04T03:33:50.000Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li>人们看股票容易犯一个错误，总是构思股票后市会涨，所以容易盲目买入。而走势往往不是我们所想的那样。2020-02-04</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ul&gt;
+&lt;li&gt;人们看股票容易犯一个错误，总是构思股票后市会涨，所以容易盲目买入。而走势往往不是我们所想的那样。2020-02-04&lt;/li&gt;
+&lt;/ul&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="股票" scheme="http://tech.bejond.org/categories/%E8%82%A1%E7%A5%A8/"/>
+    
+      <category term="理论" scheme="http://tech.bejond.org/categories/%E8%82%A1%E7%A5%A8/%E7%90%86%E8%AE%BA/"/>
+    
+    
+      <category term="股票" scheme="http://tech.bejond.org/tags/%E8%82%A1%E7%A5%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>grape股票列表-2020</title>
@@ -602,33 +633,6 @@
     
     
       <category term="Java 8" scheme="http://tech.bejond.org/tags/Java-8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Simple String Null, Empty and Blank Issues</title>
-    <link href="http://tech.bejond.org/2018/04/08/Simple-String-Null-Empty-and-Blank-Issues/"/>
-    <id>http://tech.bejond.org/2018/04/08/Simple-String-Null-Empty-and-Blank-Issues/</id>
-    <published>2018-04-08T12:40:00.000Z</published>
-    <updated>2018-06-25T17:56:57.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>@ Today I meet an interesting issue about String. First, let’s guess what’s the result of the code below:</p><figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">@Test</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> testConcat() &#123;</span><br><span class="line">  <span class="keyword">String</span> a = <span class="keyword">null</span>;</span><br><span class="line">  <span class="keyword">String</span> b = <span class="keyword">null</span>;</span><br><span class="line">  <span class="keyword">String</span> c = a + b;</span><br><span class="line">  System.out.<span class="built_in">println</span>(<span class="string">"c = "</span> + c);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>The answer is:</p><figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">c</span> = nullnull</span><br></pre></td></tr></table></figure><p>Yes, String c becomes “nullnull”, which is not our desired result. And how to avoid this?</p><figure class="highlight nix"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">a</span> = <span class="attr">a</span> == <span class="literal">null</span> ? <span class="string">""</span> : a;</span><br><span class="line"><span class="attr">b</span> = <span class="attr">b</span> == <span class="literal">null</span> ? <span class="string">""</span> : b;</span><br><span class="line">String <span class="attr">d</span> = a + b;</span><br><span class="line">System.out.println(<span class="string">"d = "</span> + d);</span><br></pre></td></tr></table></figure><p>This time, String d is “”. It also happends to <code>StringBuffer.append(String s)</code> if s is null.</p><p>We should be patient to String concat behavior.</p><p>@ If we create a Restful API that accepts two parameters, String firstName and String lastName. But we need to make sure that they are not all empty. We can set default value to attribute when defining to the parameter to avoid “null” issue. Like:</p><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">@XmlAttribute</span>(name = <span class="string">"LastName"</span>)</span><br><span class="line"><span class="variable">@JsonProperty</span>(<span class="string">"lastName"</span>)</span><br><span class="line">private String lastName = <span class="string">""</span>;</span><br><span class="line"></span><br><span class="line"><span class="variable">@XmlAttribute</span>(name = <span class="string">"FirstName"</span>)</span><br><span class="line"><span class="variable">@JsonProperty</span>(<span class="string">"firstName"</span>)</span><br><span class="line">private String firstName = <span class="string">""</span>;</span><br></pre></td></tr></table></figure><p>@ Another use case is that we usually want to check if a String is not null or “”. We usually use<br><code>org.apache.commons.lang3.StringUtils.isNotEmpty(final CharSequence cs)</code>. But it just checks if cs is null or “”. It treats a whitespace string as not empty. We can trim cs before checking, but it’s not a good way because:</p><ol><li>The method points up “final”.</li><li>We have to trim cs all the time if we don’t change cs at the first place.</li></ol><p>Good news is there’s a better method <code>org.apache.commons.lang3.StringUtils.isNotBlank(final CharSequence cs)</code>. It treats whitespace string as empty too.🙂</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;@ Today I meet an interesting issue about String. First, let’s guess what’s the result of the code below:&lt;/p&gt;
-&lt;figure class=&quot;highlight pr
-      
-    
-    </summary>
-    
-    
-      <category term="Java" scheme="http://tech.bejond.org/categories/Java/"/>
-    
-    
-      <category term="Java" scheme="http://tech.bejond.org/tags/Java/"/>
     
   </entry>
   
