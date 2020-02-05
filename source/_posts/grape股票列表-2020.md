@@ -203,3 +203,10 @@ comments: false
 |[002144](https://xueqiu.com/s/sz002144)|[宏达高科](https://www.lixinger.com/analytics/company/sz/002144/2144/detail/shareholders/nolimit)|2020-01-22|纺织|浙江|10.18|
 |[002612](https://xueqiu.com/s/sz002612)|[朗姿股份](https://www.lixinger.com/analytics/company/sz/002612/2612/detail/shareholders/nolimit)|2020-01-22|服饰|北京|9.04|
 |[000153](https://xueqiu.com/s/sz000153)|[丰原药业](https://www.lixinger.com/analytics/company/sz/000153/153/detail/shareholders/nolimit)|2020-01-23|化学制药|安徽|6.87|
+|[600328](https://xueqiu.com/s/sh600328)|[兰太实业](https://www.lixinger.com/analytics/company/sh/600328/600328/detail/shareholders/nolimit)|2020-02-04|化工原料|内蒙|8.47|
+|[002589](https://xueqiu.com/s/sz002589)|[瑞康医药](https://www.lixinger.com/analytics/company/sz/002589/2589/detail/shareholders/nolimit)|2020-02-05|医药商业|山东|7.72|
+|[600863](https://xueqiu.com/s/sh600863)|[内蒙华电](https://www.lixinger.com/analytics/company/sh/600863/600863/detail/shareholders/nolimit)|2020-02-05|火力发电|内蒙|2.7|
+|[000919](https://xueqiu.com/s/sz000919)|[金陵药业](https://www.lixinger.com/analytics/company/sz/000919/919/detail/shareholders/nolimit)|2020-02-05|化学制药|江苏|7.8|
+|[000411](https://xueqiu.com/s/sz000411)|[英特集团](https://www.lixinger.com/analytics/company/sz/000411/411/detail/shareholders/nolimit)|2020-02-05|医药商业|浙江|12.37|
+|[600479](https://xueqiu.com/s/sh600479)|[千金药业](https://www.lixinger.com/analytics/company/sh/600479/600479/detail/shareholders/nolimit)|2020-02-05|中成药|湖南|9.61|
+|[000623](https://xueqiu.com/s/sz000623)|[吉林敖东](https://www.lixinger.com/analytics/company/sz/000623/623/detail/shareholders/nolimit)|2020-02-05|化学制药|吉林|17.07|
