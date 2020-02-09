@@ -210,3 +210,13 @@ comments: false
 |[000411](https://xueqiu.com/s/sz000411)|[英特集团](https://www.lixinger.com/analytics/company/sz/000411/411/detail/shareholders/nolimit)|2020-02-05|医药商业|浙江|12.37|
 |[600479](https://xueqiu.com/s/sh600479)|[千金药业](https://www.lixinger.com/analytics/company/sh/600479/600479/detail/shareholders/nolimit)|2020-02-05|中成药|湖南|9.61|
 |[000623](https://xueqiu.com/s/sz000623)|[吉林敖东](https://www.lixinger.com/analytics/company/sz/000623/623/detail/shareholders/nolimit)|2020-02-05|化学制药|吉林|17.07|
+|[002217](https://xueqiu.com/s/sz002217)|[合力泰](https://www.lixinger.com/analytics/company/sz/002217/2217/detail/shareholders/nolimit)|2020-02-06|元器件|福建|5.42|
+|[603599](https://xueqiu.com/s/sh603599)|[广信股份](https://www.lixinger.com/analytics/company/sh/603599/603599/detail/shareholders/nolimit)|2020-02-06|农药化肥|安徽|14.7|
+|[600308](https://xueqiu.com/s/sh600308)|[华泰股份](https://www.lixinger.com/analytics/company/sh/600308/600308/detail/shareholders/nolimit)|2020-02-06|造纸|山东|4.47|
+|[002734](https://xueqiu.com/s/sz002734)|[利民股份](https://www.lixinger.com/analytics/company/sz/002734/2734/detail/shareholders/nolimit)|2020-02-06|农药化肥|江苏|13.38|
+|[601928](https://xueqiu.com/s/sh601928)|[凤凰传媒](https://www.lixinger.com/analytics/company/sh/601928/601928/detail/shareholders/nolimit)|2020-02-06|出版业|江苏|7.54|
+|[603365](https://xueqiu.com/s/sh603365)|[水星家纺](https://www.lixinger.com/analytics/company/sh/603365/603365/detail/shareholders/nolimit)|2020-02-06|纺织|上海|16.51|
+|[600589](https://xueqiu.com/s/sh600589)|[广东榕泰](https://www.lixinger.com/analytics/company/sh/600589/600589/detail/shareholders/nolimit)|2020-02-07|塑料|广东|5.24|
+|[601200](https://xueqiu.com/s/sh601200)|[上海环境](https://www.lixinger.com/analytics/company/sh/601200/601200/detail/shareholders/nolimit)|2020-02-07|环境保护|上海|12.31|
+|[600510](https://xueqiu.com/s/sh600510)|[黑牡丹](https://www.lixinger.com/analytics/company/sh/600510/600510/detail/shareholders/nolimit)|2020-02-07|全国地产|江苏|6.77|
+|[002425](https://xueqiu.com/s/sz002425)|[凯撒文化](https://www.lixinger.com/analytics/company/sz/002425/2425/detail/shareholders/nolimit)|2020-02-07|互联网|广东|6.1|
