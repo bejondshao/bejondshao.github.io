@@ -220,3 +220,8 @@ comments: false
 |[601200](https://xueqiu.com/s/sh601200)|[上海环境](https://www.lixinger.com/analytics/company/sh/601200/601200/detail/shareholders/nolimit)|2020-02-07|环境保护|上海|12.31|
 |[600510](https://xueqiu.com/s/sh600510)|[黑牡丹](https://www.lixinger.com/analytics/company/sh/600510/600510/detail/shareholders/nolimit)|2020-02-07|全国地产|江苏|6.77|
 |[002425](https://xueqiu.com/s/sz002425)|[凯撒文化](https://www.lixinger.com/analytics/company/sz/002425/2425/detail/shareholders/nolimit)|2020-02-07|互联网|广东|6.1|
+|[600873](https://xueqiu.com/s/sh600873)|[梅花生物](https://www.lixinger.com/analytics/company/sh/600873/600873/detail/shareholders/nolimit)|2020-02-05|食品|西藏|4.29|
+|[002672](https://xueqiu.com/s/sz002672)|[东江环保](https://www.lixinger.com/analytics/company/sz/002672/2672/detail/shareholders/nolimit)|2020-02-07|环境保护|深圳|10.24|
+|[002083](https://xueqiu.com/s/sz002083)|[孚日股份](https://www.lixinger.com/analytics/company/sz/002083/2083/detail/shareholders/nolimit)|2020-02-10|纺织|山东|6.42|
+|[002154](https://xueqiu.com/s/sz002154)|[报 喜 鸟](https://www.lixinger.com/analytics/company/sz/002154/2154/detail/shareholders/nolimit)|2020-02-10|服饰|浙江|3.12|
+|[601952](https://xueqiu.com/s/sh601952)|[苏垦农发](https://www.lixinger.com/analytics/company/sh/601952/601952/detail/shareholders/nolimit)|2020-02-10|种植业|江苏|7.13|
