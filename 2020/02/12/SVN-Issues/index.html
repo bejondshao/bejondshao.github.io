@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Bejond IO">
 <meta property="og:description" content="14:14	Commit failed with error 0 files committed, 42 files failed to commit: xxx 移植xxx相关的部分业务 svn: E200009: Commit failed (details follow): svn: E200009: Cannot commit ‘/Users/abc/xxx/Lastname.java’">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-02-12T09:11:53.000Z">
+<meta property="og:updated_time" content="2020-02-12T11:32:43.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SVN Issues">
 <meta name="twitter:description" content="14:14	Commit failed with error 0 files committed, 42 files failed to commit: xxx 移植xxx相关的部分业务 svn: E200009: Commit failed (details follow): svn: E200009: Cannot commit ‘/Users/abc/xxx/Lastname.java’">
@@ -173,7 +173,7 @@
 0 files committed, 42 files failed to commit: xxx 移植xxx相关的部分业务<br>
 svn: E200009: Commit failed (details follow):<br>
 svn: E200009: Cannot commit ‘/Users/abc/xxx/Lastname.java’ because it was moved to ‘/Users/abc/xxx/bizmodel/Lastname.java’ which is not part of the commit; both sides of the move must be committed together</p>
-<p>The reason is you are moving the file to another folder while also editing the file. So it means they can’t be done together. You need to revert the changes(or make a copy about the changes.) do moving action</p>
+<p>The reason is you are moving the file to another folder while also editing the file. So it means they can’t be done together. You need to revert the changes(or make a copy about the changes.) do move action and commit. Then do edit and commit.</p>
 
         </div>
         <!--
