@@ -13,4 +13,5 @@ date: 2020-02-12 17:08:00
 			svn: E200009: Commit failed (details follow):
 			svn: E200009: Cannot commit '/Users/abc/xxx/Lastname.java' because it was moved to '/Users/abc/xxx/bizmodel/Lastname.java' which is not part of the commit; both sides of the move must be committed together
 
-The reason is you are moving the file to another folder while also editing the file. So it means they can't be done together. You need to revert the changes(or make a copy about the changes.) do moving action 
+The reason is you are moving the file to another folder while also editing the file. So it means they can't be done together. You need to revert the changes(or make a copy about the changes.) do move action and commit. Then do edit and commit.
+
