@@ -1,5 +1,5 @@
+http://tech.bejond.org/2020/02/12/SVN-Issues/
 http://tech.bejond.org/2020/02/04/关于股市的思考/
 http://tech.bejond.org/2020/01/05/grape股票列表-2020/
 http://tech.bejond.org/2019/11/24/验证股票之股东人数/
 http://tech.bejond.org/2019/11/17/股票基本概念/
-http://tech.bejond.org/2019/11/17/股票进阶概念/
