@@ -225,3 +225,8 @@ comments: false
 |[002083](https://xueqiu.com/s/sz002083)|[孚日股份](https://www.lixinger.com/analytics/company/sz/002083/2083/detail/shareholders/nolimit)|2020-02-10|纺织|山东|6.42|
 |[002154](https://xueqiu.com/s/sz002154)|[报 喜 鸟](https://www.lixinger.com/analytics/company/sz/002154/2154/detail/shareholders/nolimit)|2020-02-10|服饰|浙江|3.12|
 |[601952](https://xueqiu.com/s/sh601952)|[苏垦农发](https://www.lixinger.com/analytics/company/sh/601952/601952/detail/shareholders/nolimit)|2020-02-10|种植业|江苏|7.13|
+|[000517](https://xueqiu.com/s/sz000517)|[荣安地产](https://www.lixinger.com/analytics/company/sz/000517/517/detail/shareholders/nolimit)|2020-02-11|区域地产|浙江|2.65|
+|[000591](https://xueqiu.com/s/sz000591)|[太阳能](https://www.lixinger.com/analytics/company/sz/000591/591/detail/shareholders/nolimit)|2020-02-12|新型电力|重庆|3.69|
+|[600704](https://xueqiu.com/s/sh600704)|[物产中大](https://www.lixinger.com/analytics/company/sh/600704/600704/detail/shareholders/nolimit)|2020-02-14|商贸代理|浙江|5.54|
+|[600727](https://xueqiu.com/s/sh600727)|[鲁北化工](https://www.lixinger.com/analytics/company/sh/600727/600727/detail/shareholders/nolimit)|2020-02-14|农药化肥|山东|7.61|
+|[000553](https://xueqiu.com/s/sz000553)|[安道麦A](https://www.lixinger.com/analytics/company/sz/000553/553/detail/shareholders/nolimit)|2020-02-14|农药化肥|湖北|10.09|
