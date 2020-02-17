@@ -230,3 +230,9 @@ comments: false
 |[600704](https://xueqiu.com/s/sh600704)|[物产中大](https://www.lixinger.com/analytics/company/sh/600704/600704/detail/shareholders/nolimit)|2020-02-14|商贸代理|浙江|5.54|
 |[600727](https://xueqiu.com/s/sh600727)|[鲁北化工](https://www.lixinger.com/analytics/company/sh/600727/600727/detail/shareholders/nolimit)|2020-02-14|农药化肥|山东|7.61|
 |[000553](https://xueqiu.com/s/sz000553)|[安道麦A](https://www.lixinger.com/analytics/company/sz/000553/553/detail/shareholders/nolimit)|2020-02-14|农药化肥|湖北|10.09|
+|[002498](https://xueqiu.com/s/sz002498)|[汉缆股份](https://www.lixinger.com/analytics/company/sz/002498/2498/detail/shareholders/nolimit)|2020-02-11|电气设备|山东|3.01|
+|[600586](https://xueqiu.com/s/sh600586)|[金晶科技](https://www.lixinger.com/analytics/company/sh/600586/600586/detail/shareholders/nolimit)|2020-02-14|玻璃|山东|2.99|
+|[600811](https://xueqiu.com/s/sh600811)|[东方集团](https://www.lixinger.com/analytics/company/sh/600811/600811/detail/shareholders/nolimit)|2020-02-17|综合类|黑龙江|3.41|
+|[600837](https://xueqiu.com/s/sh600837)|[海通证券](https://www.lixinger.com/analytics/company/sh/600837/600837/detail/shareholders/nolimit)|2020-02-17|证券|上海|14.8|
+|[002736](https://xueqiu.com/s/sz002736)|[国信证券](https://www.lixinger.com/analytics/company/sz/002736/2736/detail/shareholders/nolimit)|2020-02-17|证券|深圳|12.09|
+|[002381](https://xueqiu.com/s/sz002381)|[双箭股份](https://www.lixinger.com/analytics/company/sz/002381/2381/detail/shareholders/nolimit)|2020-02-17|橡胶|浙江|8.13|
