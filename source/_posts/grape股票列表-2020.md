@@ -236,3 +236,8 @@ comments: false
 |[600837](https://xueqiu.com/s/sh600837)|[海通证券](https://www.lixinger.com/analytics/company/sh/600837/600837/detail/shareholders/nolimit)|2020-02-17|证券|上海|14.8|
 |[002736](https://xueqiu.com/s/sz002736)|[国信证券](https://www.lixinger.com/analytics/company/sz/002736/2736/detail/shareholders/nolimit)|2020-02-17|证券|深圳|12.09|
 |[002381](https://xueqiu.com/s/sz002381)|[双箭股份](https://www.lixinger.com/analytics/company/sz/002381/2381/detail/shareholders/nolimit)|2020-02-17|橡胶|浙江|8.13|
+|[600284](https://xueqiu.com/s/sh600284)|[浦东建设](https://www.lixinger.com/analytics/company/sh/600284/600284/detail/shareholders/nolimit)|2020-02-17|建筑工程|上海|6.34|
+|[002560](https://xueqiu.com/s/sz002560)|[通达股份](https://www.lixinger.com/analytics/company/sz/002560/2560/detail/shareholders/nolimit)|2020-02-18|电气设备|河南|5.64|
+|[002403](https://xueqiu.com/s/sz002403)|[爱仕达](https://www.lixinger.com/analytics/company/sz/002403/2403/detail/shareholders/nolimit)|2020-02-18|家用电器|浙江|8.65|
+|[603556](https://xueqiu.com/s/sh603556)|[海兴电力](https://www.lixinger.com/analytics/company/sh/603556/603556/detail/shareholders/nolimit)|2020-02-18|电器仪表|浙江|16.46|
+|[300233](https://xueqiu.com/s/sz300233)|[金城医药](https://www.lixinger.com/analytics/company/sz/300233/300233/detail/shareholders/nolimit)|2020-02-18|化学制药|山东|20.06|
