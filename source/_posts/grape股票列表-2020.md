@@ -241,3 +241,7 @@ comments: false
 |[002403](https://xueqiu.com/s/sz002403)|[爱仕达](https://www.lixinger.com/analytics/company/sz/002403/2403/detail/shareholders/nolimit)|2020-02-18|家用电器|浙江|8.65|
 |[603556](https://xueqiu.com/s/sh603556)|[海兴电力](https://www.lixinger.com/analytics/company/sh/603556/603556/detail/shareholders/nolimit)|2020-02-18|电器仪表|浙江|16.46|
 |[300233](https://xueqiu.com/s/sz300233)|[金城医药](https://www.lixinger.com/analytics/company/sz/300233/300233/detail/shareholders/nolimit)|2020-02-18|化学制药|山东|20.06|
+|[603928](https://xueqiu.com/s/sh603928)|[兴业股份](https://www.lixinger.com/analytics/company/sh/603928/603928/detail/shareholders/nolimit)|2020-02-19|化工原料|江苏|11.62|
+|[600522](https://xueqiu.com/s/sh600522)|[中天科技](https://www.lixinger.com/analytics/company/sh/600522/600522/detail/shareholders/nolimit)|2020-02-19|通信设备|江苏|8.27|
+|[002423](https://xueqiu.com/s/sz002423)|[中粮资本](https://www.lixinger.com/analytics/company/sz/002423/2423/detail/shareholders/nolimit)|2020-02-19|多元金融|河南|9.61|
+|[603968](https://xueqiu.com/s/sh603968)|[醋化股份](https://www.lixinger.com/analytics/company/sh/603968/603968/detail/shareholders/nolimit)|2020-02-19|化工原料|江苏|14.72|
