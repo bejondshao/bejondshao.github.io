@@ -110,7 +110,7 @@ metadata:
   comments: true
 
 # hexo-admin authentification
-#admin:
-  #username: bejond
-  #password_hash: $2a$10$GGiwUjRtRwkzOf3s1PX/nejbkb9HFMVDACGl/bnghMPX19KsUEjte
-  #secret: effefing
+admin:
+  username: eagle
+  password_hash: $2a$10$W7jIbbD3FzGl9erZTwrdAurkcwdyQgpjyfznn/kzQ/HuEeoarhb0u
+  secret: 43
