@@ -113,4 +113,4 @@ metadata:
 admin:
   username: eagle
   password_hash: $2a$10$W7jIbbD3FzGl9erZTwrdAurkcwdyQgpjyfznn/kzQ/HuEeoarhb0u
-  secret: 43
+  secret: 43aaaa
