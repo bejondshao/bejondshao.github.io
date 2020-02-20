@@ -245,3 +245,12 @@ comments: false
 |[600522](https://xueqiu.com/s/sh600522)|[中天科技](https://www.lixinger.com/analytics/company/sh/600522/600522/detail/shareholders/nolimit)|2020-02-19|通信设备|江苏|8.27|
 |[002423](https://xueqiu.com/s/sz002423)|[中粮资本](https://www.lixinger.com/analytics/company/sz/002423/2423/detail/shareholders/nolimit)|2020-02-19|多元金融|河南|9.61|
 |[603968](https://xueqiu.com/s/sh603968)|[醋化股份](https://www.lixinger.com/analytics/company/sh/603968/603968/detail/shareholders/nolimit)|2020-02-19|化工原料|江苏|14.72|
+|[603639](https://xueqiu.com/s/sh603639)|[海利尔](https://www.lixinger.com/analytics/company/sh/603639/603639/detail/shareholders/nolimit)|2020-02-14|农药化肥|山东|26.65|
+|[600329](https://xueqiu.com/s/sh600329)|[中新药业](https://www.lixinger.com/analytics/company/sh/600329/600329/detail/shareholders/nolimit)|2020-02-17|中成药|天津|13.7|
+|[601216](https://xueqiu.com/s/sh601216)|[君正集团](https://www.lixinger.com/analytics/company/sh/601216/601216/detail/shareholders/nolimit)|2020-02-19|化工原料|内蒙|2.99|
+|[000729](https://xueqiu.com/s/sz000729)|[燕京啤酒](https://www.lixinger.com/analytics/company/sz/000729/729/detail/shareholders/nolimit)|2020-02-20|啤酒|北京|6.29|
+|[601988](https://xueqiu.com/s/sh601988)|[中国银行](https://www.lixinger.com/analytics/company/sh/601988/601988/detail/shareholders/nolimit)|2020-02-20|银行|北京|3.63|
+|[000415](https://xueqiu.com/s/sz000415)|[渤海租赁](https://www.lixinger.com/analytics/company/sz/000415/415/detail/shareholders/nolimit)|2020-02-20|多元金融|新疆|3.58|
+|[000166](https://xueqiu.com/s/sz000166)|[申万宏源](https://www.lixinger.com/analytics/company/sz/000166/166/detail/shareholders/nolimit)|2020-02-20|证券|新疆|4.94|
+|[600814](https://xueqiu.com/s/sh600814)|[杭州解百](https://www.lixinger.com/analytics/company/sh/600814/600814/detail/shareholders/nolimit)|2020-02-20|百货|浙江|5.05|
+|[603298](https://xueqiu.com/s/sh603298)|[杭叉集团](https://www.lixinger.com/analytics/company/sh/603298/603298/detail/shareholders/nolimit)|2020-02-20|专用机械|浙江|13.27|
