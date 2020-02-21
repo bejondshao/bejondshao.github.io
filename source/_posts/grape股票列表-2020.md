@@ -254,3 +254,9 @@ comments: false
 |[000166](https://xueqiu.com/s/sz000166)|[申万宏源](https://www.lixinger.com/analytics/company/sz/000166/166/detail/shareholders/nolimit)|2020-02-20|证券|新疆|4.94|
 |[600814](https://xueqiu.com/s/sh600814)|[杭州解百](https://www.lixinger.com/analytics/company/sh/600814/600814/detail/shareholders/nolimit)|2020-02-20|百货|浙江|5.05|
 |[603298](https://xueqiu.com/s/sh603298)|[杭叉集团](https://www.lixinger.com/analytics/company/sh/603298/603298/detail/shareholders/nolimit)|2020-02-20|专用机械|浙江|13.27|
+|[601238](https://xueqiu.com/s/sh601238)|[广汽集团](https://www.lixinger.com/analytics/company/sh/601238/601238/detail/shareholders/nolimit)|2020-02-21|汽车整车|广东|11.7|
+|[000598](https://xueqiu.com/s/sz000598)|[兴蓉环境](https://www.lixinger.com/analytics/company/sz/000598/598/detail/shareholders/nolimit)|2020-02-21|水务|四川|4.65|
+|[600582](https://xueqiu.com/s/sh600582)|[天地科技](https://www.lixinger.com/analytics/company/sh/600582/600582/detail/shareholders/nolimit)|2020-02-21|工程机械|北京|3.1|
+|[601016](https://xueqiu.com/s/sh601016)|[节能风电](https://www.lixinger.com/analytics/company/sh/601016/601016/detail/shareholders/nolimit)|2020-02-21|新型电力|北京|2.36|
+|[603020](https://xueqiu.com/s/sh603020)|[爱普股份](https://www.lixinger.com/analytics/company/sh/603020/603020/detail/shareholders/nolimit)|2020-02-21|食品|上海|8.13|
+|[000913](https://xueqiu.com/s/sz000913)|[钱江摩托](https://www.lixinger.com/analytics/company/sz/000913/913/detail/shareholders/nolimit)|2020-02-21|摩托车|浙江|11.41|
