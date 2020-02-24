@@ -260,3 +260,4 @@ comments: false
 |[601016](https://xueqiu.com/s/sh601016)|[节能风电](https://www.lixinger.com/analytics/company/sh/601016/601016/detail/shareholders/nolimit)|2020-02-21|新型电力|北京|2.36|
 |[603020](https://xueqiu.com/s/sh603020)|[爱普股份](https://www.lixinger.com/analytics/company/sh/603020/603020/detail/shareholders/nolimit)|2020-02-21|食品|上海|8.13|
 |[000913](https://xueqiu.com/s/sz000913)|[钱江摩托](https://www.lixinger.com/analytics/company/sz/000913/913/detail/shareholders/nolimit)|2020-02-21|摩托车|浙江|11.41|
+|[002302](https://xueqiu.com/s/sz002302)|[西部建设](https://www.lixinger.com/analytics/company/sz/002302/2302/detail/shareholders/nolimit)|2020-02-24|水泥|新疆|11.18|
