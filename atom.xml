@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://tech.bejond.org/"/>
-  <updated>2020-02-12T11:32:43.000Z</updated>
+  <updated>2020-02-25T15:01:00.000Z</updated>
   <id>http://tech.bejond.org/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>股票交易所思</title>
+    <link href="http://tech.bejond.org/2020/02/25/%E8%82%A1%E7%A5%A8%E4%BA%A4%E6%98%93%E6%89%80%E6%80%9D/"/>
+    <id>http://tech.bejond.org/2020/02/25/%E8%82%A1%E7%A5%A8%E4%BA%A4%E6%98%93%E6%89%80%E6%80%9D/</id>
+    <published>2020-02-25T14:52:12.000Z</published>
+    <updated>2020-02-25T15:01:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><em>买入时机很重要，同样一直股票，甲买后浮盈20个点，乙买后套8个点。假设今天股票跌5个点。甲和乙看这个股票的观点很可能截然不同，甚至操作完全相反。而股票却是同一只股票。2020-02-07</em></p><p>上面是我今年年初对自己的频繁操作所形成的交易总结，我觉得这个道理很简单，但是又没有参悟透。十分有必要再详细讨论。这篇文章是对自己混沌思想的理顺，不作为投资依据。</p><p>一只股票上市后，二级市场就可以自由交易，价格也会随着交易而变化。股票的数量不变，价格却升高或降低。我曾仔细思考过价格变化的原因，那就是有相当的资金进入或流出。虽然一只股票会无交易骤升，但是只要有人想要套现，就必然需要场外资金接手，否则会出现无量骤跌的情形。反之无量骤降同理，如果想要抄底，尤其是涉及量比较大的抄底，必然是持票者割肉的结果，否则就会随着买盘的增多而拉高股价。具体原理我就不在此详细解释了。也就是说，假设你想通过二级市场的买卖来获得利润（暂不考虑股息），那么买入和卖出时机很重要，更极端来讲，买入时机至关重要。</p><p>只要一只股票不是有突发不可弥补的事件，股价都是在市场交易中以肉眼可见的速度变化的。从日线，周线来看，也是平滑的。一只股票，不论股性如何，基本面如何，未来期望如何，它的股价都会变化。我们都知道股票应该低买高卖，但是别忘了，每一次价格变化，都是由成交决定的。也就是说，在这个价格，持票者和持币者的意见是截然相反的：持票者可能是后市看跌，持币者后市看涨。当然，持票者卖出不一定是后市看跌，他可能是想做个日T或者阶段T。但是持币者买入一定是后市看涨，我相信没有人会认为这个股票未来几天会跌而现在买入。倘若我们买在右侧启动</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;em&gt;买入时机很重要，同样一直股票，甲买后浮盈20个点，乙买后套8个点。假设今天股票跌5个点。甲和乙看这个股票的观点很可能截然不同，甚至操作完全相反。而股票却是同一只股票。2020-02-07&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;上面是我今年年初对自己的频繁操作所形成的交易总结，我觉
+      
+    
+    </summary>
+    
+    
+      <category term="Others" scheme="http://tech.bejond.org/categories/Others/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>SVN Issues</title>
@@ -48,9 +73,9 @@ svn: E200
     <link href="http://tech.bejond.org/2020/02/04/%E5%85%B3%E4%BA%8E%E8%82%A1%E5%B8%82%E7%9A%84%E6%80%9D%E8%80%83/"/>
     <id>http://tech.bejond.org/2020/02/04/%E5%85%B3%E4%BA%8E%E8%82%A1%E5%B8%82%E7%9A%84%E6%80%9D%E8%80%83/</id>
     <published>2020-02-04T02:46:00.000Z</published>
-    <updated>2020-02-25T14:50:41.000Z</updated>
+    <updated>2020-02-25T14:52:28.000Z</updated>
     
-    <content type="html"><![CDATA[<ul><li>人们看股票容易犯一个错误，总是构思股票后市会涨，所以容易盲目买入。而走势往往不是我们所想的那样。2020-02-04</li><li>买入时机很重要，同样一直股票，甲买后浮盈20个点，乙买后套8个点。假设今天股票跌5个点。甲和乙看这个股票的观点很可能截然不同，甚至操作完全相反。而股票却是同一只股票。2020-02-07</li><li>一只股票上市后，二级市场就可以自由交易，价格也会随着交易而变化。股票的数量不变，价格却升高或降低。我曾仔细思考过价格变化的原因，那就是有相当的资金进入或流出。虽然一只股票会无交易骤升，但是只要有人想要套现，就必然是从已进入市场的资金获利的。反之骤降抄底也是一个道理。我就不在此详细解释了。也就是说，假设你想通过二级市场的买卖来获得利润（暂不考虑股息），那么买入和卖出时机很重要，更严格来讲，买入时机至关重要。只要一只股票不是有极端事件，股价都是在市场交易中以肉眼可见的速度变化的。从日线，周线来看，也是平滑的。也就是说，一只股票，不论股性如何，基本面如何，未来期望如何，它的股价都会变化。我们都知道股票应该低买高卖，但是别忘了，每一次价格变化，都是由成交决定的。也就是说，在这个价格，持票者和持币者的意见是截然相反的：倘若我们买在右侧启动</li></ul>]]></content>
+    <content type="html"><![CDATA[<ul><li>人们看股票容易犯一个错误，总是构思股票后市会涨，所以容易盲目买入。而走势往往不是我们所想的那样。2020-02-04</li><li>买入时机很重要，同样一直股票，甲买后浮盈20个点，乙买后套8个点。假设今天股票跌5个点。甲和乙看这个股票的观点很可能截然不同，甚至操作完全相反。而股票却是同一只股票。2020-02-07</li></ul>]]></content>
     
     <summary type="html">
     
@@ -598,40 +623,6 @@ svn: E200
       <category term="Linux" scheme="http://tech.bejond.org/tags/Linux/"/>
     
       <category term="CentOS" scheme="http://tech.bejond.org/tags/CentOS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Keycloak和Kibana集成实现单点登录</title>
-    <link href="http://tech.bejond.org/2018/04/09/Keycloak%E5%92%8CKibana%E9%9B%86%E6%88%90%E5%AE%9E%E7%8E%B0%E5%8D%95%E7%82%B9%E7%99%BB%E5%BD%95/"/>
-    <id>http://tech.bejond.org/2018/04/09/Keycloak%E5%92%8CKibana%E9%9B%86%E6%88%90%E5%AE%9E%E7%8E%B0%E5%8D%95%E7%82%B9%E7%99%BB%E5%BD%95/</id>
-    <published>2018-04-09T08:49:00.000Z</published>
-    <updated>2019-12-22T10:37:19.000Z</updated>
-    
-    <content type="html"><![CDATA[<h5 id="elasticsearch"><a class="markdownIt-Anchor" href="#elasticsearch"></a> <a href="https://www.elastic.co/products/elasticsearch" target="_blank" rel="noopener">Elasticsearch</a></h5><p>Elasticsearch是一个分布式， 支持RESTful接口查询和分析的引擎， 用于解决不断增长的数据和用例。 作为Elastic Stack的核心存储数据。 Es提供多种查询方式， 聚合细化查询粒度。 可以自动检查结点健壮性。 Es可以做到应用查询， 安全分析， 记录日志， 监测， 警报， 生成报告等。 另外Es还可以和Hadoop结合使用。</p><h5 id="安装elasticsearch"><a class="markdownIt-Anchor" href="#安装elasticsearch"></a> 安装Elasticsearch</h5><ul><li>到<a href="https://www.elastic.co/downloads/elasticsearch" target="_blank" rel="noopener">Elasticsearch下载页</a>下载zip包，当前版本6.2.3。 下载zip包好处是解压到本地， 配置文件可以放在用户目录， 启动方便， 重做系统也不会丢失配置。 当然如果是服务器部署， 应该下载对应的安装包， 方便安装服务。</li><li>进入<code>elasticsearch/bin</code>目录， 命令行启动elasticsearch。</li><li>待启动完成， 访问http://localhost:9200 。 看到如下所示基本信息表明启动成功。</li></ul><img src="/2018/04/09/Keycloak和Kibana集成实现单点登录/es.png" class="Elasticsearch"><h5 id="kibana"><a class="markdownIt-Anchor" href="#kibana"></a> <a href="https://www.elastic.co/products/kibana" target="_blank" rel="noopener">Kibana</a></h5><p>Kibana将Es的数据以友好的可视化方式展示， 比如脂肪图， 曲线图， 饼图， 地理图。 Kibana聚合了Es的功能， 并具备基于时间的分析功能。</p><h5 id="安装"><a class="markdownIt-Anchor" href="#安装"></a> 安装</h5><ul><li>到<a href="https://www.elastic.co/downloads/kibana" target="_blank" rel="noopener">Kibana下载页</a>下载zip包， 当前版本6.2.3。</li><li>进入<code>kibana/bin</code>目录， 启动kibana。</li><li>待启动完成，访问http://localhost:5601即可。</li></ul><h4 id="keycloak保护kibana"><a class="markdownIt-Anchor" href="#keycloak保护kibana"></a> Keycloak保护Kibana</h4><h5 id="工作流程"><a class="markdownIt-Anchor" href="#工作流程"></a> 工作流程</h5><img src="/2018/04/09/Keycloak和Kibana集成实现单点登录/keycloak-kibana.jpg" class="Workflow"><ol><li>外部请求被<a href="https://www.keycloak.org/docs/latest/server_installation/index.html#_proxy" target="_blank" rel="noopener">keycloak proxy</a>拦截。 keycloak proxy根据它的配置决定请求是否需要验证。</li><li>如果需要验证， keycloak proxy将请求重定向到keycloak的登录页面。</li><li>成功登录后， 将请求发送到kibana。</li></ol><h5 id="keycloak配置client"><a class="markdownIt-Anchor" href="#keycloak配置client"></a> Keycloak配置client</h5><ul><li>在Keycloak后台创建client， 名为kibana。 Root URL填keycloak proxy监听的地址， 如http://localhost:8081</li></ul><img src="/2018/04/09/Keycloak和Kibana集成实现单点登录/client.png" class="Client"><ul><li>开启Authorization Enabled， 保存， 用于验证客户端。</li></ul><img src="/2018/04/09/Keycloak和Kibana集成实现单点登录/client2.png" class="Authorization Enabled"><h5 id="安装keycloak-proxy"><a class="markdownIt-Anchor" href="#安装keycloak-proxy"></a> 安装keycloak proxy</h5><ol><li><a href="https://downloads.jboss.org/keycloak/3.4.3.Final/keycloak-proxy-3.4.3.Final.zip" target="_blank" rel="noopener">下载keycloak proxy 3.4.3</a>到本地， 解压。</li><li>在<code>keycloak-proxy-3.4.3.Final/bin</code>目录下创建proxy.json文件</li></ol><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"target-url"</span>: <span class="string">"http://localhost:5601"</span>,</span><br><span class="line">    <span class="attr">"bind-address"</span>: <span class="string">"0.0.0.0"</span>,</span><br><span class="line">    <span class="attr">"http-port"</span>: <span class="string">"8081"</span>,</span><br><span class="line">    <span class="attr">"applications"</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="attr">"base-path"</span>: <span class="string">"/"</span>,</span><br><span class="line">            <span class="attr">"error-page"</span>: <span class="string">"/error.html"</span>,</span><br><span class="line">            <span class="attr">"adapter-config"</span>: &#123;</span><br><span class="line">                <span class="attr">"realm"</span>: <span class="string">"Kunlun"</span>,</span><br><span class="line">                <span class="attr">"resource"</span>: <span class="string">"kibana"</span>,</span><br><span class="line">                <span class="attr">"auth-server-url"</span>: <span class="string">"http://localhost:8080/auth"</span>,</span><br><span class="line">                <span class="attr">"ssl-required"</span> : <span class="string">"external"</span>,</span><br><span class="line">                <span class="attr">"principal-attribute"</span>: <span class="string">"name"</span>,</span><br><span class="line">                <span class="attr">"credentials"</span>: &#123;</span><br><span class="line">                    <span class="attr">"secret"</span>: <span class="string">"7aa8d667-2ae1-4ee9-b9b8-eb94b317b649"</span></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            ,</span><br><span class="line">            <span class="attr">"constraints"</span>: [</span><br><span class="line">                &#123;</span><br><span class="line">                    <span class="attr">"pattern"</span>: <span class="string">"/*"</span>,</span><br><span class="line">                    <span class="attr">"roles-allowed"</span>: [</span><br><span class="line">                        <span class="string">"user"</span></span><br><span class="line">                    ]</span><br><span class="line">                &#125;</span><br><span class="line">            ]</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>target-url： kibana后台的地址</li><li>bind-address： 绑定keycloak proxy的地址， 默认localhost</li><li>http-port: keycloak proxy监听的端口</li><li>base-path: 要保护的应用的路径，必须以&quot;/&quot;开头</li><li>resource: keycloak创建的client id</li><li>auth-server-url: keycloak验证地址</li><li>credentials: 客户端验证的方式， 如果是secret， secret的密钥从<code>keycloak cline -&gt; Credentials</code>获得， 见下图</li></ul><img src="/2018/04/09/Keycloak和Kibana集成实现单点登录/client-secret.png" class="Credentials"><ul><li>constrainsts： 过滤条件</li><li>pattern: 过滤不同路径下的内容</li><li>roles-allowed: 具有roles-allowed里的role的用户才有权限访问pattern下的资源</li></ul><p>配置好proxy.json后， 在<code>bin</code>下执行<br><code>$ java -jar launcher.jar</code></p><h5 id="验证登录"><a class="markdownIt-Anchor" href="#验证登录"></a> 验证登录</h5><ul><li>访问http://localhost:8081, keycloak proxy检测到当前用户未登录， 会跳转到keycloak登录界面。</li></ul><img src="/2018/04/09/Keycloak和Kibana集成实现单点登录/login.png" class="Login"><ul><li>输入用户名密码， 验证成功后即调回keycloak proxy。 keycloak proxy负责转发到kibana。</li></ul><img src="/2018/04/09/Keycloak和Kibana集成实现单点登录/tokibana.png" class="To Kibana"><p>可以看到浏览器地址为localhost:8081， 而不是localhost:5601。</p><h5 id="遗留问题"><a class="markdownIt-Anchor" href="#遗留问题"></a> 遗留问题</h5><ol><li>Kibana没有验证功能， 因此也没有登出功能。 只能在Keycloak中<code>Users -&gt; Someuser -&gt; Sessions</code>点击Logout all sessions尝试登出。 但是点击后在keycloak proxy console则报<code>UT005071: Undertow request failed HttpServerExchange</code>异常， 该问题在<a href="https://issues.jboss.org/browse/KEYCLOAK-3311" target="_blank" rel="noopener">Keycloak-3311</a>已经提及， 但是至今未修复。</li><li>Keycloak proxy暂时只能起到定向到keycloak登录的功能， 对于鉴权还做得不好， 任何一个在Realm里的用户， 即便没有<code>roles_allowed</code>里的role， 也能访问登录后的kibana界面， 详见<a href="https://issues.jboss.org/browse/KEYCLOAK-7120" target="_blank" rel="noopener">Keycloak-7120</a></li></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h5 id=&quot;elasticsearch&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#elasticsearch&quot;&gt;&lt;/a&gt; &lt;a href=&quot;https://www.elastic.co/products/elasticsearch&quot; targe
-      
-    
-    </summary>
-    
-    
-      <category term="DevOps" scheme="http://tech.bejond.org/categories/DevOps/"/>
-    
-      <category term="Keycloak" scheme="http://tech.bejond.org/categories/DevOps/Keycloak/"/>
-    
-    
-      <category term="Keycloak" scheme="http://tech.bejond.org/tags/Keycloak/"/>
-    
-      <category term="Kibana" scheme="http://tech.bejond.org/tags/Kibana/"/>
-    
-      <category term="Elasticsearch" scheme="http://tech.bejond.org/tags/Elasticsearch/"/>
-    
-      <category term="Keycloak proxy" scheme="http://tech.bejond.org/tags/Keycloak-proxy/"/>
     
   </entry>
   
