@@ -261,3 +261,4 @@ comments: false
 |[603020](https://xueqiu.com/s/sh603020)|[爱普股份](https://www.lixinger.com/analytics/company/sh/603020/603020/detail/shareholders/nolimit)|2020-02-21|食品|上海|8.13|
 |[000913](https://xueqiu.com/s/sz000913)|[钱江摩托](https://www.lixinger.com/analytics/company/sz/000913/913/detail/shareholders/nolimit)|2020-02-21|摩托车|浙江|11.41|
 |[002302](https://xueqiu.com/s/sz002302)|[西部建设](https://www.lixinger.com/analytics/company/sz/002302/2302/detail/shareholders/nolimit)|2020-02-24|水泥|新疆|11.18|
+|[601633](https://xueqiu.com/s/sh601633)|[长城汽车](https://www.lixinger.com/analytics/company/sh/601633/601633/detail/shareholders/nolimit)|2020-02-25|汽车整车|河北|9.56|
