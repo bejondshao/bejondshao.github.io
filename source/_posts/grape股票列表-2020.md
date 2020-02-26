@@ -262,3 +262,9 @@ comments: false
 |[000913](https://xueqiu.com/s/sz000913)|[钱江摩托](https://www.lixinger.com/analytics/company/sz/000913/913/detail/shareholders/nolimit)|2020-02-21|摩托车|浙江|11.41|
 |[002302](https://xueqiu.com/s/sz002302)|[西部建设](https://www.lixinger.com/analytics/company/sz/002302/2302/detail/shareholders/nolimit)|2020-02-24|水泥|新疆|11.18|
 |[601633](https://xueqiu.com/s/sh601633)|[长城汽车](https://www.lixinger.com/analytics/company/sh/601633/601633/detail/shareholders/nolimit)|2020-02-25|汽车整车|河北|9.56|
+|[600162](https://xueqiu.com/s/sh600162)|[香江控股](https://www.lixinger.com/analytics/company/sh/600162/600162/detail/shareholders/nolimit)|2020-02-26|全国地产|深圳|2.27|
+|[601618](https://xueqiu.com/s/sh601618)|[中国中冶](https://www.lixinger.com/analytics/company/sh/601618/601618/detail/shareholders/nolimit)|2020-02-26|建筑工程|北京|2.73|
+|[000498](https://xueqiu.com/s/sz000498)|[山东路桥](https://www.lixinger.com/analytics/company/sz/000498/498/detail/shareholders/nolimit)|2020-02-26|建筑工程|山东|4.7|
+|[600068](https://xueqiu.com/s/sh600068)|[葛洲坝](https://www.lixinger.com/analytics/company/sh/600068/600068/detail/shareholders/nolimit)|2020-02-26|建筑工程|湖北|6.53|
+|[601669](https://xueqiu.com/s/sh601669)|[中国电建](https://www.lixinger.com/analytics/company/sh/601669/601669/detail/shareholders/nolimit)|2020-02-26|建筑工程|北京|4.25|
+|[000065](https://xueqiu.com/s/sz000065)|[北方国际](https://www.lixinger.com/analytics/company/sz/000065/65/detail/shareholders/nolimit)|2020-02-26|建筑工程|北京|8.24|
