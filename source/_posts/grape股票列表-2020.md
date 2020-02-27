@@ -268,3 +268,10 @@ comments: false
 |[600068](https://xueqiu.com/s/sh600068)|[葛洲坝](https://www.lixinger.com/analytics/company/sh/600068/600068/detail/shareholders/nolimit)|2020-02-26|建筑工程|湖北|6.53|
 |[601669](https://xueqiu.com/s/sh601669)|[中国电建](https://www.lixinger.com/analytics/company/sh/601669/601669/detail/shareholders/nolimit)|2020-02-26|建筑工程|北京|4.25|
 |[000065](https://xueqiu.com/s/sz000065)|[北方国际](https://www.lixinger.com/analytics/company/sz/000065/65/detail/shareholders/nolimit)|2020-02-26|建筑工程|北京|8.24|
+|[600502](https://xueqiu.com/s/sh600502)|[安徽建工](https://www.lixinger.com/analytics/company/sh/600502/600502/detail/shareholders/nolimit)|2020-02-27|建筑工程|安徽|4.04|
+|[002526](https://xueqiu.com/s/sz002526)|[山东矿机](https://www.lixinger.com/analytics/company/sz/002526/2526/detail/shareholders/nolimit)|2020-02-27|工程机械|山东|2.29|
+|[600724](https://xueqiu.com/s/sh600724)|[宁波富达](https://www.lixinger.com/analytics/company/sh/600724/600724/detail/shareholders/nolimit)|2020-02-27|区域地产|浙江|3.61|
+|[002457](https://xueqiu.com/s/sz002457)|[青龙管业](https://www.lixinger.com/analytics/company/sz/002457/2457/detail/shareholders/nolimit)|2020-02-27|塑料|宁夏|7.99|
+|[002852](https://xueqiu.com/s/sz002852)|[道道全](https://www.lixinger.com/analytics/company/sz/002852/2852/detail/shareholders/nolimit)|2020-02-27|食品|湖南|13.44|
+|[000528](https://xueqiu.com/s/sz000528)|[柳 工](https://www.lixinger.com/analytics/company/sz/000528/528/detail/shareholders/nolimit)|2020-02-27|工程机械|广西|6.66|
+|[002034](https://xueqiu.com/s/sz002034)|[旺能环境](https://www.lixinger.com/analytics/company/sz/002034/2034/detail/shareholders/nolimit)|2020-02-27|环境保护|浙江|14.98|
