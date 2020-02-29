@@ -275,3 +275,5 @@ comments: false
 |[002852](https://xueqiu.com/s/sz002852)|[道道全](https://www.lixinger.com/analytics/company/sz/002852/2852/detail/shareholders/nolimit)|2020-02-27|食品|湖南|13.44|
 |[000528](https://xueqiu.com/s/sz000528)|[柳 工](https://www.lixinger.com/analytics/company/sz/000528/528/detail/shareholders/nolimit)|2020-02-27|工程机械|广西|6.66|
 |[002034](https://xueqiu.com/s/sz002034)|[旺能环境](https://www.lixinger.com/analytics/company/sz/002034/2034/detail/shareholders/nolimit)|2020-02-27|环境保护|浙江|14.98|
+|[002521](https://xueqiu.com/s/sz002521)|[齐峰新材](https://www.lixinger.com/analytics/company/sz/002521/2521/detail/shareholders/nolimit)|2020-02-24|造纸|山东|5.97|
+|[002611](https://xueqiu.com/s/sz002611)|[东方精工](https://www.lixinger.com/analytics/company/sz/002611/2611/detail/shareholders/nolimit)|2020-02-28|轻工机械|广东|4.63|
