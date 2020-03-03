@@ -293,3 +293,7 @@ comments: false
 |[000755](https://xueqiu.com/s/sz000755)|[山西路桥](https://www.lixinger.com/analytics/company/sz/000755/755/detail/shareholders/nolimit)|[2020-03-02](http://data.eastmoney.com/zjlx/000755.html)|公路|山西|3.9|
 |[600688](https://xueqiu.com/s/sh600688)|[上海石化](https://www.lixinger.com/analytics/company/sh/600688/600688/detail/shareholders/nolimit)|[2020-03-02](http://data.eastmoney.com/zjlx/600688.html)|石油加工|上海|4.16|
 |[601019](https://xueqiu.com/s/sh601019)|[山东出版](https://www.lixinger.com/analytics/company/sh/601019/601019/detail/shareholders/nolimit)|[2020-03-02](http://data.eastmoney.com/zjlx/601019.html)|出版业|山东|6.81|
+|[600335](https://xueqiu.com/s/sh600335)|[国机汽车](https://www.lixinger.com/analytics/company/sh/600335/600335/detail/shareholders/nolimit)|[2020-03-02](http://data.eastmoney.com/zjlx/600335.html)|汽车配件|天津|5.72|
+|[603766](https://xueqiu.com/s/sh603766)|[隆鑫通用](https://www.lixinger.com/analytics/company/sh/603766/603766/detail/shareholders/nolimit)|[2020-03-03](http://data.eastmoney.com/zjlx/603766.html)|摩托车|重庆|3.74|
+|[603017](https://xueqiu.com/s/sh603017)|[中衡设计](https://www.lixinger.com/analytics/company/sh/603017/603017/detail/shareholders/nolimit)|[2020-03-03](http://data.eastmoney.com/zjlx/603017.html)|建筑工程|江苏|10.83|
+|[600581](https://xueqiu.com/s/sh600581)|[八一钢铁](https://www.lixinger.com/analytics/company/sh/600581/600581/detail/shareholders/nolimit)|[2020-03-03](http://data.eastmoney.com/zjlx/600581.html)|普钢|新疆|3.38|
