@@ -317,3 +317,12 @@ comments: false
 |[000537](https://xueqiu.com/s/sz000537)|[广宇发展](https://www.lixinger.com/analytics/company/sz/000537/537/detail/shareholders/nolimit)|[2020-03-04](http://data.eastmoney.com/zjlx/000537.html)|区域地产|天津|7.23|
 |[002375](https://xueqiu.com/s/sz002375)|[亚厦股份](https://www.lixinger.com/analytics/company/sz/002375/2375/detail/shareholders/nolimit)|[2020-03-04](http://data.eastmoney.com/zjlx/002375.html)|装修装饰|浙江|5.57|
 |[600185](https://xueqiu.com/s/sh600185)|[格力地产](https://www.lixinger.com/analytics/company/sh/600185/600185/detail/shareholders/nolimit)|[2020-03-04](http://data.eastmoney.com/zjlx/600185.html)|区域地产|广东|4.84|
+|[600578](https://xueqiu.com/s/sh600578)|[京能电力](https://www.lixinger.com/analytics/company/sh/600578/600578/detail/shareholders/nolimit)|[2020-03-05](http://data.eastmoney.com/zjlx/600578.html)|火力发电|北京|3.09|
+|[000531](https://xueqiu.com/s/sz000531)|[穗恒运Ａ](https://www.lixinger.com/analytics/company/sz/000531/531/detail/shareholders/nolimit)|[2020-03-05](http://data.eastmoney.com/zjlx/000531.html)|火力发电|广东|6.64|
+|[600705](https://xueqiu.com/s/sh600705)|[中航资本](https://www.lixinger.com/analytics/company/sh/600705/600705/detail/shareholders/nolimit)|[2020-03-05](http://data.eastmoney.com/zjlx/600705.html)|多元金融|黑龙江|4.66|
+|[002948](https://xueqiu.com/s/sz002948)|[青岛银行](https://www.lixinger.com/analytics/company/sz/002948/2948/detail/shareholders/nolimit)|[2020-03-05](http://data.eastmoney.com/zjlx/002948.html)|银行|山东|5.67|
+|[600743](https://xueqiu.com/s/sh600743)|[华远地产](https://www.lixinger.com/analytics/company/sh/600743/600743/detail/shareholders/nolimit)|[2020-03-05](http://data.eastmoney.com/zjlx/600743.html)|区域地产|北京|2.49|
+|[000407](https://xueqiu.com/s/sz000407)|[胜利股份](https://www.lixinger.com/analytics/company/sz/000407/407/detail/shareholders/nolimit)|[2020-03-05](http://data.eastmoney.com/zjlx/000407.html)|供气供热|山东|3.45|
+|[603225](https://xueqiu.com/s/sh603225)|[新凤鸣](https://www.lixinger.com/analytics/company/sh/603225/603225/detail/shareholders/nolimit)|[2020-03-05](http://data.eastmoney.com/zjlx/603225.html)|化纤|浙江|11.75|
+|[600012](https://xueqiu.com/s/sh600012)|[皖通高速](https://www.lixinger.com/analytics/company/sh/600012/600012/detail/shareholders/nolimit)|[2020-03-05](http://data.eastmoney.com/zjlx/600012.html)|路桥|安徽|5.66|
+|[002053](https://xueqiu.com/s/sz002053)|[云南能投](https://www.lixinger.com/analytics/company/sz/002053/2053/detail/shareholders/nolimit)|[2020-03-05](http://data.eastmoney.com/zjlx/002053.html)|食品|云南|7.36|
