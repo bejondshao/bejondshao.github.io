@@ -326,3 +326,9 @@ comments: false
 |[603225](https://xueqiu.com/s/sh603225)|[新凤鸣](https://www.lixinger.com/analytics/company/sh/603225/603225/detail/shareholders/nolimit)|[2020-03-05](http://data.eastmoney.com/zjlx/603225.html)|化纤|浙江|11.75|
 |[600012](https://xueqiu.com/s/sh600012)|[皖通高速](https://www.lixinger.com/analytics/company/sh/600012/600012/detail/shareholders/nolimit)|[2020-03-05](http://data.eastmoney.com/zjlx/600012.html)|路桥|安徽|5.66|
 |[002053](https://xueqiu.com/s/sz002053)|[云南能投](https://www.lixinger.com/analytics/company/sz/002053/2053/detail/shareholders/nolimit)|[2020-03-05](http://data.eastmoney.com/zjlx/002053.html)|食品|云南|7.36|
+|[600022](https://xueqiu.com/s/sh600022)|[山东钢铁](https://www.lixinger.com/analytics/company/sh/600022/600022/detail/shareholders/nolimit)|[2020-03-05](http://data.eastmoney.com/zjlx/600022.html)|普钢|山东|1.39|
+|[600113](https://xueqiu.com/s/sh600113)|[浙江东日](https://www.lixinger.com/analytics/company/sh/600113/600113/detail/shareholders/nolimit)|[2020-03-06](http://data.eastmoney.com/zjlx/600113.html)|区域地产|浙江|6.95|
+|[601339](https://xueqiu.com/s/sh601339)|[百隆东方](https://www.lixinger.com/analytics/company/sh/601339/601339/detail/shareholders/nolimit)|[2020-03-06](http://data.eastmoney.com/zjlx/601339.html)|纺织|浙江|3.97|
+|[600982](https://xueqiu.com/s/sh600982)|[宁波热电](https://www.lixinger.com/analytics/company/sh/600982/600982/detail/shareholders/nolimit)|[2020-03-06](http://data.eastmoney.com/zjlx/600982.html)|供气供热|浙江|2.93|
+|[600569](https://xueqiu.com/s/sh600569)|[安阳钢铁](https://www.lixinger.com/analytics/company/sh/600569/600569/detail/shareholders/nolimit)|[2020-03-06](http://data.eastmoney.com/zjlx/600569.html)|普钢|河南|2.43|
+|[601800](https://xueqiu.com/s/sh601800)|[中国交建](https://www.lixinger.com/analytics/company/sh/601800/601800/detail/shareholders/nolimit)|[2020-03-06](http://data.eastmoney.com/zjlx/601800.html)|建筑工程|北京|9.49|
