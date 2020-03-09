@@ -332,3 +332,9 @@ comments: false
 |[600982](https://xueqiu.com/s/sh600982)|[宁波热电](https://www.lixinger.com/analytics/company/sh/600982/600982/detail/shareholders/nolimit)|[2020-03-06](http://data.eastmoney.com/zjlx/600982.html)|供气供热|浙江|2.93|
 |[600569](https://xueqiu.com/s/sh600569)|[安阳钢铁](https://www.lixinger.com/analytics/company/sh/600569/600569/detail/shareholders/nolimit)|[2020-03-06](http://data.eastmoney.com/zjlx/600569.html)|普钢|河南|2.43|
 |[601800](https://xueqiu.com/s/sh601800)|[中国交建](https://www.lixinger.com/analytics/company/sh/601800/601800/detail/shareholders/nolimit)|[2020-03-06](http://data.eastmoney.com/zjlx/601800.html)|建筑工程|北京|9.49|
+|[002438](https://xueqiu.com/s/sz002438)|[江苏神通](https://www.lixinger.com/analytics/company/sz/002438/2438/detail/shareholders/nolimit)|[2020-03-04](http://data.eastmoney.com/zjlx/002438.html)|机械基件|江苏|8.22|
+|[002462](https://xueqiu.com/s/sz002462)|[嘉事堂](https://www.lixinger.com/analytics/company/sz/002462/2462/detail/shareholders/nolimit)|[2020-03-05](http://data.eastmoney.com/zjlx/002462.html)|医药商业|北京|16.1|
+|[000582](https://xueqiu.com/s/sz000582)|[北部湾港](https://www.lixinger.com/analytics/company/sz/000582/582/detail/shareholders/nolimit)|[2020-03-05](http://data.eastmoney.com/zjlx/000582.html)|港口|广西|8.62|
+|[002839](https://xueqiu.com/s/sz002839)|[张家港行](https://www.lixinger.com/analytics/company/sz/002839/2839/detail/shareholders/nolimit)|[2020-03-05](http://data.eastmoney.com/zjlx/002839.html)|银行|江苏|6.09|
+|[603969](https://xueqiu.com/s/sh603969)|[银龙股份](https://www.lixinger.com/analytics/company/sh/603969/603969/detail/shareholders/nolimit)|[2020-03-06](http://data.eastmoney.com/zjlx/603969.html)|其他建材|天津|4.15|
+|[600798](https://xueqiu.com/s/sh600798)|[宁波海运](https://www.lixinger.com/analytics/company/sh/600798/600798/detail/shareholders/nolimit)|[2020-03-09](http://data.eastmoney.com/zjlx/600798.html)|水运|浙江|3.46|
