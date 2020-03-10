@@ -338,3 +338,9 @@ comments: false
 |[002839](https://xueqiu.com/s/sz002839)|[张家港行](https://www.lixinger.com/analytics/company/sz/002839/2839/detail/shareholders/nolimit)|[2020-03-05](http://data.eastmoney.com/zjlx/002839.html)|银行|江苏|6.09|
 |[603969](https://xueqiu.com/s/sh603969)|[银龙股份](https://www.lixinger.com/analytics/company/sh/603969/603969/detail/shareholders/nolimit)|[2020-03-06](http://data.eastmoney.com/zjlx/603969.html)|其他建材|天津|4.15|
 |[600798](https://xueqiu.com/s/sh600798)|[宁波海运](https://www.lixinger.com/analytics/company/sh/600798/600798/detail/shareholders/nolimit)|[2020-03-09](http://data.eastmoney.com/zjlx/600798.html)|水运|浙江|3.46|
+|[600755](https://xueqiu.com/s/sh600755)|[厦门国贸](https://www.lixinger.com/analytics/company/sh/600755/600755/detail/shareholders/nolimit)|[2020-03-05](http://data.eastmoney.com/zjlx/600755.html)|商贸代理|福建|7.07|
+|[600035](https://xueqiu.com/s/sh600035)|[楚天高速](https://www.lixinger.com/analytics/company/sh/600035/600035/detail/shareholders/nolimit)|[2020-03-10](http://data.eastmoney.com/zjlx/600035.html)|路桥|湖北|3.48|
+|[600104](https://xueqiu.com/s/sh600104)|[上汽集团](https://www.lixinger.com/analytics/company/sh/600104/600104/detail/shareholders/nolimit)|[2020-03-10](http://data.eastmoney.com/zjlx/600104.html)|汽车整车|上海|23.3|
+|[002244](https://xueqiu.com/s/sz002244)|[滨江集团](https://www.lixinger.com/analytics/company/sz/002244/2244/detail/shareholders/nolimit)|[2020-03-10](http://data.eastmoney.com/zjlx/002244.html)|区域地产|浙江|4.62|
+|[002620](https://xueqiu.com/s/sz002620)|[瑞和股份](https://www.lixinger.com/analytics/company/sz/002620/2620/detail/shareholders/nolimit)|[2020-03-10](http://data.eastmoney.com/zjlx/002620.html)|装修装饰|深圳|6.04|
+|[000573](https://xueqiu.com/s/sz000573)|[粤宏远Ａ](https://www.lixinger.com/analytics/company/sz/000573/573/detail/shareholders/nolimit)|[2020-03-10](http://data.eastmoney.com/zjlx/000573.html)|区域地产|广东|3.0|
