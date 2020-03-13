@@ -344,3 +344,6 @@ comments: false
 |[002244](https://xueqiu.com/s/sz002244)|[滨江集团](https://www.lixinger.com/analytics/company/sz/002244/2244/detail/shareholders/nolimit)|[2020-03-10](http://data.eastmoney.com/zjlx/002244.html)|区域地产|浙江|4.62|
 |[002620](https://xueqiu.com/s/sz002620)|[瑞和股份](https://www.lixinger.com/analytics/company/sz/002620/2620/detail/shareholders/nolimit)|[2020-03-10](http://data.eastmoney.com/zjlx/002620.html)|装修装饰|深圳|6.04|
 |[000573](https://xueqiu.com/s/sz000573)|[粤宏远Ａ](https://www.lixinger.com/analytics/company/sz/000573/573/detail/shareholders/nolimit)|[2020-03-10](http://data.eastmoney.com/zjlx/000573.html)|区域地产|广东|3.0|
+|[002811](https://xueqiu.com/s/sz002811)|[亚泰国际](https://www.lixinger.com/analytics/company/sz/002811/2811/detail/shareholders/nolimit)|[2020-03-13](http://data.eastmoney.com/zjlx/002811.html)|装修装饰|深圳|15.35|
+|[002807](https://xueqiu.com/s/sz002807)|[江阴银行](https://www.lixinger.com/analytics/company/sz/002807/2807/detail/shareholders/nolimit)|[2020-03-13](http://data.eastmoney.com/zjlx/002807.html)|银行|江苏|4.54|
+|[600995](https://xueqiu.com/s/sh600995)|[文山电力](https://www.lixinger.com/analytics/company/sh/600995/600995/detail/shareholders/nolimit)|[2020-03-13](http://data.eastmoney.com/zjlx/600995.html)|水力发电|云南|7.73|
