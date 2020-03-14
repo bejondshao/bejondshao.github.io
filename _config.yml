@@ -109,8 +109,3 @@ metadata:
   categories: Others
   comments: true
 
-# hexo-admin authentification
-admin:
-  username: eagle
-  password_hash: $2a$10$W7jIbbD3FzGl9erZTwrdAurkcwdyQgpjyfznn/kzQ/HuEeoarhb0u
-  secret: 43aaaa
