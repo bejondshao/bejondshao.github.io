@@ -347,3 +347,5 @@ comments: false
 |[002811](https://xueqiu.com/s/sz002811)|[亚泰国际](https://www.lixinger.com/analytics/company/sz/002811/2811/detail/shareholders/nolimit)|[2020-03-13](http://data.eastmoney.com/zjlx/002811.html)|装修装饰|深圳|15.35|
 |[002807](https://xueqiu.com/s/sz002807)|[江阴银行](https://www.lixinger.com/analytics/company/sz/002807/2807/detail/shareholders/nolimit)|[2020-03-13](http://data.eastmoney.com/zjlx/002807.html)|银行|江苏|4.54|
 |[600995](https://xueqiu.com/s/sh600995)|[文山电力](https://www.lixinger.com/analytics/company/sh/600995/600995/detail/shareholders/nolimit)|[2020-03-13](http://data.eastmoney.com/zjlx/600995.html)|水力发电|云南|7.73|
+|[601390](https://xueqiu.com/s/sh601390)|[中国中铁](https://www.lixinger.com/analytics/company/sh/601390/601390/detail/shareholders/nolimit)|[2020-03-10](http://data.eastmoney.com/zjlx/601390.html)|建筑工程|北京|5.79|
+|[002357](https://xueqiu.com/s/sz002357)|[富临运业](https://www.lixinger.com/analytics/company/sz/002357/2357/detail/shareholders/nolimit)|[2020-03-16](http://data.eastmoney.com/zjlx/002357.html)|公路|四川|5.96|
