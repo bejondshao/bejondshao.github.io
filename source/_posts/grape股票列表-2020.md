@@ -351,3 +351,4 @@ comments: false
 |[002357](https://xueqiu.com/s/sz002357)|[富临运业](https://www.lixinger.com/analytics/company/sz/002357/2357/detail/shareholders/nolimit)|[2020-03-16](http://data.eastmoney.com/zjlx/002357.html)|公路|四川|5.96|
 |[300154](https://xueqiu.com/s/sz300154)|[瑞凌股份](https://www.lixinger.com/analytics/company/sz/300154/300154/detail/shareholders/nolimit)|[2020-03-17](http://data.eastmoney.com/zjlx/300154.html)|元器件|深圳|5.87|
 |[002687](https://xueqiu.com/s/sz002687)|[乔治白](https://www.lixinger.com/analytics/company/sz/002687/2687/detail/shareholders/nolimit)|[2020-03-17](http://data.eastmoney.com/zjlx/002687.html)|服饰|浙江|5.87|
+|[600051](https://xueqiu.com/s/sh600051)|[宁波联合](https://www.lixinger.com/analytics/company/sh/600051/600051/detail/shareholders/nolimit)|[2020-03-17](http://data.eastmoney.com/zjlx/600051.html)|综合类|浙江|6.15|
