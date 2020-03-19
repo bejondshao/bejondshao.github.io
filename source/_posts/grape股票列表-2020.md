@@ -352,3 +352,4 @@ comments: false
 |[300154](https://xueqiu.com/s/sz300154)|[瑞凌股份](https://www.lixinger.com/analytics/company/sz/300154/300154/detail/shareholders/nolimit)|[2020-03-17](http://data.eastmoney.com/zjlx/300154.html)|元器件|深圳|5.87|
 |[002687](https://xueqiu.com/s/sz002687)|[乔治白](https://www.lixinger.com/analytics/company/sz/002687/2687/detail/shareholders/nolimit)|[2020-03-17](http://data.eastmoney.com/zjlx/002687.html)|服饰|浙江|5.87|
 |[600051](https://xueqiu.com/s/sh600051)|[宁波联合](https://www.lixinger.com/analytics/company/sh/600051/600051/detail/shareholders/nolimit)|[2020-03-17](http://data.eastmoney.com/zjlx/600051.html)|综合类|浙江|6.15|
+|[000419](https://xueqiu.com/s/sz000419)|[通程控股](https://www.lixinger.com/analytics/company/sz/000419/419/detail/shareholders/nolimit)|[2020-03-19](http://data.eastmoney.com/zjlx/000419.html)|百货|湖南|4.56|
