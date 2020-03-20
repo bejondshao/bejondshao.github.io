@@ -353,3 +353,8 @@ comments: false
 |[002687](https://xueqiu.com/s/sz002687)|[乔治白](https://www.lixinger.com/analytics/company/sz/002687/2687/detail/shareholders/nolimit)|[2020-03-17](http://data.eastmoney.com/zjlx/002687.html)|服饰|浙江|5.87|
 |[600051](https://xueqiu.com/s/sh600051)|[宁波联合](https://www.lixinger.com/analytics/company/sh/600051/600051/detail/shareholders/nolimit)|[2020-03-17](http://data.eastmoney.com/zjlx/600051.html)|综合类|浙江|6.15|
 |[000419](https://xueqiu.com/s/sz000419)|[通程控股](https://www.lixinger.com/analytics/company/sz/000419/419/detail/shareholders/nolimit)|[2020-03-19](http://data.eastmoney.com/zjlx/000419.html)|百货|湖南|4.56|
+|[600693](https://xueqiu.com/s/sh600693)|[东百集团](https://www.lixinger.com/analytics/company/sh/600693/600693/detail/shareholders/nolimit)|[2020-03-19](http://data.eastmoney.com/zjlx/600693.html)|百货|福建|5.35|
+|[601607](https://xueqiu.com/s/sh601607)|[上海医药](https://www.lixinger.com/analytics/company/sh/601607/601607/detail/shareholders/nolimit)|[2020-03-20](http://data.eastmoney.com/zjlx/601607.html)|医药商业|上海|19.07|
+|[002448](https://xueqiu.com/s/sz002448)|[中原内配](https://www.lixinger.com/analytics/company/sz/002448/2448/detail/shareholders/nolimit)|[2020-03-20](http://data.eastmoney.com/zjlx/002448.html)|汽车配件|河南|5.43|
+|[600963](https://xueqiu.com/s/sh600963)|[岳阳林纸](https://www.lixinger.com/analytics/company/sh/600963/600963/detail/shareholders/nolimit)|[2020-03-20](http://data.eastmoney.com/zjlx/600963.html)|造纸|湖南|4.4|
+|[002283](https://xueqiu.com/s/sz002283)|[天润曲轴](https://www.lixinger.com/analytics/company/sz/002283/2283/detail/shareholders/nolimit)|[2020-03-20](http://data.eastmoney.com/zjlx/002283.html)|汽车配件|山东|3.68|
