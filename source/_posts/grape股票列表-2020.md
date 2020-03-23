@@ -358,3 +358,4 @@ comments: false
 |[002448](https://xueqiu.com/s/sz002448)|[中原内配](https://www.lixinger.com/analytics/company/sz/002448/2448/detail/shareholders/nolimit)|[2020-03-20](http://data.eastmoney.com/zjlx/002448.html)|汽车配件|河南|5.43|
 |[600963](https://xueqiu.com/s/sh600963)|[岳阳林纸](https://www.lixinger.com/analytics/company/sh/600963/600963/detail/shareholders/nolimit)|[2020-03-20](http://data.eastmoney.com/zjlx/600963.html)|造纸|湖南|4.4|
 |[002283](https://xueqiu.com/s/sz002283)|[天润曲轴](https://www.lixinger.com/analytics/company/sz/002283/2283/detail/shareholders/nolimit)|[2020-03-20](http://data.eastmoney.com/zjlx/002283.html)|汽车配件|山东|3.68|
+|[002033](https://xueqiu.com/s/sz002033)|[丽江旅游](https://www.lixinger.com/analytics/company/sz/002033/2033/detail/shareholders/nolimit)|[2020-03-23](http://data.eastmoney.com/zjlx/002033.html)|旅游景点|云南|6.43|
