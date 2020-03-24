@@ -359,3 +359,10 @@ comments: false
 |[600963](https://xueqiu.com/s/sh600963)|[岳阳林纸](https://www.lixinger.com/analytics/company/sh/600963/600963/detail/shareholders/nolimit)|[2020-03-20](http://data.eastmoney.com/zjlx/600963.html)|造纸|湖南|4.4|
 |[002283](https://xueqiu.com/s/sz002283)|[天润曲轴](https://www.lixinger.com/analytics/company/sz/002283/2283/detail/shareholders/nolimit)|[2020-03-20](http://data.eastmoney.com/zjlx/002283.html)|汽车配件|山东|3.68|
 |[002033](https://xueqiu.com/s/sz002033)|[丽江旅游](https://www.lixinger.com/analytics/company/sz/002033/2033/detail/shareholders/nolimit)|[2020-03-23](http://data.eastmoney.com/zjlx/002033.html)|旅游景点|云南|6.43|
+|[002790](https://xueqiu.com/s/sz002790)|[瑞尔特](https://www.lixinger.com/analytics/company/sz/002790/2790/detail/shareholders/nolimit)|[2020-03-20](http://data.eastmoney.com/zjlx/002790.html)|家居用品|福建|6.66|
+|[002377](https://xueqiu.com/s/sz002377)|[国创高新](https://www.lixinger.com/analytics/company/sz/002377/2377/detail/shareholders/nolimit)|[2020-03-24](http://data.eastmoney.com/zjlx/002377.html)|房产服务|湖北|4.19|
+|[600874](https://xueqiu.com/s/sh600874)|[创业环保](https://www.lixinger.com/analytics/company/sh/600874/600874/detail/shareholders/nolimit)|[2020-03-24](http://data.eastmoney.com/zjlx/600874.html)|环境保护|天津|7.4|
+|[002360](https://xueqiu.com/s/sz002360)|[同德化工](https://www.lixinger.com/analytics/company/sz/002360/2360/detail/shareholders/nolimit)|[2020-03-24](http://data.eastmoney.com/zjlx/002360.html)|化工原料|山西|5.33|
+|[601010](https://xueqiu.com/s/sh601010)|[文峰股份](https://www.lixinger.com/analytics/company/sh/601010/601010/detail/shareholders/nolimit)|[2020-03-24](http://data.eastmoney.com/zjlx/601010.html)|超市连锁|江苏|3.2|
+|[603897](https://xueqiu.com/s/sh603897)|[长城科技](https://www.lixinger.com/analytics/company/sh/603897/603897/detail/shareholders/nolimit)|[2020-03-24](http://data.eastmoney.com/zjlx/603897.html)|电气设备|浙江|18.92|
+|[002102](https://xueqiu.com/s/sz002102)|[ST冠福](https://www.lixinger.com/analytics/company/sz/002102/2102/detail/shareholders/nolimit)|[2020-03-24](http://data.eastmoney.com/zjlx/002102.html)|化学制药|福建|2.19|
