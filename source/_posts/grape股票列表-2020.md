@@ -366,3 +366,9 @@ comments: false
 |[601010](https://xueqiu.com/s/sh601010)|[文峰股份](https://www.lixinger.com/analytics/company/sh/601010/601010/detail/shareholders/nolimit)|[2020-03-24](http://data.eastmoney.com/zjlx/601010.html)|超市连锁|江苏|3.2|
 |[603897](https://xueqiu.com/s/sh603897)|[长城科技](https://www.lixinger.com/analytics/company/sh/603897/603897/detail/shareholders/nolimit)|[2020-03-24](http://data.eastmoney.com/zjlx/603897.html)|电气设备|浙江|18.92|
 |[002102](https://xueqiu.com/s/sz002102)|[ST冠福](https://www.lixinger.com/analytics/company/sz/002102/2102/detail/shareholders/nolimit)|[2020-03-24](http://data.eastmoney.com/zjlx/002102.html)|化学制药|福建|2.19|
+|[000581](https://xueqiu.com/s/sz000581)|[威孚高科](https://www.lixinger.com/analytics/company/sz/000581/581/detail/shareholders/nolimit)|[2020-03-25](http://data.eastmoney.com/zjlx/000581.html)|汽车配件|江苏|19.58|
+|[600665](https://xueqiu.com/s/sh600665)|[天地源](https://www.lixinger.com/analytics/company/sh/600665/600665/detail/shareholders/nolimit)|[2020-03-25](http://data.eastmoney.com/zjlx/600665.html)|全国地产|陕西|3.56|
+|[600969](https://xueqiu.com/s/sh600969)|[郴电国际](https://www.lixinger.com/analytics/company/sh/600969/600969/detail/shareholders/nolimit)|[2020-03-25](http://data.eastmoney.com/zjlx/600969.html)|水力发电|湖南|6.49|
+|[600533](https://xueqiu.com/s/sh600533)|[栖霞建设](https://www.lixinger.com/analytics/company/sh/600533/600533/detail/shareholders/nolimit)|[2020-03-25](http://data.eastmoney.com/zjlx/600533.html)|区域地产|江苏|3.29|
+|[600865](https://xueqiu.com/s/sh600865)|[百大集团](https://www.lixinger.com/analytics/company/sh/600865/600865/detail/shareholders/nolimit)|[2020-03-25](http://data.eastmoney.com/zjlx/600865.html)|百货|浙江|6.3|
+|[600778](https://xueqiu.com/s/sh600778)|[友好集团](https://www.lixinger.com/analytics/company/sh/600778/600778/detail/shareholders/nolimit)|[2020-03-25](http://data.eastmoney.com/zjlx/600778.html)|百货|新疆|5.29|
