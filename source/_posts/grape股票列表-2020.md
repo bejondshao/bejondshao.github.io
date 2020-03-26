@@ -372,3 +372,5 @@ comments: false
 |[600533](https://xueqiu.com/s/sh600533)|[栖霞建设](https://www.lixinger.com/analytics/company/sh/600533/600533/detail/shareholders/nolimit)|[2020-03-25](http://data.eastmoney.com/zjlx/600533.html)|区域地产|江苏|3.29|
 |[600865](https://xueqiu.com/s/sh600865)|[百大集团](https://www.lixinger.com/analytics/company/sh/600865/600865/detail/shareholders/nolimit)|[2020-03-25](http://data.eastmoney.com/zjlx/600865.html)|百货|浙江|6.3|
 |[600778](https://xueqiu.com/s/sh600778)|[友好集团](https://www.lixinger.com/analytics/company/sh/600778/600778/detail/shareholders/nolimit)|[2020-03-25](http://data.eastmoney.com/zjlx/600778.html)|百货|新疆|5.29|
+|[001896](https://xueqiu.com/s/sz001896)|[豫能控股](https://www.lixinger.com/analytics/company/sz/001896/1896/detail/shareholders/nolimit)|[2020-03-25](http://data.eastmoney.com/zjlx/001896.html)|火力发电|河南|3.54|
+|[002574](https://xueqiu.com/s/sz002574)|[明牌珠宝](https://www.lixinger.com/analytics/company/sz/002574/2574/detail/shareholders/nolimit)|[2020-03-26](http://data.eastmoney.com/zjlx/002574.html)|服饰|浙江|5.14|
