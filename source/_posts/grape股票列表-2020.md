@@ -374,3 +374,6 @@ comments: false
 |[600778](https://xueqiu.com/s/sh600778)|[友好集团](https://www.lixinger.com/analytics/company/sh/600778/600778/detail/shareholders/nolimit)|[2020-03-25](http://data.eastmoney.com/zjlx/600778.html)|百货|新疆|5.29|
 |[001896](https://xueqiu.com/s/sz001896)|[豫能控股](https://www.lixinger.com/analytics/company/sz/001896/1896/detail/shareholders/nolimit)|[2020-03-25](http://data.eastmoney.com/zjlx/001896.html)|火力发电|河南|3.54|
 |[002574](https://xueqiu.com/s/sz002574)|[明牌珠宝](https://www.lixinger.com/analytics/company/sz/002574/2574/detail/shareholders/nolimit)|[2020-03-26](http://data.eastmoney.com/zjlx/002574.html)|服饰|浙江|5.14|
+|[600337](https://xueqiu.com/s/sh600337)|[美克家居](https://www.lixinger.com/analytics/company/sh/600337/600337/detail/shareholders/nolimit)|[2020-03-27](http://data.eastmoney.com/zjlx/600337.html)|家居用品|新疆|4.5|
+|[600252](https://xueqiu.com/s/sh600252)|[中恒集团](https://www.lixinger.com/analytics/company/sh/600252/600252/detail/shareholders/nolimit)|[2020-03-27](http://data.eastmoney.com/zjlx/600252.html)|中成药|广西|3.31|
+|[002060](https://xueqiu.com/s/sz002060)|[粤 水 电](https://www.lixinger.com/analytics/company/sz/002060/2060/detail/shareholders/nolimit)|[2020-03-27](http://data.eastmoney.com/zjlx/002060.html)|建筑工程|广东|3.12|
