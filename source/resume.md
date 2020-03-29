@@ -1,4 +1,4 @@
-邵帅 • 男 • 1990-10 • 辽宁 大连 • <a@bejond.org> • +86 1864090xxxx
+邵帅 • 男 • 1990-10 • 辽宁 大连 • <a@bejond.org> • +86 18640902787
 
 ------
 四年半Java后台研发经验，曾就职于Liferay，服务于开源框架[Liferay（CMS）]((https://github.com/liferay/liferay-portal))的维护和支持，服务于亚太，欧美客户，英语六级，英文听说读写流利。
@@ -90,7 +90,7 @@
 * 2011年，获英语CET-6证书，听说读写流利。
 * 2012年，获金融英语证书。
 * 2012年，获IBM证书（SOA与服务计算）。
-* 有Linux服务器(CentOS)维护经验。有Linux桌面版（xUbuntu）四年使用经验。熟悉Linux及常用命令。* 熟练使用git以及Intellij/eclipse调试，快速定位问题。使用Junit自动化测试。
+* 有Linux服务器(CentOS)维护经验。有Linux桌面版六年使用经验。熟悉Linux及常用命令。* 熟练使用git以及Intellij/eclipse调试，快速定位问题。使用Junit自动化测试。
 
 兴趣爱好
 ----
