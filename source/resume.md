@@ -72,7 +72,7 @@
 
 产品名称：**[Liferay Portal](https://github.com/liferay/liferay-portal)**
 
-产品简介：Liferay Portal是一个开源企业级的网页内容管理系统，为多家企业提供商业支持。其基于portlet的开发模式使其便于用户动态管理页面布局和内容。可插拔的多功能插件灵活完成预期功能。技术体系是基于SSH的多功能的portlet容器。官方标准版本的功能包括内容管理，日历，用户导入（LDAP，SAML，AD等），动态可配置的角色和权限的管理，内容搜索（基于Elasticsearch）等。
+产品简介：Liferay Portal是一个开源企业级的内容管理系统，为多家企业提供商业支持。其基于portlet的开发模式使其便于用户动态管理页面布局和内容。可插拔的多功能插件灵活完成预期功能。技术体系是基于SSH的多功能的portlet容器。官方标准版本的功能包括内容管理，日历，用户导入（LDAP，SAML，AD等），动态可配置的角色和权限的管理，内容搜索（基于Elasticsearch）等。
 
 角色及职能：产品维护，负责系统与LDAP对接模块。维护liferay(开源)和liferay-ee(private)系统，提交修复。
 
