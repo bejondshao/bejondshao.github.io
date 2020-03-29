@@ -50,7 +50,7 @@
 
 产品名称：**Guest Journey Engine（GJE）**
 
-产品简介：GJE是部署在云端的，供第三方互联网厂商如飞猪，盟广，风向标等使用的在线办理酒店业务的接口。对接PMS有Opera，Cambridge，Foxhis。主要功能包括创建订单，在线选房分房，刷预授权，在线入住，抛账，自助离店等。其中GJE调用酒店内网Kiosk接口遇到网络限制，通过应用RabbitMQ的RPC模式，实现了跨域调用。
+产品简介：GJE是供第三方互联网厂商如飞猪，携程等使用的在线办理酒店业务的接口。服务于国内五星级酒店如香格里拉，红树林，万豪等。对接PMS有Opera（国内四星级五星级酒店行业通用酒店管理系统），Cambridge（石基信息自主研发云PMS）。主要功能包括创建订单，在线选房分房，刷预授权，在线入住，抛账，自助离店等。其中GJE调用酒店内网Kiosk接口遇到网络限制，通过应用RabbitMQ的RPC模式，实现了跨域调用。
 
 角色及职能：产品负责人，对客户需求分析，设计，接口定义，并做技术难点实现。实现进度把控，产品质量把关。编写自动化并发测试代码。
 
@@ -79,11 +79,11 @@
 * 2011年，获英语CET-6证书，听说读写流利。
 * 2012年，获金融英语证书。
 * 2012年，获IBM证书（SOA与服务计算）。
-* 有Linux服务器(CentOS)维护经验。有Linux桌面版六年使用经验。熟悉Linux及常用命令。* 熟练使用git以及Intellij/eclipse调试，快速定位问题。使用Junit自动化测试。
+* Linux服务器(CentOS)维护经验。六年Linux使用经验。熟悉Linux常用命令。* 熟练使用git以及Intellij/eclipse调试，快速定位问题。使用Junit自动化测试。
 
 兴趣爱好
 ----
-* 拥抱技术，对技术有钻研的兴趣。能系统的学习技术，并善于做记录和总结，喜欢用自己所学帮助别人。
-* [Github主页](https://github.com/bejondshao)
+* 拥抱技术，对技术有钻研的兴趣。能很快的熟悉新的思想和技术方案并使用。能系统的学习技术，并善于做记录和总结，喜欢用自己所学帮助他人。
 * [技术博客](http://tech.bejond.org)
+* [Github主页](https://github.com/bejondshao)
 * [Stachoverflow](https://stackoverflow.com/users/3908814/bejond)
