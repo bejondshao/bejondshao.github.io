@@ -18,11 +18,11 @@ Education
 
 2009-2013 : Dalian University of Technology，Software engineering，bachelor degree。
 
-工作经历
+Work Experience
 ----
 
 **[Beijing Shiji Kunlun Software Co., Ltd.](http://www.shijinet.cn)（2016/05 - by now）**
-> I work on intelligent hotel service management system for five-star hotels, not only to solve hotel front office staff's problems, but also to make customers have a better experiences on their trip. I'm responsible for Mobile PMS and Hotel Check-in Kiosk.
+> I work on intelligent hotel service management system for five-star hotels, not only to solve hotel front office staff's problems, but also to make customers have a better experiences on their trip. I'm responsible for Mobile PMS and Kiosk self-help system.
 
 * Participate in the compnay and become a full member in advance in 2 months. Become the leader of the projects that worked on.
 * Responsible for technology leadership, such as Springboot, camel, keycloak, rabbitmq etc. As a leader, I always do the resarch and make a demo for my workmates.
@@ -30,21 +30,17 @@ Education
 * Responsible for Java developer interviews.
 
 **[Liferay](https://www.liferay.com)（2014/06 - 2016/04）**
-> I worked in Liferay as technical support engineer for [Liferay portal](https://github.com/liferay/liferay-portal), worked together with Asia-Pacific and occident coworkers. Help customer service engineers to solve technical problems, such as bug fixing, hotfix making, complex environmental construction, issue reproduction 
-> 工作内容为开源项目Liferay维护。为美国，日本，印度，澳大利亚，欧洲客户提供技术支持。
+> I worked in Liferay as technical support engineer for [Liferay portal](https://github.com/liferay/liferay-portal), worked together with Asia-Pacific and occident coworkers. Help customer support engineers to solve technical problems, such as bug fixing, hotfix making, complex environmental construction, issue reproduction, customer issue analysing, etc.
+> Catch thread dump and head dump to analyse system performance issues, JVM performance turning. 
 
-* 与客户支持人员沟通（英语），为客户分析Liferay的bug，其中包括搭建环境，分析客户数据，分析问题日志，重现问题，调试并解决问题，制作补丁，向低版本移植修复，解决不同修复之间代码冲突。问题涉及前台，后台API，系统业务模块，权限管理，Liferay升级兼容等问题。
-* Thread Dump，Heap Dump分析，JVM调优。
-
-**北京紫光华宇软件有限公司（2012/08-2012/12，实习）**
-> 在北京高级人民法院驻地一个月,参与太极-紫光数据库统一整合工作,参与地方法院数据向最高人民法院汇报工作。
-
-项目经历
+Product Experience
 ----
 
-产品名称：**[Kiosk自助机服务系统](http://www.shijinet.cn/Check%20in.html)**
+Name：**[Kiosk self-help system](http://www.shijinet.cn/Check%20in.html)**
 
-产品简介：Kiosk自助机服务系统是部署在酒店，通过与酒店PMS进行交互完成客人自助查询分配房间，刷预授权，人脸识别，上传证件到公安局，办理入住以及离店的多功能智能化系统。Kiosk提供两套接口，一套接口（SOAP协议）供酒店自助机使用。解决客人排队，自主选房的问题，同时减轻酒店前台压力。另一套接口（REST API）供GJE使用，完成在线选房，入住，离店等功能。
+Introduction：Kiosk self-help system locates in local hotel, communicate with hotel PMS, usually Opera. And Kiosk can help customers do check in 
+
+Kiosk自助机服务系统是部署在酒店，通过与酒店PMS进行交互完成客人自助查询分配房间，刷预授权，人脸识别，上传证件到公安局，办理入住以及离店的多功能智能化系统。Kiosk提供两套接口，一套接口（SOAP协议）供酒店自助机使用。解决客人排队，自主选房的问题，同时减轻酒店前台压力。另一套接口（REST API）供GJE使用，完成在线选房，入住，离店等功能。
 
 角色及职能：产品负责人，对客户需求分析，设计，接口定义，并做技术难点实现。实现进度把控，产品质量把关。
 
