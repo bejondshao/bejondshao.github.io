@@ -1,15 +1,13 @@
 Bejond Shao • Male • 1990-10 • Dalian, Liaoning • <a@bejond.org> • +86 18640902787
 
 ------
-I have 6 years Java development experience of backend service. I used to 
+I have 6 years Java development experience of backend service. 
 
+Research on security, identity authentication and authorization. Have a systematic study of [Keycloak] (https://www.keycloak.org/). Use spare time for single sign-on and LDAP integration. Use Spring Security for OpenId Connect authentication and authorization.
 
+Have complete product design and implementation experience for remote call of message middleware. Familiar with mainstream Java frameworks. Research and tuning experience on JVM tuning and memory leak.
 
-对安全，身份认证、授权颇有研究。对[Keycloak](https://www.keycloak.org/)有过系统的学习。利用业余时间做单点登录，LDAP集成。使用Spring Security做OpenId Connect身份认证与授权。
-
-对消息中间件远程调用有完整的产品设计和实现经验。熟悉主流Java框架。对JVM调优，内存泄露有研究和调优经验。
-
-拥抱技术，对技术有钻研的兴趣。能很快的熟悉新的思想和技术方案并使用。能系统的学习技术，并善于做记录和总结，喜欢用自己所学帮助他人。
+Embrace and have a deep interest in technology. Can quickly become familiar with new ideas and technical solutions and use them. Able to learn technology systematically, and good at recording and summarizing. Like to help others with what I have learned.
 
 ------
 
@@ -78,20 +76,20 @@ Related technologies: Liferay, portlet, Struts, Spring, Hibernate, JSP, LDAP, Bo
 
 Personal open source: **[Grape](https://github.com/bejondshao/grape)**
 
-Introduction: Use python to obtain basic information of A-share stocks, daily trading information, calculate K-line and other technical indicators, and screen through certain stock selection strategies. In the process of stock investment, I was unable to have too many stocks and had no time to observe all the K-lines and stock infomations, so I developed this system to screen by itself. 筛选的股票可根据不同的策略调整，并使用非关系型数据库MongoDB本地持久化，同时自动上传筛选结果到[个人博客](https://tech.bejond.org/2020/01/05/grape%E8%82%A1%E7%A5%A8%E5%88%97%E8%A1%A8-2020/)中。
+Introduction: Use python to obtain basic information of A-share stocks, daily trading information, calculate K-line and other technical indicators, and screen through certain stock selection strategies. In the process of stock investment, I was unable to have too many stocks and had no time to observe all the K-lines and stock infomations, so I developed this system to screen by itself. Screened stocks can be adjusted according to different strategies, and non-relational database MongoDB is used for local persistence, and the screening results are automatically uploaded to [personal blog](https://tech.bejond.org/2020/01/05/grape%E8%82%A1%E7%A5%A8%E5%88%97%E8%A1%A8-2020/).
 
-相关技术：Python, MongoDB, Tushare, pandas。
+Related technologies: Python, MongoDB, Tushare, pandas.
 
-个人技能
+Personal Skills
 ----
-* 2011年，获英语CET-6证书，听说读写流利。
-* 2012年，获金融英语证书。
-* 2012年，获IBM证书（SOA与服务计算）。
-* Linux服务器(CentOS)维护经验。六年Linux使用经验。熟悉Linux常用命令。* 熟练使用git以及Intellij/eclipse调试，快速定位问题。使用Junit自动化测试。
+* 2011, Obtained English CET-6 certificate, fluent in listening, speaking, reading and writing.
+* 2012, Obtained Financial English Certificate.
+* 2012, Obtained IBM Certificate (SOA and Service Computing).
+* Linux server (CentOS) maintenance experience. 6 years of Linux desktop experience. Familiar with common Linux commands.* Familiar with git and Intellij / eclipse debugging, quickly locate problems. Automate testing with Junit.
 
-兴趣爱好
+Hobbies
 ----
-* [技术博客](http://tech.bejond.org)
+* [Personal technical blog](http://tech.bejond.org)
 * [Stackoverflow](https://stackoverflow.com/users/3908814/bejond?tab=profile)
 * [Github](https://github.com/bejondshao)
 
