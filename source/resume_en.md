@@ -22,7 +22,7 @@ Work Experience
 ----
 
 **[Beijing Shiji Kunlun Software Co., Ltd.](http://www.shijinet.cn)（2016/05 - by now）**
-> I work on intelligent hotel service management system for five-star hotels, not only to solve hotel front office staff's problems, but also to make customers have a better experiences on their trip. I'm responsible for Mobile PMS and Kiosk self-help system.
+> I work on intelligent hotel service management system for five-star hotels, not only to solve hotel front office staff's problems, but also to make guests have a better experiences on their trip. I'm responsible for Mobile PMS and Kiosk self-help system.
 
 * Participate in the compnay and become a full member in advance in 2 months. Become the leader of the projects that worked on.
 * Responsible for technology leadership, such as Springboot, camel, keycloak, rabbitmq etc. As a leader, I always do the resarch and make a demo for my workmates.
@@ -38,11 +38,10 @@ Product Experience
 
 Name: **[Kiosk self-help system](http://www.shijinet.cn/Check%20in.html)**
 
-Introduction: Kiosk self-help system (Kiosk) locates in local hotel, communicate with hotel Property Management System (PMS), usually Opera or Cambridge. And Kiosk can help customers do check in processes by themselves, in case of front desk is busy or the customer doesn't want to contact with staff directly. Kiosk can search reservation, find rooms, and assign room, upload document to Public Security Bureau (PSB), make payment or pre-authorization and check in. When leaving, customer can also search the reservation, and check out.
+Introduction: Kiosk self-help system (Kiosk) locates in local hotel, communicate with hotel Property Management System (PMS), usually Opera or Cambridge. And Kiosk can help guests do check in processes by themselves, in case of front desk is busy or the guest doesn't want to contact with staff directly. Kiosk can search reservation, find rooms, and assign room, upload document to Public Security Bureau (PSB), make payment or pre-authorization and check in or check out.
 
-Kiosk自助机服务系统是部署在酒店，通过与酒店PMS进行交互完成客人自助查询分配房间，刷预授权，人脸识别，上传证件到公安局，办理入住以及离店的多功能智能化系统。Kiosk提供两套接口，一套接口（SOAP协议）供酒店自助机使用。解决客人排队，自主选房的问题，同时减轻酒店前台压力。另一套接口（REST API）供GJE使用，完成在线选房，入住，离店等功能。
-
-角色及职能：产品负责人，对客户需求分析，设计，接口定义，并做技术难点实现。实现进度把控，产品质量把关。
+Roles and resposibilities: Person in charge. Analyse customer requirement, make design for Rest APIs, 
+，对客户需求分析，设计，接口定义，并做技术难点实现。实现进度把控，产品质量把关。
 
 相关技术：Java EE, EJB, CDI, AOP, Mybatis, JPA, JWT，RabbitMQ, Postgresql, Oracle, Maven, SVN。
 
