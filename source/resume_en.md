@@ -3,7 +3,7 @@
 ------
 6 years Java development experience of backend service. 
 
-Research on security, identity authentication and authorization. Have a systematic study of [Keycloak] (https://www.keycloak.org/). Use spare time for single sign-on and LDAP integration. Use Spring Security for OpenId Connect authentication and authorization.
+Research on security, identity authentication and authorization. Have a systematic study of [Keycloak](https://www.keycloak.org/). Use spare time for single sign-on and LDAP integration. Use Spring Security for OpenId Connect authentication and authorization.
 
 Have complete product design and implementation experience for remote call of message middleware. Familiar with mainstream Java frameworks. Research and tuning experience on JVM tuning and memory leak.
 
