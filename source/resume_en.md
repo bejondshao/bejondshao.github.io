@@ -30,7 +30,7 @@ Education
 * Responsible for Java developer interviews.
 
 **[Liferay](https://www.liferay.com)（2014/06 - 2016/04）**
-> I worked in Liferay as technical support engineer for [Liferay portal](https://github.com/liferay/liferay-portal), worked together with Asia-Pacific and occident coworkers.
+> I worked in Liferay as technical support engineer for [Liferay portal](https://github.com/liferay/liferay-portal), worked together with Asia-Pacific and occident coworkers. Help customer service engineers to solve technical problems, such as bug fixing, hotfix making, complex environmental construction, issue reproduction 
 > 工作内容为开源项目Liferay维护。为美国，日本，印度，澳大利亚，欧洲客户提供技术支持。
 
 * 与客户支持人员沟通（英语），为客户分析Liferay的bug，其中包括搭建环境，分析客户数据，分析问题日志，重现问题，调试并解决问题，制作补丁，向低版本移植修复，解决不同修复之间代码冲突。问题涉及前台，后台API，系统业务模块，权限管理，Liferay升级兼容等问题。
