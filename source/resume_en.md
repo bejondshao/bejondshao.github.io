@@ -36,20 +36,19 @@ Work Experience
 Product Experience
 ----
 
-Name: **[Kiosk self-help system](http://www.shijinet.cn/Check%20in.html)**
+Name: **[Kiosk self-help system (Kiosk)](http://www.shijinet.cn/Check%20in.html)**
 
-Introduction: Kiosk self-help system (Kiosk) locates in local hotel, communicate with hotel Property Management System (PMS), usually Opera or Cambridge. And Kiosk can help guests do check in processes by themselves, in case of front desk is busy or the guest doesn't want to contact with staff directly. Kiosk can search reservation, find rooms, and assign room, upload document to Public Security Bureau (PSB), make payment or pre-authorization and check in or check out.
+Introduction: Kiosk locates in local hotel, communicate with hotel Property Management System (PMS), usually Opera or Cambridge. And Kiosk can help guests do check in processes by themselves, in case of front desk is busy or the guest doesn't want to contact with staff directly. Kiosk can search reservation, find rooms, and assign room, upload document to Public Security Bureau (PSB), make payment or pre-authorization and check in or check out.
 
-Roles and resposibilities: Person in charge. Analyse customer requirement, make design for Rest APIs, 
-，对客户需求分析，设计，接口定义，并做技术难点实现。实现进度把控，产品质量把关。
+Roles and resposibilities: Person in charge. Analyse customer requirement, make design for Rest APIs, technical difficulties resolution. Achieve progress control and product quality control.
 
-相关技术：Java EE, EJB, CDI, AOP, Mybatis, JPA, JWT，RabbitMQ, Postgresql, Oracle, Maven, SVN。
+Related technologies: Java EE, EJB, CDI, AOP, Mybatis, JPA, JWT，RabbitMQ, Postgresql, Oracle, Maven, SVN。
 
 ----
 
-产品名称：**Guest Journey Engine（GJE）**
+Name: **Guest Journey Engine（GJE）**
 
-产品简介：GJE是供第三方互联网厂商如飞猪，携程等使用的在线办理酒店业务的接口。服务于国内五星级酒店如香格里拉，红树林，万豪等。对接PMS有Opera（国内四星级五星级酒店行业通用酒店管理系统），Cambridge（石基信息自主研发云PMS）。主要功能包括创建订单，在线选房分房，刷预授权，在线入住，抛账，自助离店等。其中GJE调用酒店内网Kiosk接口遇到网络限制，通过应用RabbitMQ的RPC模式，实现了跨域调用。
+Introduction: GJE is an interface for online hotel business for third-party internet vendors such as Feizhu and Ctrip. Serving domestic five-star hotels对接PMS有Opera（国内四星级五星级酒店行业通用酒店管理系统），Cambridge（石基信息自主研发云PMS）。主要功能包括创建订单，在线选房分房，刷预授权，在线入住，抛账，自助离店等。其中GJE调用酒店内网Kiosk接口遇到网络限制，通过应用RabbitMQ的RPC模式，实现了跨域调用。
 
 角色及职能：产品负责人，对客户需求分析，设计，接口定义，并做技术难点实现。实现进度把控，产品质量把关。编写自动化并发测试代码。
 
