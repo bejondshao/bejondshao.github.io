@@ -1,6 +1,8 @@
-邵帅 • 男 • 1990-10 • 辽宁 大连 • <a@bejond.org> • +86 18640902787
+Bejond Shao • Male • 1990-10 • Dalian, Liaoning • <a@bejond.org> • +86 18640902787
 
 ------
+
+
 六年Java后台研发经验，曾就职于Liferay，服务于开源框架[Liferay（CMS）]((https://github.com/liferay/liferay-portal))的维护和支持，服务于亚太，欧美客户。
 
 现从事酒店智能化管理，主要负责在线入住，在线选房，在线离店等一整套智能化酒店业务流程，提供移动PMS解决方案并实现。带领两个人做产品研发和维护。
