@@ -1,7 +1,7 @@
 Bejond Shao • Male • 1990-10 • Dalian, Liaoning • <a@bejond.org> • +86 18640902787
 
 ------
-I have 6 years Java development experience of backend service. I used to work in Liferay as technical support for [Liferay portal](https://github.com/liferay/liferay-portal), work together with Asia-Pacific and occident workmates.
+I have 6 years Java development experience of backend service. I used to 
 
 
 
@@ -24,13 +24,13 @@ I have 6 years Java development experience of backend service. I used to work in
 **[Beijing Shiji Kunlun Software Co., Ltd.](http://www.shijinet.cn)（2016/05 - by now）**
 > I work on intelligent hotel service management system for five-star hotels, not only to solve hotel front office staff's problems, but also to make customers have a better experiences on their trip. I'm responsible for Mobile PMS and Hotel Check-in Kiosk.
 
-* Participate in the compnay and become a full member in advance in 2 months. Become the leader of the projects that 
-* 入职两个月提前转正，并承担Kiosk自助机产品和GJE产品开发。后由于人员变动，成为项目负责人。
-* 负责新技术调研，如SpringBoot, Camel, Keycloak。技术攻关，比如消息中间件RPC模式应用，新PMS接口对接，产品设计和代码规范。
-* 优化代码结构，性能调优，代码审核。
-* 负责Java开发人员招聘和面试。
+* Participate in the compnay and become a full member in advance in 2 months. Become the leader of the projects that worked on.
+* Responsible for technology leadership, such as Springboot, camel, keycloak, rabbitmq etc. As a leader, I always do the resarch and make a demo for my workmates.
+* Always tring to make the product better, besides developing modules, doing reconstruction about the products, performance tuning, code review.
+* Responsible for Java developer interviews.
 
-**[Liferay](https://www.liferay.com)（2014/06-2016/04）**
+**[Liferay](https://www.liferay.com)（2014/06 - 2016/04）**
+> I worked in Liferay as technical support engineer for [Liferay portal](https://github.com/liferay/liferay-portal), worked together with Asia-Pacific and occident coworkers.
 > 工作内容为开源项目Liferay维护。为美国，日本，印度，澳大利亚，欧洲客户提供技术支持。
 
 * 与客户支持人员沟通（英语），为客户分析Liferay的bug，其中包括搭建环境，分析客户数据，分析问题日志，重现问题，调试并解决问题，制作补丁，向低版本移植修复，解决不同修复之间代码冲突。问题涉及前台，后台API，系统业务模块，权限管理，Liferay升级兼容等问题。
