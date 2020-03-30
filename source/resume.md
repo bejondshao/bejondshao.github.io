@@ -21,7 +21,7 @@
 ----
 
 **[北京石基昆仑软件有限公司](http://www.shijinet.cn)（2016/05-至今）**
-> 工作内容为智能化酒店服务管理。主要负责酒店自助入住相关业务，负责Kiosk自助机产品研发，云端GJE在线入住产品研发。包括创建订单，在线选房分房，预授权，付款，离店等功能。
+> 工作内容为智能化酒店服务管理。主要负责酒店自助入住相关业务，负责Kiosk自助机产品研发，云端GJE在线入住产品研发，移动端PMS的服务开发。包括创建订单，在线选房分房，预授权，付款，离店等功能。
 
 * 入职两个月提前转正，并承担Kiosk自助机产品和GJE产品开发。后由于人员变动，成为项目负责人。
 * 负责新技术调研，如SpringBoot, Camel, Keycloak。技术攻关，比如消息中间件RPC模式应用，新PMS接口对接，产品设计和代码规范。
@@ -46,7 +46,7 @@
 
 角色及职能：产品负责人，对客户需求分析，设计，接口定义，并做技术难点实现。实现进度把控，产品质量把关。
 
-相关技术：Java EE, EJB, CDI, AOP, Mybatis, Hibernate, JWT，RabbitMQ, Postgresql, Oracle, Maven, SVN。
+相关技术：Java EE, EJB, CDI, AOP, Mybatis, JPA, JWT，RabbitMQ, Postgresql, Oracle, Maven, SVN。
 
 ----
 
@@ -56,7 +56,7 @@
 
 角色及职能：产品负责人，对客户需求分析，设计，接口定义，并做技术难点实现。实现进度把控，产品质量把关。编写自动化并发测试代码。
 
-相关技术：Java EE, EJB, CDI, AOP, Mybatis, Hibernate, JWT，Postgresql, RabbitMQ。
+相关技术：Java EE, EJB, CDI, AOP, Mybatis, JPA, JWT，Postgresql, RabbitMQ。
 
 ----
 
