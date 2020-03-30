@@ -377,3 +377,5 @@ comments: false
 |[600337](https://xueqiu.com/s/sh600337)|[美克家居](https://www.lixinger.com/analytics/company/sh/600337/600337/detail/shareholders/nolimit)|[2020-03-27](http://data.eastmoney.com/zjlx/600337.html)|家居用品|新疆|4.5|
 |[600252](https://xueqiu.com/s/sh600252)|[中恒集团](https://www.lixinger.com/analytics/company/sh/600252/600252/detail/shareholders/nolimit)|[2020-03-27](http://data.eastmoney.com/zjlx/600252.html)|中成药|广西|3.31|
 |[002060](https://xueqiu.com/s/sz002060)|[粤 水 电](https://www.lixinger.com/analytics/company/sz/002060/2060/detail/shareholders/nolimit)|[2020-03-27](http://data.eastmoney.com/zjlx/002060.html)|建筑工程|广东|3.12|
+|[000530](https://xueqiu.com/s/sz000530)|[冰山冷热](https://www.lixinger.com/analytics/company/sz/000530/530/detail/shareholders/nolimit)|[2020-03-25](http://data.eastmoney.com/zjlx/000530.html)|机械基件|辽宁|3.92|
+|[603038](https://xueqiu.com/s/sh603038)|[华立股份](https://www.lixinger.com/analytics/company/sh/603038/603038/detail/shareholders/nolimit)|[2020-03-30](http://data.eastmoney.com/zjlx/603038.html)|装修装饰|广东|14.37|
