@@ -48,7 +48,7 @@ Related technologies: Java EE, EJB, CDI, AOP, Mybatis, JPA, JWT，RabbitMQ, Post
 
 Name: **Guest Journey Engine（GJE）**
 
-Introduction: GJE is an interface for online hotel business for third-party internet vendors such as Feizhu and Ctrip. Serving domestic five-star hotels对接PMS有Opera（国内四星级五星级酒店行业通用酒店管理系统），Cambridge（石基信息自主研发云PMS）。主要功能包括创建订单，在线选房分房，刷预授权，在线入住，抛账，自助离店等。其中GJE调用酒店内网Kiosk接口遇到网络限制，通过应用RabbitMQ的RPC模式，实现了跨域调用。
+Introduction: GJE is an interface for online hotel business for third-party internet channels such as Feizhu and Ctrip. The interfaces about GJE is similar to Kiosk, but GJE is a load-balanced cloud architecture gateway. It can searve multiple channels and also connect to multiple hotels. 主要功能包括创建订单，在线选房分房，刷预授权，在线入住，抛账，自助离店等。其中GJE调用酒店内网Kiosk接口遇到网络限制，通过应用RabbitMQ的RPC模式，实现了跨域调用。
 
 角色及职能：产品负责人，对客户需求分析，设计，接口定义，并做技术难点实现。实现进度把控，产品质量把关。编写自动化并发测试代码。
 
