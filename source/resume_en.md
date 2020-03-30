@@ -58,11 +58,11 @@ Related technologies: Java EE, EJB, CDI, AOP, Mybatis, JPA, JWT，Postgresql, Ra
 
 Name: **Kunlun 360**
 
-Introduction: Kunlun 360是石基昆仑自主研发的，全方位服务酒店业务的综合性系统。包含订单处理，客房管理，客人管理，账目管理，证件上传公安局，扫码支付，电子签名，发票打印等多个模块。实现移动PMS功能，方便服务人员专项服务客人，不必局限于前台或自助设备，让客人获得更优质的体验。
+Introduction: Kunlun 360 is a comprehensive system independently developed by Shiji Kunlun, which is a full-service hotel business. Including reservation processing, room, guest, billing management. And intellijent functions such as electronic signature, document uploading, scan code payment, invoice printing and other modules. The mobile PMS function is implemented, which is convenient for the service staff to serve the guests specifically. It does not have to be confined to the front desk or self-help equipment to allow guests to have a better experience.
 
-角色及职能：本人负责订单，客房，客人，账目管理等模块。负责需求分析，功能调研，接口设计，功能实现，协调客户端测试。
+Roles and resposibilities: I am responsible for reservation, room, guest, billing management and other modules. Responsible for requirements analysis, function investigation, interface design, function implementation, and coordination client testing.
 
-相关技术：SpringBoot, Mybatis, JPA, Postgresql。
+Related technologies: Springboot, Rest API, Mybatis, JPA, Postgresql。
 
 ----
 
