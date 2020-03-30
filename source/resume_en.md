@@ -50,15 +50,15 @@ Name: **Guest Journey Engine（GJE）**
 
 Introduction: GJE is an interface for online hotel business for third-party internet channels such as Feizhu and Ctrip. The interfaces about GJE is similar to Kiosk, but GJE is a load-balanced cloud architecture gateway. It can searve multiple channels and also connect to multiple hotels. GJE called the hotel intranet Kiosk interface and encountered network limitations. By applying RabbitMQ's RPC mode, intranet penetration was achieved.
 
-角色及职能：产品负责人，对客户需求分析，设计，接口定义，并做技术难点实现。实现进度把控，产品质量把关。编写自动化并发测试代码。
+Roles and resposibilities: The same as Kiosk.
 
-相关技术：Java EE, EJB, CDI, AOP, Mybatis, JPA, JWT，Postgresql, RabbitMQ。
+Related technologies: Java EE, EJB, CDI, AOP, Mybatis, JPA, JWT，Postgresql, RabbitMQ。
 
 ----
 
-产品名称：**Kunlun 360**
+Name: **Kunlun 360**
 
-产品介绍：Kunlun 360是石基昆仑自主研发的，全方位服务酒店业务的综合性系统。包含订单处理，客房管理，客人管理，账目管理，证件上传公安局，扫码支付，电子签名，发票打印等多个模块。实现移动PMS功能，方便服务人员专项服务客人，不必局限于前台或自助设备，让客人获得更优质的体验。
+Introduction: Kunlun 360是石基昆仑自主研发的，全方位服务酒店业务的综合性系统。包含订单处理，客房管理，客人管理，账目管理，证件上传公安局，扫码支付，电子签名，发票打印等多个模块。实现移动PMS功能，方便服务人员专项服务客人，不必局限于前台或自助设备，让客人获得更优质的体验。
 
 角色及职能：本人负责订单，客房，客人，账目管理等模块。负责需求分析，功能调研，接口设计，功能实现，协调客户端测试。
 
