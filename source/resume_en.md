@@ -1,4 +1,4 @@
-Bejond Shao • Male • 1990-10 • Dalian, Liaoning • <a@bejond.org> • +86 18640902787
+**Bejond Shao** • Male • 1990-10 • Dalian, Liaoning • <a@bejond.org> • +86 **18640902787**
 
 ------
 6 years Java development experience of backend service. 
@@ -14,9 +14,9 @@ Embrace and have a deep interest in technology. Can quickly become familiar with
 Education
 ----
 
-2009-2013 : Dalian University of Technology，Software engineering，bachelor degree.
+**2009 - 2013:** Dalian University of Technology，Software engineering，bachelor degree.
 
-Work Experience
+Work Experiences
 ----
 
 **[Beijing Shiji Kunlun Software Co., Ltd.](http://www.shijinet.cn)（2016/05 - by now）**
@@ -28,10 +28,12 @@ Work Experience
 * Responsible for Java developer interviews.
 
 **[Liferay Inc.](https://www.liferay.com)（2014/06 - 2016/04）**
-> I worked in Liferay as technical support engineer for [Liferay portal](https://github.com/liferay/liferay-portal), worked together with Asia-Pacific and occident coworkers. Help customer support engineers to solve technical problems, such as bug fixing, hotfix making, complex environmental construction, issue reproduction, customer issue analysing, etc.
-> Catch thread dump and heap dump to analyse system performance issues, JVM performance turning. 
+> I worked in Liferay as technical support engineer for [Liferay portal](https://github.com/liferay/liferay-portal), worked together with Asia-Pacific and occident coworkers. 
 
-Product Experience
+* Help customer support engineers to solve technical problems, such as bug fixing, hotfix making, complex environmental construction, issue reproduction, customer issue analysing, etc.
+* Catch thread dump and heap dump to analyse system performance issues, JVM performance turning. 
+
+Product Experiences
 ----
 
 **Name:** **[Kiosk self-help system (Kiosk)](http://www.shijinet.cn/Check%20in.html)**
@@ -46,7 +48,7 @@ Product Experience
 
 **Name:** **Guest Journey Engine（GJE）**
 
-**Introduction:** GJE is an interface for online hotel business for third-party internet channels such as Feizhu and Ctrip. The interfaces about GJE is similar to Kiosk, but GJE is a load-balanced cloud architecture gateway. It can searve multiple channels and also connect to multiple hotels. GJE called the hotel intranet Kiosk interface and encountered network limitations. By applying RabbitMQ's RPC mode, intranet penetration was achieved.
+**Introduction:** GJE is an interface for online hotel business for third-party internet channels such as Feizhu and Ctrip. The interfaces about GJE is similar to Kiosk, but GJE is a load-balanced cloud architecture gateway. It can serve multiple channels and also connect to multiple hotels. GJE called the hotel intranet Kiosk interface and encountered network limitations. By applying RabbitMQ's RPC mode, intranet penetration was achieved.
 
 **Roles and resposibilities:** The same as Kiosk.
 
