@@ -22,10 +22,9 @@ I have 6 years Java development experience of backend service. I used to work in
 ----
 
 **[Beijing Shiji Kunlun Software Co., Ltd.](http://www.shijinet.cn)（2016/05 - by now）**
-> I work on smart hotel management system for five-star hotels, not only to solve hotel front office staff's problems, but also to make customers have a better experiences on their trip. I'm responsible for Mobile PMS and Hotel Check-in Kiosk.
+> I work on intelligent hotel service management system for five-star hotels, not only to solve hotel front office staff's problems, but also to make customers have a better experiences on their trip. I'm responsible for Mobile PMS and Hotel Check-in Kiosk.
 
-> 工作内容为智能化酒店服务管理。主要负责酒店自助入住相关业务，负责Kiosk自助机产品研发，云端GJE在线入住产品研发，移动端PMS的服务开发。包括创建订单，在线选房分房，预授权，付款，离店等功能。
-
+* Participate in the compnay and become a full member in advance in 2 months. Become the leader of the projects that 
 * 入职两个月提前转正，并承担Kiosk自助机产品和GJE产品开发。后由于人员变动，成为项目负责人。
 * 负责新技术调研，如SpringBoot, Camel, Keycloak。技术攻关，比如消息中间件RPC模式应用，新PMS接口对接，产品设计和代码规范。
 * 优化代码结构，性能调优，代码审核。
