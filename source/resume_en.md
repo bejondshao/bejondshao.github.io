@@ -70,7 +70,7 @@ Product Experiences
 
 Introduction: Liferay Portal is an open source enterprise content management system that provides commercial support to multiple companies. Its portlet-based development model makes it easy for users to dynamically manage page layout and content. Pluggable multi-function plugins flexibly complete the expected functions.
 
-**Roles and resposibilities:** Product maintenance, responsible for the system and LDAP module. Maintain liferay-portal and liferay-ee (private) systems and submit for repair.
+**Roles and resposibilities:** Product maintenance, responsible for the system and LDAP module. Maintain liferay-portal and liferay-ee systems and submit for repair.
 
 **Related technologies:** Liferay, portlet, Struts, Spring, Hibernate, JSP, LDAP, Bootstrap, freemarker, Git, JIRA.
 
@@ -80,14 +80,14 @@ Introduction: Liferay Portal is an open source enterprise content management sys
 
 **Introduction:** Use python to obtain basic information of A-share stocks, daily trading information, calculate K-line and other technical indicators, and screen through certain stock selection strategies. In the process of stock investment, I was unable to have too many stocks and had no time to observe all the K-lines and stock infomations, so I developed this system to screen by itself. Screened stocks can be adjusted according to different strategies, and non-relational database MongoDB is used for local persistence, and the screening results are automatically uploaded to [personal blog](https://tech.bejond.org/2020/01/05/grape%E8%82%A1%E7%A5%A8%E5%88%97%E8%A1%A8-2020/).
 
-**Related technologies:** Python, MongoDB, Tushare, pandas.
+**Related technologies:** Python, MongoDB, Tushare, pandas, unit testing.
 
 Personal Skills
 ----
 * 2011, Obtained English CET-6 certificate, fluent in listening, speaking, reading and writing.
 * 2012, Obtained Financial English Certificate.
 * 2012, Obtained IBM Certificate (SOA and Service Computing).
-* Linux server (CentOS) maintenance experience. 6 years of Linux desktop experience. Familiar with common Linux commands.* Familiar with git and Intellij / eclipse debugging, quickly locate problems. Automate testing with Junit.
+* Linux server maintenance experience. 6 years of Linux desktop experience. Familiar with common Linux commands.* Familiar with Intellij / eclipse debugging, quickly locate problems. Automate testing with Junit.
 
 Hobbies
 ----
