@@ -3,7 +3,6 @@ Bejond Shao • Male • 1990-10 • Dalian, Liaoning • <a@bejond.org> • +86
 ------
 I have 6 years Java development experience of backend service. I used to work in Liferay as technical support for [Liferay portal](https://github.com/liferay/liferay-portal), work together with Asia-Pacific and occident workmates.
 
-Now I work on smart hotel management system for five-star hotels, not only to solve hotel front office staff's problems, but also to make customers have a better experiences on their trip. I'm responsible for Mobile PMS and Hotel Check-in Kiosk.
 
 
 对安全，身份认证、授权颇有研究。对[Keycloak](https://www.keycloak.org/)有过系统的学习。利用业余时间做单点登录，LDAP集成。使用Spring Security做OpenId Connect身份认证与授权。
@@ -17,12 +16,14 @@ Now I work on smart hotel management system for five-star hotels, not only to so
 教育经历
 ----
 
-2009-2013 : Dalian University of Technology，Software engineering，bechlar degree。
+2009-2013 : Dalian University of Technology，Software engineering，bachelor degree。
 
 工作经历
 ----
 
-**[北京石基昆仑软件有限公司](http://www.shijinet.cn)（2016/05-至今）**
+**[Beijing Shiji Kunlun Software Co., Ltd.](http://www.shijinet.cn)（2016/05 - by now）**
+> I work on smart hotel management system for five-star hotels, not only to solve hotel front office staff's problems, but also to make customers have a better experiences on their trip. I'm responsible for Mobile PMS and Hotel Check-in Kiosk.
+
 > 工作内容为智能化酒店服务管理。主要负责酒店自助入住相关业务，负责Kiosk自助机产品研发，云端GJE在线入住产品研发，移动端PMS的服务开发。包括创建订单，在线选房分房，预授权，付款，离店等功能。
 
 * 入职两个月提前转正，并承担Kiosk自助机产品和GJE产品开发。后由于人员变动，成为项目负责人。
