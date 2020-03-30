@@ -13,7 +13,7 @@ I have 6 years Java development experience of backend service. I used to
 
 ------
 
-教育经历
+Education
 ----
 
 2009-2013 : Dalian University of Technology，Software engineering，bachelor degree。
