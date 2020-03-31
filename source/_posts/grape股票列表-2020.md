@@ -379,3 +379,4 @@ comments: false
 |[002060](https://xueqiu.com/s/sz002060)|[粤 水 电](https://www.lixinger.com/analytics/company/sz/002060/2060/detail/shareholders/nolimit)|[2020-03-27](http://data.eastmoney.com/zjlx/002060.html)|建筑工程|广东|3.12|
 |[000530](https://xueqiu.com/s/sz000530)|[冰山冷热](https://www.lixinger.com/analytics/company/sz/000530/530/detail/shareholders/nolimit)|[2020-03-25](http://data.eastmoney.com/zjlx/000530.html)|机械基件|辽宁|3.92|
 |[603038](https://xueqiu.com/s/sh603038)|[华立股份](https://www.lixinger.com/analytics/company/sh/603038/603038/detail/shareholders/nolimit)|[2020-03-30](http://data.eastmoney.com/zjlx/603038.html)|装修装饰|广东|14.37|
+|[002538](https://xueqiu.com/s/sz002538)|[司尔特](https://www.lixinger.com/analytics/company/sz/002538/2538/detail/shareholders/nolimit)|[2020-03-31](http://data.eastmoney.com/zjlx/002538.html)|农药化肥|安徽|5.0|
