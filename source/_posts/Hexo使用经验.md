@@ -88,7 +88,7 @@ Hello World是要展示的文字，如果不填，默认取引用文章标题。
   ```
 即可，需要重启hexo生效。
 {% asset_img hexo-admin_metadata.png Hexo-admin metadata %}
-`categories`配置创建文章的默认类别，该属性是数组，如果想配置文章到默认的二级类别则为`categories: [杂记,生活]`。`comments`为是否开启文章评论功能，添加后即可在hexo-admin后台设定属性（comments即便不设定，如果博客开启评论功能，也是所有文章默认都开启的，这样配置则方便在hexo-admin设置某篇文章不开启comment，就不需要手动修改文章markdown文件了）。这些默认值需要通过hexo-admin方式创建文章才会设定默认值。如果是通过`hexo new abc`来创建文章，则打开hexo-admin文章这些配置默认值不生效，需要手动设定。
+`categories`配置创建文章的默认类别，该属性是数组，如果想配置文章到默认的二级类别则为`categories: [杂记,生活]`。`comments`为是否开启文章评论功能，添加后即可在hexo-admin后台设定属性（comments即便不设定，如果博客开启评论功能，也是所有文章默认都开启的，这样配置则方便在hexo-admin设置某篇文章不开启comment，就不需要手动修改文章markdown文件了）。**这些默认值需要通过hexo-admin方式创建文章才会设定默认值。如果是通过`hexo new abc`来创建文章，则打开hexo-admin文章这些配置默认值不生效，需要手动设定。另外**
 
 * Metadata功能，可以在_config.yml里添加诸如默认category的功能（因为hexo的默认category功能好像不好用）
 ```
@@ -184,4 +184,3 @@ hexo g && hexo d
  3. git issues（有gitment, ghpages-ghcomments等，在github的资源库创建issues。其他人评论则以comment的形式出现，没有验证博主是否有权利删除他人评论。需要注册登录github。）
  4. [Valine](https://valine.js.org/)（使用[LeanCloud](https://leancloud.cn/)作为数据库存储。好处是不需要注册，绝大多数Hexo主题都已支持，可以直接启动配置项即可。另外建议结合[Valine-Admin](https://github.com/DesertsP/Valine-Admin)一起使用，可视化管理评论。）
  * 禁用某个文章评论功能，在文章头部添加`comments: false`即可。
- 
