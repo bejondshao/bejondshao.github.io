@@ -88,7 +88,7 @@ Hello World是要展示的文字，如果不填，默认取引用文章标题。
   ```
 即可，需要重启hexo生效。
 {% asset_img hexo-admin_metadata.png Hexo-admin metadata %}
-`categories`配置创建文章的默认类别，该属性是数组，如果想配置文章到默认的二级类别则为`categories: [杂记,生活]`。`comments`为是否开启文章评论功能，添加后即可在hexo-admin后台设定属性（comments即便不设定，如果博客开启评论功能，也是所有文章默认都开启的，这样配置则方便在hexo-admin设置某篇文章不开启comment，就不需要手动修改文章markdown文件了）。**这些默认值需要通过hexo-admin方式创建文章才会设定默认值。如果是通过`hexo new abc`来创建文章，则打开hexo-admin文章这些配置默认值不生效，需要手动设定。另外**
+`categories`配置创建文章的默认类别，该属性是数组，如果想配置文章到默认的二级类别则为`categories: [杂记,生活]`。`comments`为是否开启文章评论功能，添加后即可在hexo-admin后台设定属性（comments即便不设定，如果博客开启评论功能，也是所有文章默认都开启的，这样配置则方便在hexo-admin设置某篇文章不开启comment，就不需要手动修改文章markdown文件了）。**这些默认值需要通过hexo-admin方式创建文章才会设定默认值。如果是通过`hexo new abc`来创建文章，则打开hexo-admin文章这些配置默认值不生效，需要手动设定。另外使用hexo-admin创建文章还有个好处，会自动在draft里创建文章同名文件夹，可以放图片资源，在文章就可以引用了。如果文件夹里没有放图片资源，那么publish时就不会拷贝这个空文件夹到public目录下，稍微有点小遗憾:pensive:。**
 
 * Metadata功能，可以在_config.yml里添加诸如默认category的功能（因为hexo的默认category功能好像不好用）
 ```
