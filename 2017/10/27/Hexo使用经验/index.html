@@ -18,7 +18,7 @@
 <meta property="og:description" content="本文仅做使用Hexo时遇到的问题汇总，如果对你有帮助，那就有吧😅。  Hexo官方安装方式 $ npm install hexo-cli -g 注意是是普通用户，如果安装时遇到权限问题，请想尽办法解决。不要用root安装，会出各种奇怪的问题。  安装后，写好文章，在执行 hexo deploy 后,出现 error deployer not found:git 的错误。 $ npm instal">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://tech.bejond.org/2017/10/27/Hexo使用经验/hexo-admin_metadata.png">
-<meta property="og:updated_time" content="2020-04-02T11:50:51.000Z">
+<meta property="og:updated_time" content="2020-04-02T11:52:23.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo使用经验">
 <meta name="twitter:description" content="本文仅做使用Hexo时遇到的问题汇总，如果对你有帮助，那就有吧😅。  Hexo官方安装方式 $ npm install hexo-cli -g 注意是是普通用户，如果安装时遇到权限问题，请想尽办法解决。不要用root安装，会出各种奇怪的问题。  安装后，写好文章，在执行 hexo deploy 后,出现 error deployer not found:git 的错误。 $ npm instal">
@@ -221,7 +221,7 @@ Hello World是要展示的文字，如果不填，默认取引用文章标题。
   <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">metadata:</span></span><br><span class="line">    <span class="attr">categories:</span> <span class="string">杂记</span></span><br><span class="line">    <span class="attr">comments:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 <p>即可，需要重启hexo生效。</p>
 <img src="/2017/10/27/Hexo使用经验/hexo-admin_metadata.png" title="Hexo-admin metadata">
-<p><code>categories</code>配置创建文章的默认类别，该属性是数组，如果想配置文章到默认的二级类别则为<code>categories: [杂记,生活]</code>。<code>comments</code>为是否开启文章评论功能，添加后即可在hexo-admin后台设定属性（comments即便不设定，如果博客开启评论功能，也是所有文章默认都开启的，这样配置则方便在hexo-admin设置某篇文章不开启comment，就不需要手动修改文章markdown文件了）。<strong>这些默认值需要通过hexo-admin方式创建文章才会设定默认值。如果是通过<code>hexo new abc</code>来创建文章，则打开hexo-admin文章这些配置默认值不生效，需要手动设定。另外使用hexo-admin创建文章还有个好处，会</strong></p>
+<p><code>categories</code>配置创建文章的默认类别，该属性是数组，如果想配置文章到默认的二级类别则为<code>categories: [杂记,生活]</code>。<code>comments</code>为是否开启文章评论功能，添加后即可在hexo-admin后台设定属性（comments即便不设定，如果博客开启评论功能，也是所有文章默认都开启的，这样配置则方便在hexo-admin设置某篇文章不开启comment，就不需要手动修改文章markdown文件了）。<strong>这些默认值需要通过hexo-admin方式创建文章才会设定默认值。如果是通过<code>hexo new abc</code>来创建文章，则打开hexo-admin文章这些配置默认值不生效，需要手动设定。另外使用hexo-admin创建文章还有个好处，会自动在draft里创建文章同名文件夹，可以放图片资源，在文章就可以引用了。如果文件夹里没有放图片资源，那么publish时就不会拷贝这个空文件夹到public目录下，稍微有点小遗憾😔。</strong></p>
 <ul>
 <li>Metadata功能，可以在_config.yml里添加诸如默认category的功能（因为hexo的默认category功能好像不好用）</li>
 </ul>
