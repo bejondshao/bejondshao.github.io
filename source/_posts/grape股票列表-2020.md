@@ -382,3 +382,6 @@ comments: false
 |[002538](https://xueqiu.com/s/sz002538)|[司尔特](https://www.lixinger.com/analytics/company/sz/002538/2538/detail/shareholders/nolimit)|[2020-03-31](http://data.eastmoney.com/zjlx/002538.html)|农药化肥|安徽|5.0|
 |[603609](https://xueqiu.com/s/sh603609)|[禾丰牧业](https://www.lixinger.com/analytics/company/sh/603609/603609/detail/shareholders/nolimit)|[2020-03-26](http://data.eastmoney.com/zjlx/603609.html)|饲料|辽宁|11.63|
 |[603001](https://xueqiu.com/s/sh603001)|[奥康国际](https://www.lixinger.com/analytics/company/sh/603001/603001/detail/shareholders/nolimit)|[2020-03-27](http://data.eastmoney.com/zjlx/603001.html)|服饰|浙江|8.91|
+|[002109](https://xueqiu.com/s/sz002109)|[兴化股份](https://www.lixinger.com/analytics/company/sz/002109/2109/detail/shareholders/nolimit)|[2020-03-30](http://data.eastmoney.com/zjlx/002109.html)|化工原料|陕西|3.46|
+|[000417](https://xueqiu.com/s/sz000417)|[合肥百货](https://www.lixinger.com/analytics/company/sz/000417/417/detail/shareholders/nolimit)|[2020-03-31](http://data.eastmoney.com/zjlx/000417.html)|百货|安徽|4.99|
+|[600491](https://xueqiu.com/s/sh600491)|[龙元建设](https://www.lixinger.com/analytics/company/sh/600491/600491/detail/shareholders/nolimit)|[2020-04-02](http://data.eastmoney.com/zjlx/600491.html)|建筑工程|浙江|7.65|
