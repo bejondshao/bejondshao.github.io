@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Bejond IO</title>
   <icon>https://www.gravatar.com/avatar/e5f961359a1d00e64338c905025aa931</icon>
-  <subtitle>Do not be afraid of output. Most of things you write would be no readers, but it means a lot to you.</subtitle>
+  <subtitle>Do not be afraid of outputing. Most of things you write or do might be no readers, but they mean a lot to yourself.</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://tech.bejond.org/"/>
