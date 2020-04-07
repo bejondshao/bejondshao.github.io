@@ -385,3 +385,6 @@ comments: false
 |[002109](https://xueqiu.com/s/sz002109)|[兴化股份](https://www.lixinger.com/analytics/company/sz/002109/2109/detail/shareholders/nolimit)|[2020-03-30](http://data.eastmoney.com/zjlx/002109.html)|化工原料|陕西|3.46|
 |[000417](https://xueqiu.com/s/sz000417)|[合肥百货](https://www.lixinger.com/analytics/company/sz/000417/417/detail/shareholders/nolimit)|[2020-03-31](http://data.eastmoney.com/zjlx/000417.html)|百货|安徽|4.99|
 |[600491](https://xueqiu.com/s/sh600491)|[龙元建设](https://www.lixinger.com/analytics/company/sh/600491/600491/detail/shareholders/nolimit)|[2020-04-02](http://data.eastmoney.com/zjlx/600491.html)|建筑工程|浙江|7.65|
+|[600873](https://xueqiu.com/s/sh600873)|[梅花生物](https://www.lixinger.com/analytics/company/sh/600873/600873/detail/shareholders/nolimit)|[2020-04-02](http://data.eastmoney.com/zjlx/600873.html)|食品|西藏|4.47|
+|[000850](https://xueqiu.com/s/sz000850)|[华茂股份](https://www.lixinger.com/analytics/company/sz/000850/850/detail/shareholders/nolimit)|[2020-04-07](http://data.eastmoney.com/zjlx/000850.html)|纺织|安徽|4.27|
+|[600577](https://xueqiu.com/s/sh600577)|[精达股份](https://www.lixinger.com/analytics/company/sh/600577/600577/detail/shareholders/nolimit)|[2020-04-07](http://data.eastmoney.com/zjlx/600577.html)|电气设备|安徽|2.85|
