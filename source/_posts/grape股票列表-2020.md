@@ -388,3 +388,5 @@ comments: false
 |[600873](https://xueqiu.com/s/sh600873)|[梅花生物](https://www.lixinger.com/analytics/company/sh/600873/600873/detail/shareholders/nolimit)|[2020-04-02](http://data.eastmoney.com/zjlx/600873.html)|食品|西藏|4.47|
 |[000850](https://xueqiu.com/s/sz000850)|[华茂股份](https://www.lixinger.com/analytics/company/sz/000850/850/detail/shareholders/nolimit)|[2020-04-07](http://data.eastmoney.com/zjlx/000850.html)|纺织|安徽|4.27|
 |[600577](https://xueqiu.com/s/sh600577)|[精达股份](https://www.lixinger.com/analytics/company/sh/600577/600577/detail/shareholders/nolimit)|[2020-04-07](http://data.eastmoney.com/zjlx/600577.html)|电气设备|安徽|2.85|
+|[002327](https://xueqiu.com/s/sz002327)|[富安娜](https://www.lixinger.com/analytics/company/sz/002327/2327/detail/shareholders/nolimit)|[2020-04-08](http://data.eastmoney.com/zjlx/002327.html)|纺织|深圳|7.0|
+|[601200](https://xueqiu.com/s/sh601200)|[上海环境](https://www.lixinger.com/analytics/company/sh/601200/601200/detail/shareholders/nolimit)|[2020-04-08](http://data.eastmoney.com/zjlx/601200.html)|环境保护|上海|12.0|
