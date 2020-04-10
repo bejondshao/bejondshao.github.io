@@ -390,3 +390,9 @@ comments: false
 |[600577](https://xueqiu.com/s/sh600577)|[精达股份](https://www.lixinger.com/analytics/company/sh/600577/600577/detail/shareholders/nolimit)|[2020-04-07](http://data.eastmoney.com/zjlx/600577.html)|电气设备|安徽|2.85|
 |[002327](https://xueqiu.com/s/sz002327)|[富安娜](https://www.lixinger.com/analytics/company/sz/002327/2327/detail/shareholders/nolimit)|[2020-04-08](http://data.eastmoney.com/zjlx/002327.html)|纺织|深圳|7.0|
 |[601200](https://xueqiu.com/s/sh601200)|[上海环境](https://www.lixinger.com/analytics/company/sh/601200/601200/detail/shareholders/nolimit)|[2020-04-08](http://data.eastmoney.com/zjlx/601200.html)|环境保护|上海|12.0|
+|[601199](https://xueqiu.com/s/sh601199)|[江南水务](https://www.lixinger.com/analytics/company/sh/601199/601199/detail/shareholders/nolimit)|[2020-04-10](http://data.eastmoney.com/zjlx/601199.html)|水务|江苏|3.97|
+|[600785](https://xueqiu.com/s/sh600785)|[新华百货](https://www.lixinger.com/analytics/company/sh/600785/600785/detail/shareholders/nolimit)|[2020-04-10](http://data.eastmoney.com/zjlx/600785.html)|百货|宁夏|15.4|
+|[002004](https://xueqiu.com/s/sz002004)|[华邦健康](https://www.lixinger.com/analytics/company/sz/002004/2004/detail/shareholders/nolimit)|[2020-04-10](http://data.eastmoney.com/zjlx/002004.html)|化学制药|重庆|5.11|
+|[000488](https://xueqiu.com/s/sz000488)|[晨鸣纸业](https://www.lixinger.com/analytics/company/sz/000488/488/detail/shareholders/nolimit)|[2020-04-10](http://data.eastmoney.com/zjlx/000488.html)|造纸|山东|5.25|
+|[000877](https://xueqiu.com/s/sz000877)|[天山股份](https://www.lixinger.com/analytics/company/sz/000877/877/detail/shareholders/nolimit)|[2020-04-10](http://data.eastmoney.com/zjlx/000877.html)|水泥|新疆|11.61|
+|[600109](https://xueqiu.com/s/sh600109)|[国金证券](https://www.lixinger.com/analytics/company/sh/600109/600109/detail/shareholders/nolimit)|[2020-04-10](http://data.eastmoney.com/zjlx/600109.html)|证券|四川|9.56|
