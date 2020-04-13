@@ -396,3 +396,6 @@ comments: false
 |[000488](https://xueqiu.com/s/sz000488)|[晨鸣纸业](https://www.lixinger.com/analytics/company/sz/000488/488/detail/shareholders/nolimit)|[2020-04-10](http://data.eastmoney.com/zjlx/000488.html)|造纸|山东|5.25|
 |[000877](https://xueqiu.com/s/sz000877)|[天山股份](https://www.lixinger.com/analytics/company/sz/000877/877/detail/shareholders/nolimit)|[2020-04-10](http://data.eastmoney.com/zjlx/000877.html)|水泥|新疆|11.61|
 |[600109](https://xueqiu.com/s/sh600109)|[国金证券](https://www.lixinger.com/analytics/company/sh/600109/600109/detail/shareholders/nolimit)|[2020-04-10](http://data.eastmoney.com/zjlx/600109.html)|证券|四川|9.56|
+|[600159](https://xueqiu.com/s/sh600159)|[大龙地产](https://www.lixinger.com/analytics/company/sh/600159/600159/detail/shareholders/nolimit)|[2020-04-08](http://data.eastmoney.com/zjlx/600159.html)|区域地产|北京|2.6|
+|[603878](https://xueqiu.com/s/sh603878)|[武进不锈](https://www.lixinger.com/analytics/company/sh/603878/603878/detail/shareholders/nolimit)|[2020-04-10](http://data.eastmoney.com/zjlx/603878.html)|钢加工|江苏|11.2|
+|[603599](https://xueqiu.com/s/sh603599)|[广信股份](https://www.lixinger.com/analytics/company/sh/603599/603599/detail/shareholders/nolimit)|[2020-04-13](http://data.eastmoney.com/zjlx/603599.html)|农药化肥|安徽|16.37|
