@@ -399,3 +399,4 @@ comments: false
 |[600159](https://xueqiu.com/s/sh600159)|[大龙地产](https://www.lixinger.com/analytics/company/sh/600159/600159/detail/shareholders/nolimit)|[2020-04-08](http://data.eastmoney.com/zjlx/600159.html)|区域地产|北京|2.6|
 |[603878](https://xueqiu.com/s/sh603878)|[武进不锈](https://www.lixinger.com/analytics/company/sh/603878/603878/detail/shareholders/nolimit)|[2020-04-10](http://data.eastmoney.com/zjlx/603878.html)|钢加工|江苏|11.2|
 |[603599](https://xueqiu.com/s/sh603599)|[广信股份](https://www.lixinger.com/analytics/company/sh/603599/603599/detail/shareholders/nolimit)|[2020-04-13](http://data.eastmoney.com/zjlx/603599.html)|农药化肥|安徽|16.37|
+|[603937](https://xueqiu.com/s/sh603937)|[丽岛新材](https://www.lixinger.com/analytics/company/sh/603937/603937/detail/shareholders/nolimit)|[2020-04-14](http://data.eastmoney.com/zjlx/603937.html)|铝|江苏|11.25|
