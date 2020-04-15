@@ -400,3 +400,5 @@ comments: false
 |[603878](https://xueqiu.com/s/sh603878)|[武进不锈](https://www.lixinger.com/analytics/company/sh/603878/603878/detail/shareholders/nolimit)|[2020-04-10](http://data.eastmoney.com/zjlx/603878.html)|钢加工|江苏|11.2|
 |[603599](https://xueqiu.com/s/sh603599)|[广信股份](https://www.lixinger.com/analytics/company/sh/603599/603599/detail/shareholders/nolimit)|[2020-04-13](http://data.eastmoney.com/zjlx/603599.html)|农药化肥|安徽|16.37|
 |[603937](https://xueqiu.com/s/sh603937)|[丽岛新材](https://www.lixinger.com/analytics/company/sh/603937/603937/detail/shareholders/nolimit)|[2020-04-14](http://data.eastmoney.com/zjlx/603937.html)|铝|江苏|11.25|
+|[603858](https://xueqiu.com/s/sh603858)|[步长制药](https://www.lixinger.com/analytics/company/sh/603858/603858/detail/shareholders/nolimit)|[2020-04-15](http://data.eastmoney.com/zjlx/603858.html)|中成药|山东|21.44|
+|[000090](https://xueqiu.com/s/sz000090)|[天健集团](https://www.lixinger.com/analytics/company/sz/000090/90/detail/shareholders/nolimit)|[2020-04-15](http://data.eastmoney.com/zjlx/000090.html)|建筑工程|深圳|5.41|
