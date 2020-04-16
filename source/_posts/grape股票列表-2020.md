@@ -402,3 +402,6 @@ comments: false
 |[603937](https://xueqiu.com/s/sh603937)|[丽岛新材](https://www.lixinger.com/analytics/company/sh/603937/603937/detail/shareholders/nolimit)|[2020-04-14](http://data.eastmoney.com/zjlx/603937.html)|铝|江苏|11.25|
 |[603858](https://xueqiu.com/s/sh603858)|[步长制药](https://www.lixinger.com/analytics/company/sh/603858/603858/detail/shareholders/nolimit)|[2020-04-15](http://data.eastmoney.com/zjlx/603858.html)|中成药|山东|21.44|
 |[000090](https://xueqiu.com/s/sz000090)|[天健集团](https://www.lixinger.com/analytics/company/sz/000090/90/detail/shareholders/nolimit)|[2020-04-15](http://data.eastmoney.com/zjlx/000090.html)|建筑工程|深圳|5.41|
+|[000757](https://xueqiu.com/s/sz000757)|[浩物股份](https://www.lixinger.com/analytics/company/sz/000757/757/detail/shareholders/nolimit)|[2020-04-14](http://data.eastmoney.com/zjlx/000757.html)|汽车配件|四川|4.84|
+|[002546](https://xueqiu.com/s/sz002546)|[新联电子](https://www.lixinger.com/analytics/company/sz/002546/2546/detail/shareholders/nolimit)|[2020-04-16](http://data.eastmoney.com/zjlx/002546.html)|电气设备|江苏|4.31|
+|[002208](https://xueqiu.com/s/sz002208)|[合肥城建](https://www.lixinger.com/analytics/company/sz/002208/2208/detail/shareholders/nolimit)|[2020-04-16](http://data.eastmoney.com/zjlx/002208.html)|区域地产|安徽|6.9|
