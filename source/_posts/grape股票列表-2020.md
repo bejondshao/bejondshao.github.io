@@ -406,3 +406,9 @@ comments: false
 |[002546](https://xueqiu.com/s/sz002546)|[新联电子](https://www.lixinger.com/analytics/company/sz/002546/2546/detail/shareholders/nolimit)|[2020-04-16](http://data.eastmoney.com/zjlx/002546.html)|电气设备|江苏|4.31|
 |[002208](https://xueqiu.com/s/sz002208)|[合肥城建](https://www.lixinger.com/analytics/company/sz/002208/2208/detail/shareholders/nolimit)|[2020-04-16](http://data.eastmoney.com/zjlx/002208.html)|区域地产|安徽|6.9|
 |[603458](https://xueqiu.com/s/sh603458)|[勘设股份](https://www.lixinger.com/analytics/company/sh/603458/603458/detail/shareholders/nolimit)|[2020-04-17](http://data.eastmoney.com/zjlx/603458.html)|建筑工程|贵州|20.04|
+|[603928](https://xueqiu.com/s/sh603928)|[兴业股份](https://www.lixinger.com/analytics/company/sh/603928/603928/detail/shareholders/nolimit)|[2020-04-20](http://data.eastmoney.com/zjlx/603928.html)|化工原料|江苏|12.42|
+|[300500](https://xueqiu.com/s/sz300500)|[启迪设计](https://www.lixinger.com/analytics/company/sz/300500/300500/detail/shareholders/nolimit)|[2020-04-20](http://data.eastmoney.com/zjlx/300500.html)|建筑工程|江苏|15.36|
+|[600894](https://xueqiu.com/s/sh600894)|[广日股份](https://www.lixinger.com/analytics/company/sh/600894/600894/detail/shareholders/nolimit)|[2020-04-20](http://data.eastmoney.com/zjlx/600894.html)|运输设备|广东|7.77|
+|[600751](https://xueqiu.com/s/sh600751)|[海航科技](https://www.lixinger.com/analytics/company/sh/600751/600751/detail/shareholders/nolimit)|[2020-04-20](http://data.eastmoney.com/zjlx/600751.html)|水运|天津|2.98|
+|[603067](https://xueqiu.com/s/sh603067)|[振华股份](https://www.lixinger.com/analytics/company/sh/603067/603067/detail/shareholders/nolimit)|[2020-04-20](http://data.eastmoney.com/zjlx/603067.html)|化工原料|湖北|6.16|
+|[002293](https://xueqiu.com/s/sz002293)|[罗莱生活](https://www.lixinger.com/analytics/company/sz/002293/2293/detail/shareholders/nolimit)|[2020-04-20](http://data.eastmoney.com/zjlx/002293.html)|纺织|江苏|9.09|
