@@ -412,3 +412,12 @@ comments: false
 |[600751](https://xueqiu.com/s/sh600751)|[海航科技](https://www.lixinger.com/analytics/company/sh/600751/600751/detail/shareholders/nolimit)|[2020-04-20](http://data.eastmoney.com/zjlx/600751.html)|水运|天津|2.98|
 |[603067](https://xueqiu.com/s/sh603067)|[振华股份](https://www.lixinger.com/analytics/company/sh/603067/603067/detail/shareholders/nolimit)|[2020-04-20](http://data.eastmoney.com/zjlx/603067.html)|化工原料|湖北|6.16|
 |[002293](https://xueqiu.com/s/sz002293)|[罗莱生活](https://www.lixinger.com/analytics/company/sz/002293/2293/detail/shareholders/nolimit)|[2020-04-20](http://data.eastmoney.com/zjlx/002293.html)|纺织|江苏|9.09|
+|[603020](https://xueqiu.com/s/sh603020)|[爱普股份](https://www.lixinger.com/analytics/company/sh/603020/603020/detail/shareholders/nolimit)|[2020-04-17](http://data.eastmoney.com/zjlx/603020.html)|食品|上海|8.84|
+|[603585](https://xueqiu.com/s/sh603585)|[苏利股份](https://www.lixinger.com/analytics/company/sh/603585/603585/detail/shareholders/nolimit)|[2020-04-21](http://data.eastmoney.com/zjlx/603585.html)|化工原料|江苏|20.95|
+|[600780](https://xueqiu.com/s/sh600780)|[通宝能源](https://www.lixinger.com/analytics/company/sh/600780/600780/detail/shareholders/nolimit)|[2020-04-22](http://data.eastmoney.com/zjlx/600780.html)|火力发电|山西|3.63|
+|[000011](https://xueqiu.com/s/sz000011)|[深物业A](https://www.lixinger.com/analytics/company/sz/000011/11/detail/shareholders/nolimit)|[2020-04-22](http://data.eastmoney.com/zjlx/000011.html)|区域地产|深圳|9.28|
+|[300660](https://xueqiu.com/s/sz300660)|[江苏雷利](https://www.lixinger.com/analytics/company/sz/300660/300660/detail/shareholders/nolimit)|[2020-04-22](http://data.eastmoney.com/zjlx/300660.html)|电气设备|江苏|16.66|
+|[000731](https://xueqiu.com/s/sz000731)|[四川美丰](https://www.lixinger.com/analytics/company/sz/000731/731/detail/shareholders/nolimit)|[2020-04-23](http://data.eastmoney.com/zjlx/000731.html)|农药化肥|四川|5.23|
+|[300443](https://xueqiu.com/s/sz300443)|[金雷股份](https://www.lixinger.com/analytics/company/sz/300443/300443/detail/shareholders/nolimit)|[2020-04-23](http://data.eastmoney.com/zjlx/300443.html)|专用机械|山东|15.36|
+|[600248](https://xueqiu.com/s/sh600248)|[延长化建](https://www.lixinger.com/analytics/company/sh/600248/600248/detail/shareholders/nolimit)|[2020-04-23](http://data.eastmoney.com/zjlx/600248.html)|建筑工程|陕西|4.35|
+|[600048](https://xueqiu.com/s/sh600048)|[保利地产](https://www.lixinger.com/analytics/company/sh/600048/600048/detail/shareholders/nolimit)|[2020-04-23](http://data.eastmoney.com/zjlx/600048.html)|全国地产|广东|15.89|
