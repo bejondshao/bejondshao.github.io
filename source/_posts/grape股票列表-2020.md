@@ -421,3 +421,6 @@ comments: false
 |[300443](https://xueqiu.com/s/sz300443)|[金雷股份](https://www.lixinger.com/analytics/company/sz/300443/300443/detail/shareholders/nolimit)|[2020-04-23](http://data.eastmoney.com/zjlx/300443.html)|专用机械|山东|15.36|
 |[600248](https://xueqiu.com/s/sh600248)|[延长化建](https://www.lixinger.com/analytics/company/sh/600248/600248/detail/shareholders/nolimit)|[2020-04-23](http://data.eastmoney.com/zjlx/600248.html)|建筑工程|陕西|4.35|
 |[600048](https://xueqiu.com/s/sh600048)|[保利地产](https://www.lixinger.com/analytics/company/sh/600048/600048/detail/shareholders/nolimit)|[2020-04-23](http://data.eastmoney.com/zjlx/600048.html)|全国地产|广东|15.89|
+|[603979](https://xueqiu.com/s/sh603979)|[金诚信](https://www.lixinger.com/analytics/company/sh/603979/603979/detail/shareholders/nolimit)|[2020-04-24](http://data.eastmoney.com/zjlx/603979.html)|建筑工程|北京|9.29|
+|[600326](https://xueqiu.com/s/sh600326)|[西藏天路](https://www.lixinger.com/analytics/company/sh/600326/600326/detail/shareholders/nolimit)|[2020-04-24](http://data.eastmoney.com/zjlx/600326.html)|水泥|西藏|7.19|
+|[300732](https://xueqiu.com/s/sz300732)|[设研院](https://www.lixinger.com/analytics/company/sz/300732/300732/detail/shareholders/nolimit)|[2020-04-24](http://data.eastmoney.com/zjlx/300732.html)|建筑工程|河南|17.56|
