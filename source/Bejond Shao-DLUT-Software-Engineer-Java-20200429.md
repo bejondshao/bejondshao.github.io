@@ -1,4 +1,4 @@
-**Bejond Shao** • Male • 1990-10 • Dalian, Liaoning • <bejond@163.com> • +86 **18640902787**
+Bejond Shao • Male • 1990-10 • Dalian, Liaoning • <bejond@163.com> • +86 **18640902787**
 
 ------
 6 years Java development experience of backend service. 
