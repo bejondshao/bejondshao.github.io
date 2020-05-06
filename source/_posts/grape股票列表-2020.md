@@ -473,3 +473,5 @@ comments: false
 |[000965](https://xueqiu.com/s/sz000965)|[天保基建](https://www.lixinger.com/analytics/company/sz/000965/965/detail/shareholders/nolimit)|[2020-04-30](http://data.eastmoney.com/zjlx/000965.html)|区域地产|天津|3.26|
 |[000828](https://xueqiu.com/s/sz000828)|[东莞控股](https://www.lixinger.com/analytics/company/sz/000828/828/detail/shareholders/nolimit)|[2020-04-30](http://data.eastmoney.com/zjlx/000828.html)|路桥|广东|7.31|
 |[002142](https://xueqiu.com/s/sz002142)|[宁波银行](https://www.lixinger.com/analytics/company/sz/002142/2142/detail/shareholders/nolimit)|[2020-04-30](http://data.eastmoney.com/zjlx/002142.html)|银行|浙江|26.05|
+|[601001](https://xueqiu.com/s/sh601001)|[大同煤业](https://www.lixinger.com/analytics/company/sh/601001/601001/detail/shareholders/nolimit)|[2020-05-06](http://data.eastmoney.com/zjlx/601001.html)|煤炭开采|山西|3.81|
+|[600901](https://xueqiu.com/s/sh600901)|[江苏租赁](https://www.lixinger.com/analytics/company/sh/600901/600901/detail/shareholders/nolimit)|[2020-05-06](http://data.eastmoney.com/zjlx/600901.html)|多元金融|江苏|5.37|
