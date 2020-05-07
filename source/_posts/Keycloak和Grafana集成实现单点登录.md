@@ -1,19 +1,18 @@
----
 layout: post
 title: Keycloak和Grafana集成实现单点登录
-date: 2018-03-26 11:26:12
 tags:
-- Grafana
-- Keycloak
-- DevOps
+  - Grafana
+  - Keycloak
+  - DevOps
 category:
-- DevOps
+  - DevOps
+date: 2018-03-26 11:26:12
 ---
 ##### Keycloak配置
 
 @ 登录Keycloak后台http://localhost:8080/auth/admin/master/console/#/realms/master
 
-@ Add Realm，Name为"Kunlun"
+@ Add Realm，Name为"abc"
 
 @ 创建Client，Name为"grafana"，grafana默认端口是3000, 因此Root URL填写http://localhost:3000
 {% asset_img Client client.png %}
@@ -49,15 +48,15 @@ sudo dpkg -i grafana_5.0.3_amd64.deb
 
 [auth.generic_oauth]
 enabled = true
-name = Kunlun
+name = abc
 allow_sign_up = true
 client_id = grafana
 # secret从keycloak的grafana client，Credentials页签的Secret获取。
 client_secret = 9a134c1a-e8f2-46b0-b351-d2ffeccaa289
 ;scopes = user:email,read:org
 scopes = openid email name
-auth_url = http://localhost:8080/auth/realms/Kunlun/protocol/openid-connect/auth
-token_url = http://localhost:8080/auth/realms/Kunlun/protocol/openid-connect/token
+auth_url = http://localhost:8080/auth/realms/abc/protocol/openid-connect/auth
+token_url = http://localhost:8080/auth/realms/abc/protocol/openid-connect/token
 ;api_url = https://foo.bar/user
 ;team_ids =
 ;allowed_organizations =
@@ -69,7 +68,7 @@ token_url = http://localhost:8080/auth/realms/Kunlun/protocol/openid-connect/tok
 
 `sudo service grafana-server restart`
 
-@ 再次访问http://localhost:3000  ，登录界面能看到"Sign in with Kunlun"，点击即跳转到Keycloak登录界面，Realm为Kunlun。使用bejond.shao登录，登录成功跳转回grafana，实现单点登录。同时grafana会创建同名用户，并存储基本信息，如邮箱。
+@ 再次访问http://localhost:3000  ，登录界面能看到"Sign in with abc"，点击即跳转到Keycloak登录界面，Realm为abc。使用bejond.shao登录，登录成功跳转回grafana，实现单点登录。同时grafana会创建同名用户，并存储基本信息，如邮箱。
 
 ##### 存在的问题
 
@@ -77,4 +76,4 @@ token_url = http://localhost:8080/auth/realms/Kunlun/protocol/openid-connect/tok
 
 * 在keycloak登出用户的所有sessions，grafana并不知晓，session仍有效。
 
-* 在grafana登出用户，再次登录，点击"Sign in with Kunlun"，没有登录界面，而是直接跳转回grafana。说明grafana登出功能未做到通知IdP。详见[sign out url for generic oauth](https://github.com/grafana/grafana/issues/9847 )
+* 在grafana登出用户，再次登录，点击"Sign in with abc"，没有登录界面，而是直接跳转回grafana。说明grafana登出功能未做到通知IdP。详见[sign out url for generic oauth](https://github.com/grafana/grafana/issues/9847 )

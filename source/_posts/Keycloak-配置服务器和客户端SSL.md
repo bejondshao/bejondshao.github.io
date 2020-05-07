@@ -63,20 +63,20 @@ https://host:8443
 下面介绍如何在客户端通过https访问keycloak: 
 
 @ 用keycloak服务器配置的keystore导出证书，供客户端使用：
-keytool -export -alias shiji-server -keystore keycloak.jks -rfc -file shiji-server.crt
-alias建议和生成时的别名相同，根据keycloak.jks导出证书到shiji-server.crt中，导出时会要求输入keycloak.jks的密码。
+keytool -export -alias abc -keystore keycloak.jks -rfc -file abc.crt
+alias建议和生成时的别名相同，根据keycloak.jks导出证书到abc.crt中，导出时会要求输入keycloak.jks的密码。
 
 @ 将crt导入到客户端中：
 [参考](https://docs.oracle.com/javase/tutorial/security/toolfilex/rstep1.html)
 `
-keytool -importcert -alias shiji-server -file shij-server.crt -keystore truststore.jks
+keytool -importcert -alias abc -file shij-server.crt -keystore truststore.jks
 `
 将crt证书导入到truststore.jks中，导入时会要求输入truststore.jks的密码
 @ 在客户端的keycloak.json中配置
 ```
 {
   "realm": "hello-world-authz",
-  "auth-server-url": "https://shiji-server:8443/auth",
+  "auth-server-url": "https://abc:8443/auth",
   "ssl-required": "all",
   "resource": "hello-world-authz-service",
   "credentials": {
@@ -94,4 +94,3 @@ Note: 如果导入后启动客户端出现
 Certificate for <192.168.1.100> doesn't match common name of the certificate subject: localhostCertificate for <192.168.1.100> doesn't match common name of the certificate subject: localhost
 ```
 说明证书的CN是localhost，而远端主机是192.168.1.100。说明证书的common name起错了，应该是ip或者主机名，建议使用主机名
-

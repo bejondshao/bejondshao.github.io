@@ -1,17 +1,14 @@
----
 layout: post
 title: Jboss6.x升级到Wildfly10所遇到的问题
-date: 2017-12-18 17:46:59
 tags:
-- Wildfly
-
+  - Wildfly
 category:
-- Java
-
+  - Java
+date: 2017-12-18 17:46:59
 ---
 1). Hibernate second level cache问题
 
-> 17:02:43,041 ERROR [org.jboss.msc.service.fail] (ServerService Thread Pool -- 61) MSC000001: Failed to start service jboss.persistenceunit.kunlun-weixin-showcase#primary.__FIRST_PHASE__: org.jboss.msc.service.StartException in service jboss.persistenceunit.kunlun-weixin-showcase#primary.__FIRST_PHASE__: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.cache.spi.RegionFactory]
+> 17:02:43,041 ERROR [org.jboss.msc.service.fail] (ServerService Thread Pool -- 61) MSC000001: Failed to start service jboss.persistenceunit.abc-weixin-showcase#primary.__FIRST_PHASE__: org.jboss.msc.service.StartException in service jboss.persistenceunit.abc-weixin-showcase#primary.__FIRST_PHASE__: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.cache.spi.RegionFactory]
 	at org.jboss.as.jpa.service.PhaseOnePersistenceUnitServiceImpl$1$1.run(PhaseOnePersistenceUnitServiceImpl.java:120)
 	at org.jboss.as.jpa.service.PhaseOnePersistenceUnitServiceImpl$1$1.run(PhaseOnePersistenceUnitServiceImpl.java:102)
 	at org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:667)
@@ -56,24 +53,21 @@ Solved by moving second level cache from hibernate4  to **hibernate5** in persis
 由于hibernate4对表关联创建的列为users_id和roles_id，升级为hibernate5后，hibernate尝试将列名改为user_id，roles_id，而在进行`alter table user_roles add column User_id int8 not null`操作时，遇到非空检查失败了。解决方法是将原表备份，然后删除user_roles表，启动项目后会自动创建新的表和表结构。然后再自行更新表。
 
 3). Hibernate infinispan statistics cache问题
-> [2017-12-15 05:14:40,464] Artifact kunlun-weixin-showcase:war exploded: Error during artifact deployment. See server log for details.
-[2017-12-15 05:14:40,468] Artifact kunlun-weixin-showcase:war exploded: java.lang.Exception: {"WFLYCTL0080: Failed services" => {"jboss.persistenceunit.kunlun-weixin-showcase#primary" => "org.jboss.msc.service.StartException in service jboss.persistenceunit.kunlun-weixin-showcase#primary: javax.persistence.PersistenceException: [PersistenceUnit: primary] Unable to build Hibernate SessionFactory
+> [2017-12-15 05:14:40,464] Artifact abc-weixin-showcase:war exploded: Error during artifact deployment. See server log for details.
+[2017-12-15 05:14:40,468] Artifact abc-weixin-showcase:war exploded: java.lang.Exception: {"WFLYCTL0080: Failed services" => {"jboss.persistenceunit.abc-weixin-showcase#primary" => "org.jboss.msc.service.StartException in service jboss.persistenceunit.abc-weixin-showcase#primary: javax.persistence.PersistenceException: [PersistenceUnit: primary] Unable to build Hibernate SessionFactory
     Caused by: javax.persistence.PersistenceException: [PersistenceUnit: primary] Unable to build Hibernate SessionFactory
     Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.spi.CacheImplementor]
     Caused by: org.hibernate.cache.CacheException: Unable to start region factory
-    Caused by: org.infinispan.commons.CacheConfigurationException: ISPN000372: Statistics are enabled while attribute 'available' is set to false."},"WFLYCTL0412: Required services that are not installed:" => ["jboss.persistenceunit.kunlun-weixin-showcase#primary"],"WFLYCTL0180: Services with missing/unavailable dependencies" => undefined}
+    Caused by: org.infinispan.commons.CacheConfigurationException: ISPN000372: Statistics are enabled while attribute 'available' is set to false."},"WFLYCTL0412: Required services that are not installed:" => ["jboss.persistenceunit.abc-weixin-showcase#primary"],"WFLYCTL0180: Services with missing/unavailable dependencies" => undefined}
 17:17:43,075 INFO  [org.jboss.as.server] (management-handler-thread - 5) WFLYSRV0236: Suspending server with no timeout.
-[2017-12-15 05:23:17,962] Artifact kunlun-weixin-showcase:war exploded: Error during artifact deployment. See server log for details.
-[2017-12-15 05:23:17,962] Artifact kunlun-weixin-showcase:war exploded: java.lang.Exception: {"WFLYCTL0080: Failed services" => {"jboss.persistenceunit.kunlun-weixin-showcase#primary" => "org.jboss.msc.service.StartException in service jboss.persistenceunit.kunlun-weixin-showcase#primary: javax.persistence.PersistenceException: [PersistenceUnit: primary] Unable to build Hibernate SessionFactory
+[2017-12-15 05:23:17,962] Artifact abc-weixin-showcase:war exploded: Error during artifact deployment. See server log for details.
+[2017-12-15 05:23:17,962] Artifact abc-weixin-showcase:war exploded: java.lang.Exception: {"WFLYCTL0080: Failed services" => {"jboss.persistenceunit.abc-weixin-showcase#primary" => "org.jboss.msc.service.StartException in service jboss.persistenceunit.abc-weixin-showcase#primary: javax.persistence.PersistenceException: [PersistenceUnit: primary] Unable to build Hibernate SessionFactory
     Caused by: javax.persistence.PersistenceException: [PersistenceUnit: primary] Unable to build Hibernate SessionFactory
     Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.spi.CacheImplementor]
     Caused by: org.hibernate.cache.CacheException: Unable to start region factory
-    Caused by: org.infinispan.commons.CacheConfigurationException: ISPN000372: Statistics are enabled while attribute 'available' is set to false."},"WFLYCTL0412: Required services that are not installed:" => ["jboss.persistenceunit.kunlun-weixin-showcase#primary"],"WFLYCTL0180: Services with missing/unavailable dependencies" => undefined}
+    Caused by: org.infinispan.commons.CacheConfigurationException: ISPN000372: Statistics are enabled while attribute 'available' is set to false."},"WFLYCTL0412: Required services that are not installed:" => ["jboss.persistenceunit.abc-weixin-showcase#primary"],"WFLYCTL0180: Services with missing/unavailable dependencies" => undefined}
 
 Solution: https://stackoverflow.com/questions/43586016/infinispan-statistics-are-enabled-while-attribute-available-is-set-to-false
 
 Workaround: 將persistence.xml hibernate.cache.infinispan.statistics=true 改为false
 Note: 有可能在解决第2个问题后这个问题就不存在了。
-
-
-

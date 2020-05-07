@@ -54,7 +54,7 @@ Kibana将Es的数据以友好的可视化方式展示， 比如脂肪图， 曲�
             "base-path": "/",
             "error-page": "/error.html",
             "adapter-config": {
-                "realm": "Kunlun",
+                "realm": "abc",
                 "resource": "kibana",
                 "auth-server-url": "http://localhost:8080/auth",
                 "ssl-required" : "external",
