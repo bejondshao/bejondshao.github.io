@@ -9,19 +9,19 @@
     
         <meta name="keywords" content="DevOps,Keycloak,Grafana">
     
-    <meta name="description" content="Keycloak配置 @ 登录Keycloak后台http://localhost:8080/auth/admin/master/console/#/realms/master @ Add Realm，Name为&amp;quot;Kunlun&amp;quot; @ 创建Client，Name为&amp;quot;grafana&amp;quot;，grafana默认端口是3000, 因此Root URL填写http://l">
+    <meta name="description" content="Keycloak配置 @ 登录Keycloak后台http://localhost:8080/auth/admin/master/console/#/realms/master @ Add Realm，Name为&amp;quot;abc&amp;quot; @ 创建Client，Name为&amp;quot;grafana&amp;quot;，grafana默认端口是3000, 因此Root URL填写http://loca">
 <meta name="keywords" content="DevOps,Keycloak,Grafana">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Keycloak和Grafana集成实现单点登录">
 <meta property="og:url" content="http://tech.bejond.org/2018/03/26/Keycloak和Grafana集成实现单点登录/index.html">
 <meta property="og:site_name" content="Bejond IO">
-<meta property="og:description" content="Keycloak配置 @ 登录Keycloak后台http://localhost:8080/auth/admin/master/console/#/realms/master @ Add Realm，Name为&amp;quot;Kunlun&amp;quot; @ 创建Client，Name为&amp;quot;grafana&amp;quot;，grafana默认端口是3000, 因此Root URL填写http://l">
+<meta property="og:description" content="Keycloak配置 @ 登录Keycloak后台http://localhost:8080/auth/admin/master/console/#/realms/master @ Add Realm，Name为&amp;quot;abc&amp;quot; @ 创建Client，Name为&amp;quot;grafana&amp;quot;，grafana默认端口是3000, 因此Root URL填写http://loca">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://tech.bejond.org/2018/03/26/Keycloak和Grafana集成实现单点登录/client.png">
-<meta property="og:updated_time" content="2018-06-25T17:56:57.000Z">
+<meta property="og:updated_time" content="2020-05-07T16:19:03.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Keycloak和Grafana集成实现单点登录">
-<meta name="twitter:description" content="Keycloak配置 @ 登录Keycloak后台http://localhost:8080/auth/admin/master/console/#/realms/master @ Add Realm，Name为&amp;quot;Kunlun&amp;quot; @ 创建Client，Name为&amp;quot;grafana&amp;quot;，grafana默认端口是3000, 因此Root URL填写http://l">
+<meta name="twitter:description" content="Keycloak配置 @ 登录Keycloak后台http://localhost:8080/auth/admin/master/console/#/realms/master @ Add Realm，Name为&amp;quot;abc&amp;quot; @ 创建Client，Name为&amp;quot;grafana&amp;quot;，grafana默认端口是3000, 因此Root URL填写http://loca">
 <meta name="twitter:image" content="http://tech.bejond.org/2018/03/26/Keycloak和Grafana集成实现单点登录/client.png">
     
 
@@ -178,7 +178,7 @@
         <div class="article-entry" itemprop="articleBody">
             <h5 id="keycloak配置"><a class="markdownIt-Anchor" href="#keycloak配置"></a> Keycloak配置</h5>
 <p>@ 登录Keycloak后台http://localhost:8080/auth/admin/master/console/#/realms/master</p>
-<p>@ Add Realm，Name为&quot;Kunlun&quot;</p>
+<p>@ Add Realm，Name为&quot;abc&quot;</p>
 <p>@ 创建Client，Name为&quot;grafana&quot;，grafana默认端口是3000, 因此Root URL填写http://localhost:3000</p>
 <img src="/2018/03/26/Keycloak和Grafana集成实现单点登录/client.png" class="Client">
 <p>@ 开启Authorization Enabled，保存。（该步骤非必须，建议开启，可以提供鉴权功能）</p>
@@ -194,11 +194,11 @@
 <p>@ 访问http://localhost:3000即可看到登录界面</p>
 <h5 id="grafana配置oauth"><a class="markdownIt-Anchor" href="#grafana配置oauth"></a> Grafana配置Oauth</h5>
 <p>@ 编辑/etc/grafana/grafana.ini配置文件</p>
-<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="section">[auth.generic_oauth]</span></span><br><span class="line"><span class="attr">enabled</span> = <span class="literal">true</span></span><br><span class="line"><span class="attr">name</span> = Kunlun</span><br><span class="line"><span class="attr">allow_sign_up</span> = <span class="literal">true</span></span><br><span class="line"><span class="attr">client_id</span> = grafana</span><br><span class="line"><span class="comment"># secret从keycloak的grafana client，Credentials页签的Secret获取。</span></span><br><span class="line"><span class="attr">client_secret</span> = <span class="number">9</span>a134c1a-e8f2-<span class="number">46</span>b0-b351-d2ffeccaa289</span><br><span class="line"><span class="comment">;scopes = user:email,read:org</span></span><br><span class="line"><span class="attr">scopes</span> = openid email name</span><br><span class="line"><span class="attr">auth_url</span> = http://localhost:<span class="number">8080</span>/auth/realms/Kunlun/protocol/openid-connect/auth</span><br><span class="line"><span class="attr">token_url</span> = http://localhost:<span class="number">8080</span>/auth/realms/Kunlun/protocol/openid-connect/token</span><br><span class="line"><span class="comment">;api_url = https://foo.bar/user</span></span><br><span class="line"><span class="comment">;team_ids =</span></span><br><span class="line"><span class="comment">;allowed_organizations =</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="section">[auth.generic_oauth]</span></span><br><span class="line"><span class="attr">enabled</span> = <span class="literal">true</span></span><br><span class="line"><span class="attr">name</span> = abc</span><br><span class="line"><span class="attr">allow_sign_up</span> = <span class="literal">true</span></span><br><span class="line"><span class="attr">client_id</span> = grafana</span><br><span class="line"><span class="comment"># secret从keycloak的grafana client，Credentials页签的Secret获取。</span></span><br><span class="line"><span class="attr">client_secret</span> = <span class="number">9</span>a134c1a-e8f2-<span class="number">46</span>b0-b351-d2ffeccaa289</span><br><span class="line"><span class="comment">;scopes = user:email,read:org</span></span><br><span class="line"><span class="attr">scopes</span> = openid email name</span><br><span class="line"><span class="attr">auth_url</span> = http://localhost:<span class="number">8080</span>/auth/realms/abc/protocol/openid-connect/auth</span><br><span class="line"><span class="attr">token_url</span> = http://localhost:<span class="number">8080</span>/auth/realms/abc/protocol/openid-connect/token</span><br><span class="line"><span class="comment">;api_url = https://foo.bar/user</span></span><br><span class="line"><span class="comment">;team_ids =</span></span><br><span class="line"><span class="comment">;allowed_organizations =</span></span><br></pre></td></tr></table></figure>
 <p>同时修改<code>[database]</code>和<code>[security]</code>节点内容。</p>
 <p>@ 重启服务</p>
 <p><code>sudo service grafana-server restart</code></p>
-<p>@ 再次访问http://localhost:3000  ，登录界面能看到&quot;Sign in with Kunlun&quot;，点击即跳转到Keycloak登录界面，Realm为Kunlun。使用bejond.shao登录，登录成功跳转回grafana，实现单点登录。同时grafana会创建同名用户，并存储基本信息，如邮箱。</p>
+<p>@ 再次访问http://localhost:3000  ，登录界面能看到&quot;Sign in with abc&quot;，点击即跳转到Keycloak登录界面，Realm为abc。使用bejond.shao登录，登录成功跳转回grafana，实现单点登录。同时grafana会创建同名用户，并存储基本信息，如邮箱。</p>
 <h5 id="存在的问题"><a class="markdownIt-Anchor" href="#存在的问题"></a> 存在的问题</h5>
 <p>@ Session无法同步</p>
 <ul>
@@ -206,7 +206,7 @@
 <p>在keycloak登出用户的所有sessions，grafana并不知晓，session仍有效。</p>
 </li>
 <li>
-<p>在grafana登出用户，再次登录，点击&quot;Sign in with Kunlun&quot;，没有登录界面，而是直接跳转回grafana。说明grafana登出功能未做到通知IdP。详见<a href="https://github.com/grafana/grafana/issues/9847" target="_blank" rel="noopener">sign out url for generic oauth</a></p>
+<p>在grafana登出用户，再次登录，点击&quot;Sign in with abc&quot;，没有登录界面，而是直接跳转回grafana。说明grafana登出功能未做到通知IdP。详见<a href="https://github.com/grafana/grafana/issues/9847" target="_blank" rel="noopener">sign out url for generic oauth</a></p>
 </li>
 </ul>
 
