@@ -91,6 +91,6 @@ Note: truststore的配置项可以指定“classpath:/truststore.jks",例子使�
 
 Note: 如果导入后启动客户端出现 
 ```
-Certificate for <192.168.1.100> doesn't match common name of the certificate subject: localhostCertificate for <192.168.1.100> doesn't match common name of the certificate subject: localhost
+Certificate for <192.168.1.8> doesn't match common name of the certificate subject: localhostCertificate for <192.168.1.8> doesn't match common name of the certificate subject: localhost
 ```
-说明证书的CN是localhost，而远端主机是192.168.1.100。说明证书的common name起错了，应该是ip或者主机名，建议使用主机名
+说明证书的CN是localhost，而远端主机是192.168.1.8。说明证书的common name起错了，应该是ip或者主机名，建议使用主机名
