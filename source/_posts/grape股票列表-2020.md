@@ -476,3 +476,5 @@ comments: false
 |[601001](https://xueqiu.com/s/sh601001)|[大同煤业](https://www.lixinger.com/analytics/company/sh/601001/601001/detail/shareholders/nolimit)|[2020-05-06](http://data.eastmoney.com/zjlx/601001.html)|煤炭开采|山西|3.81|
 |[600901](https://xueqiu.com/s/sh600901)|[江苏租赁](https://www.lixinger.com/analytics/company/sh/600901/600901/detail/shareholders/nolimit)|[2020-05-06](http://data.eastmoney.com/zjlx/600901.html)|多元金融|江苏|5.37|
 |[002381](https://xueqiu.com/s/sz002381)|[双箭股份](https://www.lixinger.com/analytics/company/sz/002381/2381/detail/shareholders/nolimit)|[2020-05-07](http://data.eastmoney.com/zjlx/002381.html)|橡胶|浙江|8.06|
+|[600308](https://xueqiu.com/s/sh600308)|[华泰股份](https://www.lixinger.com/analytics/company/sh/600308/600308/detail/shareholders/nolimit)|[2020-05-08](http://data.eastmoney.com/zjlx/600308.html)|造纸|山东|4.53|
+|[600252](https://xueqiu.com/s/sh600252)|[中恒集团](https://www.lixinger.com/analytics/company/sh/600252/600252/detail/shareholders/nolimit)|[2020-05-08](http://data.eastmoney.com/zjlx/600252.html)|中成药|广西|3.42|
