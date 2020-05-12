@@ -481,3 +481,4 @@ comments: false
 |[000932](https://xueqiu.com/s/sz000932)|[华菱钢铁](https://www.lixinger.com/analytics/company/sz/000932/932/detail/shareholders/nolimit)|[2020-05-11](http://data.eastmoney.com/zjlx/000932.html)|普钢|湖南|4.23|
 |[600846](https://xueqiu.com/s/sh600846)|[同济科技](https://www.lixinger.com/analytics/company/sh/600846/600846/detail/shareholders/nolimit)|[2020-05-11](http://data.eastmoney.com/zjlx/600846.html)|建筑工程|上海|8.78|
 |[600790](https://xueqiu.com/s/sh600790)|[轻纺城](https://www.lixinger.com/analytics/company/sh/600790/600790/detail/shareholders/nolimit)|[2020-05-11](http://data.eastmoney.com/zjlx/600790.html)|商品城|浙江|3.18|
+|[600594](https://xueqiu.com/s/sh600594)|[益佰制药](https://www.lixinger.com/analytics/company/sh/600594/600594/detail/shareholders/nolimit)|[2020-05-12](http://data.eastmoney.com/zjlx/600594.html)|中成药|贵州|5.65|
