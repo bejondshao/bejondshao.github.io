@@ -482,3 +482,6 @@ comments: false
 |[600846](https://xueqiu.com/s/sh600846)|[同济科技](https://www.lixinger.com/analytics/company/sh/600846/600846/detail/shareholders/nolimit)|[2020-05-11](http://data.eastmoney.com/zjlx/600846.html)|建筑工程|上海|8.78|
 |[600790](https://xueqiu.com/s/sh600790)|[轻纺城](https://www.lixinger.com/analytics/company/sh/600790/600790/detail/shareholders/nolimit)|[2020-05-11](http://data.eastmoney.com/zjlx/600790.html)|商品城|浙江|3.18|
 |[600594](https://xueqiu.com/s/sh600594)|[益佰制药](https://www.lixinger.com/analytics/company/sh/600594/600594/detail/shareholders/nolimit)|[2020-05-12](http://data.eastmoney.com/zjlx/600594.html)|中成药|贵州|5.65|
+|[002573](https://xueqiu.com/s/sz002573)|[清新环境](https://www.lixinger.com/analytics/company/sz/002573/2573/detail/shareholders/nolimit)|[2020-05-12](http://data.eastmoney.com/zjlx/002573.html)|环境保护|北京|6.09|
+|[603817](https://xueqiu.com/s/sh603817)|[海峡环保](https://www.lixinger.com/analytics/company/sh/603817/603817/detail/shareholders/nolimit)|[2020-05-13](http://data.eastmoney.com/zjlx/603817.html)|环境保护|福建|6.16|
+|[601336](https://xueqiu.com/s/sh601336)|[新华保险](https://www.lixinger.com/analytics/company/sh/601336/601336/detail/shareholders/nolimit)|[2020-05-13](http://data.eastmoney.com/zjlx/601336.html)|保险|北京|45.54|
