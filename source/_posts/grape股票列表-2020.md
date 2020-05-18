@@ -485,3 +485,6 @@ comments: false
 |[002573](https://xueqiu.com/s/sz002573)|[清新环境](https://www.lixinger.com/analytics/company/sz/002573/2573/detail/shareholders/nolimit)|[2020-05-12](http://data.eastmoney.com/zjlx/002573.html)|环境保护|北京|6.09|
 |[603817](https://xueqiu.com/s/sh603817)|[海峡环保](https://www.lixinger.com/analytics/company/sh/603817/603817/detail/shareholders/nolimit)|[2020-05-13](http://data.eastmoney.com/zjlx/603817.html)|环境保护|福建|6.16|
 |[601336](https://xueqiu.com/s/sh601336)|[新华保险](https://www.lixinger.com/analytics/company/sh/601336/601336/detail/shareholders/nolimit)|[2020-05-13](http://data.eastmoney.com/zjlx/601336.html)|保险|北京|45.54|
+|[600629](https://xueqiu.com/s/sh600629)|[华建集团](https://www.lixinger.com/analytics/company/sh/600629/600629/detail/shareholders/nolimit)|[2020-05-18](http://data.eastmoney.com/zjlx/600629.html)|建筑工程|上海|8.13|
+|[603599](https://xueqiu.com/s/sh603599)|[广信股份](https://www.lixinger.com/analytics/company/sh/603599/603599/detail/shareholders/nolimit)|[2020-05-18](http://data.eastmoney.com/zjlx/603599.html)|农药化肥|安徽|16.32|
+|[002053](https://xueqiu.com/s/sz002053)|[云南能投](https://www.lixinger.com/analytics/company/sz/002053/2053/detail/shareholders/nolimit)|[2020-05-18](http://data.eastmoney.com/zjlx/002053.html)|食品|云南|6.9|
