@@ -488,3 +488,8 @@ comments: false
 |[600629](https://xueqiu.com/s/sh600629)|[华建集团](https://www.lixinger.com/analytics/company/sh/600629/600629/detail/shareholders/nolimit)|[2020-05-18](http://data.eastmoney.com/zjlx/600629.html)|建筑工程|上海|8.13|
 |[603599](https://xueqiu.com/s/sh603599)|[广信股份](https://www.lixinger.com/analytics/company/sh/603599/603599/detail/shareholders/nolimit)|[2020-05-18](http://data.eastmoney.com/zjlx/603599.html)|农药化肥|安徽|16.32|
 |[002053](https://xueqiu.com/s/sz002053)|[云南能投](https://www.lixinger.com/analytics/company/sz/002053/2053/detail/shareholders/nolimit)|[2020-05-18](http://data.eastmoney.com/zjlx/002053.html)|食品|云南|6.9|
+|[000612](https://xueqiu.com/s/sz000612)|[焦作万方](https://www.lixinger.com/analytics/company/sz/000612/612/detail/shareholders/nolimit)|[2020-05-19](http://data.eastmoney.com/zjlx/000612.html)|铝|河南|3.96|
+|[002531](https://xueqiu.com/s/sz002531)|[天顺风能](https://www.lixinger.com/analytics/company/sz/002531/2531/detail/shareholders/nolimit)|[2020-05-19](http://data.eastmoney.com/zjlx/002531.html)|电气设备|江苏|6.09|
+|[000753](https://xueqiu.com/s/sz000753)|[漳州发展](https://www.lixinger.com/analytics/company/sz/000753/753/detail/shareholders/nolimit)|[2020-05-19](http://data.eastmoney.com/zjlx/000753.html)|汽车服务|福建|2.78|
+|[603766](https://xueqiu.com/s/sh603766)|[隆鑫通用](https://www.lixinger.com/analytics/company/sh/603766/603766/detail/shareholders/nolimit)|[2020-05-19](http://data.eastmoney.com/zjlx/603766.html)|摩托车|重庆|3.61|
+|[000417](https://xueqiu.com/s/sz000417)|[合肥百货](https://www.lixinger.com/analytics/company/sz/000417/417/detail/shareholders/nolimit)|[2020-05-19](http://data.eastmoney.com/zjlx/000417.html)|百货|安徽|4.64|
