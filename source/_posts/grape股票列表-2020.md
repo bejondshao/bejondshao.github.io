@@ -493,3 +493,4 @@ comments: false
 |[000753](https://xueqiu.com/s/sz000753)|[漳州发展](https://www.lixinger.com/analytics/company/sz/000753/753/detail/shareholders/nolimit)|[2020-05-19](http://data.eastmoney.com/zjlx/000753.html)|汽车服务|福建|2.78|
 |[603766](https://xueqiu.com/s/sh603766)|[隆鑫通用](https://www.lixinger.com/analytics/company/sh/603766/603766/detail/shareholders/nolimit)|[2020-05-19](http://data.eastmoney.com/zjlx/603766.html)|摩托车|重庆|3.61|
 |[000417](https://xueqiu.com/s/sz000417)|[合肥百货](https://www.lixinger.com/analytics/company/sz/000417/417/detail/shareholders/nolimit)|[2020-05-19](http://data.eastmoney.com/zjlx/000417.html)|百货|安徽|4.64|
+|[603303](https://xueqiu.com/s/sh603303)|[得邦照明](https://www.lixinger.com/analytics/company/sh/603303/603303/detail/shareholders/nolimit)|[2020-05-20](http://data.eastmoney.com/zjlx/603303.html)|家用电器|浙江|9.8|
