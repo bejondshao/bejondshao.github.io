@@ -494,3 +494,5 @@ comments: false
 |[603766](https://xueqiu.com/s/sh603766)|[隆鑫通用](https://www.lixinger.com/analytics/company/sh/603766/603766/detail/shareholders/nolimit)|[2020-05-19](http://data.eastmoney.com/zjlx/603766.html)|摩托车|重庆|3.61|
 |[000417](https://xueqiu.com/s/sz000417)|[合肥百货](https://www.lixinger.com/analytics/company/sz/000417/417/detail/shareholders/nolimit)|[2020-05-19](http://data.eastmoney.com/zjlx/000417.html)|百货|安徽|4.64|
 |[603303](https://xueqiu.com/s/sh603303)|[得邦照明](https://www.lixinger.com/analytics/company/sh/603303/603303/detail/shareholders/nolimit)|[2020-05-20](http://data.eastmoney.com/zjlx/603303.html)|家用电器|浙江|9.8|
+|[300214](https://xueqiu.com/s/sz300214)|[日科化学](https://www.lixinger.com/analytics/company/sz/300214/300214/detail/shareholders/nolimit)|[2020-05-21](http://data.eastmoney.com/zjlx/300214.html)|化工原料|山东|8.41|
+|[600163](https://xueqiu.com/s/sh600163)|[中闽能源](https://www.lixinger.com/analytics/company/sh/600163/600163/detail/shareholders/nolimit)|[2020-05-22](http://data.eastmoney.com/zjlx/600163.html)|新型电力|福建|3.39|
