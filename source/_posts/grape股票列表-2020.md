@@ -501,3 +501,5 @@ comments: false
 |[600426](https://xueqiu.com/s/sh600426)|[华鲁恒升](https://www.lixinger.com/analytics/company/sh/600426/600426/detail/shareholders/nolimit)|[2020-05-25](http://data.eastmoney.com/zjlx/600426.html)|农药化肥|山东|17.78|
 |[601003](https://xueqiu.com/s/sh601003)|[柳钢股份](https://www.lixinger.com/analytics/company/sh/601003/601003/detail/shareholders/nolimit)|[2020-05-25](http://data.eastmoney.com/zjlx/601003.html)|普钢|广西|5.09|
 |[600023](https://xueqiu.com/s/sh600023)|[浙能电力](https://www.lixinger.com/analytics/company/sh/600023/600023/detail/shareholders/nolimit)|[2020-05-25](http://data.eastmoney.com/zjlx/600023.html)|火力发电|浙江|3.53|
+|[600985](https://xueqiu.com/s/sh600985)|[淮北矿业](https://www.lixinger.com/analytics/company/sh/600985/600985/detail/shareholders/nolimit)|[2020-05-25](http://data.eastmoney.com/zjlx/600985.html)|煤炭开采|安徽|8.59|
+|[000552](https://xueqiu.com/s/sz000552)|[靖远煤电](https://www.lixinger.com/analytics/company/sz/000552/552/detail/shareholders/nolimit)|[2020-05-26](http://data.eastmoney.com/zjlx/000552.html)|煤炭开采|甘肃|2.36|
