@@ -503,3 +503,7 @@ comments: false
 |[600023](https://xueqiu.com/s/sh600023)|[浙能电力](https://www.lixinger.com/analytics/company/sh/600023/600023/detail/shareholders/nolimit)|[2020-05-25](http://data.eastmoney.com/zjlx/600023.html)|火力发电|浙江|3.53|
 |[600985](https://xueqiu.com/s/sh600985)|[淮北矿业](https://www.lixinger.com/analytics/company/sh/600985/600985/detail/shareholders/nolimit)|[2020-05-25](http://data.eastmoney.com/zjlx/600985.html)|煤炭开采|安徽|8.59|
 |[000552](https://xueqiu.com/s/sz000552)|[靖远煤电](https://www.lixinger.com/analytics/company/sz/000552/552/detail/shareholders/nolimit)|[2020-05-26](http://data.eastmoney.com/zjlx/000552.html)|煤炭开采|甘肃|2.36|
+|[600551](https://xueqiu.com/s/sh600551)|[时代出版](https://www.lixinger.com/analytics/company/sh/600551/600551/detail/shareholders/nolimit)|[2020-05-27](http://data.eastmoney.com/zjlx/600551.html)|出版业|安徽|7.96|
+|[601088](https://xueqiu.com/s/sh601088)|[中国神华](https://www.lixinger.com/analytics/company/sh/601088/601088/detail/shareholders/nolimit)|[2020-05-27](http://data.eastmoney.com/zjlx/601088.html)|煤炭开采|北京|16.45|
+|[600926](https://xueqiu.com/s/sh600926)|[杭州银行](https://www.lixinger.com/analytics/company/sh/600926/600926/detail/shareholders/nolimit)|[2020-05-27](http://data.eastmoney.com/zjlx/600926.html)|银行|浙江|8.9|
+|[603113](https://xueqiu.com/s/sh603113)|[金能科技](https://www.lixinger.com/analytics/company/sh/603113/603113/detail/shareholders/nolimit)|[2020-05-27](http://data.eastmoney.com/zjlx/603113.html)|化工原料|山东|10.11|
