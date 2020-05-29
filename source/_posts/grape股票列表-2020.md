@@ -524,3 +524,4 @@ comments: false
 |[600382](https://xueqiu.com/s/sh600382)|[广东明珠](https://www.lixinger.com/analytics/company/sh/600382/600382/detail/shareholders/nolimit)|[2020-05-28](http://data.eastmoney.com/zjlx/600382.html)|商贸代理|广东|6.27|
 |[600291](https://xueqiu.com/s/sh600291)|[西水股份](https://www.lixinger.com/analytics/company/sh/600291/600291/detail/shareholders/nolimit)|[2020-05-28](http://data.eastmoney.com/zjlx/600291.html)|保险|内蒙|8.07|
 |[601388](https://xueqiu.com/s/sh601388)|[怡球资源](https://www.lixinger.com/analytics/company/sh/601388/601388/detail/shareholders/nolimit)|[2020-05-28](http://data.eastmoney.com/zjlx/601388.html)|铝|江苏|1.8|
+|[600750](https://xueqiu.com/s/sh600750)|[江中药业](https://www.lixinger.com/analytics/company/sh/600750/600750/detail/shareholders/nolimit)|[2020-05-29](http://data.eastmoney.com/zjlx/600750.html)|中成药|江西|12.74|
