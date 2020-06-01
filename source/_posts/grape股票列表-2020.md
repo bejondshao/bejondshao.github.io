@@ -525,3 +525,8 @@ comments: false
 |[600291](https://xueqiu.com/s/sh600291)|[西水股份](https://www.lixinger.com/analytics/company/sh/600291/600291/detail/shareholders/nolimit)|[2020-05-28](http://data.eastmoney.com/zjlx/600291.html)|保险|内蒙|8.07|
 |[601388](https://xueqiu.com/s/sh601388)|[怡球资源](https://www.lixinger.com/analytics/company/sh/601388/601388/detail/shareholders/nolimit)|[2020-05-28](http://data.eastmoney.com/zjlx/601388.html)|铝|江苏|1.8|
 |[600750](https://xueqiu.com/s/sh600750)|[江中药业](https://www.lixinger.com/analytics/company/sh/600750/600750/detail/shareholders/nolimit)|[2020-05-29](http://data.eastmoney.com/zjlx/600750.html)|中成药|江西|12.74|
+|[600415](https://xueqiu.com/s/sh600415)|[小商品城](https://www.lixinger.com/analytics/company/sh/600415/600415/detail/shareholders/nolimit)|[2020-06-01](http://data.eastmoney.com/zjlx/600415.html)|商品城|浙江|3.8|
+|[002344](https://xueqiu.com/s/sz002344)|[海宁皮城](https://www.lixinger.com/analytics/company/sz/002344/2344/detail/shareholders/nolimit)|[2020-06-01](http://data.eastmoney.com/zjlx/002344.html)|商品城|浙江|4.08|
+|[002818](https://xueqiu.com/s/sz002818)|[富森美](https://www.lixinger.com/analytics/company/sz/002818/2818/detail/shareholders/nolimit)|[2020-06-01](http://data.eastmoney.com/zjlx/002818.html)|其他商业|四川|12.05|
+|[600644](https://xueqiu.com/s/sh600644)|[乐山电力](https://www.lixinger.com/analytics/company/sh/600644/600644/detail/shareholders/nolimit)|[2020-06-01](http://data.eastmoney.com/zjlx/600644.html)|水力发电|四川|5.11|
+|[601200](https://xueqiu.com/s/sh601200)|[上海环境](https://www.lixinger.com/analytics/company/sh/601200/601200/detail/shareholders/nolimit)|[2020-06-01](http://data.eastmoney.com/zjlx/601200.html)|环境保护|上海|12.27|
