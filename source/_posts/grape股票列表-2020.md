@@ -530,3 +530,4 @@ comments: false
 |[002818](https://xueqiu.com/s/sz002818)|[富森美](https://www.lixinger.com/analytics/company/sz/002818/2818/detail/shareholders/nolimit)|[2020-06-01](http://data.eastmoney.com/zjlx/002818.html)|其他商业|四川|12.05|
 |[600644](https://xueqiu.com/s/sh600644)|[乐山电力](https://www.lixinger.com/analytics/company/sh/600644/600644/detail/shareholders/nolimit)|[2020-06-01](http://data.eastmoney.com/zjlx/600644.html)|水力发电|四川|5.11|
 |[601200](https://xueqiu.com/s/sh601200)|[上海环境](https://www.lixinger.com/analytics/company/sh/601200/601200/detail/shareholders/nolimit)|[2020-06-01](http://data.eastmoney.com/zjlx/601200.html)|环境保护|上海|12.27|
+|[600886](https://xueqiu.com/s/sh600886)|[国投电力](https://www.lixinger.com/analytics/company/sh/600886/600886/detail/shareholders/nolimit)|[2020-06-02](http://data.eastmoney.com/zjlx/600886.html)|水力发电|北京|7.75|
