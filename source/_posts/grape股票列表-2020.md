@@ -531,3 +531,6 @@ comments: false
 |[600644](https://xueqiu.com/s/sh600644)|[乐山电力](https://www.lixinger.com/analytics/company/sh/600644/600644/detail/shareholders/nolimit)|[2020-06-01](http://data.eastmoney.com/zjlx/600644.html)|水力发电|四川|5.11|
 |[601200](https://xueqiu.com/s/sh601200)|[上海环境](https://www.lixinger.com/analytics/company/sh/601200/601200/detail/shareholders/nolimit)|[2020-06-01](http://data.eastmoney.com/zjlx/601200.html)|环境保护|上海|12.27|
 |[600886](https://xueqiu.com/s/sh600886)|[国投电力](https://www.lixinger.com/analytics/company/sh/600886/600886/detail/shareholders/nolimit)|[2020-06-02](http://data.eastmoney.com/zjlx/600886.html)|水力发电|北京|7.75|
+|[600665](https://xueqiu.com/s/sh600665)|[天地源](https://www.lixinger.com/analytics/company/sh/600665/600665/detail/shareholders/nolimit)|[2020-06-04](http://data.eastmoney.com/zjlx/600665.html)|全国地产|陕西|3.54|
+|[603878](https://xueqiu.com/s/sh603878)|[武进不锈](https://www.lixinger.com/analytics/company/sh/603878/603878/detail/shareholders/nolimit)|[2020-06-04](http://data.eastmoney.com/zjlx/603878.html)|钢加工|江苏|11.4|
+|[600657](https://xueqiu.com/s/sh600657)|[信达地产](https://www.lixinger.com/analytics/company/sh/600657/600657/detail/shareholders/nolimit)|[2020-06-04](http://data.eastmoney.com/zjlx/600657.html)|全国地产|北京|3.94|
