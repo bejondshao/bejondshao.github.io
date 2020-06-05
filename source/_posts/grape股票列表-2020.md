@@ -534,3 +534,9 @@ comments: false
 |[600665](https://xueqiu.com/s/sh600665)|[天地源](https://www.lixinger.com/analytics/company/sh/600665/600665/detail/shareholders/nolimit)|[2020-06-04](http://data.eastmoney.com/zjlx/600665.html)|全国地产|陕西|3.54|
 |[603878](https://xueqiu.com/s/sh603878)|[武进不锈](https://www.lixinger.com/analytics/company/sh/603878/603878/detail/shareholders/nolimit)|[2020-06-04](http://data.eastmoney.com/zjlx/603878.html)|钢加工|江苏|11.4|
 |[600657](https://xueqiu.com/s/sh600657)|[信达地产](https://www.lixinger.com/analytics/company/sh/600657/600657/detail/shareholders/nolimit)|[2020-06-04](http://data.eastmoney.com/zjlx/600657.html)|全国地产|北京|3.94|
+|[601018](https://xueqiu.com/s/sh601018)|[宁波港](https://www.lixinger.com/analytics/company/sh/601018/601018/detail/shareholders/nolimit)|[2020-06-05](http://data.eastmoney.com/zjlx/601018.html)|港口|浙江|3.45|
+|[000488](https://xueqiu.com/s/sz000488)|[晨鸣纸业](https://www.lixinger.com/analytics/company/sz/000488/488/detail/shareholders/nolimit)|[2020-06-05](http://data.eastmoney.com/zjlx/000488.html)|造纸|山东|4.91|
+|[000600](https://xueqiu.com/s/sz000600)|[建投能源](https://www.lixinger.com/analytics/company/sz/000600/600/detail/shareholders/nolimit)|[2020-06-05](http://data.eastmoney.com/zjlx/000600.html)|火力发电|河北|4.92|
+|[600633](https://xueqiu.com/s/sh600633)|[浙数文化](https://www.lixinger.com/analytics/company/sh/600633/600633/detail/shareholders/nolimit)|[2020-06-05](http://data.eastmoney.com/zjlx/600633.html)|互联网|浙江|9.5|
+|[603968](https://xueqiu.com/s/sh603968)|[醋化股份](https://www.lixinger.com/analytics/company/sh/603968/603968/detail/shareholders/nolimit)|[2020-06-05](http://data.eastmoney.com/zjlx/603968.html)|化工原料|江苏|14.37|
+|[600325](https://xueqiu.com/s/sh600325)|[华发股份](https://www.lixinger.com/analytics/company/sh/600325/600325/detail/shareholders/nolimit)|[2020-06-05](http://data.eastmoney.com/zjlx/600325.html)|区域地产|广东|6.88|
