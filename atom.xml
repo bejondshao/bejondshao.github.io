@@ -524,9 +524,9 @@ svn: E200
       <category term="服务器" scheme="http://tech.bejond.org/categories/Java/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
     
-      <category term="Java" scheme="http://tech.bejond.org/tags/Java/"/>
-    
       <category term="Wildfly" scheme="http://tech.bejond.org/tags/Wildfly/"/>
+    
+      <category term="Java" scheme="http://tech.bejond.org/tags/Java/"/>
     
   </entry>
   
@@ -555,9 +555,9 @@ svn: E200
       <category term="服务器" scheme="http://tech.bejond.org/categories/Java/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
     
-      <category term="Java" scheme="http://tech.bejond.org/tags/Java/"/>
-    
       <category term="Wildfly" scheme="http://tech.bejond.org/tags/Wildfly/"/>
+    
+      <category term="Java" scheme="http://tech.bejond.org/tags/Java/"/>
     
       <category term="resteasy-jaxrs" scheme="http://tech.bejond.org/tags/resteasy-jaxrs/"/>
     
