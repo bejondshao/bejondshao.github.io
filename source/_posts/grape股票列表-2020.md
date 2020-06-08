@@ -540,3 +540,6 @@ comments: false
 |[600633](https://xueqiu.com/s/sh600633)|[浙数文化](https://www.lixinger.com/analytics/company/sh/600633/600633/detail/shareholders/nolimit)|[2020-06-05](http://data.eastmoney.com/zjlx/600633.html)|互联网|浙江|9.5|
 |[603968](https://xueqiu.com/s/sh603968)|[醋化股份](https://www.lixinger.com/analytics/company/sh/603968/603968/detail/shareholders/nolimit)|[2020-06-05](http://data.eastmoney.com/zjlx/603968.html)|化工原料|江苏|14.37|
 |[600325](https://xueqiu.com/s/sh600325)|[华发股份](https://www.lixinger.com/analytics/company/sh/600325/600325/detail/shareholders/nolimit)|[2020-06-05](http://data.eastmoney.com/zjlx/600325.html)|区域地产|广东|6.88|
+|[000923](https://xueqiu.com/s/sz000923)|[河钢资源](https://www.lixinger.com/analytics/company/sz/000923/923/detail/shareholders/nolimit)|[2020-06-08](http://data.eastmoney.com/zjlx/000923.html)|普钢|河北|13.95|
+|[000028](https://xueqiu.com/s/sz000028)|[国药一致](https://www.lixinger.com/analytics/company/sz/000028/28/detail/shareholders/nolimit)|[2020-06-08](http://data.eastmoney.com/zjlx/000028.html)|医药商业|深圳|43.62|
+|[601801](https://xueqiu.com/s/sh601801)|[皖新传媒](https://www.lixinger.com/analytics/company/sh/601801/601801/detail/shareholders/nolimit)|[2020-06-08](http://data.eastmoney.com/zjlx/601801.html)|出版业|安徽|5.35|
