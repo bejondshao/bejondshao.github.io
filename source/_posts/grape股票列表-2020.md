@@ -543,3 +543,4 @@ comments: false
 |[000923](https://xueqiu.com/s/sz000923)|[河钢资源](https://www.lixinger.com/analytics/company/sz/000923/923/detail/shareholders/nolimit)|[2020-06-08](http://data.eastmoney.com/zjlx/000923.html)|普钢|河北|13.95|
 |[000028](https://xueqiu.com/s/sz000028)|[国药一致](https://www.lixinger.com/analytics/company/sz/000028/28/detail/shareholders/nolimit)|[2020-06-08](http://data.eastmoney.com/zjlx/000028.html)|医药商业|深圳|43.62|
 |[601801](https://xueqiu.com/s/sh601801)|[皖新传媒](https://www.lixinger.com/analytics/company/sh/601801/601801/detail/shareholders/nolimit)|[2020-06-08](http://data.eastmoney.com/zjlx/601801.html)|出版业|安徽|5.35|
+|[002448](https://xueqiu.com/s/sz002448)|[中原内配](https://www.lixinger.com/analytics/company/sz/002448/2448/detail/shareholders/nolimit)|[2020-06-09](http://data.eastmoney.com/zjlx/002448.html)|汽车配件|河南|5.47|
