@@ -570,3 +570,8 @@ comments: false
 |[600352](https://xueqiu.com/s/sh600352)|[浙江龙盛](https://www.lixinger.com/analytics/company/sh/600352/600352/detail/shareholders/nolimit)|[2020-06-12](http://data.eastmoney.com/zjlx/600352.html)|染料涂料|浙江|12.68|
 |[000543](https://xueqiu.com/s/sz000543)|[皖能电力](https://www.lixinger.com/analytics/company/sz/000543/543/detail/shareholders/nolimit)|[2020-06-12](http://data.eastmoney.com/zjlx/000543.html)|火力发电|安徽|3.95|
 |[601688](https://xueqiu.com/s/sh601688)|[华泰证券](https://www.lixinger.com/analytics/company/sh/601688/601688/detail/shareholders/nolimit)|[2020-06-12](http://data.eastmoney.com/zjlx/601688.html)|证券|江苏|17.82|
+|[600755](https://xueqiu.com/s/sh600755)|[厦门国贸](https://www.lixinger.com/analytics/company/sh/600755/600755/detail/shareholders/nolimit)|[2020-06-15](http://data.eastmoney.com/zjlx/600755.html)|商贸代理|福建|6.64|
+|[601163](https://xueqiu.com/s/sh601163)|[三角轮胎](https://www.lixinger.com/analytics/company/sh/601163/601163/detail/shareholders/nolimit)|[2020-06-15](http://data.eastmoney.com/zjlx/601163.html)|汽车配件|山东|13.22|
+|[002394](https://xueqiu.com/s/sz002394)|[联发股份](https://www.lixinger.com/analytics/company/sz/002394/2394/detail/shareholders/nolimit)|[2020-06-15](http://data.eastmoney.com/zjlx/002394.html)|纺织|江苏|8.99|
+|[600173](https://xueqiu.com/s/sh600173)|[卧龙地产](https://www.lixinger.com/analytics/company/sh/600173/600173/detail/shareholders/nolimit)|[2020-06-15](http://data.eastmoney.com/zjlx/600173.html)|全国地产|浙江|4.58|
+|[300196](https://xueqiu.com/s/sz300196)|[长海股份](https://www.lixinger.com/analytics/company/sz/300196/300196/detail/shareholders/nolimit)|[2020-06-15](http://data.eastmoney.com/zjlx/300196.html)|玻璃|江苏|10.58|
