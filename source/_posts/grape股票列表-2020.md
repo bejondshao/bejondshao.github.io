@@ -593,3 +593,11 @@ comments: false
 |[601006](https://xueqiu.com/s/sh601006)|[大秦铁路](https://www.lixinger.com/analytics/company/sh/601006/601006/detail/shareholders/nolimit)|[2020-06-16](http://data.eastmoney.com/zjlx/601006.html)|铁路|山西|6.99|
 |[000623](https://xueqiu.com/s/sz000623)|[吉林敖东](https://www.lixinger.com/analytics/company/sz/000623/623/detail/shareholders/nolimit)|[2020-06-16](http://data.eastmoney.com/zjlx/000623.html)|化学制药|吉林|15.61|
 |[000783](https://xueqiu.com/s/sz000783)|[长江证券](https://www.lixinger.com/analytics/company/sz/000783/783/detail/shareholders/nolimit)|[2020-06-16](http://data.eastmoney.com/zjlx/000783.html)|证券|湖北|6.6|
+|[600420](https://xueqiu.com/s/sh600420)|[现代制药](https://www.lixinger.com/analytics/company/sh/600420/600420/detail/shareholders/nolimit)|[2020-06-17](http://data.eastmoney.com/zjlx/600420.html)|化学制药|上海|10.01|
+|[600056](https://xueqiu.com/s/sh600056)|[中国医药](https://www.lixinger.com/analytics/company/sh/600056/600056/detail/shareholders/nolimit)|[2020-06-17](http://data.eastmoney.com/zjlx/600056.html)|医药商业|北京|14.67|
+|[000717](https://xueqiu.com/s/sz000717)|[韶钢松山](https://www.lixinger.com/analytics/company/sz/000717/717/detail/shareholders/nolimit)|[2020-06-17](http://data.eastmoney.com/zjlx/000717.html)|普钢|广东|4.05|
+|[000411](https://xueqiu.com/s/sz000411)|[英特集团](https://www.lixinger.com/analytics/company/sz/000411/411/detail/shareholders/nolimit)|[2020-06-17](http://data.eastmoney.com/zjlx/000411.html)|医药商业|浙江|11.45|
+|[000983](https://xueqiu.com/s/sz000983)|[西山煤电](https://www.lixinger.com/analytics/company/sz/000983/983/detail/shareholders/nolimit)|[2020-06-17](http://data.eastmoney.com/zjlx/000983.html)|煤炭开采|山西|4.87|
+|[600508](https://xueqiu.com/s/sh600508)|[上海能源](https://www.lixinger.com/analytics/company/sh/600508/600508/detail/shareholders/nolimit)|[2020-06-17](http://data.eastmoney.com/zjlx/600508.html)|煤炭开采|上海|8.25|
+|[000807](https://xueqiu.com/s/sz000807)|[云铝股份](https://www.lixinger.com/analytics/company/sz/000807/807/detail/shareholders/nolimit)|[2020-06-17](http://data.eastmoney.com/zjlx/000807.html)|铝|云南|4.32|
+|[601577](https://xueqiu.com/s/sh601577)|[长沙银行](https://www.lixinger.com/analytics/company/sh/601577/601577/detail/shareholders/nolimit)|[2020-06-17](http://data.eastmoney.com/zjlx/601577.html)|银行|湖南|7.93|
