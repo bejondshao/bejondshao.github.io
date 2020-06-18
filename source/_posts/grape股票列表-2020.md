@@ -601,3 +601,8 @@ comments: false
 |[600508](https://xueqiu.com/s/sh600508)|[上海能源](https://www.lixinger.com/analytics/company/sh/600508/600508/detail/shareholders/nolimit)|[2020-06-17](http://data.eastmoney.com/zjlx/600508.html)|煤炭开采|上海|8.25|
 |[000807](https://xueqiu.com/s/sz000807)|[云铝股份](https://www.lixinger.com/analytics/company/sz/000807/807/detail/shareholders/nolimit)|[2020-06-17](http://data.eastmoney.com/zjlx/000807.html)|铝|云南|4.32|
 |[601577](https://xueqiu.com/s/sh601577)|[长沙银行](https://www.lixinger.com/analytics/company/sh/601577/601577/detail/shareholders/nolimit)|[2020-06-17](http://data.eastmoney.com/zjlx/601577.html)|银行|湖南|7.93|
+|[000937](https://xueqiu.com/s/sz000937)|[冀中能源](https://www.lixinger.com/analytics/company/sz/000937/937/detail/shareholders/nolimit)|[2020-06-18](http://data.eastmoney.com/zjlx/000937.html)|煤炭开采|河北|3.12|
+|[000778](https://xueqiu.com/s/sz000778)|[新兴铸管](https://www.lixinger.com/analytics/company/sz/000778/778/detail/shareholders/nolimit)|[2020-06-18](http://data.eastmoney.com/zjlx/000778.html)|钢加工|河北|3.5|
+|[600219](https://xueqiu.com/s/sh600219)|[南山铝业](https://www.lixinger.com/analytics/company/sh/600219/600219/detail/shareholders/nolimit)|[2020-06-18](http://data.eastmoney.com/zjlx/600219.html)|铝|山东|2.1|
+|[600395](https://xueqiu.com/s/sh600395)|[盘江股份](https://www.lixinger.com/analytics/company/sh/600395/600395/detail/shareholders/nolimit)|[2020-06-18](http://data.eastmoney.com/zjlx/600395.html)|煤炭开采|贵州|5.45|
+|[000961](https://xueqiu.com/s/sz000961)|[中南建设](https://www.lixinger.com/analytics/company/sz/000961/961/detail/shareholders/nolimit)|[2020-06-18](http://data.eastmoney.com/zjlx/000961.html)|建筑工程|江苏|8.58|
