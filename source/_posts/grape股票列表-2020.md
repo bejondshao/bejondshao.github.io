@@ -606,3 +606,15 @@ comments: false
 |[600219](https://xueqiu.com/s/sh600219)|[南山铝业](https://www.lixinger.com/analytics/company/sh/600219/600219/detail/shareholders/nolimit)|[2020-06-18](http://data.eastmoney.com/zjlx/600219.html)|铝|山东|2.1|
 |[600395](https://xueqiu.com/s/sh600395)|[盘江股份](https://www.lixinger.com/analytics/company/sh/600395/600395/detail/shareholders/nolimit)|[2020-06-18](http://data.eastmoney.com/zjlx/600395.html)|煤炭开采|贵州|5.45|
 |[000961](https://xueqiu.com/s/sz000961)|[中南建设](https://www.lixinger.com/analytics/company/sz/000961/961/detail/shareholders/nolimit)|[2020-06-18](http://data.eastmoney.com/zjlx/000961.html)|建筑工程|江苏|8.58|
+|[002736](https://xueqiu.com/s/sz002736)|[国信证券](https://www.lixinger.com/analytics/company/sz/002736/2736/detail/shareholders/nolimit)|[2020-06-19](http://data.eastmoney.com/zjlx/002736.html)|证券|深圳|11.22|
+|[601228](https://xueqiu.com/s/sh601228)|[广州港](https://www.lixinger.com/analytics/company/sh/601228/601228/detail/shareholders/nolimit)|[2020-06-19](http://data.eastmoney.com/zjlx/601228.html)|港口|广东|3.2|
+|[002926](https://xueqiu.com/s/sz002926)|[华西证券](https://www.lixinger.com/analytics/company/sz/002926/2926/detail/shareholders/nolimit)|[2020-06-19](http://data.eastmoney.com/zjlx/002926.html)|证券|四川|10.89|
+|[000166](https://xueqiu.com/s/sz000166)|[申万宏源](https://www.lixinger.com/analytics/company/sz/000166/166/detail/shareholders/nolimit)|[2020-06-19](http://data.eastmoney.com/zjlx/000166.html)|证券|新疆|4.6|
+|[000686](https://xueqiu.com/s/sz000686)|[东北证券](https://www.lixinger.com/analytics/company/sz/000686/686/detail/shareholders/nolimit)|[2020-06-19](http://data.eastmoney.com/zjlx/000686.html)|证券|吉林|8.45|
+|[000776](https://xueqiu.com/s/sz000776)|[广发证券](https://www.lixinger.com/analytics/company/sz/000776/776/detail/shareholders/nolimit)|[2020-06-19](http://data.eastmoney.com/zjlx/000776.html)|证券|广东|13.91|
+|[600958](https://xueqiu.com/s/sh600958)|[东方证券](https://www.lixinger.com/analytics/company/sh/600958/600958/detail/shareholders/nolimit)|[2020-06-19](http://data.eastmoney.com/zjlx/600958.html)|证券|上海|9.38|
+|[601233](https://xueqiu.com/s/sh601233)|[桐昆股份](https://www.lixinger.com/analytics/company/sh/601233/601233/detail/shareholders/nolimit)|[2020-06-19](http://data.eastmoney.com/zjlx/601233.html)|化纤|浙江|12.83|
+|[002067](https://xueqiu.com/s/sz002067)|[景兴纸业](https://www.lixinger.com/analytics/company/sz/002067/2067/detail/shareholders/nolimit)|[2020-06-19](http://data.eastmoney.com/zjlx/002067.html)|造纸|浙江|3.11|
+|[600995](https://xueqiu.com/s/sh600995)|[文山电力](https://www.lixinger.com/analytics/company/sh/600995/600995/detail/shareholders/nolimit)|[2020-06-19](http://data.eastmoney.com/zjlx/600995.html)|水力发电|云南|7.8|
+|[000591](https://xueqiu.com/s/sz000591)|[太阳能](https://www.lixinger.com/analytics/company/sz/000591/591/detail/shareholders/nolimit)|[2020-06-19](http://data.eastmoney.com/zjlx/000591.html)|新型电力|重庆|3.32|
+|[600533](https://xueqiu.com/s/sh600533)|[栖霞建设](https://www.lixinger.com/analytics/company/sh/600533/600533/detail/shareholders/nolimit)|[2020-06-19](http://data.eastmoney.com/zjlx/600533.html)|区域地产|江苏|3.56|
