@@ -618,3 +618,4 @@ comments: false
 |[600995](https://xueqiu.com/s/sh600995)|[文山电力](https://www.lixinger.com/analytics/company/sh/600995/600995/detail/shareholders/nolimit)|[2020-06-19](http://data.eastmoney.com/zjlx/600995.html)|水力发电|云南|7.8|
 |[000591](https://xueqiu.com/s/sz000591)|[太阳能](https://www.lixinger.com/analytics/company/sz/000591/591/detail/shareholders/nolimit)|[2020-06-19](http://data.eastmoney.com/zjlx/000591.html)|新型电力|重庆|3.32|
 |[600533](https://xueqiu.com/s/sh600533)|[栖霞建设](https://www.lixinger.com/analytics/company/sh/600533/600533/detail/shareholders/nolimit)|[2020-06-19](http://data.eastmoney.com/zjlx/600533.html)|区域地产|江苏|3.56|
+|[600061](https://xueqiu.com/s/sh600061)|[国投资本](https://www.lixinger.com/analytics/company/sh/600061/600061/detail/shareholders/nolimit)|[2020-06-23](http://data.eastmoney.com/zjlx/600061.html)|证券|上海|13.17|
