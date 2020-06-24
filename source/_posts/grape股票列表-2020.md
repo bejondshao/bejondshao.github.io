@@ -619,3 +619,7 @@ comments: false
 |[000591](https://xueqiu.com/s/sz000591)|[太阳能](https://www.lixinger.com/analytics/company/sz/000591/591/detail/shareholders/nolimit)|[2020-06-19](http://data.eastmoney.com/zjlx/000591.html)|新型电力|重庆|3.32|
 |[600533](https://xueqiu.com/s/sh600533)|[栖霞建设](https://www.lixinger.com/analytics/company/sh/600533/600533/detail/shareholders/nolimit)|[2020-06-19](http://data.eastmoney.com/zjlx/600533.html)|区域地产|江苏|3.56|
 |[600061](https://xueqiu.com/s/sh600061)|[国投资本](https://www.lixinger.com/analytics/company/sh/600061/600061/detail/shareholders/nolimit)|[2020-06-23](http://data.eastmoney.com/zjlx/600061.html)|证券|上海|13.17|
+|[600837](https://xueqiu.com/s/sh600837)|[海通证券](https://www.lixinger.com/analytics/company/sh/600837/600837/detail/shareholders/nolimit)|[2020-06-24](http://data.eastmoney.com/zjlx/600837.html)|证券|上海|12.87|
+|[000563](https://xueqiu.com/s/sz000563)|[陕国投Ａ](https://www.lixinger.com/analytics/company/sz/000563/563/detail/shareholders/nolimit)|[2020-06-24](http://data.eastmoney.com/zjlx/000563.html)|多元金融|陕西|3.64|
+|[002244](https://xueqiu.com/s/sz002244)|[滨江集团](https://www.lixinger.com/analytics/company/sz/002244/2244/detail/shareholders/nolimit)|[2020-06-24](http://data.eastmoney.com/zjlx/002244.html)|区域地产|浙江|4.29|
+|[002839](https://xueqiu.com/s/sz002839)|[张家港行](https://www.lixinger.com/analytics/company/sz/002839/2839/detail/shareholders/nolimit)|[2020-06-24](http://data.eastmoney.com/zjlx/002839.html)|银行|江苏|5.79|
