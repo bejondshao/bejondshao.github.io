@@ -623,3 +623,4 @@ comments: false
 |[000563](https://xueqiu.com/s/sz000563)|[陕国投Ａ](https://www.lixinger.com/analytics/company/sz/000563/563/detail/shareholders/nolimit)|[2020-06-24](http://data.eastmoney.com/zjlx/000563.html)|多元金融|陕西|3.64|
 |[002244](https://xueqiu.com/s/sz002244)|[滨江集团](https://www.lixinger.com/analytics/company/sz/002244/2244/detail/shareholders/nolimit)|[2020-06-24](http://data.eastmoney.com/zjlx/002244.html)|区域地产|浙江|4.29|
 |[002839](https://xueqiu.com/s/sz002839)|[张家港行](https://www.lixinger.com/analytics/company/sz/002839/2839/detail/shareholders/nolimit)|[2020-06-24](http://data.eastmoney.com/zjlx/002839.html)|银行|江苏|5.79|
+|[601222](https://xueqiu.com/s/sh601222)|[林洋能源](https://www.lixinger.com/analytics/company/sh/601222/601222/detail/shareholders/nolimit)|[2020-06-29](http://data.eastmoney.com/zjlx/601222.html)|电器仪表|江苏|5.3|
