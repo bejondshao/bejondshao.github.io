@@ -625,3 +625,10 @@ comments: false
 |[002839](https://xueqiu.com/s/sz002839)|[张家港行](https://www.lixinger.com/analytics/company/sz/002839/2839/detail/shareholders/nolimit)|[2020-06-24](http://data.eastmoney.com/zjlx/002839.html)|银行|江苏|5.79|
 |[601222](https://xueqiu.com/s/sh601222)|[林洋能源](https://www.lixinger.com/analytics/company/sh/601222/601222/detail/shareholders/nolimit)|[2020-06-29](http://data.eastmoney.com/zjlx/601222.html)|电器仪表|江苏|5.3|
 |[000875](https://xueqiu.com/s/sz000875)|[吉电股份](https://www.lixinger.com/analytics/company/sz/000875/875/detail/shareholders/nolimit)|[2020-06-29](http://data.eastmoney.com/zjlx/000875.html)|火力发电|吉林|3.73|
+|[000671](https://xueqiu.com/s/sz000671)|[阳 光 城](https://www.lixinger.com/analytics/company/sz/000671/671/detail/shareholders/nolimit)|[2020-07-01](http://data.eastmoney.com/zjlx/000671.html)|区域地产|福建|6.97|
+|[600048](https://xueqiu.com/s/sh600048)|[保利地产](https://www.lixinger.com/analytics/company/sh/600048/600048/detail/shareholders/nolimit)|[2020-07-01](http://data.eastmoney.com/zjlx/600048.html)|全国地产|广东|15.9|
+|[000069](https://xueqiu.com/s/sz000069)|[华侨城Ａ](https://www.lixinger.com/analytics/company/sz/000069/69/detail/shareholders/nolimit)|[2020-07-01](http://data.eastmoney.com/zjlx/000069.html)|旅游景点|深圳|6.5|
+|[600422](https://xueqiu.com/s/sh600422)|[昆药集团](https://www.lixinger.com/analytics/company/sh/600422/600422/detail/shareholders/nolimit)|[2020-07-01](http://data.eastmoney.com/zjlx/600422.html)|中成药|云南|10.03|
+|[601166](https://xueqiu.com/s/sh601166)|[兴业银行](https://www.lixinger.com/analytics/company/sh/601166/601166/detail/shareholders/nolimit)|[2020-07-01](http://data.eastmoney.com/zjlx/601166.html)|银行|福建|16.15|
+|[000750](https://xueqiu.com/s/sz000750)|[国海证券](https://www.lixinger.com/analytics/company/sz/000750/750/detail/shareholders/nolimit)|[2020-07-01](http://data.eastmoney.com/zjlx/000750.html)|证券|广西|4.42|
+|[601328](https://xueqiu.com/s/sh601328)|[交通银行](https://www.lixinger.com/analytics/company/sh/601328/601328/detail/shareholders/nolimit)|[2020-07-01](http://data.eastmoney.com/zjlx/601328.html)|银行|上海|5.16|
