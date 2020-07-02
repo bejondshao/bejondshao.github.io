@@ -632,3 +632,14 @@ comments: false
 |[601166](https://xueqiu.com/s/sh601166)|[兴业银行](https://www.lixinger.com/analytics/company/sh/601166/601166/detail/shareholders/nolimit)|[2020-07-01](http://data.eastmoney.com/zjlx/601166.html)|银行|福建|16.15|
 |[000750](https://xueqiu.com/s/sz000750)|[国海证券](https://www.lixinger.com/analytics/company/sz/000750/750/detail/shareholders/nolimit)|[2020-07-01](http://data.eastmoney.com/zjlx/000750.html)|证券|广西|4.42|
 |[601328](https://xueqiu.com/s/sh601328)|[交通银行](https://www.lixinger.com/analytics/company/sh/601328/601328/detail/shareholders/nolimit)|[2020-07-01](http://data.eastmoney.com/zjlx/601328.html)|银行|上海|5.16|
+|[601319](https://xueqiu.com/s/sh601319)|[中国人保](https://www.lixinger.com/analytics/company/sh/601319/601319/detail/shareholders/nolimit)|[2020-07-02](http://data.eastmoney.com/zjlx/601319.html)|保险|北京|7.35|
+|[002081](https://xueqiu.com/s/sz002081)|[金 螳 螂](https://www.lixinger.com/analytics/company/sz/002081/2081/detail/shareholders/nolimit)|[2020-07-02](http://data.eastmoney.com/zjlx/002081.html)|装修装饰|江苏|8.25|
+|[601555](https://xueqiu.com/s/sh601555)|[东吴证券](https://www.lixinger.com/analytics/company/sh/601555/601555/detail/shareholders/nolimit)|[2020-07-02](http://data.eastmoney.com/zjlx/601555.html)|证券|江苏|9.03|
+|[601618](https://xueqiu.com/s/sh601618)|[中国中冶](https://www.lixinger.com/analytics/company/sh/601618/601618/detail/shareholders/nolimit)|[2020-07-02](http://data.eastmoney.com/zjlx/601618.html)|建筑工程|北京|2.63|
+|[601225](https://xueqiu.com/s/sh601225)|[陕西煤业](https://www.lixinger.com/analytics/company/sh/601225/601225/detail/shareholders/nolimit)|[2020-07-02](http://data.eastmoney.com/zjlx/601225.html)|煤炭开采|陕西|7.74|
+|[600908](https://xueqiu.com/s/sh600908)|[无锡银行](https://www.lixinger.com/analytics/company/sh/600908/600908/detail/shareholders/nolimit)|[2020-07-02](http://data.eastmoney.com/zjlx/600908.html)|银行|江苏|5.16|
+|[601339](https://xueqiu.com/s/sh601339)|[百隆东方](https://www.lixinger.com/analytics/company/sh/601339/601339/detail/shareholders/nolimit)|[2020-07-02](http://data.eastmoney.com/zjlx/601339.html)|纺织|浙江|3.62|
+|[600705](https://xueqiu.com/s/sh600705)|[中航资本](https://www.lixinger.com/analytics/company/sh/600705/600705/detail/shareholders/nolimit)|[2020-07-02](http://data.eastmoney.com/zjlx/600705.html)|多元金融|黑龙江|4.23|
+|[600864](https://xueqiu.com/s/sh600864)|[哈投股份](https://www.lixinger.com/analytics/company/sh/600864/600864/detail/shareholders/nolimit)|[2020-07-02](http://data.eastmoney.com/zjlx/600864.html)|证券|黑龙江|6.62|
+|[601000](https://xueqiu.com/s/sh601000)|[唐山港](https://www.lixinger.com/analytics/company/sh/601000/601000/detail/shareholders/nolimit)|[2020-07-02](http://data.eastmoney.com/zjlx/601000.html)|港口|河北|2.28|
+|[600713](https://xueqiu.com/s/sh600713)|[南京医药](https://www.lixinger.com/analytics/company/sh/600713/600713/detail/shareholders/nolimit)|[2020-07-02](http://data.eastmoney.com/zjlx/600713.html)|医药商业|江苏|4.4|
