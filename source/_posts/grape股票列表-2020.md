@@ -698,3 +698,8 @@ comments: false
 |[600528](https://xueqiu.com/s/sh600528)|[中铁工业](https://www.lixinger.com/analytics/company/sh/600528/600528/detail/shareholders/nolimit)|[2020-07-06](http://data.eastmoney.com/zjlx/600528.html)|运输设备|北京|9.89|
 |[002016](https://xueqiu.com/s/sz002016)|[世荣兆业](https://www.lixinger.com/analytics/company/sz/002016/2016/detail/shareholders/nolimit)|[2020-07-06](http://data.eastmoney.com/zjlx/002016.html)|区域地产|广东|7.37|
 |[000627](https://xueqiu.com/s/sz000627)|[天茂集团](https://www.lixinger.com/analytics/company/sz/000627/627/detail/shareholders/nolimit)|[2020-07-07](http://data.eastmoney.com/zjlx/000627.html)|保险|湖北|6.09|
+|[300483](https://xueqiu.com/s/sz300483)|[沃施股份](https://www.lixinger.com/analytics/company/sz/300483/300483/detail/shareholders/nolimit)|[2020-07-08](http://data.eastmoney.com/zjlx/300483.html)|石油开采|上海|33.26|
+|[600710](https://xueqiu.com/s/sh600710)|[苏美达](https://www.lixinger.com/analytics/company/sh/600710/600710/detail/shareholders/nolimit)|[2020-07-08](http://data.eastmoney.com/zjlx/600710.html)|工程机械|江苏|5.1|
+|[600777](https://xueqiu.com/s/sh600777)|[新潮能源](https://www.lixinger.com/analytics/company/sh/600777/600777/detail/shareholders/nolimit)|[2020-07-08](http://data.eastmoney.com/zjlx/600777.html)|石油开采|山东|1.82|
+|[603299](https://xueqiu.com/s/sh603299)|[苏盐井神](https://www.lixinger.com/analytics/company/sh/603299/603299/detail/shareholders/nolimit)|[2020-07-08](http://data.eastmoney.com/zjlx/603299.html)|化工原料|江苏|6.56|
+|[002357](https://xueqiu.com/s/sz002357)|[富临运业](https://www.lixinger.com/analytics/company/sz/002357/2357/detail/shareholders/nolimit)|[2020-07-08](http://data.eastmoney.com/zjlx/002357.html)|公路|四川|5.89|
