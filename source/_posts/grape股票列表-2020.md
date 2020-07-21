@@ -703,3 +703,5 @@ comments: false
 |[600351](https://xueqiu.com/s/sh600351)|[亚宝药业](https://www.lixinger.com/analytics/company/sh/600351/600351/detail/shareholders/nolimit)|[2020-07-20](http://data.eastmoney.com/zjlx/600351.html)|中成药|山西|5.3|
 |[000767](https://xueqiu.com/s/sz000767)|[漳泽电力](https://www.lixinger.com/analytics/company/sz/000767/767/detail/shareholders/nolimit)|[2020-07-20](http://data.eastmoney.com/zjlx/000767.html)|火力发电|山西|2.5|
 |[002889](https://xueqiu.com/s/sz002889)|[东方嘉盛](https://www.lixinger.com/analytics/company/sz/002889/2889/detail/shareholders/nolimit)|[2020-07-20](http://data.eastmoney.com/zjlx/002889.html)|仓储物流|深圳|24.84|
+|[000631](https://xueqiu.com/s/sz000631)|[顺发恒业](https://www.lixinger.com/analytics/company/sz/000631/631/detail/shareholders/nolimit)|[2020-07-21](http://data.eastmoney.com/zjlx/000631.html)|区域地产|吉林|3.12|
+|[603567](https://xueqiu.com/s/sh603567)|[珍宝岛](https://www.lixinger.com/analytics/company/sh/603567/603567/detail/shareholders/nolimit)|[2020-07-21](http://data.eastmoney.com/zjlx/603567.html)|中成药|黑龙江|13.16|
