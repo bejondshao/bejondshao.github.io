@@ -705,3 +705,4 @@ comments: false
 |[002889](https://xueqiu.com/s/sz002889)|[东方嘉盛](https://www.lixinger.com/analytics/company/sz/002889/2889/detail/shareholders/nolimit)|[2020-07-20](http://data.eastmoney.com/zjlx/002889.html)|仓储物流|深圳|24.84|
 |[000631](https://xueqiu.com/s/sz000631)|[顺发恒业](https://www.lixinger.com/analytics/company/sz/000631/631/detail/shareholders/nolimit)|[2020-07-21](http://data.eastmoney.com/zjlx/000631.html)|区域地产|吉林|3.12|
 |[603567](https://xueqiu.com/s/sh603567)|[珍宝岛](https://www.lixinger.com/analytics/company/sh/603567/603567/detail/shareholders/nolimit)|[2020-07-21](http://data.eastmoney.com/zjlx/603567.html)|中成药|黑龙江|13.16|
+|[600603](https://xueqiu.com/s/sh600603)|[广汇物流](https://www.lixinger.com/analytics/company/sh/600603/600603/detail/shareholders/nolimit)|[2020-07-22](http://data.eastmoney.com/zjlx/600603.html)|仓储物流|四川|5.33|
