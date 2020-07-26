@@ -706,3 +706,9 @@ comments: false
 |[000631](https://xueqiu.com/s/sz000631)|[顺发恒业](https://www.lixinger.com/analytics/company/sz/000631/631/detail/shareholders/nolimit)|[2020-07-21](http://data.eastmoney.com/zjlx/000631.html)|区域地产|吉林|3.12|
 |[603567](https://xueqiu.com/s/sh603567)|[珍宝岛](https://www.lixinger.com/analytics/company/sh/603567/603567/detail/shareholders/nolimit)|[2020-07-21](http://data.eastmoney.com/zjlx/603567.html)|中成药|黑龙江|13.16|
 |[600603](https://xueqiu.com/s/sh600603)|[广汇物流](https://www.lixinger.com/analytics/company/sh/600603/600603/detail/shareholders/nolimit)|[2020-07-22](http://data.eastmoney.com/zjlx/600603.html)|仓储物流|四川|5.33|
+|[601088](https://xueqiu.com/s/sh601088)|[中国神华](https://www.lixinger.com/analytics/company/sh/601088/601088/detail/shareholders/nolimit)|[2020-07-20](http://data.eastmoney.com/zjlx/601088.html)|煤炭开采|北京|16.26|
+|[601003](https://xueqiu.com/s/sh601003)|[柳钢股份](https://www.lixinger.com/analytics/company/sh/601003/601003/detail/shareholders/nolimit)|[2020-07-20](http://data.eastmoney.com/zjlx/601003.html)|普钢|广西|5.24|
+|[600780](https://xueqiu.com/s/sh600780)|[通宝能源](https://www.lixinger.com/analytics/company/sh/600780/600780/detail/shareholders/nolimit)|[2020-07-23](http://data.eastmoney.com/zjlx/600780.html)|火力发电|山西|3.52|
+|[600398](https://xueqiu.com/s/sh600398)|[海澜之家](https://www.lixinger.com/analytics/company/sh/600398/600398/detail/shareholders/nolimit)|[2020-07-23](http://data.eastmoney.com/zjlx/600398.html)|服饰|江苏|6.37|
+|[000999](https://xueqiu.com/s/sz000999)|[华润三九](https://www.lixinger.com/analytics/company/sz/000999/999/detail/shareholders/nolimit)|[2020-07-23](http://data.eastmoney.com/zjlx/000999.html)|中成药|深圳|30.8|
+|[603585](https://xueqiu.com/s/sh603585)|[苏利股份](https://www.lixinger.com/analytics/company/sh/603585/603585/detail/shareholders/nolimit)|[2020-07-24](http://data.eastmoney.com/zjlx/603585.html)|化工原料|江苏|18.66|
