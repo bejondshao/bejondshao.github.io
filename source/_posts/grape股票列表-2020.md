@@ -713,3 +713,5 @@ comments: false
 |[000999](https://xueqiu.com/s/sz000999)|[华润三九](https://www.lixinger.com/analytics/company/sz/000999/999/detail/shareholders/nolimit)|[2020-07-23](http://data.eastmoney.com/zjlx/000999.html)|中成药|深圳|30.8|
 |[603585](https://xueqiu.com/s/sh603585)|[苏利股份](https://www.lixinger.com/analytics/company/sh/603585/603585/detail/shareholders/nolimit)|[2020-07-24](http://data.eastmoney.com/zjlx/603585.html)|化工原料|江苏|18.66|
 |[300158](https://xueqiu.com/s/sz300158)|[振东制药](https://www.lixinger.com/analytics/company/sz/300158/300158/detail/shareholders/nolimit)|[2020-07-27](http://data.eastmoney.com/zjlx/300158.html)|化学制药|山西|5.77|
+|[600068](https://xueqiu.com/s/sh600068)|[葛洲坝](https://www.lixinger.com/analytics/company/sh/600068/600068/detail/shareholders/nolimit)|[2020-07-28](http://data.eastmoney.com/zjlx/600068.html)|建筑工程|湖北|6.52|
+|[300179](https://xueqiu.com/s/sz300179)|[四方达](https://www.lixinger.com/analytics/company/sz/300179/300179/detail/shareholders/nolimit)|[2020-07-28](http://data.eastmoney.com/zjlx/300179.html)|矿物制品|河南|6.08|
