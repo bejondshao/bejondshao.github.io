@@ -715,3 +715,6 @@ comments: false
 |[300158](https://xueqiu.com/s/sz300158)|[振东制药](https://www.lixinger.com/analytics/company/sz/300158/300158/detail/shareholders/nolimit)|[2020-07-27](http://data.eastmoney.com/zjlx/300158.html)|化学制药|山西|5.77|
 |[600068](https://xueqiu.com/s/sh600068)|[葛洲坝](https://www.lixinger.com/analytics/company/sh/600068/600068/detail/shareholders/nolimit)|[2020-07-28](http://data.eastmoney.com/zjlx/600068.html)|建筑工程|湖北|6.52|
 |[300179](https://xueqiu.com/s/sz300179)|[四方达](https://www.lixinger.com/analytics/company/sz/300179/300179/detail/shareholders/nolimit)|[2020-07-28](http://data.eastmoney.com/zjlx/300179.html)|矿物制品|河南|6.08|
+|[300194](https://xueqiu.com/s/sz300194)|[福安药业](https://www.lixinger.com/analytics/company/sz/300194/300194/detail/shareholders/nolimit)|[2020-07-29](http://data.eastmoney.com/zjlx/300194.html)|化学制药|重庆|6.06|
+|[002462](https://xueqiu.com/s/sz002462)|[嘉事堂](https://www.lixinger.com/analytics/company/sz/002462/2462/detail/shareholders/nolimit)|[2020-07-29](http://data.eastmoney.com/zjlx/002462.html)|医药商业|北京|14.9|
+|[601158](https://xueqiu.com/s/sh601158)|[重庆水务](https://www.lixinger.com/analytics/company/sh/601158/601158/detail/shareholders/nolimit)|[2020-07-29](http://data.eastmoney.com/zjlx/601158.html)|水务|重庆|5.34|
