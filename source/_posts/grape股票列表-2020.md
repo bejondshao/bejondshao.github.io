@@ -718,3 +718,6 @@ comments: false
 |[300194](https://xueqiu.com/s/sz300194)|[福安药业](https://www.lixinger.com/analytics/company/sz/300194/300194/detail/shareholders/nolimit)|[2020-07-29](http://data.eastmoney.com/zjlx/300194.html)|化学制药|重庆|6.06|
 |[002462](https://xueqiu.com/s/sz002462)|[嘉事堂](https://www.lixinger.com/analytics/company/sz/002462/2462/detail/shareholders/nolimit)|[2020-07-29](http://data.eastmoney.com/zjlx/002462.html)|医药商业|北京|14.9|
 |[601158](https://xueqiu.com/s/sh601158)|[重庆水务](https://www.lixinger.com/analytics/company/sh/601158/601158/detail/shareholders/nolimit)|[2020-07-29](http://data.eastmoney.com/zjlx/601158.html)|水务|重庆|5.34|
+|[603359](https://xueqiu.com/s/sh603359)|[东珠生态](https://www.lixinger.com/analytics/company/sh/603359/603359/detail/shareholders/nolimit)|[2020-07-28](http://data.eastmoney.com/zjlx/603359.html)|环境保护|江苏|18.21|
+|[601975](https://xueqiu.com/s/sh601975)|[招商南油](https://www.lixinger.com/analytics/company/sh/601975/601975/detail/shareholders/nolimit)|[2020-07-31](http://data.eastmoney.com/zjlx/601975.html)|水运|江苏|2.67|
+|[600846](https://xueqiu.com/s/sh600846)|[同济科技](https://www.lixinger.com/analytics/company/sh/600846/600846/detail/shareholders/nolimit)|[2020-08-03](http://data.eastmoney.com/zjlx/600846.html)|建筑工程|上海|8.92|
