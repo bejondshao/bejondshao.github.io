@@ -721,3 +721,5 @@ comments: false
 |[603359](https://xueqiu.com/s/sh603359)|[东珠生态](https://www.lixinger.com/analytics/company/sh/603359/603359/detail/shareholders/nolimit)|[2020-07-28](http://data.eastmoney.com/zjlx/603359.html)|环境保护|江苏|18.21|
 |[601975](https://xueqiu.com/s/sh601975)|[招商南油](https://www.lixinger.com/analytics/company/sh/601975/601975/detail/shareholders/nolimit)|[2020-07-31](http://data.eastmoney.com/zjlx/601975.html)|水运|江苏|2.67|
 |[600846](https://xueqiu.com/s/sh600846)|[同济科技](https://www.lixinger.com/analytics/company/sh/600846/600846/detail/shareholders/nolimit)|[2020-08-03](http://data.eastmoney.com/zjlx/600846.html)|建筑工程|上海|8.92|
+|[601601](https://xueqiu.com/s/sh601601)|[中国太保](https://www.lixinger.com/analytics/company/sh/601601/601601/detail/shareholders/nolimit)|[2020-08-04](http://data.eastmoney.com/zjlx/601601.html)|保险|上海|30.84|
+|[000001](https://xueqiu.com/s/sz000001)|[平安银行](https://www.lixinger.com/analytics/company/sz/000001/1/detail/shareholders/nolimit)|[2020-08-04](http://data.eastmoney.com/zjlx/000001.html)|银行|深圳|14.04|
