@@ -723,3 +723,6 @@ comments: false
 |[600846](https://xueqiu.com/s/sh600846)|[同济科技](https://www.lixinger.com/analytics/company/sh/600846/600846/detail/shareholders/nolimit)|[2020-08-03](http://data.eastmoney.com/zjlx/600846.html)|建筑工程|上海|8.92|
 |[601601](https://xueqiu.com/s/sh601601)|[中国太保](https://www.lixinger.com/analytics/company/sh/601601/601601/detail/shareholders/nolimit)|[2020-08-04](http://data.eastmoney.com/zjlx/601601.html)|保险|上海|30.84|
 |[000001](https://xueqiu.com/s/sz000001)|[平安银行](https://www.lixinger.com/analytics/company/sz/000001/1/detail/shareholders/nolimit)|[2020-08-04](http://data.eastmoney.com/zjlx/000001.html)|银行|深圳|14.04|
+|[600963](https://xueqiu.com/s/sh600963)|[岳阳林纸](https://www.lixinger.com/analytics/company/sh/600963/600963/detail/shareholders/nolimit)|[2020-08-07](http://data.eastmoney.com/zjlx/600963.html)|造纸|湖南|4.39|
+|[601098](https://xueqiu.com/s/sh601098)|[中南传媒](https://www.lixinger.com/analytics/company/sh/601098/601098/detail/shareholders/nolimit)|[2020-08-07](http://data.eastmoney.com/zjlx/601098.html)|出版业|湖南|11.01|
+|[000922](https://xueqiu.com/s/sz000922)|[佳电股份](https://www.lixinger.com/analytics/company/sz/000922/922/detail/shareholders/nolimit)|[2020-08-07](http://data.eastmoney.com/zjlx/000922.html)|电气设备|黑龙江|7.49|
