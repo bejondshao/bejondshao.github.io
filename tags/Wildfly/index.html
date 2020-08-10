@@ -3,14 +3,14 @@
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
     
-    <title>标签: wildfly | Bejond IO</title>
+    <title>标签: Wildfly | Bejond IO</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="description" content="自律然后自由">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Bejond IO">
-<meta property="og:url" content="http://tech.bejond.org/tags/wildfly/index.html">
+<meta property="og:url" content="http://tech.bejond.org/tags/Wildfly/index.html">
 <meta property="og:site_name" content="Bejond IO">
 <meta property="og:description" content="自律然后自由">
 <meta property="og:locale" content="zh-CN">
@@ -134,7 +134,7 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    <i class="icon fa fa-tag"></i>标签: <em>wildfly</em>
+    <i class="icon fa fa-tag"></i>标签: <em>Wildfly</em>
     </h1>
 </div>
                         <div class="main-body-content">
@@ -157,7 +157,104 @@
         <article class="article article-summary">
     <div class="article-summary-inner">
         
-        <a href="/2018/03/07/在应用启动前更新数据库遇到TransactionRequiredException/" class="thumbnail">
+        <a href="/2018/06/22/NoClassDefFoundError-Failed-to-link-org-jboss-resteasy-plugins-providers-yaml-i18n-LogMessages/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            <a class="article-category-link" href="/categories/Java/">Java</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Java/服务器/">服务器</a>
+            </div>
+            <div class="date"><time datetime="2018-06-22T06:48:00.000Z" itemprop="datePublished">2018-06-22</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/2018/06/22/NoClassDefFoundError-Failed-to-link-org-jboss-resteasy-plugins-providers-yaml-i18n-LogMessages/">NoClassDefFoundError: Failed to link org/jboss/resteasy/plugins/providers/yaml/i18n/LogMessages</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            I’m using wildfly10.1.0.Final and try to passing byte[] to REST API. It throws error.
+
+10:38:57,445 ERROR [io.undertow.request] (default task-11) UT005023:
+Exception handling request to /app/rest/sear
+        </p>
+    </div>
+</article>
+    
+
+    
+    
+    
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/2018/06/15/Wildfly10-1-0-Final报ResteasyClientBuilder-executeService-NoSuchMethodError问题/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/2018/06/15/Wildfly10-1-0-Final报ResteasyClientBuilder-executeService-NoSuchMethodError问题/wildfly10-resteasy-jaxrs.png)" alt="Wildfly10.1.0.Final报ResteasyClientBuilder.execuetSrevice NoSuchMethodError问题" class="thumbnail-image"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            <a class="article-category-link" href="/categories/Java/">Java</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Java/服务器/">服务器</a>
+            </div>
+            <div class="date"><time datetime="2018-06-15T06:31:00.000Z" itemprop="datePublished">2018-06-15</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/2018/06/15/Wildfly10-1-0-Final报ResteasyClientBuilder-executeService-NoSuchMethodError问题/">Wildfly10.1.0.Final报ResteasyClientBuilder.execuetSrevice NoSuchMethodError问题</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            ResteasyClientBuilder是一个支持Client pool，SSL context，异步执行的HttpClient Builder。在使用时遇到了奇怪的事情。我在test包下使用
+1new ResteasyClientBuilder().executorService(Executors.newCachedThreadPool());
+就没问题，但是在main包下使用上述代码，就出
+        </p>
+    </div>
+</article>
+    
+        </div>
+    
+
+    
+    
+    
+    
+        <div class="article-row">
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/2018/03/01/Wildfly读取classpath文件/" class="thumbnail">
     
     
         <span class="thumbnail-image thumbnail-none"></span>
@@ -178,23 +275,176 @@
             <div class="category">
             <a class="article-category-link" href="/categories/Java/">Java</a>
             </div>
-            <div class="date"><time datetime="2018-03-07T09:41:26.000Z" itemprop="datePublished">2018-03-07</time></div>
+            <div class="date"><time datetime="2018-03-01T07:58:00.000Z" itemprop="datePublished">2018-03-01</time></div>
         </div>
         
     
         <h1 class="article-title" itemprop="name">
-        <a href="/2018/03/07/在应用启动前更新数据库遇到TransactionRequiredException/">在应用启动前更新数据库遇到TransactionRequiredException</a>
+        <a href="/2018/03/01/Wildfly读取classpath文件/">Wildfly读取classpath文件</a>
         </h1>
     
 
         <p class="article-excerpt">
-            在实现项目升级时，自动查找SQL文件并执行脚本，更新数据库表结构或内容时，遇到“javax.persistence.TransactionRequiredException: Executing an update/delete query&quot;。
-由于执行更新要在应用启动前执行，所以需要实现ServletContextListener，实现contextInitialized(Servle
+            由于Wildfly使用Virtual File System
+无法通过URL或InputStream直接转换为java.io.File。需要通过VirtualFile转换：
+123URL url = getClass().getClassLoader().getResource("updatesql");VirtualFile virtualFile = (VirtualFile)url.open
+        </p>
+    </div>
+</article>
+    
+
+    
+    
+        
+            </div></section>
+        
+        
+        <section class="archives-wrap">
+            <div class="archive-year-wrap">
+                <a href="/archives/2017" class="archive-year"><i class="icon fa fa-calendar-o"></i>2017</a>
+            </div>
+            <div class="archives">
+    
+    
+    
+        <div class="article-row">
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/2017/12/18/Jboss6-x升级到Wildfly10所遇到的问题/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            <a class="article-category-link" href="/categories/Java/">Java</a>
+            </div>
+            <div class="date"><time datetime="2017-12-18T09:46:59.000Z" itemprop="datePublished">2017-12-18</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/2017/12/18/Jboss6-x升级到Wildfly10所遇到的问题/">Jboss6.x升级到Wildfly10所遇到的问题</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            1). Hibernate second level cache问题
+
+17:02:43,041 ERROR [org.jboss.msc.service.fail] (ServerService Thread Pool – 61) MSC000001: Failed to start service jboss.persistenceunit.abc-weixin-showcase#primar
+        </p>
+    </div>
+</article>
+    
+
+    
+    
+    
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/2017/11/30/Centos7中搭建wildfly/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            <a class="article-category-link" href="/categories/Linux/">Linux</a>
+            </div>
+            <div class="date"><time datetime="2017-11-30T12:00:55.000Z" itemprop="datePublished">2017-11-30</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/2017/11/30/Centos7中搭建wildfly/">Centos7中搭建wildfly</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            （一）wildfly配置
+1 将wildfly文件移至/opt目录
+$ sudo mv /tmp/wildfly /opt
+2 创建用户。创建名为wildfly的group，创建名为wildfly的不可登录的用户，将用户加入组中。
+$ sudo groupadd -r wildfly useradd -r -g wildfly -d /opt/wildfly -s /sbin/nologin wi
         </p>
     </div>
 </article>
     
         </div>
+    
+
+    
+    
+    
+    
+        <div class="article-row">
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/2017/11/07/How-to-Install-Wildfly-as-System-Service/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            <a class="article-category-link" href="/categories/Java/">Java</a>
+            </div>
+            <div class="date"><time datetime="2017-11-07T08:49:15.000Z" itemprop="datePublished">2017-11-07</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/2017/11/07/How-to-Install-Wildfly-as-System-Service/">How to Install Wildfly as System Service</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            The latest wildfly is wildfly-11.0.0.Final. Acutally the tutorial is located in jboss.home.dir/docs/contrib/scripts. There are init.d way and systemd way. There’s also a service way which used for Win
+        </p>
+    </div>
+</article>
     
 
 
@@ -364,83 +614,6 @@
         <h3 class="widget-title">分类</h3>
         <div class="widget">
             <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/DevOps/">DevOps</a><span class="category-list-count">22</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/DevOps/Keycloak/">Keycloak</a><span class="category-list-count">14</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Java/">Java</a><span class="category-list-count">35</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Java/Liferay/">Liferay</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Java/服务器/">服务器</a><span class="category-list-count">2</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">9</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/CentOS/">CentOS</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/Mac/">Mac</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/Ubuntu/">Ubuntu</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Others/">Others</a><span class="category-list-count">18</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Others/Hexo/">Hexo</a><span class="category-list-count">4</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tools/">Tools</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/股票/">股票</a><span class="category-list-count">8</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/股票/思考/">思考</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/股票/理论/">理论</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/股票/知识/">知识</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/股票/策略/">策略</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/股票/选股/">选股</a><span class="category-list-count">2</span></li></ul></li></ul>
-        </div>
-    </div>
-
-
-            
-                
-    <div class="widget-wrap widget-float">
-        <h3 class="widget-title">标签云</h3>
-        <div class="widget tagcloud">
-            <a href="/tags/Active-Directory/" style="font-size: 10px;">Active Directory</a> <a href="/tags/Backport/" style="font-size: 10px;">Backport</a> <a href="/tags/CentOS/" style="font-size: 10px;">CentOS</a> <a href="/tags/Centos/" style="font-size: 10px;">Centos</a> <a href="/tags/Command/" style="font-size: 10px;">Command</a> <a href="/tags/Consul/" style="font-size: 10px;">Consul</a> <a href="/tags/Database/" style="font-size: 11.11px;">Database</a> <a href="/tags/DevOps/" style="font-size: 17.78px;">DevOps</a> <a href="/tags/Docker/" style="font-size: 11.11px;">Docker</a> <a href="/tags/Elasticsearch/" style="font-size: 10px;">Elasticsearch</a> <a href="/tags/Encoding/" style="font-size: 10px;">Encoding</a> <a href="/tags/Firefox/" style="font-size: 10px;">Firefox</a> <a href="/tags/Google/" style="font-size: 12.22px;">Google</a> <a href="/tags/Grafana/" style="font-size: 10px;">Grafana</a> <a href="/tags/Hexo/" style="font-size: 13.33px;">Hexo</a> <a href="/tags/Hosts/" style="font-size: 11.11px;">Hosts</a> <a href="/tags/Hueman/" style="font-size: 10px;">Hueman</a> <a href="/tags/IP/" style="font-size: 10px;">IP</a> <a href="/tags/Identity-Management/" style="font-size: 10px;">Identity Management</a> <a href="/tags/Intellij/" style="font-size: 11.11px;">Intellij</a> <a href="/tags/Istio/" style="font-size: 10px;">Istio</a> <a href="/tags/JVM/" style="font-size: 14.44px;">JVM</a> <a href="/tags/Java/" style="font-size: 20px;">Java</a> <a href="/tags/Java-8/" style="font-size: 10px;">Java 8</a> <a href="/tags/Jenkins/" style="font-size: 10px;">Jenkins</a> <a href="/tags/Keycloak/" style="font-size: 18.89px;">Keycloak</a> <a href="/tags/Keycloak-proxy/" style="font-size: 10px;">Keycloak proxy</a> <a href="/tags/Kibana/" style="font-size: 10px;">Kibana</a> <a href="/tags/LDAP/" style="font-size: 13.33px;">LDAP</a> <a href="/tags/Liferay/" style="font-size: 16.67px;">Liferay</a> <a href="/tags/Linux/" style="font-size: 15.56px;">Linux</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/Maven/" style="font-size: 10px;">Maven</a> <a href="/tags/Metric-names/" style="font-size: 10px;">Metric names</a> <a href="/tags/Mybatis/" style="font-size: 11.11px;">Mybatis</a> <a href="/tags/Mysql/" style="font-size: 10px;">Mysql</a> <a href="/tags/Netty/" style="font-size: 14.44px;">Netty</a> <a href="/tags/Prometheus/" style="font-size: 10px;">Prometheus</a> <a href="/tags/Proxy/" style="font-size: 10px;">Proxy</a> <a href="/tags/Python/" style="font-size: 10px;">Python</a> <a href="/tags/SCIM/" style="font-size: 10px;">SCIM</a> <a href="/tags/SSL/" style="font-size: 10px;">SSL</a> <a href="/tags/SVN/" style="font-size: 10px;">SVN</a> <a href="/tags/Security/" style="font-size: 10px;">Security</a> <a href="/tags/Spring-cloud/" style="font-size: 10px;">Spring cloud</a> <a href="/tags/Theme/" style="font-size: 10px;">Theme</a> <a href="/tags/Threads/" style="font-size: 10px;">Threads</a> <a href="/tags/Ubuntu/" style="font-size: 10px;">Ubuntu</a> <a href="/tags/Wildfly/" style="font-size: 14.44px;">Wildfly</a> <a href="/tags/grape/" style="font-size: 11.11px;">grape</a> <a href="/tags/iPhone/" style="font-size: 10px;">iPhone</a> <a href="/tags/mac/" style="font-size: 10px;">mac</a> <a href="/tags/maven/" style="font-size: 10px;">maven</a> <a href="/tags/pandas/" style="font-size: 10px;">pandas</a> <a href="/tags/resteasy-jaxrs/" style="font-size: 10px;">resteasy-jaxrs</a> <a href="/tags/wildfly/" style="font-size: 10px;">wildfly</a> <a href="/tags/交易/" style="font-size: 10px;">交易</a> <a href="/tags/股票/" style="font-size: 15.56px;">股票</a> <a href="/tags/选股/" style="font-size: 10px;">选股</a>
-        </div>
-    </div>
-
-
-            
-        
-    </div>
-</aside>
-                </div>
-            </div>
-        </div>
-        <!-- 不蒜子游客统计 -->
-<!--
-<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
-</script>
--->
-<footer id="footer">
-    <div class="container">
-        <div class="container-inner">
-            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
-            <div class="credit">
-                <h1 class="logo-wrap">
-                    <a href="/" class="logo"></a>
-                </h1>
-                <p>&copy; 2015 - 2020 Bejond Shao Contact Me: <a href="mailto:a@bejond.org">a@bejond.org</a>
-                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a>
-                	<!--
-                	<span id="busuanzi_container_site_pv">
-    					总访问量<span id="busuanzi_value_site_pv"></span>次
-					</span>
-        			<span id="busuanzi_container_site_uv">
-		  				你是本站第<span id="busuanzi_value_site_uv"></span>位访客
-					</span>
-					-->
-                </p>
-            </div>
-        </div>
-    </div>
-</footer>
-        
-
-
-    
-        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
-    
-    
-        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
-    
-    
-
-
-
-<!-- Custom Scripts -->
-<script src="/js/main.js"></script>
-
-    </div>
-</body>
-</html>
-ink" href="/categories/Python/">Python</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tools/">Tools</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/股票/">股票</a><span class="category-list-count">8</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/股票/思考/">思考</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/股票/理论/">理论</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/股票/知识/">知识</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/股票/策略/">策略</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/股票/选股/">选股</a><span class="category-list-count">2</span></li></ul></li></ul>
         </div>
     </div>
 
