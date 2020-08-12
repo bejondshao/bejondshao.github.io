@@ -730,3 +730,5 @@ comments: false
 |[002015](https://xueqiu.com/s/sz002015)|[协鑫能科](https://www.lixinger.com/analytics/company/sz/002015/2015/detail/shareholders/nolimit)|[2020-08-10](http://data.eastmoney.com/zjlx/002015.html)|新型电力|江苏|6.01|
 |[002215](https://xueqiu.com/s/sz002215)|[诺 普 信](https://www.lixinger.com/analytics/company/sz/002215/2215/detail/shareholders/nolimit)|[2020-08-10](http://data.eastmoney.com/zjlx/002215.html)|农药化肥|深圳|6.56|
 |[000726](https://xueqiu.com/s/sz000726)|[鲁 泰Ａ](https://www.lixinger.com/analytics/company/sz/000726/726/detail/shareholders/nolimit)|[2020-08-11](http://data.eastmoney.com/zjlx/000726.html)|纺织|山东|7.88|
+|[002102](https://xueqiu.com/s/sz002102)|[ST冠福](https://www.lixinger.com/analytics/company/sz/002102/2102/detail/shareholders/nolimit)|[2020-08-12](http://data.eastmoney.com/zjlx/002102.html)|化学制药|福建|1.92|
+|[600027](https://xueqiu.com/s/sh600027)|[华电国际](https://www.lixinger.com/analytics/company/sh/600027/600027/detail/shareholders/nolimit)|[2020-08-12](http://data.eastmoney.com/zjlx/600027.html)|火力发电|山东|3.68|
