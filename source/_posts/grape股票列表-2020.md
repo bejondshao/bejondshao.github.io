@@ -729,3 +729,4 @@ comments: false
 |[601567](https://xueqiu.com/s/sh601567)|[三星医疗](https://www.lixinger.com/analytics/company/sh/601567/601567/detail/shareholders/nolimit)|[2020-08-10](http://data.eastmoney.com/zjlx/601567.html)|电器仪表|浙江|7.53|
 |[002015](https://xueqiu.com/s/sz002015)|[协鑫能科](https://www.lixinger.com/analytics/company/sz/002015/2015/detail/shareholders/nolimit)|[2020-08-10](http://data.eastmoney.com/zjlx/002015.html)|新型电力|江苏|6.01|
 |[002215](https://xueqiu.com/s/sz002215)|[诺 普 信](https://www.lixinger.com/analytics/company/sz/002215/2215/detail/shareholders/nolimit)|[2020-08-10](http://data.eastmoney.com/zjlx/002215.html)|农药化肥|深圳|6.56|
+|[000726](https://xueqiu.com/s/sz000726)|[鲁 泰Ａ](https://www.lixinger.com/analytics/company/sz/000726/726/detail/shareholders/nolimit)|[2020-08-11](http://data.eastmoney.com/zjlx/000726.html)|纺织|山东|7.88|
