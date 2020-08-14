@@ -733,3 +733,4 @@ comments: false
 |[002102](https://xueqiu.com/s/sz002102)|[ST冠福](https://www.lixinger.com/analytics/company/sz/002102/2102/detail/shareholders/nolimit)|[2020-08-12](http://data.eastmoney.com/zjlx/002102.html)|化学制药|福建|1.92|
 |[600027](https://xueqiu.com/s/sh600027)|[华电国际](https://www.lixinger.com/analytics/company/sh/600027/600027/detail/shareholders/nolimit)|[2020-08-12](http://data.eastmoney.com/zjlx/600027.html)|火力发电|山东|3.68|
 |[600729](https://xueqiu.com/s/sh600729)|[重庆百货](https://www.lixinger.com/analytics/company/sh/600729/600729/detail/shareholders/nolimit)|[2020-08-13](http://data.eastmoney.com/zjlx/600729.html)|百货|重庆|31.75|
+|[600644](https://xueqiu.com/s/sh600644)|[乐山电力](https://www.lixinger.com/analytics/company/sh/600644/600644/detail/shareholders/nolimit)|[2020-08-14](http://data.eastmoney.com/zjlx/600644.html)|水力发电|四川|5.68|
