@@ -735,3 +735,5 @@ comments: false
 |[600729](https://xueqiu.com/s/sh600729)|[重庆百货](https://www.lixinger.com/analytics/company/sh/600729/600729/detail/shareholders/nolimit)|[2020-08-13](http://data.eastmoney.com/zjlx/600729.html)|百货|重庆|31.75|
 |[600644](https://xueqiu.com/s/sh600644)|[乐山电力](https://www.lixinger.com/analytics/company/sh/600644/600644/detail/shareholders/nolimit)|[2020-08-14](http://data.eastmoney.com/zjlx/600644.html)|水力发电|四川|5.68|
 |[601186](https://xueqiu.com/s/sh601186)|[中国铁建](https://www.lixinger.com/analytics/company/sh/601186/601186/detail/shareholders/nolimit)|[2020-08-17](http://data.eastmoney.com/zjlx/601186.html)|建筑工程|北京|9.27|
+|[002327](https://xueqiu.com/s/sz002327)|[富安娜](https://www.lixinger.com/analytics/company/sz/002327/2327/detail/shareholders/nolimit)|[2020-08-18](http://data.eastmoney.com/zjlx/002327.html)|纺织|深圳|7.52|
+|[002290](https://xueqiu.com/s/sz002290)|[ST中科创](https://www.lixinger.com/analytics/company/sz/002290/2290/detail/shareholders/nolimit)|[2020-08-18](http://data.eastmoney.com/zjlx/002290.html)|家用电器|江苏|5.29|
