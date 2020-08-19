@@ -737,3 +737,4 @@ comments: false
 |[601186](https://xueqiu.com/s/sh601186)|[中国铁建](https://www.lixinger.com/analytics/company/sh/601186/601186/detail/shareholders/nolimit)|[2020-08-17](http://data.eastmoney.com/zjlx/601186.html)|建筑工程|北京|9.27|
 |[002327](https://xueqiu.com/s/sz002327)|[富安娜](https://www.lixinger.com/analytics/company/sz/002327/2327/detail/shareholders/nolimit)|[2020-08-18](http://data.eastmoney.com/zjlx/002327.html)|纺织|深圳|7.52|
 |[002290](https://xueqiu.com/s/sz002290)|[ST中科创](https://www.lixinger.com/analytics/company/sz/002290/2290/detail/shareholders/nolimit)|[2020-08-18](http://data.eastmoney.com/zjlx/002290.html)|家用电器|江苏|5.29|
+|[603900](https://xueqiu.com/s/sh603900)|[莱绅通灵](https://www.lixinger.com/analytics/company/sh/603900/603900/detail/shareholders/nolimit)|[2020-08-19](http://data.eastmoney.com/zjlx/603900.html)|服饰|江苏|8.66|
