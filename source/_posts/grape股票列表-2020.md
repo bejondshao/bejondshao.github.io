@@ -740,3 +740,4 @@ comments: false
 |[603900](https://xueqiu.com/s/sh603900)|[莱绅通灵](https://www.lixinger.com/analytics/company/sh/603900/603900/detail/shareholders/nolimit)|[2020-08-19](http://data.eastmoney.com/zjlx/603900.html)|服饰|江苏|8.66|
 |[601992](https://xueqiu.com/s/sh601992)|[金隅集团](https://www.lixinger.com/analytics/company/sh/601992/601992/detail/shareholders/nolimit)|[2020-08-17](http://data.eastmoney.com/zjlx/601992.html)|水泥|北京|3.3|
 |[601311](https://xueqiu.com/s/sh601311)|[骆驼股份](https://www.lixinger.com/analytics/company/sh/601311/601311/detail/shareholders/nolimit)|[2020-08-21](http://data.eastmoney.com/zjlx/601311.html)|电气设备|湖北|9.06|
+|[002737](https://xueqiu.com/s/sz002737)|[葵花药业](https://www.lixinger.com/analytics/company/sz/002737/2737/detail/shareholders/nolimit)|[2020-08-24](http://data.eastmoney.com/zjlx/002737.html)|中成药|黑龙江|14.95|
