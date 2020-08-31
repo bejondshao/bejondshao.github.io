@@ -742,3 +742,7 @@ comments: false
 |[601311](https://xueqiu.com/s/sh601311)|[骆驼股份](https://www.lixinger.com/analytics/company/sh/601311/601311/detail/shareholders/nolimit)|[2020-08-21](http://data.eastmoney.com/zjlx/601311.html)|电气设备|湖北|9.06|
 |[002737](https://xueqiu.com/s/sz002737)|[葵花药业](https://www.lixinger.com/analytics/company/sz/002737/2737/detail/shareholders/nolimit)|[2020-08-24](http://data.eastmoney.com/zjlx/002737.html)|中成药|黑龙江|14.95|
 |[600982](https://xueqiu.com/s/sh600982)|[宁波热电](https://www.lixinger.com/analytics/company/sh/600982/600982/detail/shareholders/nolimit)|[2020-08-27](http://data.eastmoney.com/zjlx/600982.html)|供气供热|浙江|3.0|
+|[600743](https://xueqiu.com/s/sh600743)|[华远地产](https://www.lixinger.com/analytics/company/sh/600743/600743/detail/shareholders/nolimit)|[2020-08-27](http://data.eastmoney.com/zjlx/600743.html)|区域地产|北京|2.23|
+|[600170](https://xueqiu.com/s/sh600170)|[上海建工](https://www.lixinger.com/analytics/company/sh/600170/600170/detail/shareholders/nolimit)|[2020-08-27](http://data.eastmoney.com/zjlx/600170.html)|建筑工程|上海|3.37|
+|[600820](https://xueqiu.com/s/sh600820)|[隧道股份](https://www.lixinger.com/analytics/company/sh/600820/600820/detail/shareholders/nolimit)|[2020-08-28](http://data.eastmoney.com/zjlx/600820.html)|建筑工程|上海|6.07|
+|[601566](https://xueqiu.com/s/sh601566)|[九牧王](https://www.lixinger.com/analytics/company/sh/601566/601566/detail/shareholders/nolimit)|[2020-08-31](http://data.eastmoney.com/zjlx/601566.html)|服饰|福建|9.95|
