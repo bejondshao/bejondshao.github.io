@@ -746,3 +746,6 @@ comments: false
 |[600170](https://xueqiu.com/s/sh600170)|[上海建工](https://www.lixinger.com/analytics/company/sh/600170/600170/detail/shareholders/nolimit)|[2020-08-27](http://data.eastmoney.com/zjlx/600170.html)|建筑工程|上海|3.37|
 |[600820](https://xueqiu.com/s/sh600820)|[隧道股份](https://www.lixinger.com/analytics/company/sh/600820/600820/detail/shareholders/nolimit)|[2020-08-28](http://data.eastmoney.com/zjlx/600820.html)|建筑工程|上海|6.07|
 |[601566](https://xueqiu.com/s/sh601566)|[九牧王](https://www.lixinger.com/analytics/company/sh/601566/601566/detail/shareholders/nolimit)|[2020-08-31](http://data.eastmoney.com/zjlx/601566.html)|服饰|福建|9.95|
+|[601166](https://xueqiu.com/s/sh601166)|[兴业银行](https://www.lixinger.com/analytics/company/sh/601166/601166/detail/shareholders/nolimit)|[2020-09-01](http://data.eastmoney.com/zjlx/601166.html)|银行|福建|16.35|
+|[002911](https://xueqiu.com/s/sz002911)|[佛燃能源](https://www.lixinger.com/analytics/company/sz/002911/2911/detail/shareholders/nolimit)|[2020-09-01](http://data.eastmoney.com/zjlx/002911.html)|供气供热|广东|16.41|
+|[600790](https://xueqiu.com/s/sh600790)|[轻纺城](https://www.lixinger.com/analytics/company/sh/600790/600790/detail/shareholders/nolimit)|[2020-09-01](http://data.eastmoney.com/zjlx/600790.html)|商品城|浙江|3.41|
