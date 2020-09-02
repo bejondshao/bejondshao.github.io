@@ -749,3 +749,7 @@ comments: false
 |[601166](https://xueqiu.com/s/sh601166)|[兴业银行](https://www.lixinger.com/analytics/company/sh/601166/601166/detail/shareholders/nolimit)|[2020-09-01](http://data.eastmoney.com/zjlx/601166.html)|银行|福建|16.35|
 |[002911](https://xueqiu.com/s/sz002911)|[佛燃能源](https://www.lixinger.com/analytics/company/sz/002911/2911/detail/shareholders/nolimit)|[2020-09-01](http://data.eastmoney.com/zjlx/002911.html)|供气供热|广东|16.41|
 |[600790](https://xueqiu.com/s/sh600790)|[轻纺城](https://www.lixinger.com/analytics/company/sh/600790/600790/detail/shareholders/nolimit)|[2020-09-01](http://data.eastmoney.com/zjlx/600790.html)|商品城|浙江|3.41|
+|[300732](https://xueqiu.com/s/sz300732)|[设研院](https://www.lixinger.com/analytics/company/sz/300732/300732/detail/shareholders/nolimit)|[2020-09-02](http://data.eastmoney.com/zjlx/300732.html)|建筑工程|河南|16.85|
+|[600113](https://xueqiu.com/s/sh600113)|[浙江东日](https://www.lixinger.com/analytics/company/sh/600113/600113/detail/shareholders/nolimit)|[2020-09-02](http://data.eastmoney.com/zjlx/600113.html)|区域地产|浙江|6.98|
+|[600106](https://xueqiu.com/s/sh600106)|[重庆路桥](https://www.lixinger.com/analytics/company/sh/600106/600106/detail/shareholders/nolimit)|[2020-09-02](http://data.eastmoney.com/zjlx/600106.html)|路桥|重庆|2.7|
+|[600565](https://xueqiu.com/s/sh600565)|[迪马股份](https://www.lixinger.com/analytics/company/sh/600565/600565/detail/shareholders/nolimit)|[2020-09-02](http://data.eastmoney.com/zjlx/600565.html)|全国地产|重庆|3.12|
