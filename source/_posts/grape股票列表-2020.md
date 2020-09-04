@@ -754,3 +754,5 @@ comments: false
 |[600106](https://xueqiu.com/s/sh600106)|[重庆路桥](https://www.lixinger.com/analytics/company/sh/600106/600106/detail/shareholders/nolimit)|[2020-09-02](http://data.eastmoney.com/zjlx/600106.html)|路桥|重庆|2.7|
 |[600565](https://xueqiu.com/s/sh600565)|[迪马股份](https://www.lixinger.com/analytics/company/sh/600565/600565/detail/shareholders/nolimit)|[2020-09-02](http://data.eastmoney.com/zjlx/600565.html)|全国地产|重庆|3.12|
 |[600865](https://xueqiu.com/s/sh600865)|[百大集团](https://www.lixinger.com/analytics/company/sh/600865/600865/detail/shareholders/nolimit)|[2020-09-03](http://data.eastmoney.com/zjlx/600865.html)|百货|浙江|7.2|
+|[002936](https://xueqiu.com/s/sz002936)|[郑州银行](https://www.lixinger.com/analytics/company/sz/002936/2936/detail/shareholders/nolimit)|[2020-09-01](http://data.eastmoney.com/zjlx/002936.html)|银行|河南|3.85|
+|[002344](https://xueqiu.com/s/sz002344)|[海宁皮城](https://www.lixinger.com/analytics/company/sz/002344/2344/detail/shareholders/nolimit)|[2020-09-04](http://data.eastmoney.com/zjlx/002344.html)|商品城|浙江|4.64|
