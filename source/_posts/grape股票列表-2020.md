@@ -756,3 +756,4 @@ comments: false
 |[600865](https://xueqiu.com/s/sh600865)|[百大集团](https://www.lixinger.com/analytics/company/sh/600865/600865/detail/shareholders/nolimit)|[2020-09-03](http://data.eastmoney.com/zjlx/600865.html)|百货|浙江|7.2|
 |[002936](https://xueqiu.com/s/sz002936)|[郑州银行](https://www.lixinger.com/analytics/company/sz/002936/2936/detail/shareholders/nolimit)|[2020-09-01](http://data.eastmoney.com/zjlx/002936.html)|银行|河南|3.85|
 |[002344](https://xueqiu.com/s/sz002344)|[海宁皮城](https://www.lixinger.com/analytics/company/sz/002344/2344/detail/shareholders/nolimit)|[2020-09-04](http://data.eastmoney.com/zjlx/002344.html)|商品城|浙江|4.64|
+|[002543](https://xueqiu.com/s/sz002543)|[万和电气](https://www.lixinger.com/analytics/company/sz/002543/2543/detail/shareholders/nolimit)|[2020-09-08](http://data.eastmoney.com/zjlx/002543.html)|家用电器|广东|8.65|
