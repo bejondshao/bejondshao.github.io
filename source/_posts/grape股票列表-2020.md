@@ -763,3 +763,4 @@ comments: false
 |[600266](https://xueqiu.com/s/sh600266)|[城建发展](https://www.lixinger.com/analytics/company/sh/600266/600266/detail/shareholders/nolimit)|[2020-09-21](http://data.eastmoney.com/zjlx/600266.html)|区域地产|北京|5.98|
 |[600781](https://xueqiu.com/s/sh600781)|[*ST辅仁](https://www.lixinger.com/analytics/company/sh/600781/600781/detail/shareholders/nolimit)|[2020-09-22](http://data.eastmoney.com/zjlx/600781.html)|中成药|河南|4.35|
 |[002757](https://xueqiu.com/s/sz002757)|[南兴股份](https://www.lixinger.com/analytics/company/sz/002757/2757/detail/shareholders/nolimit)|[2020-09-22](http://data.eastmoney.com/zjlx/002757.html)|专用机械|广东|21.76|
+|[688009](https://xueqiu.com/s/sh688009)|[中国通号](https://www.lixinger.com/analytics/company/sh/688009/688009/detail/shareholders/nolimit)|[2020-09-23](http://data.eastmoney.com/zjlx/688009.html)|运输设备|北京|6.48|
