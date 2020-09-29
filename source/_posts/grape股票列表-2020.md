@@ -765,3 +765,8 @@ comments: false
 |[002757](https://xueqiu.com/s/sz002757)|[南兴股份](https://www.lixinger.com/analytics/company/sz/002757/2757/detail/shareholders/nolimit)|[2020-09-22](http://data.eastmoney.com/zjlx/002757.html)|专用机械|广东|21.76|
 |[688009](https://xueqiu.com/s/sh688009)|[中国通号](https://www.lixinger.com/analytics/company/sh/688009/688009/detail/shareholders/nolimit)|[2020-09-23](http://data.eastmoney.com/zjlx/688009.html)|运输设备|北京|6.48|
 |[603013](https://xueqiu.com/s/sh603013)|[亚普股份](https://www.lixinger.com/analytics/company/sh/603013/603013/detail/shareholders/nolimit)|[2020-09-25](http://data.eastmoney.com/zjlx/603013.html)|汽车配件|江苏|16.59|
+|[600348](https://xueqiu.com/s/sh600348)|[阳泉煤业](https://www.lixinger.com/analytics/company/sh/600348/600348/detail/shareholders/nolimit)|[2020-09-29](http://data.eastmoney.com/zjlx/600348.html)|煤炭开采|山西|4.94|
+|[000983](https://xueqiu.com/s/sz000983)|[西山煤电](https://www.lixinger.com/analytics/company/sz/000983/983/detail/shareholders/nolimit)|[2020-09-29](http://data.eastmoney.com/zjlx/000983.html)|煤炭开采|山西|4.45|
+|[601928](https://xueqiu.com/s/sh601928)|[凤凰传媒](https://www.lixinger.com/analytics/company/sh/601928/601928/detail/shareholders/nolimit)|[2020-09-29](http://data.eastmoney.com/zjlx/601928.html)|出版业|江苏|7.33|
+|[600023](https://xueqiu.com/s/sh600023)|[浙能电力](https://www.lixinger.com/analytics/company/sh/600023/600023/detail/shareholders/nolimit)|[2020-09-29](http://data.eastmoney.com/zjlx/600023.html)|火力发电|浙江|3.72|
+|[601555](https://xueqiu.com/s/sh601555)|[东吴证券](https://www.lixinger.com/analytics/company/sh/601555/601555/detail/shareholders/nolimit)|[2020-09-29](http://data.eastmoney.com/zjlx/601555.html)|证券|江苏|10.77|
