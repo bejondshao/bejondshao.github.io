@@ -770,3 +770,16 @@ comments: false
 |[601928](https://xueqiu.com/s/sh601928)|[凤凰传媒](https://www.lixinger.com/analytics/company/sh/601928/601928/detail/shareholders/nolimit)|[2020-09-29](http://data.eastmoney.com/zjlx/601928.html)|出版业|江苏|7.33|
 |[600023](https://xueqiu.com/s/sh600023)|[浙能电力](https://www.lixinger.com/analytics/company/sh/600023/600023/detail/shareholders/nolimit)|[2020-09-29](http://data.eastmoney.com/zjlx/600023.html)|火力发电|浙江|3.72|
 |[601555](https://xueqiu.com/s/sh601555)|[东吴证券](https://www.lixinger.com/analytics/company/sh/601555/601555/detail/shareholders/nolimit)|[2020-09-29](http://data.eastmoney.com/zjlx/601555.html)|证券|江苏|10.77|
+|[600580](https://xueqiu.com/s/sh600580)|[卧龙电驱](https://www.lixinger.com/analytics/company/sh/600580/600580/detail/shareholders/nolimit)|[2020-10-09](http://data.eastmoney.com/zjlx/600580.html)|电气设备|浙江|13.21|
+|[601619](https://xueqiu.com/s/sh601619)|[嘉泽新能](https://www.lixinger.com/analytics/company/sh/601619/601619/detail/shareholders/nolimit)|[2020-10-09](http://data.eastmoney.com/zjlx/601619.html)|新型电力|宁夏|3.39|
+|[000552](https://xueqiu.com/s/sz000552)|[靖远煤电](https://www.lixinger.com/analytics/company/sz/000552/552/detail/shareholders/nolimit)|[2020-10-09](http://data.eastmoney.com/zjlx/000552.html)|煤炭开采|甘肃|2.7|
+|[000055](https://xueqiu.com/s/sz000055)|[方大集团](https://www.lixinger.com/analytics/company/sz/000055/55/detail/shareholders/nolimit)|[2020-10-09](http://data.eastmoney.com/zjlx/000055.html)|其他建材|深圳|4.97|
+|[600835](https://xueqiu.com/s/sh600835)|[上海机电](https://www.lixinger.com/analytics/company/sh/600835/600835/detail/shareholders/nolimit)|[2020-10-09](http://data.eastmoney.com/zjlx/600835.html)|运输设备|上海|17.59|
+|[300066](https://xueqiu.com/s/sz300066)|[三川智慧](https://www.lixinger.com/analytics/company/sz/300066/300066/detail/shareholders/nolimit)|[2020-10-09](http://data.eastmoney.com/zjlx/300066.html)|电器仪表|江西|5.62|
+|[000338](https://xueqiu.com/s/sz000338)|[潍柴动力](https://www.lixinger.com/analytics/company/sz/000338/338/detail/shareholders/nolimit)|[2020-10-09](http://data.eastmoney.com/zjlx/000338.html)|汽车配件|山东|15.79|
+|[000767](https://xueqiu.com/s/sz000767)|[漳泽电力](https://www.lixinger.com/analytics/company/sz/000767/767/detail/shareholders/nolimit)|[2020-10-09](http://data.eastmoney.com/zjlx/000767.html)|火力发电|山西|2.54|
+|[600335](https://xueqiu.com/s/sh600335)|[国机汽车](https://www.lixinger.com/analytics/company/sh/600335/600335/detail/shareholders/nolimit)|[2020-10-09](http://data.eastmoney.com/zjlx/600335.html)|汽车配件|天津|5.42|
+|[600218](https://xueqiu.com/s/sh600218)|[全柴动力](https://www.lixinger.com/analytics/company/sh/600218/600218/detail/shareholders/nolimit)|[2020-10-09](http://data.eastmoney.com/zjlx/600218.html)|农用机械|安徽|10.17|
+|[600104](https://xueqiu.com/s/sh600104)|[上汽集团](https://www.lixinger.com/analytics/company/sh/600104/600104/detail/shareholders/nolimit)|[2020-10-09](http://data.eastmoney.com/zjlx/600104.html)|汽车整车|上海|19.8|
+|[002423](https://xueqiu.com/s/sz002423)|[中粮资本](https://www.lixinger.com/analytics/company/sz/002423/2423/detail/shareholders/nolimit)|[2020-10-09](http://data.eastmoney.com/zjlx/002423.html)|多元金融|河南|10.31|
+|[600177](https://xueqiu.com/s/sh600177)|[雅戈尔](https://www.lixinger.com/analytics/company/sh/600177/600177/detail/shareholders/nolimit)|[2020-10-09](http://data.eastmoney.com/zjlx/600177.html)|服饰|浙江|6.99|
