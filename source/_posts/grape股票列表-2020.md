@@ -835,3 +835,10 @@ comments: false
 |[601088](https://xueqiu.com/s/sh601088)|[中国神华](https://www.lixinger.com/analytics/company/sh/601088/601088/detail/shareholders/nolimit)|[2020-10-12](http://data.eastmoney.com/zjlx/601088.html)|煤炭开采|北京|16.74|
 |[000761](https://xueqiu.com/s/sz000761)|[本钢板材](https://www.lixinger.com/analytics/company/sz/000761/761/detail/shareholders/nolimit)|[2020-10-12](http://data.eastmoney.com/zjlx/000761.html)|普钢|辽宁|3.51|
 |[603300](https://xueqiu.com/s/sh603300)|[华铁应急](https://www.lixinger.com/analytics/company/sh/603300/603300/detail/shareholders/nolimit)|[2020-10-12](http://data.eastmoney.com/zjlx/603300.html)|钢加工|浙江|6.95|
+|[002202](https://xueqiu.com/s/sz002202)|[金风科技](https://www.lixinger.com/analytics/company/sz/002202/2202/detail/shareholders/nolimit)|[2020-10-14](http://data.eastmoney.com/zjlx/002202.html)|电气设备|新疆|12.0|
+|[002406](https://xueqiu.com/s/sz002406)|[远东传动](https://www.lixinger.com/analytics/company/sz/002406/2406/detail/shareholders/nolimit)|[2020-10-14](http://data.eastmoney.com/zjlx/002406.html)|汽车配件|河南|7.14|
+|[300596](https://xueqiu.com/s/sz300596)|[利安隆](https://www.lixinger.com/analytics/company/sz/300596/300596/detail/shareholders/nolimit)|[2020-10-14](http://data.eastmoney.com/zjlx/300596.html)|化工原料|天津|35.02|
+|[601318](https://xueqiu.com/s/sh601318)|[中国平安](https://www.lixinger.com/analytics/company/sh/601318/601318/detail/shareholders/nolimit)|[2020-10-14](http://data.eastmoney.com/zjlx/601318.html)|保险|深圳|81.38|
+|[600395](https://xueqiu.com/s/sh600395)|[盘江股份](https://www.lixinger.com/analytics/company/sh/600395/600395/detail/shareholders/nolimit)|[2020-10-14](http://data.eastmoney.com/zjlx/600395.html)|煤炭开采|贵州|6.15|
+|[600729](https://xueqiu.com/s/sh600729)|[重庆百货](https://www.lixinger.com/analytics/company/sh/600729/600729/detail/shareholders/nolimit)|[2020-10-14](http://data.eastmoney.com/zjlx/600729.html)|百货|重庆|35.74|
+|[603928](https://xueqiu.com/s/sh603928)|[兴业股份](https://www.lixinger.com/analytics/company/sh/603928/603928/detail/shareholders/nolimit)|[2020-10-14](http://data.eastmoney.com/zjlx/603928.html)|化工原料|江苏|12.41|
