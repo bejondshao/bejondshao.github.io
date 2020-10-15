@@ -842,3 +842,14 @@ comments: false
 |[600395](https://xueqiu.com/s/sh600395)|[盘江股份](https://www.lixinger.com/analytics/company/sh/600395/600395/detail/shareholders/nolimit)|[2020-10-14](http://data.eastmoney.com/zjlx/600395.html)|煤炭开采|贵州|6.15|
 |[600729](https://xueqiu.com/s/sh600729)|[重庆百货](https://www.lixinger.com/analytics/company/sh/600729/600729/detail/shareholders/nolimit)|[2020-10-14](http://data.eastmoney.com/zjlx/600729.html)|百货|重庆|35.74|
 |[603928](https://xueqiu.com/s/sh603928)|[兴业股份](https://www.lixinger.com/analytics/company/sh/603928/603928/detail/shareholders/nolimit)|[2020-10-14](http://data.eastmoney.com/zjlx/603928.html)|化工原料|江苏|12.41|
+|[603225](https://xueqiu.com/s/sh603225)|[新凤鸣](https://www.lixinger.com/analytics/company/sh/603225/603225/detail/shareholders/nolimit)|[2020-10-15](http://data.eastmoney.com/zjlx/603225.html)|化纤|浙江|11.11|
+|[002394](https://xueqiu.com/s/sz002394)|[联发股份](https://www.lixinger.com/analytics/company/sz/002394/2394/detail/shareholders/nolimit)|[2020-10-15](http://data.eastmoney.com/zjlx/002394.html)|纺织|江苏|10.83|
+|[603788](https://xueqiu.com/s/sh603788)|[宁波高发](https://www.lixinger.com/analytics/company/sh/603788/603788/detail/shareholders/nolimit)|[2020-10-15](http://data.eastmoney.com/zjlx/603788.html)|汽车配件|浙江|19.18|
+|[600987](https://xueqiu.com/s/sh600987)|[航民股份](https://www.lixinger.com/analytics/company/sh/600987/600987/detail/shareholders/nolimit)|[2020-10-15](http://data.eastmoney.com/zjlx/600987.html)|纺织|浙江|5.84|
+|[601818](https://xueqiu.com/s/sh601818)|[光大银行](https://www.lixinger.com/analytics/company/sh/601818/601818/detail/shareholders/nolimit)|[2020-10-15](http://data.eastmoney.com/zjlx/601818.html)|银行|北京|3.98|
+|[002763](https://xueqiu.com/s/sz002763)|[汇洁股份](https://www.lixinger.com/analytics/company/sz/002763/2763/detail/shareholders/nolimit)|[2020-10-15](http://data.eastmoney.com/zjlx/002763.html)|服饰|深圳|7.78|
+|[002440](https://xueqiu.com/s/sz002440)|[闰土股份](https://www.lixinger.com/analytics/company/sz/002440/2440/detail/shareholders/nolimit)|[2020-10-15](http://data.eastmoney.com/zjlx/002440.html)|染料涂料|浙江|9.79|
+|[601139](https://xueqiu.com/s/sh601139)|[深圳燃气](https://www.lixinger.com/analytics/company/sh/601139/601139/detail/shareholders/nolimit)|[2020-10-15](http://data.eastmoney.com/zjlx/601139.html)|供气供热|深圳|7.68|
+|[300387](https://xueqiu.com/s/sz300387)|[富邦股份](https://www.lixinger.com/analytics/company/sz/300387/300387/detail/shareholders/nolimit)|[2020-10-15](http://data.eastmoney.com/zjlx/300387.html)|化工原料|湖北|10.12|
+|[300695](https://xueqiu.com/s/sz300695)|[兆丰股份](https://www.lixinger.com/analytics/company/sz/300695/300695/detail/shareholders/nolimit)|[2020-10-15](http://data.eastmoney.com/zjlx/300695.html)|汽车配件|浙江|78.06|
+|[000988](https://xueqiu.com/s/sz000988)|[华工科技](https://www.lixinger.com/analytics/company/sz/000988/988/detail/shareholders/nolimit)|[2020-10-15](http://data.eastmoney.com/zjlx/000988.html)|电器仪表|湖北|25.28|
