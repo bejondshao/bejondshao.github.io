@@ -899,3 +899,14 @@ comments: false
 |[002644](https://xueqiu.com/s/sz002644)|[佛慈制药](https://www.lixinger.com/analytics/company/sz/002644/2644/detail/shareholders/nolimit)|[2020-10-16](http://data.eastmoney.com/zjlx/002644.html)|中成药|甘肃|8.63|
 |[000650](https://xueqiu.com/s/sz000650)|[仁和药业](https://www.lixinger.com/analytics/company/sz/000650/650/detail/shareholders/nolimit)|[2020-10-16](http://data.eastmoney.com/zjlx/000650.html)|中成药|江西|6.57|
 |[300259](https://xueqiu.com/s/sz300259)|[新天科技](https://www.lixinger.com/analytics/company/sz/300259/300259/detail/shareholders/nolimit)|[2020-10-16](http://data.eastmoney.com/zjlx/300259.html)|电器仪表|河南|5.62|
+|[002327](https://xueqiu.com/s/sz002327)|[富安娜](https://www.lixinger.com/analytics/company/sz/002327/2327/detail/shareholders/nolimit)|[2020-10-14](http://data.eastmoney.com/zjlx/002327.html)|纺织|深圳|8.11|
+|[603920](https://xueqiu.com/s/sh603920)|[世运电路](https://www.lixinger.com/analytics/company/sh/603920/603920/detail/shareholders/nolimit)|[2020-10-16](http://data.eastmoney.com/zjlx/603920.html)|元器件|广东|24.38|
+|[600488](https://xueqiu.com/s/sh600488)|[天药股份](https://www.lixinger.com/analytics/company/sh/600488/600488/detail/shareholders/nolimit)|[2020-10-19](http://data.eastmoney.com/zjlx/600488.html)|化学制药|天津|5.35|
+|[600848](https://xueqiu.com/s/sh600848)|[上海临港](https://www.lixinger.com/analytics/company/sh/600848/600848/detail/shareholders/nolimit)|[2020-10-19](http://data.eastmoney.com/zjlx/600848.html)|园区开发|上海|23.78|
+|[603006](https://xueqiu.com/s/sh603006)|[联明股份](https://www.lixinger.com/analytics/company/sh/603006/603006/detail/shareholders/nolimit)|[2020-10-19](http://data.eastmoney.com/zjlx/603006.html)|汽车配件|上海|11.48|
+|[002948](https://xueqiu.com/s/sz002948)|[青岛银行](https://www.lixinger.com/analytics/company/sz/002948/2948/detail/shareholders/nolimit)|[2020-10-19](http://data.eastmoney.com/zjlx/002948.html)|银行|山东|5.25|
+|[600998](https://xueqiu.com/s/sh600998)|[九州通](https://www.lixinger.com/analytics/company/sh/600998/600998/detail/shareholders/nolimit)|[2020-10-19](http://data.eastmoney.com/zjlx/600998.html)|医药商业|湖北|17.88|
+|[601998](https://xueqiu.com/s/sh601998)|[中信银行](https://www.lixinger.com/analytics/company/sh/601998/601998/detail/shareholders/nolimit)|[2020-10-19](http://data.eastmoney.com/zjlx/601998.html)|银行|北京|5.25|
+|[002673](https://xueqiu.com/s/sz002673)|[西部证券](https://www.lixinger.com/analytics/company/sz/002673/2673/detail/shareholders/nolimit)|[2020-10-19](http://data.eastmoney.com/zjlx/002673.html)|证券|陕西|9.9|
+|[601688](https://xueqiu.com/s/sh601688)|[华泰证券](https://www.lixinger.com/analytics/company/sh/601688/601688/detail/shareholders/nolimit)|[2020-10-19](http://data.eastmoney.com/zjlx/601688.html)|证券|江苏|21.22|
+|[000750](https://xueqiu.com/s/sz000750)|[国海证券](https://www.lixinger.com/analytics/company/sz/000750/750/detail/shareholders/nolimit)|[2020-10-19](http://data.eastmoney.com/zjlx/000750.html)|证券|广西|5.72|
