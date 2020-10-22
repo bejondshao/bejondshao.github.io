@@ -910,3 +910,5 @@ comments: false
 |[002673](https://xueqiu.com/s/sz002673)|[西部证券](https://www.lixinger.com/analytics/company/sz/002673/2673/detail/shareholders/nolimit)|[2020-10-19](http://data.eastmoney.com/zjlx/002673.html)|证券|陕西|9.9|
 |[601688](https://xueqiu.com/s/sh601688)|[华泰证券](https://www.lixinger.com/analytics/company/sh/601688/601688/detail/shareholders/nolimit)|[2020-10-19](http://data.eastmoney.com/zjlx/601688.html)|证券|江苏|21.22|
 |[000750](https://xueqiu.com/s/sz000750)|[国海证券](https://www.lixinger.com/analytics/company/sz/000750/750/detail/shareholders/nolimit)|[2020-10-19](http://data.eastmoney.com/zjlx/000750.html)|证券|广西|5.72|
+|[600167](https://xueqiu.com/s/sh600167)|[联美控股](https://www.lixinger.com/analytics/company/sh/600167/600167/detail/shareholders/nolimit)|[2020-10-20](http://data.eastmoney.com/zjlx/600167.html)|供气供热|辽宁|13.87|
+|[000906](https://xueqiu.com/s/sz000906)|[浙商中拓](https://www.lixinger.com/analytics/company/sz/000906/906/detail/shareholders/nolimit)|[2020-10-22](http://data.eastmoney.com/zjlx/000906.html)|批发业|浙江|6.81|
