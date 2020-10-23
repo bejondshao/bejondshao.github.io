@@ -912,3 +912,12 @@ comments: false
 |[000750](https://xueqiu.com/s/sz000750)|[国海证券](https://www.lixinger.com/analytics/company/sz/000750/750/detail/shareholders/nolimit)|[2020-10-19](http://data.eastmoney.com/zjlx/000750.html)|证券|广西|5.72|
 |[600167](https://xueqiu.com/s/sh600167)|[联美控股](https://www.lixinger.com/analytics/company/sh/600167/600167/detail/shareholders/nolimit)|[2020-10-20](http://data.eastmoney.com/zjlx/600167.html)|供气供热|辽宁|13.87|
 |[000906](https://xueqiu.com/s/sz000906)|[浙商中拓](https://www.lixinger.com/analytics/company/sz/000906/906/detail/shareholders/nolimit)|[2020-10-22](http://data.eastmoney.com/zjlx/000906.html)|批发业|浙江|6.81|
+|[002085](https://xueqiu.com/s/sz002085)|[万丰奥威](https://www.lixinger.com/analytics/company/sz/002085/2085/detail/shareholders/nolimit)|[2020-10-23](http://data.eastmoney.com/zjlx/002085.html)|汽车配件|浙江|7.1|
+|[002244](https://xueqiu.com/s/sz002244)|[滨江集团](https://www.lixinger.com/analytics/company/sz/002244/2244/detail/shareholders/nolimit)|[2020-10-23](http://data.eastmoney.com/zjlx/002244.html)|区域地产|浙江|4.9|
+|[600999](https://xueqiu.com/s/sh600999)|[招商证券](https://www.lixinger.com/analytics/company/sh/600999/600999/detail/shareholders/nolimit)|[2020-10-23](http://data.eastmoney.com/zjlx/600999.html)|证券|深圳|22.18|
+|[600048](https://xueqiu.com/s/sh600048)|[保利地产](https://www.lixinger.com/analytics/company/sh/600048/600048/detail/shareholders/nolimit)|[2020-10-23](http://data.eastmoney.com/zjlx/600048.html)|全国地产|广东|16.4|
+|[300038](https://xueqiu.com/s/sz300038)|[数知科技](https://www.lixinger.com/analytics/company/sz/300038/300038/detail/shareholders/nolimit)|[2020-10-23](http://data.eastmoney.com/zjlx/300038.html)|互联网|北京|8.72|
+|[601398](https://xueqiu.com/s/sh601398)|[工商银行](https://www.lixinger.com/analytics/company/sh/601398/601398/detail/shareholders/nolimit)|[2020-10-23](http://data.eastmoney.com/zjlx/601398.html)|银行|北京|5.06|
+|[002290](https://xueqiu.com/s/sz002290)|[ST中科创](https://www.lixinger.com/analytics/company/sz/002290/2290/detail/shareholders/nolimit)|[2020-10-23](http://data.eastmoney.com/zjlx/002290.html)|家用电器|江苏|5.39|
+|[000036](https://xueqiu.com/s/sz000036)|[华联控股](https://www.lixinger.com/analytics/company/sz/000036/36/detail/shareholders/nolimit)|[2020-10-23](http://data.eastmoney.com/zjlx/000036.html)|全国地产|深圳|4.43|
+|[600908](https://xueqiu.com/s/sh600908)|[无锡银行](https://www.lixinger.com/analytics/company/sh/600908/600908/detail/shareholders/nolimit)|[2020-10-23](http://data.eastmoney.com/zjlx/600908.html)|银行|江苏|6.13|
