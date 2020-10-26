@@ -921,3 +921,17 @@ comments: false
 |[002290](https://xueqiu.com/s/sz002290)|[ST中科创](https://www.lixinger.com/analytics/company/sz/002290/2290/detail/shareholders/nolimit)|[2020-10-23](http://data.eastmoney.com/zjlx/002290.html)|家用电器|江苏|5.39|
 |[000036](https://xueqiu.com/s/sz000036)|[华联控股](https://www.lixinger.com/analytics/company/sz/000036/36/detail/shareholders/nolimit)|[2020-10-23](http://data.eastmoney.com/zjlx/000036.html)|全国地产|深圳|4.43|
 |[600908](https://xueqiu.com/s/sh600908)|[无锡银行](https://www.lixinger.com/analytics/company/sh/600908/600908/detail/shareholders/nolimit)|[2020-10-23](http://data.eastmoney.com/zjlx/600908.html)|银行|江苏|6.13|
+|[000898](https://xueqiu.com/s/sz000898)|[鞍钢股份](https://www.lixinger.com/analytics/company/sz/000898/898/detail/shareholders/nolimit)|[2020-10-26](http://data.eastmoney.com/zjlx/000898.html)|普钢|辽宁|2.7|
+|[002039](https://xueqiu.com/s/sz002039)|[黔源电力](https://www.lixinger.com/analytics/company/sz/002039/2039/detail/shareholders/nolimit)|[2020-10-26](http://data.eastmoney.com/zjlx/002039.html)|水力发电|贵州|16.13|
+|[002111](https://xueqiu.com/s/sz002111)|[威海广泰](https://www.lixinger.com/analytics/company/sz/002111/2111/detail/shareholders/nolimit)|[2020-10-26](http://data.eastmoney.com/zjlx/002111.html)|航空|山东|16.48|
+|[002236](https://xueqiu.com/s/sz002236)|[大华股份](https://www.lixinger.com/analytics/company/sz/002236/2236/detail/shareholders/nolimit)|[2020-10-26](http://data.eastmoney.com/zjlx/002236.html)|电器仪表|浙江|21.85|
+|[002448](https://xueqiu.com/s/sz002448)|[中原内配](https://www.lixinger.com/analytics/company/sz/002448/2448/detail/shareholders/nolimit)|[2020-10-26](http://data.eastmoney.com/zjlx/002448.html)|汽车配件|河南|5.86|
+|[002479](https://xueqiu.com/s/sz002479)|[富春环保](https://www.lixinger.com/analytics/company/sz/002479/2479/detail/shareholders/nolimit)|[2020-10-26](http://data.eastmoney.com/zjlx/002479.html)|火力发电|浙江|6.97|
+|[002518](https://xueqiu.com/s/sz002518)|[科士达](https://www.lixinger.com/analytics/company/sz/002518/2518/detail/shareholders/nolimit)|[2020-10-26](http://data.eastmoney.com/zjlx/002518.html)|电气设备|深圳|15.55|
+|[600648](https://xueqiu.com/s/sh600648)|[外高桥](https://www.lixinger.com/analytics/company/sh/600648/600648/detail/shareholders/nolimit)|[2020-10-26](http://data.eastmoney.com/zjlx/600648.html)|园区开发|上海|16.2|
+|[600710](https://xueqiu.com/s/sh600710)|[苏美达](https://www.lixinger.com/analytics/company/sh/600710/600710/detail/shareholders/nolimit)|[2020-10-26](http://data.eastmoney.com/zjlx/600710.html)|工程机械|江苏|5.22|
+|[601288](https://xueqiu.com/s/sh601288)|[农业银行](https://www.lixinger.com/analytics/company/sh/601288/601288/detail/shareholders/nolimit)|[2020-10-26](http://data.eastmoney.com/zjlx/601288.html)|银行|北京|3.23|
+|[601567](https://xueqiu.com/s/sh601567)|[三星医疗](https://www.lixinger.com/analytics/company/sh/601567/601567/detail/shareholders/nolimit)|[2020-10-26](http://data.eastmoney.com/zjlx/601567.html)|电器仪表|浙江|7.28|
+|[601668](https://xueqiu.com/s/sh601668)|[中国建筑](https://www.lixinger.com/analytics/company/sh/601668/601668/detail/shareholders/nolimit)|[2020-10-26](http://data.eastmoney.com/zjlx/601668.html)|建筑工程|北京|5.22|
+|[603041](https://xueqiu.com/s/sh603041)|[美思德](https://www.lixinger.com/analytics/company/sh/603041/603041/detail/shareholders/nolimit)|[2020-10-26](http://data.eastmoney.com/zjlx/603041.html)|化工原料|江苏|15.88|
+|[603992](https://xueqiu.com/s/sh603992)|[松霖科技](https://www.lixinger.com/analytics/company/sh/603992/603992/detail/shareholders/nolimit)|[2020-10-26](http://data.eastmoney.com/zjlx/603992.html)|家居用品|福建|18.4|
