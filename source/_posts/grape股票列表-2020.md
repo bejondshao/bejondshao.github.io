@@ -935,3 +935,7 @@ comments: false
 |[601668](https://xueqiu.com/s/sh601668)|[中国建筑](https://www.lixinger.com/analytics/company/sh/601668/601668/detail/shareholders/nolimit)|[2020-10-26](http://data.eastmoney.com/zjlx/601668.html)|建筑工程|北京|5.22|
 |[603041](https://xueqiu.com/s/sh603041)|[美思德](https://www.lixinger.com/analytics/company/sh/603041/603041/detail/shareholders/nolimit)|[2020-10-26](http://data.eastmoney.com/zjlx/603041.html)|化工原料|江苏|15.88|
 |[603992](https://xueqiu.com/s/sh603992)|[松霖科技](https://www.lixinger.com/analytics/company/sh/603992/603992/detail/shareholders/nolimit)|[2020-10-26](http://data.eastmoney.com/zjlx/603992.html)|家居用品|福建|18.4|
+|[000155](https://xueqiu.com/s/sz000155)|[川能动力](https://www.lixinger.com/analytics/company/sz/000155/155/detail/shareholders/nolimit)|[2020-10-27](http://data.eastmoney.com/zjlx/000155.html)|新型电力|四川|5.18|
+|[603776](https://xueqiu.com/s/sh603776)|[永安行](https://www.lixinger.com/analytics/company/sh/603776/603776/detail/shareholders/nolimit)|[2020-10-27](http://data.eastmoney.com/zjlx/603776.html)|公共交通|江苏|22.18|
+|[600284](https://xueqiu.com/s/sh600284)|[浦东建设](https://www.lixinger.com/analytics/company/sh/600284/600284/detail/shareholders/nolimit)|[2020-10-27](http://data.eastmoney.com/zjlx/600284.html)|建筑工程|上海|6.64|
+|[002756](https://xueqiu.com/s/sz002756)|[永兴材料](https://www.lixinger.com/analytics/company/sz/002756/2756/detail/shareholders/nolimit)|[2020-10-27](http://data.eastmoney.com/zjlx/002756.html)|特种钢|浙江|18.2|
