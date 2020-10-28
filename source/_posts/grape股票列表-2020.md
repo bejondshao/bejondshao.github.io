@@ -939,3 +939,8 @@ comments: false
 |[603776](https://xueqiu.com/s/sh603776)|[永安行](https://www.lixinger.com/analytics/company/sh/603776/603776/detail/shareholders/nolimit)|[2020-10-27](http://data.eastmoney.com/zjlx/603776.html)|公共交通|江苏|22.18|
 |[600284](https://xueqiu.com/s/sh600284)|[浦东建设](https://www.lixinger.com/analytics/company/sh/600284/600284/detail/shareholders/nolimit)|[2020-10-27](http://data.eastmoney.com/zjlx/600284.html)|建筑工程|上海|6.64|
 |[002756](https://xueqiu.com/s/sz002756)|[永兴材料](https://www.lixinger.com/analytics/company/sz/002756/2756/detail/shareholders/nolimit)|[2020-10-27](http://data.eastmoney.com/zjlx/002756.html)|特种钢|浙江|18.2|
+|[000899](https://xueqiu.com/s/sz000899)|[赣能股份](https://www.lixinger.com/analytics/company/sz/000899/899/detail/shareholders/nolimit)|[2020-10-28](http://data.eastmoney.com/zjlx/000899.html)|火力发电|江西|4.84|
+|[600461](https://xueqiu.com/s/sh600461)|[洪城水业](https://www.lixinger.com/analytics/company/sh/600461/600461/detail/shareholders/nolimit)|[2020-10-28](http://data.eastmoney.com/zjlx/600461.html)|水务|江西|6.81|
+|[600406](https://xueqiu.com/s/sh600406)|[国电南瑞](https://www.lixinger.com/analytics/company/sh/600406/600406/detail/shareholders/nolimit)|[2020-10-28](http://data.eastmoney.com/zjlx/600406.html)|电气设备|江苏|21.33|
+|[002045](https://xueqiu.com/s/sz002045)|[国光电器](https://www.lixinger.com/analytics/company/sz/002045/2045/detail/shareholders/nolimit)|[2020-10-28](http://data.eastmoney.com/zjlx/002045.html)|元器件|广东|9.66|
+|[000600](https://xueqiu.com/s/sz000600)|[建投能源](https://www.lixinger.com/analytics/company/sz/000600/600/detail/shareholders/nolimit)|[2020-10-28](http://data.eastmoney.com/zjlx/000600.html)|火力发电|河北|5.45|
