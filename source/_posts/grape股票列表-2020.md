@@ -944,3 +944,7 @@ comments: false
 |[600406](https://xueqiu.com/s/sh600406)|[国电南瑞](https://www.lixinger.com/analytics/company/sh/600406/600406/detail/shareholders/nolimit)|[2020-10-28](http://data.eastmoney.com/zjlx/600406.html)|电气设备|江苏|21.33|
 |[002045](https://xueqiu.com/s/sz002045)|[国光电器](https://www.lixinger.com/analytics/company/sz/002045/2045/detail/shareholders/nolimit)|[2020-10-28](http://data.eastmoney.com/zjlx/002045.html)|元器件|广东|9.66|
 |[000600](https://xueqiu.com/s/sz000600)|[建投能源](https://www.lixinger.com/analytics/company/sz/000600/600/detail/shareholders/nolimit)|[2020-10-28](http://data.eastmoney.com/zjlx/000600.html)|火力发电|河北|5.45|
+|[002823](https://xueqiu.com/s/sz002823)|[凯中精密](https://www.lixinger.com/analytics/company/sz/002823/2823/detail/shareholders/nolimit)|[2020-10-27](http://data.eastmoney.com/zjlx/002823.html)|机械基件|深圳|11.77|
+|[002384](https://xueqiu.com/s/sz002384)|[东山精密](https://www.lixinger.com/analytics/company/sz/002384/2384/detail/shareholders/nolimit)|[2020-10-27](http://data.eastmoney.com/zjlx/002384.html)|元器件|江苏|27.2|
+|[600068](https://xueqiu.com/s/sh600068)|[葛洲坝](https://www.lixinger.com/analytics/company/sh/600068/600068/detail/shareholders/nolimit)|[2020-10-29](http://data.eastmoney.com/zjlx/600068.html)|建筑工程|湖北|7.37|
+|[000407](https://xueqiu.com/s/sz000407)|[胜利股份](https://www.lixinger.com/analytics/company/sz/000407/407/detail/shareholders/nolimit)|[2020-10-29](http://data.eastmoney.com/zjlx/000407.html)|供气供热|山东|4.15|
