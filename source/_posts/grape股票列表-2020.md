@@ -948,3 +948,11 @@ comments: false
 |[002384](https://xueqiu.com/s/sz002384)|[东山精密](https://www.lixinger.com/analytics/company/sz/002384/2384/detail/shareholders/nolimit)|[2020-10-27](http://data.eastmoney.com/zjlx/002384.html)|元器件|江苏|27.2|
 |[600068](https://xueqiu.com/s/sh600068)|[葛洲坝](https://www.lixinger.com/analytics/company/sh/600068/600068/detail/shareholders/nolimit)|[2020-10-29](http://data.eastmoney.com/zjlx/600068.html)|建筑工程|湖北|7.37|
 |[000407](https://xueqiu.com/s/sz000407)|[胜利股份](https://www.lixinger.com/analytics/company/sz/000407/407/detail/shareholders/nolimit)|[2020-10-29](http://data.eastmoney.com/zjlx/000407.html)|供气供热|山东|4.15|
+|[002911](https://xueqiu.com/s/sz002911)|[佛燃能源](https://www.lixinger.com/analytics/company/sz/002911/2911/detail/shareholders/nolimit)|[2020-10-26](http://data.eastmoney.com/zjlx/002911.html)|供气供热|广东|16.44|
+|[603908](https://xueqiu.com/s/sh603908)|[牧高笛](https://www.lixinger.com/analytics/company/sh/603908/603908/detail/shareholders/nolimit)|[2020-10-26](http://data.eastmoney.com/zjlx/603908.html)|纺织|浙江|26.05|
+|[603699](https://xueqiu.com/s/sh603699)|[纽威股份](https://www.lixinger.com/analytics/company/sh/603699/603699/detail/shareholders/nolimit)|[2020-10-27](http://data.eastmoney.com/zjlx/603699.html)|专用机械|江苏|15.88|
+|[002162](https://xueqiu.com/s/sz002162)|[悦心健康](https://www.lixinger.com/analytics/company/sz/002162/2162/detail/shareholders/nolimit)|[2020-10-28](http://data.eastmoney.com/zjlx/002162.html)|医疗保健|上海|3.52|
+|[603900](https://xueqiu.com/s/sh603900)|[莱绅通灵](https://www.lixinger.com/analytics/company/sh/603900/603900/detail/shareholders/nolimit)|[2020-10-30](http://data.eastmoney.com/zjlx/603900.html)|服饰|江苏|8.59|
+|[600039](https://xueqiu.com/s/sh600039)|[四川路桥](https://www.lixinger.com/analytics/company/sh/600039/600039/detail/shareholders/nolimit)|[2020-10-30](http://data.eastmoney.com/zjlx/600039.html)|建筑工程|四川|4.46|
+|[600012](https://xueqiu.com/s/sh600012)|[皖通高速](https://www.lixinger.com/analytics/company/sh/600012/600012/detail/shareholders/nolimit)|[2020-10-30](http://data.eastmoney.com/zjlx/600012.html)|路桥|安徽|5.31|
+|[603897](https://xueqiu.com/s/sh603897)|[长城科技](https://www.lixinger.com/analytics/company/sh/603897/603897/detail/shareholders/nolimit)|[2020-10-30](http://data.eastmoney.com/zjlx/603897.html)|电气设备|浙江|19.96|
