@@ -956,3 +956,15 @@ comments: false
 |[600039](https://xueqiu.com/s/sh600039)|[四川路桥](https://www.lixinger.com/analytics/company/sh/600039/600039/detail/shareholders/nolimit)|[2020-10-30](http://data.eastmoney.com/zjlx/600039.html)|建筑工程|四川|4.46|
 |[600012](https://xueqiu.com/s/sh600012)|[皖通高速](https://www.lixinger.com/analytics/company/sh/600012/600012/detail/shareholders/nolimit)|[2020-10-30](http://data.eastmoney.com/zjlx/600012.html)|路桥|安徽|5.31|
 |[603897](https://xueqiu.com/s/sh603897)|[长城科技](https://www.lixinger.com/analytics/company/sh/603897/603897/detail/shareholders/nolimit)|[2020-10-30](http://data.eastmoney.com/zjlx/603897.html)|电气设备|浙江|19.96|
+|[600740](https://xueqiu.com/s/sh600740)|[山西焦化](https://www.lixinger.com/analytics/company/sh/600740/600740/detail/shareholders/nolimit)|[2020-10-30](http://data.eastmoney.com/zjlx/600740.html)|焦炭加工|山西|5.04|
+|[600408](https://xueqiu.com/s/sh600408)|[ST安泰](https://www.lixinger.com/analytics/company/sh/600408/600408/detail/shareholders/nolimit)|[2020-10-30](http://data.eastmoney.com/zjlx/600408.html)|焦炭加工|山西|1.83|
+|[002276](https://xueqiu.com/s/sz002276)|[万马股份](https://www.lixinger.com/analytics/company/sz/002276/2276/detail/shareholders/nolimit)|[2020-11-02](http://data.eastmoney.com/zjlx/002276.html)|电气设备|浙江|8.35|
+|[002718](https://xueqiu.com/s/sz002718)|[友邦吊顶](https://www.lixinger.com/analytics/company/sz/002718/2718/detail/shareholders/nolimit)|[2020-11-02](http://data.eastmoney.com/zjlx/002718.html)|家居用品|浙江|16.98|
+|[002249](https://xueqiu.com/s/sz002249)|[大洋电机](https://www.lixinger.com/analytics/company/sz/002249/2249/detail/shareholders/nolimit)|[2020-11-02](http://data.eastmoney.com/zjlx/002249.html)|电气设备|广东|4.03|
+|[600366](https://xueqiu.com/s/sh600366)|[宁波韵升](https://www.lixinger.com/analytics/company/sh/600366/600366/detail/shareholders/nolimit)|[2020-11-02](http://data.eastmoney.com/zjlx/600366.html)|矿物制品|浙江|6.36|
+|[600368](https://xueqiu.com/s/sh600368)|[五洲交通](https://www.lixinger.com/analytics/company/sh/600368/600368/detail/shareholders/nolimit)|[2020-11-02](http://data.eastmoney.com/zjlx/600368.html)|路桥|广西|3.6|
+|[002478](https://xueqiu.com/s/sz002478)|[常宝股份](https://www.lixinger.com/analytics/company/sz/002478/2478/detail/shareholders/nolimit)|[2020-11-03](http://data.eastmoney.com/zjlx/002478.html)|钢加工|江苏|5.58|
+|[603002](https://xueqiu.com/s/sh603002)|[宏昌电子](https://www.lixinger.com/analytics/company/sh/603002/603002/detail/shareholders/nolimit)|[2020-11-03](http://data.eastmoney.com/zjlx/603002.html)|化工原料|广东|5.49|
+|[300194](https://xueqiu.com/s/sz300194)|[福安药业](https://www.lixinger.com/analytics/company/sz/300194/300194/detail/shareholders/nolimit)|[2020-11-03](http://data.eastmoney.com/zjlx/300194.html)|化学制药|重庆|6.5|
+|[300158](https://xueqiu.com/s/sz300158)|[振东制药](https://www.lixinger.com/analytics/company/sz/300158/300158/detail/shareholders/nolimit)|[2020-11-03](http://data.eastmoney.com/zjlx/300158.html)|化学制药|山西|6.34|
+|[002775](https://xueqiu.com/s/sz002775)|[文科园林](https://www.lixinger.com/analytics/company/sz/002775/2775/detail/shareholders/nolimit)|[2020-11-03](http://data.eastmoney.com/zjlx/002775.html)|建筑工程|深圳|5.51|
