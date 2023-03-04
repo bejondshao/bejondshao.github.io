@@ -63,6 +63,7 @@ markdown_it_plus:
 ```
 然后到[这里](http://emoji.muan.co/)或[这里](https://www.webpagefx.com/tools/emoji-cheat-sheet/) 查找emoji code，粘贴到文章即可。
 我一开始使用**hexo-renderer-markdown-it**插件会有两个问题，一个问题是段落之间如果不加空行，会合并成一段，也就是整篇文章都成了一段，导致以前的文章都需要作调整。二个问题是无法使用粗体标志，相信其他标志也无法完美使用，需要在`**`前加空格，很是麻烦，后来使用hexo-renderer-markdown-it-plus就没有这些问题。
+But there's another issue you might meet `LaTeX-incompatible input and strict mode is set to 'warn': Unicode text character "符" used in math mode [unicodeTextInMathMode]`. It is due to Unicode text between double `$`, e.g. `$xxx,符xxx$`. You might not input it intendedly. So try to add `` before and after `$` to make it not rendered.
 
 ##### Hexo使用站内链接
 ```
@@ -74,9 +75,6 @@ Hello World是要展示的文字，如果不填，默认取引用文章标题。
 
 ##### Hexo文章插入图片
 详见{% post_link 如何在Hexo文章中插入图片 %}
-
-##### 主动推送Hexo博客链接到百度搜索
-详见[hexo-baidu-url-submit](https://www.npmjs.com/package/hexo-baidu-url-submit)
 
 ##### [hexo-admin](https://github.com/jaredly/hexo-admin)插件，可以本地可视化编辑文章。
   

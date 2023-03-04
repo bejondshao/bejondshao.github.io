@@ -60,8 +60,9 @@ auth-server-standalone是非云架构的，auth-server-clustered是云架构的�
     </socket-binding-groups>
 ```
 
-此配置定义与每个Keycloak服务器实例一起打开的各种连接器的默认端口映射。每个带${}符号的值都可以在命令行里用-D作为参数覆盖
-$ domain.sh -Djboss.http.port=80
+此配置定义与每个Keycloak服务器实例一起打开的各种连接器的默认端口映射。每个带`${}`符号的值都可以在命令行里用-D作为参数覆盖
+`$ domain.sh -Djboss.http.port=80`
+
 @ 给Keycloak定义的server group在server-groups节点里。它确定域档案是用"default"，并且有一些默认的Java VM启动参数。绑定了一个socket-binding-group到服务器组里。
 ```
     <server-groups>

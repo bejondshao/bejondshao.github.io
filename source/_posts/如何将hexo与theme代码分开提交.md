@@ -13,7 +13,7 @@ date: 2017-11-30 22:29:00
 ###### 说在前面
 Hexo博客静态页面是用hexo-deployer-git插件自动提交到bejondshao.github.io库中的master分支的。为了保存文章和自定义内容，我将Hexo框架，文章和自定义内容保存在source分支下。平时编辑提交都在source分支做，执行hexo deploy时hexo-deployer-git自动将静态内容提交到master，不必手动切换分支，很方便。
 
-言归正传，之前有介绍过{% post_link Hueman主题升级 升级Hexo主题 %}。里面手动下载源码，手动自定义，随着自定义内容越来越多，每次升级主题会很麻烦。所以有必要将主题也提交到代码库中。但是将主题提交到Hexo与文章中显然不合适，并且想和[hexo-theme-hueman](https://github.com/ppoffice/hexo-theme-hueman)保持同步会很麻烦。所以有必要将主题单独提交到另一个资源中。
+言归正传，之前有介绍过{% post_link Hueman主题升级 升级Hexo主题 %}。里面手动下载源码，手动自定义，随着自定义内容越来越多，每次升级主题会很麻烦。所以有必要将主题也提交到代码库中。但是将主题提交到Hexo与文章中显然不合适，并且想和[hexo-theme-hueman](https://github.com/ppoffice/hexo-theme-hueman)(This repository is archived. I don't recommend you use it any more.)保持同步会很麻烦。所以有必要将主题单独提交到另一个资源中。
 
 1. 将本地`bejondshao.github.io/themes/hueman/`文件夹备份。
 2. 将hueman主题从源码移出
@@ -73,3 +73,5 @@ $ hexo g
 $ hexo s 或 hexo d
 ```
 查看下结果吧:beer:！
+
+#### Update: Since 
