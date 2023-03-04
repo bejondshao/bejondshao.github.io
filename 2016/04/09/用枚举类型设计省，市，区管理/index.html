@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>用枚举类型设计省，市，区管理 | Bejond IO</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="Java" />
+    
+    <meta name="description" content="@ 枚举类型可以将一组具有名称的值的优先级和创建为一种新的类型。我们可以像创建类一样创建枚举类型。比如 1234567public enum Food &amp;#123;    APPLE, ORANGE, CHOCOLATE, GRAPE&amp;#125; @ 枚举类型有几个常用的方法。   values()，返回该枚举类型所有的常量数组。   ordinal()，返回某个常量所在枚举类型的位置，从0开始。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="用枚举类型设计省，市，区管理">
+<meta property="og:url" content="http://bejondshao.github.io/2016/04/09/%E7%94%A8%E6%9E%9A%E4%B8%BE%E7%B1%BB%E5%9E%8B%E8%AE%BE%E8%AE%A1%E7%9C%81%EF%BC%8C%E5%B8%82%EF%BC%8C%E5%8C%BA%E7%AE%A1%E7%90%86/index.html">
+<meta property="og:site_name" content="Bejond IO">
+<meta property="og:description" content="@ 枚举类型可以将一组具有名称的值的优先级和创建为一种新的类型。我们可以像创建类一样创建枚举类型。比如 1234567public enum Food &amp;#123;    APPLE, ORANGE, CHOCOLATE, GRAPE&amp;#125; @ 枚举类型有几个常用的方法。   values()，返回该枚举类型所有的常量数组。   ordinal()，返回某个常量所在枚举类型的位置，从0开始。">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2016-04-09T10:23:44.000Z">
+<meta property="article:modified_time" content="2023-03-02T03:26:34.257Z">
+<meta property="article:author" content="Bejond Shao">
+<meta property="article:tag" content="Java">
+<meta name="twitter:card" content="summary">
+    
+
+    
+
+    
+        <link rel="icon" href="/favicon2.png" />
+    
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/libs/titillium-web/styles.css">
+
+    
+<link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+<script src="/libs/jquery/2.0.3/jquery.min.js"></script>
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+
+    
+    
+    
+
+
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Bejond IO" type="application/atom+xml">
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">Home</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/DevOps/">DevOps</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/DevOps/Keycloak/">Keycloak</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Java/">Java</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Java/Liferay/">Liferay</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Java/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Linux/">Linux</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Linux/CentOS/">CentOS</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Linux/Mac/">Mac</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Linux/Ubuntu/">Ubuntu</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Others/">Others</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Others/Hexo/">Hexo</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Python/">Python</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Tools/">Tools</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E8%82%A1%E7%A5%A8/">股票</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E6%80%9D%E8%80%83/">思考</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%90%86%E8%AE%BA/">理论</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%9F%A5%E8%AF%86/">知识</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%AD%96%E7%95%A5/">策略</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E9%80%89%E8%82%A1/">选股</a></li></ul></li></ul>
+                                    
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" target="_blank" rel="noopener" href="http://bejond.github.io">侧聆</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/index.html">About</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/Java/">Java</a>
+    </h1>
+</div>
+                        <div class="main-body-content">
+                            <article id="post-用枚举类型设计省，市，区管理" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        用枚举类型设计省，市，区管理
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2016/04/09/%E7%94%A8%E6%9E%9A%E4%B8%BE%E7%B1%BB%E5%9E%8B%E8%AE%BE%E8%AE%A1%E7%9C%81%EF%BC%8C%E5%B8%82%EF%BC%8C%E5%8C%BA%E7%AE%A1%E7%90%86/" class="article-date">
+            <time datetime="2016-04-09T10:23:44.000Z" itemprop="datePublished">2016-04-09</time>
+        </a>
+    </div>
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/Java/" rel="tag">Java</a>
+    </div>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <p>@ 枚举类型可以将一组具有名称的值的优先级和创建为一种新的类型。我们可以像创建类一样创建枚举类型。比如</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">enum</span> <span class="title class_">Food</span> &#123;</span><br><span class="line"></span><br><span class="line">    APPLE, ORANGE, CHOCOLATE, GRAPE</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>@ 枚举类型有几个常用的方法。</p>
+<ul>
+<li>
+<p>values()，返回该枚举类型所有的常量数组。</p>
+</li>
+<li>
+<p>ordinal()，返回某个常量所在枚举类型的位置，从0开始。Food.ORANGE.ordinal()的值是1</p>
+</li>
+<li>
+<p>name()，返回当前常量的名字。</p>
+</li>
+<li>
+<p>toString()，同name()</p>
+</li>
+<li>
+<p>equals()，比较两个枚举类型的值是否相同。由于枚举类型是单例并且是常量，所以枚举类型的比较可以直接用“==”。</p>
+</li>
+<li>
+<p>static valueOf(Class<T> enumType, String name)，根据枚举类型和名称找到该枚举的值。</p>
+</li>
+<li>
+<p>compareTo()，比较两个枚举值的顺序，通过ordinal()的值做差得出结果。</p>
+</li>
+<li>
+<p>valueOf(String name)，这个方法不是静态方法，所有需要一个枚举实例来调用。</p>
+</li>
+</ul>
+<p>@ 枚举还有静态引用的功能，由于省略了类型名，对后期维护容易造成困惑，不推荐使用。</p>
+<p>@ 枚举类型是常量，不可以被继承，也不能继承其他类，但是可以让枚举类型实现接口。</p>
+<p>@ 枚举类型可以添加描述，即每个常量可以赋值，可以是基本类型，可以是类。</p>
+<p>============</p>
+<p>前段时间想实现国内各个省，市，区的管理功能，这在购物网站填写地址时会用到。我想了几种实现方法，比如：</p>
+<p>方法一：省，市，区均设定为model，在数据库里分别创建表，写实际的中文名称，比如“北京”，“大连”等等。这种表示方式好处是简洁明了，缺点是每个地址都需要存储汉字，导致数据库内容重复。</p>
+<p>方法二：省，市，区均设定model，在数据库里创建表，用键值对的形式表示地点。比如省份使用两位int的值表示，“10” - 北京，“12” - “辽宁”；四位表示市，“1212” - （辽宁）大连，前两位表示省份，后两位是市；六位表示市区，“121210” - （辽宁大连）甘井子。这种表示方式的好处是可以只通过市区就定位该市区具体行政关系。缺点是省和市的内容重复。</p>
+<p>方法三：省，市，区均用int表示，显示的写在java代码里，并用map关联。这种方式的好处是不占用数据库资源，在数据库里只需要给出三个列表示省市区即可。缺点是int值很容易重复，表明意义不清晰，如果使用“101112”的形式表示则增加了数据位数，也显得冗余。</p>
+<p>方法四：使用枚举表示省，市，区。这种方式好处是不占用数据库，常量的值不会被更改，表达意义清晰。缺点是设计和实现稍微复杂。</p>
+<p>我尝试的用枚举构思并实现了一下，仅供参考。1.0版本的代码可以参考<a target="_blank" rel="noopener" href="https://github.com/bejondshao/personal/commit/ed3fe52f99e6bf0f7156befd9443eda12f275714">https://github.com/bejondshao/personal/commit/ed3fe52f99e6bf0f7156befd9443eda12f275714</a></p>
+<ol>
+<li>从区入手，设计District接口，这个接口里显示的声明多个以城市为组，将区分组。</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">package</span> com.bejond.enumregion;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Created by bejond on 4/9/16.</span></span><br><span class="line"><span class="comment"> * From https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8E%BF%E7%BA%A7%E4%BB%A5%E4%B8%8A%E8%A1%8C%E6%94%BF%E5%8C%BA%E5%88%97%E8%A1%A8</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title class_">District</span> &#123;</span><br><span class="line"></span><br><span class="line">   <span class="comment">// 注意, 只有常量用汉字, 类型仍然用英文</span></span><br><span class="line"></span><br><span class="line">   <span class="keyword">enum</span> <span class="title class_">Beijing</span> <span class="keyword">implements</span> <span class="title class_">District</span> &#123;</span><br><span class="line">      东城区, 西城区, 朝阳区, 丰台区, 石景山区, 海淀区, 门头沟区, 房山区, 通州区,</span><br><span class="line">      顺义区, 昌平区, 大兴区, 怀柔区, 平谷区, 密云区, 延庆区</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="keyword">enum</span> <span class="title class_">Tianjin</span> <span class="keyword">implements</span> <span class="title class_">District</span> &#123;</span><br><span class="line">      河西区, 河东区, 和平区, 南开区, 河北区, 红桥区, 东丽区, 西青区, 津南区,</span><br><span class="line">      北辰区, 武清区, 宝坻区, 宁河区, 静海区, 滨海新区, 蓟县</span><br><span class="line">   &#125;;</span><br><span class="line"></span><br><span class="line">   <span class="keyword">enum</span> <span class="title class_">Shanghai</span> <span class="keyword">implements</span> <span class="title class_">District</span> &#123;</span><br><span class="line">      黄浦区, 徐汇区, 长宁区, 静安区, 普陀区, 虹口区, 杨浦区, 闵行区, 宝山区,</span><br><span class="line">      嘉定区, 浦东新区, 金山区, 松江区, 青浦区, 奉贤区崇明县</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="keyword">enum</span> <span class="title class_">Chongqing</span> <span class="keyword">implements</span> <span class="title class_">District</span> &#123;</span><br><span class="line">      渝中区, 大渡口区, 江北区, 南岸区, 北碚区, 渝北区, 巴南区, 长寿区, 沙坪坝区,</span><br><span class="line">      万州区, 涪陵区, 黔江区, 永川区, 合川区, 江津区, 九龙坡区, 南川区, 綦江区,</span><br><span class="line">      大足区, 璧山区, 铜梁区, 荣昌区, 潼南区, 梁平县, 开县, 忠县, 城口县, 垫江县,</span><br><span class="line">      武隆县, 丰都县, 奉节县, 云阳县, 巫溪县, 巫山县, 石柱土家族自治县,</span><br><span class="line">      秀山土家族苗族自治县, 酉阳土家族苗族自治县, 彭水苗族土家族自治县</span><br><span class="line"></span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="keyword">enum</span> <span class="title class_">Shenyang</span> <span class="keyword">implements</span> <span class="title class_">District</span> &#123;</span><br><span class="line">      沈河区, 和平区, 大东区, 皇姑区, 铁西区, 苏家屯区, 浑南区, 沈北新区, 于洪区,</span><br><span class="line">      辽中区, 新民市, 康平县, 法库县</span><br><span class="line">   &#125;;</span><br><span class="line"></span><br><span class="line">   <span class="keyword">enum</span> <span class="title class_">Dalian</span> <span class="keyword">implements</span> <span class="title class_">District</span> &#123;</span><br><span class="line">      西岗区, 中山区, 沙河口区, 甘井子区, 旅顺口区, 金州区, 普兰店区, 瓦房店市,</span><br><span class="line">      庄河市, 长海县</span><br><span class="line">   &#125;;</span><br><span class="line"></span><br><span class="line">   <span class="keyword">enum</span> <span class="title class_">Shijiazhuang</span> <span class="keyword">implements</span> <span class="title class_">District</span> &#123;</span><br><span class="line">      长安区, 桥西区, 新华区, 裕华区, 井陉矿区, 藁城区, 鹿泉区, 栾城区, 晋州市,</span><br><span class="line">      新乐市, 井陉县, 正定县, 行唐县, 灵寿县, 高邑县, 深泽县, 赞皇县, 无极县,</span><br><span class="line">      平山县, 元氏县, 赵县</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="keyword">enum</span> <span class="title class_">Xiamen</span> <span class="keyword">implements</span> <span class="title class_">District</span> &#123;</span><br><span class="line">      思明区, 海沧区, 湖里区, 集美区, 同安区, 翔安区</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="comment">// 剩下的自己补吧, 特殊地区根据业务自行补充</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>由于枚举可以实现接口，所以声明的&quot;Beijing&quot;, &quot;Dalian&quot;都是接口，虽然是市名，但这个类型其实是表达这个市所包含的市区，所以类型是“区”</p>
+<ol start="2">
+<li>设计市。以辽宁省的市为例，将辽宁省所包含的市设为常量。</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">package</span> com.bejond.enumregion.city;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.bejond.enumregion.City;</span><br><span class="line"><span class="keyword">import</span> com.bejond.enumregion.District;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Created by bejond on 4/9/16.</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">enum</span> <span class="title class_">LiaoningCity</span> <span class="keyword">implements</span> <span class="title class_">City</span> &#123;</span><br><span class="line">   沈阳市(District.Shenyang.class), 大连市(District.Dalian.class);</span><br><span class="line"></span><br><span class="line">   <span class="keyword">private</span> District[] districts;</span><br><span class="line"></span><br><span class="line">   LiaoningCity(Class&lt;? <span class="keyword">extends</span> <span class="title class_">District</span>&gt; district) &#123;</span><br><span class="line">      districts = district.getEnumConstants();</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="keyword">public</span> District[] getDistricts() &#123;</span><br><span class="line">      <span class="keyword">return</span> districts;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>本来想声明市也是个接口，这样可以和区一样设计并管理，但是由于市和区要进行关联，关联的过程需要有构造函数，而接口不允许有构造函数。并且我们需要在市的层级上添加方法，获取该市的区，所以无法通过继承接口实现。</p>
+<p>构造函数</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LiaoningCity(Class&lt;? <span class="keyword">extends</span> <span class="title class_">District</span>&gt; district)</span><br></pre></td></tr></table></figure>
+<p>有两个功能，一是将特定的市的区赋值给不同的市，二是初始化districts，这个变量可以返回某个市的所有区，而不是辽宁省的所有市的所有区。</p>
+<ol start="3">
+<li>设计省，设计方式和市一样，这个类型就是辽宁省，所以只有一个常量，将LiaoningCity赋给它。</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">package</span> com.bejond.enumregion.province;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.bejond.enumregion.Province;</span><br><span class="line"><span class="keyword">import</span> com.bejond.enumregion.city.LiaoningCity;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Created by bejond on 4/9/16.</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">enum</span> <span class="title class_">LiaoningProvince</span> <span class="keyword">implements</span> <span class="title class_">Province</span> &#123;</span><br><span class="line">   辽宁省(LiaoningCity.class);</span><br><span class="line"></span><br><span class="line">   <span class="keyword">private</span> LiaoningCity[] liaoningCities;</span><br><span class="line"></span><br><span class="line">   LiaoningProvince(Class&lt;? <span class="keyword">extends</span> <span class="title class_">LiaoningCity</span>&gt; liaoningCity) &#123;</span><br><span class="line">      liaoningCities = liaoningCity.getEnumConstants();</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="keyword">public</span> LiaoningCity[] getLiaoningCities() &#123;</span><br><span class="line">      <span class="keyword">return</span> liaoningCities;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>以上就是设计区，市，省的过程，测试方法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">package</span> com.bejond.enumregion.test;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.bejond.enumregion.District;</span><br><span class="line"><span class="keyword">import</span> com.bejond.enumregion.city.LiaoningCity;</span><br><span class="line"><span class="keyword">import</span> com.bejond.enumregion.province.LiaoningProvince;</span><br><span class="line"><span class="keyword">import</span> org.junit.Test;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.HashMap;</span><br><span class="line"><span class="keyword">import</span> java.util.Map;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Created by bejond on 4/9/16.</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">TestProvince</span> &#123;</span><br><span class="line">   <span class="meta">@Test</span></span><br><span class="line">   <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">testGetDistrictsByCityName</span><span class="params">()</span> &#123;</span><br><span class="line">      <span class="comment">/*Province province = Liaoning.大连市;</span></span><br><span class="line"><span class="comment">      for (Province city : province.getClass().getEnumConstants())</span></span><br><span class="line"><span class="comment">         Province district = city.getClass().getEnumConstants();*/</span></span><br><span class="line">      <span class="type">String</span> <span class="variable">city</span> <span class="operator">=</span> <span class="string">&quot;dalian&quot;</span>;</span><br><span class="line">      city = city.toLowerCase();</span><br><span class="line">      <span class="comment">//city = (char)(city.charAt(0) - 32) + city.substring(1);</span></span><br><span class="line">      System.out.println(city);</span><br><span class="line"></span><br><span class="line">      <span class="comment">/**</span></span><br><span class="line"><span class="comment">       * this cityMap should be done by other class or method.</span></span><br><span class="line"><span class="comment">       */</span></span><br><span class="line">      Map&lt;String, String&gt; cityMap = <span class="keyword">new</span> <span class="title class_">HashMap</span>&lt;String, String&gt;();</span><br><span class="line">      cityMap.put(<span class="string">&quot;dalian&quot;</span>, <span class="string">&quot;大连市&quot;</span>);</span><br><span class="line">      cityMap.put(<span class="string">&quot;shenyang&quot;</span>, <span class="string">&quot;沈阳市&quot;</span>);</span><br><span class="line"></span><br><span class="line">      <span class="type">String</span> <span class="variable">cityName</span> <span class="operator">=</span> cityMap.get(city);</span><br><span class="line"></span><br><span class="line">      <span class="type">LiaoningCity</span> <span class="variable">liaoningCity</span> <span class="operator">=</span> LiaoningCity.valueOf(cityName);</span><br><span class="line"></span><br><span class="line">      <span class="keyword">for</span> (District district : liaoningCity.getDistricts()) &#123;</span><br><span class="line">         System.out.println(district);</span><br><span class="line">      &#125;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="meta">@Test</span></span><br><span class="line">   <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">getDistrictsByProvinceName</span><span class="params">()</span> &#123;</span><br><span class="line">      <span class="type">String</span> <span class="variable">name</span> <span class="operator">=</span> <span class="string">&quot;liaoning&quot;</span>;</span><br><span class="line">      name = name.toLowerCase();</span><br><span class="line"></span><br><span class="line">      <span class="comment">/**</span></span><br><span class="line"><span class="comment">       * this provinceMap should be done by other class or method.</span></span><br><span class="line"><span class="comment">       */</span></span><br><span class="line">      Map&lt;String, String&gt; provinceMap = <span class="keyword">new</span> <span class="title class_">HashMap</span>&lt;String, String&gt;();</span><br><span class="line">      provinceMap.put(<span class="string">&quot;liaoning&quot;</span>, <span class="string">&quot;辽宁省&quot;</span>);</span><br><span class="line">      provinceMap.put(<span class="string">&quot;hebei&quot;</span>, <span class="string">&quot;河北省&quot;</span>);</span><br><span class="line"></span><br><span class="line">      <span class="type">String</span> <span class="variable">provinceName</span> <span class="operator">=</span> provinceMap.get(name);</span><br><span class="line"></span><br><span class="line">      <span class="type">String</span> <span class="variable">enumName</span> <span class="operator">=</span> (<span class="type">char</span>)(name.charAt(<span class="number">0</span>) - <span class="number">32</span>) + name.substring(<span class="number">1</span>) + <span class="string">&quot;Province&quot;</span>;</span><br><span class="line"></span><br><span class="line">      <span class="comment">/**</span></span><br><span class="line"><span class="comment">       * this is stupid</span></span><br><span class="line"><span class="comment">       */</span></span><br><span class="line">      <span class="keyword">if</span> (enumName.equals(LiaoningProvince.class.getSimpleName())) &#123;</span><br><span class="line">         <span class="keyword">for</span> (LiaoningProvince liaoningProvince : LiaoningProvince.values()) &#123;</span><br><span class="line">            System.out.println(liaoningProvince.name());</span><br><span class="line">            <span class="keyword">for</span> (LiaoningCity liaoningCity0 : liaoningProvince.getLiaoningCities()) &#123;</span><br><span class="line">               System.out.println(liaoningCity0.name() + <span class="string">&quot;--&quot;</span>);</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">for</span> (LiaoningCity liaoningCity : LiaoningCity.values()) &#123;</span><br><span class="line">               System.out.println(liaoningCity.name());</span><br><span class="line"></span><br><span class="line">               <span class="keyword">for</span> (District district : liaoningCity.getDistricts()) &#123;</span><br><span class="line">                  System.out.println(district);</span><br><span class="line">               &#125;</span><br><span class="line">               System.out.println();</span><br><span class="line">            &#125;</span><br><span class="line">         &#125;</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      <span class="comment">/*Province province = Province.valueOf(provinceName);</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">      for (Enum city : province.getClass().getEnumConstants()) &#123; // get cities</span></span><br><span class="line"><span class="comment">         System.out.println(city.name());</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">         for (District district : ((LiaoningCity) city).getDistricts()) &#123;</span></span><br><span class="line"><span class="comment">            System.out.println(district.toString());</span></span><br><span class="line"><span class="comment">         &#125;</span></span><br><span class="line"><span class="comment">         break;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">      &#125;*/</span></span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>getDistrictsByCityName() 的运行结果：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">dalian</span><br><span class="line"></span><br><span class="line">西岗区</span><br><span class="line"></span><br><span class="line">中山区</span><br><span class="line"></span><br><span class="line">沙河口区</span><br><span class="line"></span><br><span class="line">甘井子区</span><br><span class="line"></span><br><span class="line">旅顺口区</span><br><span class="line"></span><br><span class="line">金州区</span><br><span class="line"></span><br><span class="line">普兰店区</span><br><span class="line"></span><br><span class="line">瓦房店市</span><br><span class="line"></span><br><span class="line">庄河市</span><br><span class="line"></span><br><span class="line">长海县</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>getDistrictsByProvinceName() 的运行结果：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">辽宁省</span><br><span class="line"></span><br><span class="line">沈阳市--</span><br><span class="line"></span><br><span class="line">大连市--</span><br><span class="line"></span><br><span class="line">沈阳市</span><br><span class="line"></span><br><span class="line">沈河区</span><br><span class="line"></span><br><span class="line">和平区</span><br><span class="line"></span><br><span class="line">大东区</span><br><span class="line"></span><br><span class="line">皇姑区</span><br><span class="line"></span><br><span class="line">铁西区</span><br><span class="line"></span><br><span class="line">苏家屯区</span><br><span class="line"></span><br><span class="line">浑南区</span><br><span class="line"></span><br><span class="line">沈北新区</span><br><span class="line"></span><br><span class="line">于洪区</span><br><span class="line"></span><br><span class="line">辽中区</span><br><span class="line"></span><br><span class="line">新民市</span><br><span class="line"></span><br><span class="line">康平县</span><br><span class="line"></span><br><span class="line">法库县</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">大连市</span><br><span class="line"></span><br><span class="line">西岗区</span><br><span class="line"></span><br><span class="line">中山区</span><br><span class="line"></span><br><span class="line">沙河口区</span><br><span class="line"></span><br><span class="line">甘井子区</span><br><span class="line"></span><br><span class="line">旅顺口区</span><br><span class="line"></span><br><span class="line">金州区</span><br><span class="line"></span><br><span class="line">普兰店区</span><br><span class="line"></span><br><span class="line">瓦房店市</span><br><span class="line"></span><br><span class="line">庄河市</span><br><span class="line"></span><br><span class="line">长海县</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>所以我们可以根据“省份”下拉框来动态生成“市”的下拉框，接着“市区”下拉框。</p>
+
+        </div>
+        <!--
+        <div class="article-entry" id="busuanzi_container_page_pv">
+            阅读<span id="busuanzi_value_page_pv"></span>次
+        </div>
+        -->
+        <footer class="article-footer">
+            
+
+
+
+        </footer>
+    </div>
+</article>
+
+    <section id="comments">
+    
+    </section>
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>follow:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github-alt" href="https://github.com/bejondshao" target="_blank">
+                        <i class="icon fa fa-github-alt"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="linkedin-square" href="https://www.linkedin.com/in/bejondshao" target="_blank">
+                        <i class="icon fa fa-linkedin-square"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="music" href="https://y.qq.com/n/yqq/playlist/1609817696.html" target="_blank">
+                        <i class="icon fa fa-music"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="wechat" href="/about/wechat.html" target="_blank">
+                        <i class="icon fa fa-wechat"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2016/04/16/How-to-return-result-with-thread/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">newer</strong>
+        <p class="article-nav-title">
+        
+            How to return result with thread
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/2016/04/03/Google%E5%8F%AF%E7%94%A8%E7%9A%84%E5%9F%9F%E5%90%8D/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">Google可用的域名</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">recents</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2020/05/05/How-to-make-mac-run-shell-on-startup/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Linux/">Linux</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Linux/Mac/">Mac</a></p>
+                            <p class="item-title"><a href="/2020/05/05/How-to-make-mac-run-shell-on-startup/" class="title">How to make mac run shell on startup</a></p>
+                            <p class="item-date"><time datetime="2020-05-05T14:21:00.000Z" itemprop="datePublished">2020-05-05</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2020/03/22/%E6%97%A5%E5%86%85%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/2020/03/22/%E6%97%A5%E5%86%85%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5/1.png)" alt="日内交易策略 " class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E8%82%A1%E7%A5%A8/">股票</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%AD%96%E7%95%A5/">策略</a></p>
+                            <p class="item-title"><a href="/2020/03/22/%E6%97%A5%E5%86%85%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5/" class="title">日内交易策略 </a></p>
+                            <p class="item-date"><time datetime="2020-03-21T18:44:00.000Z" itemprop="datePublished">2020-03-22</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2020/02/25/%E8%82%A1%E7%A5%A8%E4%BA%A4%E6%98%93%E6%89%80%E6%80%9D/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E8%82%A1%E7%A5%A8/">股票</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E8%82%A1%E7%A5%A8/%E6%80%9D%E8%80%83/">思考</a></p>
+                            <p class="item-title"><a href="/2020/02/25/%E8%82%A1%E7%A5%A8%E4%BA%A4%E6%98%93%E6%89%80%E6%80%9D/" class="title">股票交易所思</a></p>
+                            <p class="item-date"><time datetime="2020-02-25T14:52:00.000Z" itemprop="datePublished">2020-02-25</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2020/02/12/SVN-Issues/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Tools/">Tools</a></p>
+                            <p class="item-title"><a href="/2020/02/12/SVN-Issues/" class="title">SVN Issues</a></p>
+                            <p class="item-date"><time datetime="2020-02-12T09:08:00.000Z" itemprop="datePublished">2020-02-12</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2020/02/04/%E5%85%B3%E4%BA%8E%E8%82%A1%E5%B8%82%E7%9A%84%E6%80%9D%E8%80%83/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E8%82%A1%E7%A5%A8/">股票</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E8%82%A1%E7%A5%A8/%E6%80%9D%E8%80%83/">思考</a></p>
+                            <p class="item-title"><a href="/2020/02/04/%E5%85%B3%E4%BA%8E%E8%82%A1%E5%B8%82%E7%9A%84%E6%80%9D%E8%80%83/" class="title">关于股市的思考</a></p>
+                            <p class="item-date"><time datetime="2020-02-04T02:46:00.000Z" itemprop="datePublished">2020-02-04</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">categories</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/DevOps/">DevOps</a><span class="category-list-count">22</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/DevOps/Keycloak/">Keycloak</a><span class="category-list-count">14</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Java/">Java</a><span class="category-list-count">35</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Java/Liferay/">Liferay</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Java/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a><span class="category-list-count">2</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">9</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/CentOS/">CentOS</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/Mac/">Mac</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/Ubuntu/">Ubuntu</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Others/">Others</a><span class="category-list-count">18</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Others/Hexo/">Hexo</a><span class="category-list-count">4</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tools/">Tools</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%82%A1%E7%A5%A8/">股票</a><span class="category-list-count">8</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E6%80%9D%E8%80%83/">思考</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%90%86%E8%AE%BA/">理论</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%9F%A5%E8%AF%86/">知识</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%AD%96%E7%95%A5/">策略</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E9%80%89%E8%82%A1/">选股</a><span class="category-list-count">2</span></li></ul></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">tag cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/Active-Directory/" style="font-size: 10px;">Active Directory</a> <a href="/tags/Backport/" style="font-size: 10px;">Backport</a> <a href="/tags/CentOS/" style="font-size: 10px;">CentOS</a> <a href="/tags/Centos/" style="font-size: 10px;">Centos</a> <a href="/tags/Command/" style="font-size: 10px;">Command</a> <a href="/tags/Consul/" style="font-size: 10px;">Consul</a> <a href="/tags/Database/" style="font-size: 11.11px;">Database</a> <a href="/tags/DevOps/" style="font-size: 17.78px;">DevOps</a> <a href="/tags/Docker/" style="font-size: 11.11px;">Docker</a> <a href="/tags/Elasticsearch/" style="font-size: 10px;">Elasticsearch</a> <a href="/tags/Encoding/" style="font-size: 10px;">Encoding</a> <a href="/tags/Firefox/" style="font-size: 10px;">Firefox</a> <a href="/tags/Google/" style="font-size: 12.22px;">Google</a> <a href="/tags/Grafana/" style="font-size: 10px;">Grafana</a> <a href="/tags/Hexo/" style="font-size: 13.33px;">Hexo</a> <a href="/tags/Hosts/" style="font-size: 11.11px;">Hosts</a> <a href="/tags/Hueman/" style="font-size: 10px;">Hueman</a> <a href="/tags/IP/" style="font-size: 10px;">IP</a> <a href="/tags/Identity-Management/" style="font-size: 10px;">Identity Management</a> <a href="/tags/Intellij/" style="font-size: 11.11px;">Intellij</a> <a href="/tags/Istio/" style="font-size: 10px;">Istio</a> <a href="/tags/JVM/" style="font-size: 14.44px;">JVM</a> <a href="/tags/Java/" style="font-size: 20px;">Java</a> <a href="/tags/Java-8/" style="font-size: 10px;">Java 8</a> <a href="/tags/Jenkins/" style="font-size: 10px;">Jenkins</a> <a href="/tags/Keycloak/" style="font-size: 18.89px;">Keycloak</a> <a href="/tags/Keycloak-proxy/" style="font-size: 10px;">Keycloak proxy</a> <a href="/tags/Kibana/" style="font-size: 10px;">Kibana</a> <a href="/tags/LDAP/" style="font-size: 13.33px;">LDAP</a> <a href="/tags/Liferay/" style="font-size: 16.67px;">Liferay</a> <a href="/tags/Linux/" style="font-size: 15.56px;">Linux</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/Maven/" style="font-size: 10px;">Maven</a> <a href="/tags/Metric-names/" style="font-size: 10px;">Metric names</a> <a href="/tags/Mybatis/" style="font-size: 11.11px;">Mybatis</a> <a href="/tags/Mysql/" style="font-size: 10px;">Mysql</a> <a href="/tags/Netty/" style="font-size: 14.44px;">Netty</a> <a href="/tags/Prometheus/" style="font-size: 10px;">Prometheus</a> <a href="/tags/Proxy/" style="font-size: 10px;">Proxy</a> <a href="/tags/Python/" style="font-size: 10px;">Python</a> <a href="/tags/SCIM/" style="font-size: 10px;">SCIM</a> <a href="/tags/SSL/" style="font-size: 10px;">SSL</a> <a href="/tags/SVN/" style="font-size: 10px;">SVN</a> <a href="/tags/Security/" style="font-size: 10px;">Security</a> <a href="/tags/Spring-cloud/" style="font-size: 10px;">Spring cloud</a> <a href="/tags/Theme/" style="font-size: 10px;">Theme</a> <a href="/tags/Threads/" style="font-size: 10px;">Threads</a> <a href="/tags/Ubuntu/" style="font-size: 10px;">Ubuntu</a> <a href="/tags/Wildfly/" style="font-size: 14.44px;">Wildfly</a> <a href="/tags/grape/" style="font-size: 11.11px;">grape</a> <a href="/tags/iPhone/" style="font-size: 10px;">iPhone</a> <a href="/tags/mac/" style="font-size: 10px;">mac</a> <a href="/tags/maven/" style="font-size: 10px;">maven</a> <a href="/tags/pandas/" style="font-size: 10px;">pandas</a> <a href="/tags/resteasy-jaxrs/" style="font-size: 10px;">resteasy-jaxrs</a> <a href="/tags/wildfly/" style="font-size: 10px;">wildfly</a> <a href="/tags/%E4%BA%A4%E6%98%93/" style="font-size: 10px;">交易</a> <a href="/tags/%E8%82%A1%E7%A5%A8/" style="font-size: 15.56px;">股票</a> <a href="/tags/%E9%80%89%E8%82%A1/" style="font-size: 10px;">选股</a>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+                </div>
+            </div>
+        </div>
+        <!-- 不蒜子游客统计 -->
+<!--
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+-->
+<footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2015 - 2023 Bejond Shao Contact Me: <a href="mailto:bejond.shao@gmail.com">bejond.shao@gmail.com</a>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a>
+                	<!--
+                	<span id="busuanzi_container_site_pv">
+    					总访问量<span id="busuanzi_value_site_pv"></span>次
+					</span>
+        			<span id="busuanzi_container_site_uv">
+		  				你是本站第<span id="busuanzi_value_site_uv"></span>位访客
+					</span>
+					-->
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+        
+
+
+    
+        
+<script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-share.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-video.min.js"></script>
+
+    
+    
+        
+<script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
+    
+    
+
+
+
+<!-- Custom Scripts -->
+
+<script src="/js/main.js"></script>
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>Centos7中搭建wildfly | Bejond IO</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="Linux,Centos,Wildfly" />
+    
+    <meta name="description" content="（一）wildfly配置 1 将wildfly文件移至&#x2F;opt目录 $ sudo mv &#x2F;tmp&#x2F;wildfly &#x2F;opt 2 创建用户。创建名为wildfly的group，创建名为wildfly的不可登录的用户，将用户加入组中。 $ sudo groupadd -r wildfly useradd -r -g wildfly -d &#x2F;opt&#x2F;wildfly -s &#x2F;sbin&#x2F;nologin wi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Centos7中搭建wildfly">
+<meta property="og:url" content="http://bejondshao.github.io/2017/11/30/Centos7%E4%B8%AD%E6%90%AD%E5%BB%BAwildfly/index.html">
+<meta property="og:site_name" content="Bejond IO">
+<meta property="og:description" content="（一）wildfly配置 1 将wildfly文件移至&#x2F;opt目录 $ sudo mv &#x2F;tmp&#x2F;wildfly &#x2F;opt 2 创建用户。创建名为wildfly的group，创建名为wildfly的不可登录的用户，将用户加入组中。 $ sudo groupadd -r wildfly useradd -r -g wildfly -d &#x2F;opt&#x2F;wildfly -s &#x2F;sbin&#x2F;nologin wi">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2017-11-30T12:00:55.000Z">
+<meta property="article:modified_time" content="2023-03-02T03:26:34.074Z">
+<meta property="article:author" content="Bejond Shao">
+<meta property="article:tag" content="Linux">
+<meta property="article:tag" content="Centos">
+<meta property="article:tag" content="Wildfly">
+<meta name="twitter:card" content="summary">
+    
+
+    
+
+    
+        <link rel="icon" href="/favicon2.png" />
+    
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/libs/titillium-web/styles.css">
+
+    
+<link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+<script src="/libs/jquery/2.0.3/jquery.min.js"></script>
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+
+    
+    
+    
+
+
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Bejond IO" type="application/atom+xml">
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">Home</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/DevOps/">DevOps</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/DevOps/Keycloak/">Keycloak</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Java/">Java</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Java/Liferay/">Liferay</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Java/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Linux/">Linux</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Linux/CentOS/">CentOS</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Linux/Mac/">Mac</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Linux/Ubuntu/">Ubuntu</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Others/">Others</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Others/Hexo/">Hexo</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Python/">Python</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Tools/">Tools</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E8%82%A1%E7%A5%A8/">股票</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E6%80%9D%E8%80%83/">思考</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%90%86%E8%AE%BA/">理论</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%9F%A5%E8%AF%86/">知识</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%AD%96%E7%95%A5/">策略</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E9%80%89%E8%82%A1/">选股</a></li></ul></li></ul>
+                                    
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" target="_blank" rel="noopener" href="http://bejond.github.io">侧聆</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/index.html">About</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/Linux/">Linux</a>
+    </h1>
+</div>
+                        <div class="main-body-content">
+                            <article id="post-Centos7中搭建wildfly" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        Centos7中搭建wildfly
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2017/11/30/Centos7%E4%B8%AD%E6%90%AD%E5%BB%BAwildfly/" class="article-date">
+            <time datetime="2017-11-30T12:00:55.000Z" itemprop="datePublished">2017-11-30</time>
+        </a>
+    </div>
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/Centos/" rel="tag">Centos</a>, <a class="tag-link-link" href="/tags/Linux/" rel="tag">Linux</a>, <a class="tag-link-link" href="/tags/Wildfly/" rel="tag">Wildfly</a>
+    </div>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <p>（一）wildfly配置</p>
+<p>1 将wildfly文件移至/opt目录<br />
+<code>$ sudo mv /tmp/wildfly /opt</code></p>
+<p>2 创建用户。创建名为wildfly的group，创建名为wildfly的不可登录的用户，将用户加入组中。<br />
+<code>$ sudo groupadd -r wildfly useradd -r -g wildfly -d /opt/wildfly -s /sbin/nologin wildfly</code></p>
+<p>3 以下都在systemd目录下执行</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ cd <span class="regexp">/opt/</span>wildfly</span><br><span class="line">$ sudo mkdir -p <span class="regexp">/etc/</span>wildfly</span><br><span class="line">$ sudo cp wildfly.conf <span class="regexp">/etc/</span>wildfly/</span><br><span class="line">$ sudo cp wildfly.service <span class="regexp">/etc/</span>systemd<span class="regexp">/system/</span></span><br><span class="line">$ sudo cp launch.sh <span class="regexp">/opt/</span>wildfly<span class="regexp">/bin/</span></span><br><span class="line">$ sudo chmod +x <span class="regexp">/opt/</span>wildfly<span class="regexp">/bin/</span>launch.sh</span><br><span class="line">$ sudo chmod +x <span class="regexp">/opt/</span>wildfly<span class="regexp">/bin/</span>standalone.sh</span><br><span class="line">$ sudo chown -R wildfly:wildfly <span class="regexp">/opt/</span>wildfly</span><br></pre></td></tr></table></figure>
+<p>4 启动/自启</p>
+<ul>
+<li>
+<p>创建服务<br />
+<code>$ sudo systemctl enable wildfly</code></p>
+</li>
+<li>
+<p>启动服务<br />
+<code>$ sudo systemctl start wildfly</code></p>
+</li>
+<li>
+<p>停止服务<br />
+<code>$ sudo systemctl stop wildfly</code></p>
+</li>
+<li>
+<p>查看服务状态<br />
+<code>$ sudo systemctl status wildfly</code></p>
+</li>
+</ul>
+<p>（二）防火墙相关配置</p>
+<ol>
+<li>
+<p>查看防火墙状态<br />
+<code>$ sudo firewall-cmd --state</code></p>
+</li>
+<li>
+<p>开启http<br />
+<code>$ sudo firewall-cmd --zone=public --permanent --add-service=http</code></p>
+</li>
+<li>
+<p>开启https<br />
+<code>$ sudo firewall-cmd --zone=public --permanent --add-service=https</code></p>
+</li>
+<li>
+<p>开放8080端口<br />
+<code>$ sudo firewall-cmd --zone=public --permanent --add-port=8080/tcp</code></p>
+</li>
+<li>
+<p>开放8443端口<br />
+<code>$ sudo firewall-cmd --zone=public --permanent --add-port=8443/tcp</code></p>
+</li>
+<li>
+<p>开启防火墙<br />
+<code>$ sudo systemctl start firewalld.service</code></p>
+</li>
+<li>
+<p>查看防火墙开放的端口<br />
+<code>$ sudo firewall-cmd --zone=public --permanent --list-ports</code></p>
+</li>
+<li>
+<p>重新加载防火墙配置<br />
+<code>$ sudo firewall-cmd --reload</code></p>
+</li>
+</ol>
+<p>Note: 如果重新加载防火墙配置没有应用配置，重启防火墙：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> sudo systemctl stop firewalld.service</span><br><span class="line"><span class="variable">$</span> sudo systemctl status firewalld.service</span><br><span class="line"><span class="variable">$</span> sudo systemctl <span class="built_in">start</span> firewalld.service</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>（三）nginx安装及网站应用配置</p>
+<p>1 安装nginx前，安装前需先安装nginx依赖PCRE</p>
+<ul>
+<li>
+<p>安装在usr/local/src目录下下载pcre(版本自行选择稳定版)。执行：<br />
+<code>$ sudo wget  http://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.40.tar.gz </code></p>
+</li>
+<li>
+<p>解压<br />
+<code>tar zxvf pcre-8.40.tar.gz</code></p>
+</li>
+<li>
+<p>进入安装目录<br />
+`$ cd pcre-8.40</p>
+</li>
+<li>
+<p>编译<br />
+<code>$ sudo ./configure</code></p>
+</li>
+<li>
+<p>安装<br />
+<code>$ sudo make &amp;&amp; make install</code></p>
+</li>
+<li>
+<p>查看版本<br />
+<code>$ pcre-config --version</code></p>
+</li>
+</ul>
+<p>2 安装nginx</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ sudo wget http:<span class="regexp">//</span>nginx.org<span class="regexp">/download/</span>nginx-<span class="number">1.6</span>.<span class="number">2</span>.tar.gz</span><br><span class="line"></span><br><span class="line">$ sudo tar zxvf nginx-<span class="number">1.6</span>.<span class="number">2</span>.tar.gz</span><br><span class="line">$ cd nginx-<span class="number">1.6</span>.<span class="number">2</span></span><br><span class="line">$ sudo .<span class="regexp">/configure --prefix=/u</span>sr<span class="regexp">/local/</span>webserver<span class="regexp">/nginx --with-http_stub_status_module --with-http_ssl_module --with-pcre=/u</span>sr<span class="regexp">/local/</span>src/pcre-<span class="number">8.40</span></span><br><span class="line">$ sudo make &amp;&amp; make install</span><br><span class="line">$ <span class="regexp">/usr/</span>local<span class="regexp">/webserver/</span>nginx<span class="regexp">/sbin/</span>nginx -v</span><br></pre></td></tr></table></figure>
+<p>3 配置nginx</p>
+<ul>
+<li>
+<p>进入目录/usr/local/webserver/nginx/conf</p>
+</li>
+<li>
+<p>相关配置nginx.conf检查配置是否正确</p>
+</li>
+<li>
+<p>启动Nginx<br />
+<code>/usr/local/webserver/nginx/sbin/nginx -t</code></p>
+</li>
+<li>
+<p>修改配置后重新加载生效<br />
+<code>/usr/local/webserver/nginx/sbin/nginxnginx -s reload</code></p>
+</li>
+<li>
+<p>重新打开日志文件<br />
+<code>nginx -s reopen</code></p>
+</li>
+<li>
+<p>测试nginx配置文件是否正确<br />
+<code>nginx -t -c /path/to/nginx.conf</code></p>
+</li>
+</ul>
+<p>4 访问站点配置nginx.conf</p>
+<figure class="highlight tp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">location /application &#123;</span><br><span class="line">proxy_pass http:<span class="comment">//127.0.0.1:8080/application;</span></span><br><span class="line">proxy_set_header Host <span class="variable">$host</span>;</span><br><span class="line"><span class="variable">$proxy_add_x_forwarded_for</span>;</span><br><span class="line">proxy_set_header <span class="keyword">X</span>-Forwarded-Proto <span class="string">&quot;https&quot;</span>;</span><br><span class="line">proxy_set_header <span class="keyword">X</span>-Forwarded-Port <span class="string">&quot;443&quot;</span>;</span><br><span class="line">proxy_set_header <span class="keyword">X</span>-SSL-Client-Cert <span class="variable">$ssl_client_cert</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>5 设置nginx服务为自启动</p>
+<p>参考<a target="_blank" rel="noopener" href="https://www.cnblogs.com/piscesLoveCc/p/5867900.html">CentOS设置Nginx开机自启动</a></p>
+
+        </div>
+        <!--
+        <div class="article-entry" id="busuanzi_container_page_pv">
+            阅读<span id="busuanzi_value_page_pv"></span>次
+        </div>
+        -->
+        <footer class="article-footer">
+            
+
+
+
+        </footer>
+    </div>
+</article>
+
+    <section id="comments">
+    
+    </section>
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>follow:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github-alt" href="https://github.com/bejondshao" target="_blank">
+                        <i class="icon fa fa-github-alt"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="linkedin-square" href="https://www.linkedin.com/in/bejondshao" target="_blank">
+                        <i class="icon fa fa-linkedin-square"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="music" href="https://y.qq.com/n/yqq/playlist/1609817696.html" target="_blank">
+                        <i class="icon fa fa-music"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="wechat" href="/about/wechat.html" target="_blank">
+                        <i class="icon fa fa-wechat"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2017/11/30/%E5%A6%82%E4%BD%95%E5%B0%86hexo%E4%B8%8Etheme%E4%BB%A3%E7%A0%81%E5%88%86%E5%BC%80%E6%8F%90%E4%BA%A4/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">newer</strong>
+        <p class="article-nav-title">
+        
+            如何将hexo与theme代码分开提交
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/2017/11/28/Netty4-x%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">Netty4.x用户指南</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">recents</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2020/05/05/How-to-make-mac-run-shell-on-startup/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Linux/">Linux</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Linux/Mac/">Mac</a></p>
+                            <p class="item-title"><a href="/2020/05/05/How-to-make-mac-run-shell-on-startup/" class="title">How to make mac run shell on startup</a></p>
+                            <p class="item-date"><time datetime="2020-05-05T14:21:00.000Z" itemprop="datePublished">2020-05-05</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2020/03/22/%E6%97%A5%E5%86%85%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/2020/03/22/%E6%97%A5%E5%86%85%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5/1.png)" alt="日内交易策略 " class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E8%82%A1%E7%A5%A8/">股票</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%AD%96%E7%95%A5/">策略</a></p>
+                            <p class="item-title"><a href="/2020/03/22/%E6%97%A5%E5%86%85%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5/" class="title">日内交易策略 </a></p>
+                            <p class="item-date"><time datetime="2020-03-21T18:44:00.000Z" itemprop="datePublished">2020-03-22</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2020/02/25/%E8%82%A1%E7%A5%A8%E4%BA%A4%E6%98%93%E6%89%80%E6%80%9D/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E8%82%A1%E7%A5%A8/">股票</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E8%82%A1%E7%A5%A8/%E6%80%9D%E8%80%83/">思考</a></p>
+                            <p class="item-title"><a href="/2020/02/25/%E8%82%A1%E7%A5%A8%E4%BA%A4%E6%98%93%E6%89%80%E6%80%9D/" class="title">股票交易所思</a></p>
+                            <p class="item-date"><time datetime="2020-02-25T14:52:00.000Z" itemprop="datePublished">2020-02-25</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2020/02/12/SVN-Issues/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Tools/">Tools</a></p>
+                            <p class="item-title"><a href="/2020/02/12/SVN-Issues/" class="title">SVN Issues</a></p>
+                            <p class="item-date"><time datetime="2020-02-12T09:08:00.000Z" itemprop="datePublished">2020-02-12</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2020/02/04/%E5%85%B3%E4%BA%8E%E8%82%A1%E5%B8%82%E7%9A%84%E6%80%9D%E8%80%83/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E8%82%A1%E7%A5%A8/">股票</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E8%82%A1%E7%A5%A8/%E6%80%9D%E8%80%83/">思考</a></p>
+                            <p class="item-title"><a href="/2020/02/04/%E5%85%B3%E4%BA%8E%E8%82%A1%E5%B8%82%E7%9A%84%E6%80%9D%E8%80%83/" class="title">关于股市的思考</a></p>
+                            <p class="item-date"><time datetime="2020-02-04T02:46:00.000Z" itemprop="datePublished">2020-02-04</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">categories</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/DevOps/">DevOps</a><span class="category-list-count">22</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/DevOps/Keycloak/">Keycloak</a><span class="category-list-count">14</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Java/">Java</a><span class="category-list-count">35</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Java/Liferay/">Liferay</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Java/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a><span class="category-list-count">2</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">9</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/CentOS/">CentOS</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/Mac/">Mac</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/Ubuntu/">Ubuntu</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Others/">Others</a><span class="category-list-count">18</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Others/Hexo/">Hexo</a><span class="category-list-count">4</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tools/">Tools</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%82%A1%E7%A5%A8/">股票</a><span class="category-list-count">8</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E6%80%9D%E8%80%83/">思考</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%90%86%E8%AE%BA/">理论</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%9F%A5%E8%AF%86/">知识</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%AD%96%E7%95%A5/">策略</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E9%80%89%E8%82%A1/">选股</a><span class="category-list-count">2</span></li></ul></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">tag cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/Active-Directory/" style="font-size: 10px;">Active Directory</a> <a href="/tags/Backport/" style="font-size: 10px;">Backport</a> <a href="/tags/CentOS/" style="font-size: 10px;">CentOS</a> <a href="/tags/Centos/" style="font-size: 10px;">Centos</a> <a href="/tags/Command/" style="font-size: 10px;">Command</a> <a href="/tags/Consul/" style="font-size: 10px;">Consul</a> <a href="/tags/Database/" style="font-size: 11.11px;">Database</a> <a href="/tags/DevOps/" style="font-size: 17.78px;">DevOps</a> <a href="/tags/Docker/" style="font-size: 11.11px;">Docker</a> <a href="/tags/Elasticsearch/" style="font-size: 10px;">Elasticsearch</a> <a href="/tags/Encoding/" style="font-size: 10px;">Encoding</a> <a href="/tags/Firefox/" style="font-size: 10px;">Firefox</a> <a href="/tags/Google/" style="font-size: 12.22px;">Google</a> <a href="/tags/Grafana/" style="font-size: 10px;">Grafana</a> <a href="/tags/Hexo/" style="font-size: 13.33px;">Hexo</a> <a href="/tags/Hosts/" style="font-size: 11.11px;">Hosts</a> <a href="/tags/Hueman/" style="font-size: 10px;">Hueman</a> <a href="/tags/IP/" style="font-size: 10px;">IP</a> <a href="/tags/Identity-Management/" style="font-size: 10px;">Identity Management</a> <a href="/tags/Intellij/" style="font-size: 11.11px;">Intellij</a> <a href="/tags/Istio/" style="font-size: 10px;">Istio</a> <a href="/tags/JVM/" style="font-size: 14.44px;">JVM</a> <a href="/tags/Java/" style="font-size: 20px;">Java</a> <a href="/tags/Java-8/" style="font-size: 10px;">Java 8</a> <a href="/tags/Jenkins/" style="font-size: 10px;">Jenkins</a> <a href="/tags/Keycloak/" style="font-size: 18.89px;">Keycloak</a> <a href="/tags/Keycloak-proxy/" style="font-size: 10px;">Keycloak proxy</a> <a href="/tags/Kibana/" style="font-size: 10px;">Kibana</a> <a href="/tags/LDAP/" style="font-size: 13.33px;">LDAP</a> <a href="/tags/Liferay/" style="font-size: 16.67px;">Liferay</a> <a href="/tags/Linux/" style="font-size: 15.56px;">Linux</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/Maven/" style="font-size: 10px;">Maven</a> <a href="/tags/Metric-names/" style="font-size: 10px;">Metric names</a> <a href="/tags/Mybatis/" style="font-size: 11.11px;">Mybatis</a> <a href="/tags/Mysql/" style="font-size: 10px;">Mysql</a> <a href="/tags/Netty/" style="font-size: 14.44px;">Netty</a> <a href="/tags/Prometheus/" style="font-size: 10px;">Prometheus</a> <a href="/tags/Proxy/" style="font-size: 10px;">Proxy</a> <a href="/tags/Python/" style="font-size: 10px;">Python</a> <a href="/tags/SCIM/" style="font-size: 10px;">SCIM</a> <a href="/tags/SSL/" style="font-size: 10px;">SSL</a> <a href="/tags/SVN/" style="font-size: 10px;">SVN</a> <a href="/tags/Security/" style="font-size: 10px;">Security</a> <a href="/tags/Spring-cloud/" style="font-size: 10px;">Spring cloud</a> <a href="/tags/Theme/" style="font-size: 10px;">Theme</a> <a href="/tags/Threads/" style="font-size: 10px;">Threads</a> <a href="/tags/Ubuntu/" style="font-size: 10px;">Ubuntu</a> <a href="/tags/Wildfly/" style="font-size: 14.44px;">Wildfly</a> <a href="/tags/grape/" style="font-size: 11.11px;">grape</a> <a href="/tags/iPhone/" style="font-size: 10px;">iPhone</a> <a href="/tags/mac/" style="font-size: 10px;">mac</a> <a href="/tags/maven/" style="font-size: 10px;">maven</a> <a href="/tags/pandas/" style="font-size: 10px;">pandas</a> <a href="/tags/resteasy-jaxrs/" style="font-size: 10px;">resteasy-jaxrs</a> <a href="/tags/wildfly/" style="font-size: 10px;">wildfly</a> <a href="/tags/%E4%BA%A4%E6%98%93/" style="font-size: 10px;">交易</a> <a href="/tags/%E8%82%A1%E7%A5%A8/" style="font-size: 15.56px;">股票</a> <a href="/tags/%E9%80%89%E8%82%A1/" style="font-size: 10px;">选股</a>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+                </div>
+            </div>
+        </div>
+        <!-- 不蒜子游客统计 -->
+<!--
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+-->
+<footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2015 - 2023 Bejond Shao Contact Me: <a href="mailto:bejond.shao@gmail.com">bejond.shao@gmail.com</a>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a>
+                	<!--
+                	<span id="busuanzi_container_site_pv">
+    					总访问量<span id="busuanzi_value_site_pv"></span>次
+					</span>
+        			<span id="busuanzi_container_site_uv">
+		  				你是本站第<span id="busuanzi_value_site_uv"></span>位访客
+					</span>
+					-->
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+        
+
+
+    
+        
+<script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-share.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-video.min.js"></script>
+
+    
+    
+        
+<script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
+    
+    
+
+
+
+<!-- Custom Scripts -->
+
+<script src="/js/main.js"></script>
+
+
+    </div>
+</body>
+</html>

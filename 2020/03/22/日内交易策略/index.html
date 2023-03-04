@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>日内交易策略  | Bejond IO</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="交易" />
+    
+    <meta name="description" content="注：该策略未经过详细回测和实操，仅提供思路，不作为投资依据。 另外，这个策略收益不稳定，可能造成得了芝麻，丢了西瓜的情况。在没有自动化交易条件下，不建议使用。 再注：投机是迷途，投资才是最终归宿。   根据具有适量流动性和适当波动性的证券的价格规律，做日内的高抛低吸，在保证扣除手续费后实现盈利。在未发生急跌或急升的情况下，每完成一个交易回合（高抛低吸）即可实现盈利。   名词介绍：  起始价格:">
+<meta property="og:type" content="article">
+<meta property="og:title" content="日内交易策略 ">
+<meta property="og:url" content="http://bejondshao.github.io/2020/03/22/%E6%97%A5%E5%86%85%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5/index.html">
+<meta property="og:site_name" content="Bejond IO">
+<meta property="og:description" content="注：该策略未经过详细回测和实操，仅提供思路，不作为投资依据。 另外，这个策略收益不稳定，可能造成得了芝麻，丢了西瓜的情况。在没有自动化交易条件下，不建议使用。 再注：投机是迷途，投资才是最终归宿。   根据具有适量流动性和适当波动性的证券的价格规律，做日内的高抛低吸，在保证扣除手续费后实现盈利。在未发生急跌或急升的情况下，每完成一个交易回合（高抛低吸）即可实现盈利。   名词介绍：  起始价格:">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://bejondshao.github.io/2020/03/22/%E6%97%A5%E5%86%85%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5/1.png">
+<meta property="article:published_time" content="2020-03-21T18:44:00.000Z">
+<meta property="article:modified_time" content="2023-03-02T03:26:34.240Z">
+<meta property="article:author" content="Bejond Shao">
+<meta property="article:tag" content="交易">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://bejondshao.github.io/2020/03/22/%E6%97%A5%E5%86%85%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5/1.png">
+    
+
+    
+
+    
+        <link rel="icon" href="/favicon2.png" />
+    
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/libs/titillium-web/styles.css">
+
+    
+<link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+<script src="/libs/jquery/2.0.3/jquery.min.js"></script>
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+
+    
+    
+    
+
+
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Bejond IO" type="application/atom+xml">
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">Home</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/DevOps/">DevOps</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/DevOps/Keycloak/">Keycloak</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Java/">Java</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Java/Liferay/">Liferay</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Java/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Linux/">Linux</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Linux/CentOS/">CentOS</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Linux/Mac/">Mac</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Linux/Ubuntu/">Ubuntu</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Others/">Others</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Others/Hexo/">Hexo</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Python/">Python</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Tools/">Tools</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E8%82%A1%E7%A5%A8/">股票</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E6%80%9D%E8%80%83/">思考</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%90%86%E8%AE%BA/">理论</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%9F%A5%E8%AF%86/">知识</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%AD%96%E7%95%A5/">策略</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E9%80%89%E8%82%A1/">选股</a></li></ul></li></ul>
+                                    
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" target="_blank" rel="noopener" href="http://bejond.github.io">侧聆</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/index.html">About</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/%E8%82%A1%E7%A5%A8/">股票</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%AD%96%E7%95%A5/">策略</a>
+    </h1>
+</div>
+                        <div class="main-body-content">
+                            <article id="post-日内交易策略" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        日内交易策略 
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2020/03/22/%E6%97%A5%E5%86%85%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5/" class="article-date">
+            <time datetime="2020-03-21T18:44:00.000Z" itemprop="datePublished">2020-03-22</time>
+        </a>
+    </div>
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/%E4%BA%A4%E6%98%93/" rel="tag">交易</a>
+    </div>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <p><strong>注：该策略未经过详细回测和实操，仅提供思路，不作为投资依据。</strong><br />
+<strong>另外，这个策略收益不稳定，可能造成得了芝麻，丢了西瓜的情况。在没有自动化交易条件下，不建议使用。</strong><br />
+<strong>再注：投机是迷途，投资才是最终归宿。</strong></p>
+<ul>
+<li>
+<p>根据具有适量流动性和适当波动性的证券的价格规律，做日内的高抛低吸，在保证扣除手续费后实现盈利。在未发生急跌或急升的情况下，每完成一个交易回合（高抛低吸）即可实现盈利。</p>
+</li>
+<li>
+<p>名词介绍：</p>
+<ul>
+<li><code>起始价格</code>: 日内交易策略的证券基准价格，理想情况下，证券价格围绕这个价格上下浮动。起始价格一般情况下日内是不会变的，特殊情况除外。</li>
+<li><code>价位间隔</code>：日内交易策略的价格浮动计量单位，一般在1%以内，比如可转债，价位间隔可以是0.25元，可以是0.5元，0.7元，1元等都可以。</li>
+<li><code>委托价格</code>：由起始价格加上或减去一个或多个价位间隔的价格，用于委托买单和卖单，实现套利。</li>
+<li><code>成交量</code>：在资金少的情况下，可以以股为单位，如100股，1000股等。资金多的情况下，可以以仓位为计量单位，比如1/4仓位，1/2仓位。</li>
+<li><code>手续费比例</code>：每次成交的手续费，比如十万分之5，百万分之5，万分之2.5等。这个手续费其实相对于套利来说微乎其微，目的是说价位间隔不可设置过小，否则获利太少意义不大。</li>
+<li><code>交易回合</code>：完成一次低价买入，高价卖出即是一个交易回合。有时候行情变化大，无法自动完成交易回合，那么在收盘时需要平衡仓位，在不受较大损失情况下，控制仓位。</li>
+</ul>
+</li>
+<li>
+<p>成本分析：</p>
+<p>假设交易<code>起始价格</code>为<code>a</code>元，<code>价位间隔</code>为<code>i</code>元，<code>成交量</code>为<code>n</code>股，<code>手续费比例</code>为<code>x</code>。则一个交易回合（低吸高抛）的收益为 <code>(a + i)n - (a - i)n - (a - i)nx - (a + i)nx = 2in - 2anx</code>。若要满足 <code>2in - 2anx &gt; 0</code>，需要满足 <code>i &gt; ax</code>。以可转债为例，a往往为100左右，这里设为100元，x则是交易手续费比例，一般为十万分之五或百万分之五，这里取十万分之五，即0.00005。代入得 <code>i &gt; 0.005</code>，即委托差值在0.005以上就可以实现盈利，盈利为 <code>2(i - 0.005)n</code>，其中n越大，即资金越多，盈利越多。</p>
+</li>
+<li>
+<p>盈利分析：</p>
+<p>在上述成本分析可看出，一个成功的交易回合的盈利为 <code>2(i - 0.005)n</code>，可见i和n越大，一个交易回合的收益就越大。当然n大到一定程度时会影响交易价格，会让其他人误认为是压单或托单，所以挂单时要分批次挂单，这个在后面最大化利润再分析。i不应过小，仅比成本多一点虽然能成交，但是收益太小，二是证券价格容易超出价格区间，就使得后续交易很被动，要么不继续参与交割，要么放弃之前的利润而向时价靠拢。</p>
+</li>
+<li>
+<p>最大利润：</p>
+</li>
+</ul>
+<p>想要获得最大利润，不能单看某个交易回合的利润，要看整个交易日的收益，即每个交易回合的利润*交易回合数量的值达到最大。交易是否能成交取决于价格波动是否达到了交易回合设定的交易价格。倘若一支证券当日处在连续上升或持续下跌的过程，那么日内交易就基本不会进行，因为价格满足不了交易区间设定的价格，就会要么卖飞，买不到筹码；要么收集了很多筹码，但没机会出手。这种情况就是非理想状态，这种情况发生得比较少，尤其是对于前期沉寂的可转债来说，很难遇见，可能几个月都是横盘，日波动范围在一到两元之间，术语叫振幅，在3%以内，这个振幅不是稳定不变的，有时候可能一下子变大，只要收盘价和基础价格差距不大，都没什么问题。就怕收盘价与基础价相差两个以上的价位间隔。我们需要做的就是在可控范围内的振幅内反复摩擦，实现套利。</p>
+<ul>
+<li>
+<p>起始价格a，价位间隔i，成交仓位的设定</p>
+<p>这三个变量就构成了日内交易模型最基本的要素，设置得合理与否直接关系模型的收益率（注：资金量不同，不方便描述，因此最大利润模型以成交仓位和收益率来计算收益，不以资金量为标准）。<br />
+   <br />
+a. <strong>1/2仓位2i委托</strong></p>
+</li>
+</ul>
+<p>假设证券是如下图波动（横轴坐标11:30和1:00应该是一起的，中间不应该有半小时，请忽略这个错误😂）：</p>
+<p><img src="/2020/03/22/%E6%97%A5%E5%86%85%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5/1.png" class="" title="理想情况下"></p>
+<p>这是较为理想的情况，股票整日波动像波浪一样，并且上下趋势明显，波动幅度不大，且高位和低位与起始价格差距相近。这种情况就可以以开盘价为起始价a，以股票以往日内高点和低点作为高点和低点来计算价位间隔i。价位间隔的计算需要根据高点和低点的差值除以2。如果不是量化交易，人工设定买卖点，则可以直接以昨日高点和低点来设定，不过设定的差距最好相同，比如0.5元。</p>
+<p>开盘前如果没有证券，则开盘可以买入1/2仓位，在有证券的前提下，在开盘后，观察证券走势，委托卖出所有的持有证券，价格为 <code>a + i</code>，并用剩余1/2的资金设定买入，价格为 <code>a - i</code>。这样能在价格高点时完成一半交易，在价格低点时，完成另一半交易。完成一个交易回合后，即实现了上述的盈利。同时继续操作。</p>
+<p>在收盘时可以根据手中证券和证券价格来判断是否进行收盘前交易。一般可保持1/2仓位，1/2资金。倘若今天价格走高，证券都出手了，可以在价格不高，且未超过<code>a + i</code>的情况下适当补仓，不一定局限于1/2仓位。同理，倘若今天价格走低，接盘满仓了，尾盘可考虑在不亏损的情况下清部分仓位。这个是应该做的，可以空仓，但是尽量不要满仓。因为对于第二日的日内交易，满仓会很被动，会影响后续的日内交易。</p>
+<p>开盘前的建仓和收盘前的控制仓位可适当放宽原则，即不考虑昨日和今日的起始价格，保证有部分筹码且未满仓，才能具有灵活性。</p>
+<p>b. <strong>1/4仓位3i委托</strong>或<strong>1/4仓位2i委托</strong></p>
+<p>如果证券是如下图波动：</p>
+<p><img src="/2020/03/22/%E6%97%A5%E5%86%85%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5/2.png" class="" title="正常情况下"></p>
+<p>这种情况是比第1种更普遍的情况，即日内波动不太明显，绝大多数是处在微小的波动中，高位低位出现的次数少。这种情况就很考验投机者的交易素养，倘若设定价位间隔i过大，就可能出现没有交易，或空仓或满仓的情况，这样就容易在尾盘不得不控制仓位而吐出今日的收益，导致没有收益。这种情况就需要缩小价位间隔i，比如0.25。这种价格的波动是可以根据以往证券价格来预判的，比如有的证券较不活跃，出现俗称织布机行情，这种情况在普通投资者看来是没有行情，但是在日内交易模式来看，是再理想不过了，只不过每次交易收益不高，需要多次操作罢了。</p>
+<p>这种行情的交易模式可如下配置：开盘保证有1/4的仓位，然后设定较小的i值，委托卖出所有证券，卖出价格为<code>a + i</code>。如果开盘有1/2的仓位，如果委托卖出所有证券，且价格较低，一旦出现放量拉升，那么就会出现踏空的情形，从而不便再接回筹码，就会很被动，很可能丧失当日甚至以后的交易机会。这种较小波动的行情，可以委托卖出已持有的1/2仓位中的一半，即1/4仓位，价格为<code>a + i</code>，然后再委托剩下的1/4仓位，价格为<code>a + 2i</code>。同时委托买单，分别为1/4的仓位，价格为<code>a - i</code>和 <code>a - 2i</code>。不难看出，当i较小时，我们的交易价格区间就变成了3i，即以<code>a + 2i</code>的价格卖出，以<code>a - i</code>价格买入；以<code>a + i</code>价格卖出，以<code>a - 2i</code>价格买入。这样就能减少踏空和较高位（<code>a -  i</code>）接盘的风险。</p>
+<p>倘若上述委托<code>a + i</code>成交，我们就可以按照程序委托买入1/4仓位，价格为<code>a - 2i</code>，所以就有了1/2仓位的<code>a - 2i</code>的买单尚未成交；同理倘若<code>a - i</code>成交，则接着委托卖出，价格为 <code>a + 2i</code>，所以就有了1/2仓位的<code>a + 2i</code>的卖单尚未成交。这样形成了堆积，会有不成交的情况，导致空仓或满仓。所以为了保险起见，可以在成交后的委托仍然以2i原则来委托：即不以i的大小为依据，成交后的委托价格差固定为2i，而不是3i。那么当1/4的<code>a + i</code>卖单成交后，立即委托1/4的<code>a - i</code>买单，保证仓位和资金的平衡。这种1/4仓位2i委托模式优点是不易踏空或接盘，缺点是收益较少。这种收益较多较少没有定论，完全是看日内波动的情况的。</p>
+<p>c. <strong>动态起始价格1/2仓位2i委托</strong></p>
+<p>如果证券是如下图波动：</p>
+<p><img src="/2020/03/22/%E6%97%A5%E5%86%85%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5/3.png" class="" title="特殊情况下"></p>
+<p>这种情况即是证券有启动的现象，在1/4或1/2仓位成交后无明显回调，资金进入趋势明显的情况，就说明日内交易失灵了，不能再按照以往的2i或3i区间模式来下买单了，这时候就要考虑调高起始价格a，重新设定交易规则，其实规则大致是不变的，只不过a在原有基础上上调到<code>a + i</code>。所以在空仓且买单<code>a - i</code>长时间未成交的情况下，就要委托<code>a + i</code>买入1/4仓位的买单，注意这个<code>a + i</code>的价格要和当前价格有一定差距，不能是立即成交的那种，否则就成了追高了。读者可能会疑问<code>a + i</code>卖出，再<code>a + i</code>买入，岂不是亏了两笔手续费？别忘了，还有一笔<code>a + 2i</code>已经成交了，所以当出现空仓未成交的情况下，说明已经有2i的盈利了，这时候那点手续费是可以忽略不计的。成大事者不拘小节，就放心的委托<code>a + i</code>买单吧。剩下的操作和前两种一样，只不过起始价格a都变为<code>a + i</code>而已。</p>
+<p>同理，如果证券价格出现大幅下跌，导致满仓，这时就要考虑降低起始价格，降低委托卖出的价格，保证1/4或者1/2资金。</p>
+<p>不论这两种情况发生了哪一种，收盘前最好保证有部分证券和部分现金，以应对第二天高开或低开的情况。<br />
+   <br />
+至于收益率，还是那句话，在i比较大时，交易次数越多，收益率就越高。这里就不计算了，因为理想总是很丰满，现实往往不尽如人意😂。这个策略就是赚个辛苦钱，别期望太高，因为每次设定都是1/4或1/2仓位，并且价格区间在价格的1%左右，所以收益不会太高。当日能有0.5%收益就不错，有1%收益就很好了。超过1%那就是运气好，晚饭可以加鸡腿了😂。当然，没有收益也很正常，甚至亏损（价格偏离预计区域了，收盘前买回或卖出）都很正常，有赚就有亏嘛。</p>
+<p><strong>补充：如果你觉得计算委托价格麻烦，有简化版本：将资金分为4，6或者8份，选择起始价格a（弱化a），将a设定为当前交易价格，设定固定的价位间隔i（牢记i），然后以<code>a + i</code>价格委托卖出1/6仓位，以<code>a + 2i</code>价格委托卖出1/6仓位，以<code>a - i</code>价格委托买入1/6仓位，以<code>a - 2i</code>价格委托买入1/6仓位，这样就剩下1/3资金（这1/3资金是应对趋势上涨或趋势下跌设定买单用的，希望用不到）。如果某一个委托成交，比如<code>a + i</code>卖出成交，获得资金，则起始价格变为当前价格，即<code>a + i</code>，反向委托，立即以<code>a</code>价格委托买入1/6仓位。如果<code>a - i</code>买入成交，获得证券，则起始价格变为当前价格，即<code>a - i</code>，反向委托，立即以<code>a</code>价格委托卖出<code>1/6</code>仓位。每一次新的委托都是以最近一次成交的反向操作。只要价格不大幅下跌，那么这个无脑委托方式会吃到每一次波动的收益。我们丝毫不需要关注目前持仓的市值是多少，盈亏多少。我们只需要在成交后做下一次委托。</strong></p>
+<p><strong>举个例子：资金4万，两百股可转债，当前价格100元，价格区间0.5元。则预先委托卖单100.998元（这个小数稍后解释），100股；卖单100.498元，100股；委托买单99.501元，100股；委托买单99.001元，100股。如果价格升到100.5元，100股卖出，换回10050元，立即委托买单，100.001元，100股。如果价格降低到100元，则买入委托成交，获得100股。则立即委托卖单，100.498元，100股。以此类推。我曾用这种无脑委托薅羊毛的方式成功在虚拟币套牢的情况下解套，并且小赚。由于资金不大，所以完全是无脑委托，毫不关注价格走势，成交就获得收益，最终解套。</strong></p>
+<p><strong>你可能注意到我委托卖单为比整数少一点100.998，委托买单比整数多一点99.501。这是因为人们都喜欢取整，所以在卖单101元会形成排队，同理在买单99.5会形成排队，我们可以用少许的价格差，轻松排在前面，预先成交。一来节省时间，二来有可能真的因为排队而没能成交，错失收益。</strong></p>
+<p><strong>这种委托方式简单无脑，弱化a，a总是变为成交的价格，牢记i，反向操作委托即可。丝毫不需要思考，只要成交，且有波动，就注定有收益。</strong></p>
+<p>再啰嗦一些：一、该日内交易策略比较适合T + 0的交易品种，因为证券和资金可日内多次使用，且满仓也容易调仓。T + 1品种慎用。二、该策略适用于交易量一般，不能太少，也不能太多的个股，价格波动较不明显，最近一段时间处于横盘阶段，没有大量资金进入流出的个股。对于右侧的个股建议拿住不动，对于左侧的个股建议清仓。</p>
+<h4 id="聊聊投资和投机"><a class="markdownIt-Anchor" href="#聊聊投资和投机"></a> 聊聊投资和投机</h4>
+<p>正常来说，投资应该是多学习，多调研，少交易。即将大多精力用于研究公司，研究对象，研究市场，预期未来数年的情况。比如股票，就是看好一个公司未来几年的发展预期。倘若我们总是盯着短期（这个短期可能是几分钟，几天，几个月，甚至一两年）股价，低买高卖，那就是投机。也就是说只要你将眼光放在股价上，进行低买高卖，不论时间长短，那就是投机。利弗莫尔就是这么区别投资和投机的，他自始至终都自认为是投机客。简单来说，投资关注的是价值，投机关注的是价格。</p>
+<p>对于投机客来说，交易时间会容易盯盘，这有很大弊端，比如无法专心工作，享受生活，做本应该做的事，做需要专注的事，比如学习等。另外盯盘过分关注每笔交易和价格波动，未持有时希望其下跌，看到上涨则有踏空焦虑；持仓时希望其上涨，下跌则有亏损焦虑。所以盯盘肯定会造成焦虑，无法集中注意力，对什么事都无法投入，提不起兴致。而实际上，这些波动和你关系真的不大，这些价格都是数以万计的参与者委托形成的，到底是涨是跌，是由他们决定的，和你看不看盘，没有一点关系。你不看盘，它按照这个趋势波动，你看盘，它还是按照这个趋势波动。你看盘这件事是没有任何收益的事，那么你为什么还要看盘，给自己徒增烦恼呢？</p>
+<p>你可能会反问，那么日内波动策略，不就是根据短期价格波动来买卖的吗？那不看盘如何操作？</p>
+<p>其实，我是推崇自动化交易的，也叫量化交易。但是目前，我关注的可转债并没有交易接口，所以无法量化交易。当然可以后来丰富日内价格波动规律，统计可转债信息，发现可投机个股。</p>
+<p>日内交易策略，应该是佛系的，无情绪的。什么意思？假设我不使用日内交易策略，那我完全不需要知道日内价格波动，交易期都不需要看盘。倘若使用日内交易策略，那么只需要根据上一交易日的高低点，收盘价，大致设定起始价格，价位间隔，双向委托价格，成交仓位而已，然后就顺其自然吧。成交了就赚个零花钱，没成交也没损失什么，不是么？设定好成交提醒，成交了，然后设定反向委托，关了手机继续工作。打开交易软件只是设定反向操作，不需要也不要关注其价格波动，不要做任何分析，不要做任何多余的调整。因为除了委托，其他的行为和思考都是多余的。倘若有交易接口，整个过程都不需要人做任何操作。这也是程序比人优秀之处，没有情感，没有思想，只按照策略规则执行。</p>
+
+        </div>
+        <!--
+        <div class="article-entry" id="busuanzi_container_page_pv">
+            阅读<span id="busuanzi_value_page_pv"></span>次
+        </div>
+        -->
+        <footer class="article-footer">
+            
+
+
+
+        </footer>
+    </div>
+</article>
+
+    <section id="comments">
+    
+    </section>
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>follow:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github-alt" href="https://github.com/bejondshao" target="_blank">
+                        <i class="icon fa fa-github-alt"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="linkedin-square" href="https://www.linkedin.com/in/bejondshao" target="_blank">
+                        <i class="icon fa fa-linkedin-square"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="music" href="https://y.qq.com/n/yqq/playlist/1609817696.html" target="_blank">
+                        <i class="icon fa fa-music"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="wechat" href="/about/wechat.html" target="_blank">
+                        <i class="icon fa fa-wechat"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2020/05/05/How-to-make-mac-run-shell-on-startup/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">newer</strong>
+        <p class="article-nav-title">
+        
+            How to make mac run shell on startup
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/2020/02/25/%E8%82%A1%E7%A5%A8%E4%BA%A4%E6%98%93%E6%89%80%E6%80%9D/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">股票交易所思</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">recents</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2020/05/05/How-to-make-mac-run-shell-on-startup/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Linux/">Linux</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Linux/Mac/">Mac</a></p>
+                            <p class="item-title"><a href="/2020/05/05/How-to-make-mac-run-shell-on-startup/" class="title">How to make mac run shell on startup</a></p>
+                            <p class="item-date"><time datetime="2020-05-05T14:21:00.000Z" itemprop="datePublished">2020-05-05</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2020/03/22/%E6%97%A5%E5%86%85%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/2020/03/22/%E6%97%A5%E5%86%85%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5/1.png)" alt="日内交易策略 " class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E8%82%A1%E7%A5%A8/">股票</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%AD%96%E7%95%A5/">策略</a></p>
+                            <p class="item-title"><a href="/2020/03/22/%E6%97%A5%E5%86%85%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5/" class="title">日内交易策略 </a></p>
+                            <p class="item-date"><time datetime="2020-03-21T18:44:00.000Z" itemprop="datePublished">2020-03-22</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2020/02/25/%E8%82%A1%E7%A5%A8%E4%BA%A4%E6%98%93%E6%89%80%E6%80%9D/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E8%82%A1%E7%A5%A8/">股票</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E8%82%A1%E7%A5%A8/%E6%80%9D%E8%80%83/">思考</a></p>
+                            <p class="item-title"><a href="/2020/02/25/%E8%82%A1%E7%A5%A8%E4%BA%A4%E6%98%93%E6%89%80%E6%80%9D/" class="title">股票交易所思</a></p>
+                            <p class="item-date"><time datetime="2020-02-25T14:52:00.000Z" itemprop="datePublished">2020-02-25</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2020/02/12/SVN-Issues/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Tools/">Tools</a></p>
+                            <p class="item-title"><a href="/2020/02/12/SVN-Issues/" class="title">SVN Issues</a></p>
+                            <p class="item-date"><time datetime="2020-02-12T09:08:00.000Z" itemprop="datePublished">2020-02-12</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2020/02/04/%E5%85%B3%E4%BA%8E%E8%82%A1%E5%B8%82%E7%9A%84%E6%80%9D%E8%80%83/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E8%82%A1%E7%A5%A8/">股票</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E8%82%A1%E7%A5%A8/%E6%80%9D%E8%80%83/">思考</a></p>
+                            <p class="item-title"><a href="/2020/02/04/%E5%85%B3%E4%BA%8E%E8%82%A1%E5%B8%82%E7%9A%84%E6%80%9D%E8%80%83/" class="title">关于股市的思考</a></p>
+                            <p class="item-date"><time datetime="2020-02-04T02:46:00.000Z" itemprop="datePublished">2020-02-04</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">categories</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/DevOps/">DevOps</a><span class="category-list-count">22</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/DevOps/Keycloak/">Keycloak</a><span class="category-list-count">14</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Java/">Java</a><span class="category-list-count">35</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Java/Liferay/">Liferay</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Java/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a><span class="category-list-count">2</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">9</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/CentOS/">CentOS</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/Mac/">Mac</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/Ubuntu/">Ubuntu</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Others/">Others</a><span class="category-list-count">18</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Others/Hexo/">Hexo</a><span class="category-list-count">4</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tools/">Tools</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%82%A1%E7%A5%A8/">股票</a><span class="category-list-count">8</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E6%80%9D%E8%80%83/">思考</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%90%86%E8%AE%BA/">理论</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%9F%A5%E8%AF%86/">知识</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%AD%96%E7%95%A5/">策略</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E9%80%89%E8%82%A1/">选股</a><span class="category-list-count">2</span></li></ul></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">tag cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/Active-Directory/" style="font-size: 10px;">Active Directory</a> <a href="/tags/Backport/" style="font-size: 10px;">Backport</a> <a href="/tags/CentOS/" style="font-size: 10px;">CentOS</a> <a href="/tags/Centos/" style="font-size: 10px;">Centos</a> <a href="/tags/Command/" style="font-size: 10px;">Command</a> <a href="/tags/Consul/" style="font-size: 10px;">Consul</a> <a href="/tags/Database/" style="font-size: 11.11px;">Database</a> <a href="/tags/DevOps/" style="font-size: 17.78px;">DevOps</a> <a href="/tags/Docker/" style="font-size: 11.11px;">Docker</a> <a href="/tags/Elasticsearch/" style="font-size: 10px;">Elasticsearch</a> <a href="/tags/Encoding/" style="font-size: 10px;">Encoding</a> <a href="/tags/Firefox/" style="font-size: 10px;">Firefox</a> <a href="/tags/Google/" style="font-size: 12.22px;">Google</a> <a href="/tags/Grafana/" style="font-size: 10px;">Grafana</a> <a href="/tags/Hexo/" style="font-size: 13.33px;">Hexo</a> <a href="/tags/Hosts/" style="font-size: 11.11px;">Hosts</a> <a href="/tags/Hueman/" style="font-size: 10px;">Hueman</a> <a href="/tags/IP/" style="font-size: 10px;">IP</a> <a href="/tags/Identity-Management/" style="font-size: 10px;">Identity Management</a> <a href="/tags/Intellij/" style="font-size: 11.11px;">Intellij</a> <a href="/tags/Istio/" style="font-size: 10px;">Istio</a> <a href="/tags/JVM/" style="font-size: 14.44px;">JVM</a> <a href="/tags/Java/" style="font-size: 20px;">Java</a> <a href="/tags/Java-8/" style="font-size: 10px;">Java 8</a> <a href="/tags/Jenkins/" style="font-size: 10px;">Jenkins</a> <a href="/tags/Keycloak/" style="font-size: 18.89px;">Keycloak</a> <a href="/tags/Keycloak-proxy/" style="font-size: 10px;">Keycloak proxy</a> <a href="/tags/Kibana/" style="font-size: 10px;">Kibana</a> <a href="/tags/LDAP/" style="font-size: 13.33px;">LDAP</a> <a href="/tags/Liferay/" style="font-size: 16.67px;">Liferay</a> <a href="/tags/Linux/" style="font-size: 15.56px;">Linux</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/Maven/" style="font-size: 10px;">Maven</a> <a href="/tags/Metric-names/" style="font-size: 10px;">Metric names</a> <a href="/tags/Mybatis/" style="font-size: 11.11px;">Mybatis</a> <a href="/tags/Mysql/" style="font-size: 10px;">Mysql</a> <a href="/tags/Netty/" style="font-size: 14.44px;">Netty</a> <a href="/tags/Prometheus/" style="font-size: 10px;">Prometheus</a> <a href="/tags/Proxy/" style="font-size: 10px;">Proxy</a> <a href="/tags/Python/" style="font-size: 10px;">Python</a> <a href="/tags/SCIM/" style="font-size: 10px;">SCIM</a> <a href="/tags/SSL/" style="font-size: 10px;">SSL</a> <a href="/tags/SVN/" style="font-size: 10px;">SVN</a> <a href="/tags/Security/" style="font-size: 10px;">Security</a> <a href="/tags/Spring-cloud/" style="font-size: 10px;">Spring cloud</a> <a href="/tags/Theme/" style="font-size: 10px;">Theme</a> <a href="/tags/Threads/" style="font-size: 10px;">Threads</a> <a href="/tags/Ubuntu/" style="font-size: 10px;">Ubuntu</a> <a href="/tags/Wildfly/" style="font-size: 14.44px;">Wildfly</a> <a href="/tags/grape/" style="font-size: 11.11px;">grape</a> <a href="/tags/iPhone/" style="font-size: 10px;">iPhone</a> <a href="/tags/mac/" style="font-size: 10px;">mac</a> <a href="/tags/maven/" style="font-size: 10px;">maven</a> <a href="/tags/pandas/" style="font-size: 10px;">pandas</a> <a href="/tags/resteasy-jaxrs/" style="font-size: 10px;">resteasy-jaxrs</a> <a href="/tags/wildfly/" style="font-size: 10px;">wildfly</a> <a href="/tags/%E4%BA%A4%E6%98%93/" style="font-size: 10px;">交易</a> <a href="/tags/%E8%82%A1%E7%A5%A8/" style="font-size: 15.56px;">股票</a> <a href="/tags/%E9%80%89%E8%82%A1/" style="font-size: 10px;">选股</a>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+                </div>
+            </div>
+        </div>
+        <!-- 不蒜子游客统计 -->
+<!--
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+-->
+<footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2015 - 2023 Bejond Shao Contact Me: <a href="mailto:bejond.shao@gmail.com">bejond.shao@gmail.com</a>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a>
+                	<!--
+                	<span id="busuanzi_container_site_pv">
+    					总访问量<span id="busuanzi_value_site_pv"></span>次
+					</span>
+        			<span id="busuanzi_container_site_uv">
+		  				你是本站第<span id="busuanzi_value_site_uv"></span>位访客
+					</span>
+					-->
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+        
+
+
+    
+        
+<script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-share.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-video.min.js"></script>
+
+    
+    
+        
+<script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
+    
+    
+
+
+
+<!-- Custom Scripts -->
+
+<script src="/js/main.js"></script>
+
+
+    </div>
+</body>
+</html>

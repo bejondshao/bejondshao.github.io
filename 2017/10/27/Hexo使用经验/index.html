@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>Category: Others | Bejond IO</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="Hexo" />
+    
+    <meta name="description" content="本文仅做使用Hexo时遇到的问题汇总，如果对你有帮助，那就有吧😅。  Hexo官方安装方式 $ npm install hexo-cli -g 注意是是普通用户，如果安装时遇到权限问题，请想尽办法解决。不要用root安装，会出各种奇怪的问题。  安装后，写好文章，在执行 hexo deploy 后,出现 error deployer not found:git 的错误。 $ npm instal">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo使用经验">
+<meta property="og:url" content="http://bejondshao.github.io/2017/10/27/Hexo%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/index.html">
+<meta property="og:site_name" content="Bejond IO">
+<meta property="og:description" content="本文仅做使用Hexo时遇到的问题汇总，如果对你有帮助，那就有吧😅。  Hexo官方安装方式 $ npm install hexo-cli -g 注意是是普通用户，如果安装时遇到权限问题，请想尽办法解决。不要用root安装，会出各种奇怪的问题。  安装后，写好文章，在执行 hexo deploy 后,出现 error deployer not found:git 的错误。 $ npm instal">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://bejondshao.github.io/2017/10/27/Hexo%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/hexo-admin_metadata.png">
+<meta property="article:published_time" content="2017-10-27T11:38:00.000Z">
+<meta property="article:modified_time" content="2023-03-04T12:21:05.303Z">
+<meta property="article:author" content="Bejond Shao">
+<meta property="article:tag" content="Hexo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://bejondshao.github.io/2017/10/27/Hexo%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/hexo-admin_metadata.png">
+    
+
+    
+
+    
+        <link rel="icon" href="/favicon2.png" />
+    
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/libs/titillium-web/styles.css">
+
+    
+<link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+<script src="/libs/jquery/2.0.3/jquery.min.js"></script>
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+
+    
+    
+    
+
+
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Bejond IO" type="application/atom+xml">
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">Home</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/DevOps/">DevOps</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/DevOps/Keycloak/">Keycloak</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Java/">Java</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Java/Liferay/">Liferay</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Java/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Linux/">Linux</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Linux/CentOS/">CentOS</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Linux/Mac/">Mac</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Linux/Ubuntu/">Ubuntu</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Others/">Others</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Others/Hexo/">Hexo</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Python/">Python</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Tools/">Tools</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E8%82%A1%E7%A5%A8/">股票</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E6%80%9D%E8%80%83/">思考</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%90%86%E8%AE%BA/">理论</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%9F%A5%E8%AF%86/">知识</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%AD%96%E7%95%A5/">策略</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E9%80%89%E8%82%A1/">选股</a></li></ul></li></ul>
+                                    
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" target="_blank" rel="noopener" href="http://bejond.github.io">侧聆</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/index.html">About</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <i class="icon fa fa-folder-open"></i>Category: <em class="page-title-link">Others</em>
+    </h1>
+</div>
+                        <div class="main-body-content">
+                            <article id="post-Hexo使用经验" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        Hexo使用经验
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2017/10/27/Hexo%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/" class="article-date">
+            <time datetime="2017-10-27T11:38:00.000Z" itemprop="datePublished">2017-10-27</time>
+        </a>
+    </div>
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/Hexo/" rel="tag">Hexo</a>
+    </div>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <p>本文仅做使用Hexo时遇到的问题汇总，如果对你有帮助，那就有吧😅。</p>
+<h5 id="hexo官方安装方式"><a class="markdownIt-Anchor" href="#hexo官方安装方式"></a> Hexo官方安装方式</h5>
+<p><code>$ npm install hexo-cli -g</code><br />
+注意是是普通用户，如果安装时遇到权限问题，请想尽办法解决。不要用root安装，会出各种奇怪的问题。</p>
+<ul>
+<li>安装后，写好文章，在执行 hexo deploy 后,出现 error deployer not found:git 的错误。<br />
+<code>$ npm install hexo-deployer-git --save</code></li>
+<li>如果hexo deploy后，输入网站域名，显示404了，但是通过url访问页面还能访问到。</li>
+</ul>
+<figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>hexo clean</span><br><span class="line"><span class="variable">$ </span>hexo g</span><br><span class="line"><span class="variable">$ </span>hexo d</span><br></pre></td></tr></table></figure>
+<p>再访问试试</p>
+<ul>
+<li>在不同系统下，比如OS X和Linux，package-lock.json是不一样的。我建议把package-lock.json加入.gitignore中。<br />
+在package-lock.json所在目录执行一下命令：</li>
+</ul>
+<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ cp package-<span class="keyword">lock</span>.json ~/package-<span class="keyword">lock</span>.json</span><br><span class="line">$ git checkout package-<span class="keyword">lock</span>.json</span><br><span class="line">$ git <span class="keyword">reset</span> package-<span class="keyword">lock</span>.json</span><br><span class="line">$ git rm <span class="comment">--cached package-lock.json</span></span><br></pre></td></tr></table></figure>
+<p>编辑 .gitignore，在末尾填入package-lock.json</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">cp</span> ~/package-lock.json .</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">rm</span> -f ~/package-lock.json</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git add .</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git commit -m <span class="string">&quot;source the text you want to add&quot;</span></span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git push origin -f <span class="built_in">source</span></span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>不同系统下，比如OS X和Linux，package.json不同，一定要保证两个环境都是用相同版本的Hexo和插件。建议都升到最新版，以后定时统一升级。</li>
+</ul>
+<h5 id="增加emoji支持"><a class="markdownIt-Anchor" href="#增加emoji支持"></a> 增加Emoji支持</h5>
+<p>使用<a target="_blank" rel="noopener" href="https://github.com/CHENXCHEN/hexo-renderer-markdown-it-plus">hexo-renderer-markdown-it-plus</a></p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm un hexo-renderer-marked <span class="comment">--save</span></span><br><span class="line">npm i hexo-renderer-markdown-<span class="keyword">it</span>-plus <span class="comment">--save</span></span><br></pre></td></tr></table></figure>
+<p>编辑_config.yml，添加</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">markdown_it_plus:</span></span><br><span class="line">    <span class="attr">highlight:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">html:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">xhtmlOut:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">breaks:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">langPrefix:</span></span><br><span class="line">    <span class="attr">linkify:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">typographer:</span></span><br><span class="line">    <span class="attr">quotes:</span> <span class="string">“”‘’</span></span><br><span class="line">    <span class="attr">pre_class:</span> <span class="string">highlight</span></span><br></pre></td></tr></table></figure>
+<p>然后到<a target="_blank" rel="noopener" href="http://emoji.muan.co/">这里</a>或<a target="_blank" rel="noopener" href="https://www.webpagefx.com/tools/emoji-cheat-sheet/">这里</a> 查找emoji code，粘贴到文章即可。<br />
+我一开始使用<strong>hexo-renderer-markdown-it</strong>插件会有两个问题，一个问题是段落之间如果不加空行，会合并成一段，也就是整篇文章都成了一段，导致以前的文章都需要作调整。二个问题是无法使用粗体标志，相信其他标志也无法完美使用，需要在<code>**</code>前加空格，很是麻烦，后来使用hexo-renderer-markdown-it-plus就没有这些问题。<br />
+But there’s another issue you might meet <code>LaTeX-incompatible input and strict mode is set to 'warn': Unicode text character &quot;符&quot; used in math mode [unicodeTextInMathMode]</code>. It is due to Unicode text between double <code>$</code>, e.g. <code>$xxx,符xxx$</code>. You might not input it intendedly. So try to add `` before and after <code>$</code> to make it not rendered.</p>
+<h5 id="hexo使用站内链接"><a class="markdownIt-Anchor" href="#hexo使用站内链接"></a> Hexo使用站内链接</h5>
+<figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">post_link</span> hello-world Hello World %&#125;</span></span><br></pre></td></tr></table></figure>
+<p>hello-world是你的文章名称。如果文章不存在，这段代码将会被直接忽略。<br />
+Hello World是要展示的文字，如果不填，默认取引用文章标题。<br />
+示例：<a href="/2015/04/10/hello-world/" title="Hello World">Hello World</a></p>
+<h5 id="hexo文章插入图片"><a class="markdownIt-Anchor" href="#hexo文章插入图片"></a> Hexo文章插入图片</h5>
+<p>详见<a href="/2016/03/23/%E5%A6%82%E4%BD%95%E5%9C%A8Hexo%E6%96%87%E7%AB%A0%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/" title="如何在Hexo文章中插入图片">如何在Hexo文章中插入图片</a></p>
+<h5 id="hexo-admin"><a class="markdownIt-Anchor" href="#hexo-admin"></a> <a target="_blank" rel="noopener" href="https://github.com/jaredly/hexo-admin">hexo-admin</a>插件，可以本地可视化编辑文章。</h5>
+<p></p>
+<ul>
+<li>hexo-admin可配置文章自定义参数，在博客_config.yml里添加</li>
+</ul>
+  <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">metadata:</span></span><br><span class="line">    <span class="attr">categories:</span> <span class="string">杂记</span></span><br><span class="line">    <span class="attr">comments:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<p>即可，需要重启hexo生效。</p>
+<img src="/2017/10/27/Hexo%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/hexo-admin_metadata.png" class="" title="Hexo-admin metadata">
+<p><code>categories</code>配置创建文章的默认类别，该属性是数组，如果想配置文章到默认的二级类别则为<code>categories: [杂记,生活]</code>。<code>comments</code>为是否开启文章评论功能，添加后即可在hexo-admin后台设定属性（comments即便不设定，如果博客开启评论功能，也是所有文章默认都开启的，这样配置则方便在hexo-admin设置某篇文章不开启comment，就不需要手动修改文章markdown文件了）。<strong>这些默认值需要通过hexo-admin方式创建文章才会设定默认值。如果是通过<code>hexo new abc</code>来创建文章，则打开hexo-admin文章这些配置默认值不生效，需要手动设定。另外使用hexo-admin创建文章还有个好处，会自动在draft里创建文章同名文件夹，可以放图片资源，在文章就可以引用了。如果文件夹里没有放图片资源，那么publish时就不会拷贝这个空文件夹到public目录下，稍微有点小遗憾😔。</strong></p>
+<ul>
+<li>Metadata功能，可以在_config.yml里添加诸如默认category的功能（因为hexo的默认category功能好像不好用）</li>
+</ul>
+<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">metadata:</span></span><br><span class="line"><span class="symbol">  categories:</span> Others</span><br></pre></td></tr></table></figure>
+<ul>
+<li>发现原来一个文章可以添加多个categories，比如：</li>
+</ul>
+<figure class="highlight ldif"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">categories</span>:</span><br><span class="line"><span class="literal">-</span> Others</span><br><span class="line"><span class="literal">-</span> SubCategory</span><br></pre></td></tr></table></figure>
+<p>其中SubCategory就是Others菜单的二级菜单。</p>
+<h5 id="hexo升级"><a class="markdownIt-Anchor" href="#hexo升级"></a> hexo升级</h5>
+<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">npm</span> update hexo</span><br><span class="line">$ <span class="built_in">npm</span> install -g --save hexo</span><br></pre></td></tr></table></figure>
+<p>会安装hexo的依赖，如果有warn提示其他包过期，需要使用<code>npm update xxx</code>方法更新包，不一定需要安装。另外需要注意package.json中使用的插件是否与当前hexo版本兼容。我一般不升级，因为升级都往往有些意料不到的问题，尤其用开源工具以及其他开源插件。不过还是要感谢做这些工具的开发者，他们是技术发展的推动者和贡献者。</p>
+<h5 id="hexo主题升级"><a class="markdownIt-Anchor" href="#hexo主题升级"></a> hexo主题升级</h5>
+<p>参考<a href="/2017/11/30/%E5%A6%82%E4%BD%95%E5%B0%86hexo%E4%B8%8Etheme%E4%BB%A3%E7%A0%81%E5%88%86%E5%BC%80%E6%8F%90%E4%BA%A4/" title="如何将hexo与theme代码分开提交">如何将hexo与theme代码分开提交</a>。</p>
+<h5 id="一键提交更新网站脚本"><a class="markdownIt-Anchor" href="#一键提交更新网站脚本"></a> 一键提交更新网站脚本</h5>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="comment"># bejondshao.github.io</span></span><br><span class="line">HOME=/root</span><br><span class="line">LOGNAME=root</span><br><span class="line">PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin</span><br><span class="line">LANG=en_US.UTF-8</span><br><span class="line">SHELL=/bin/bash</span><br><span class="line">PWD=/root</span><br><span class="line"><span class="built_in">cd</span> /absolute_path/to/bejondshao.github.io</span><br><span class="line">git status</span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&quot;source post&quot;</span></span><br><span class="line">git pull --rebase origin <span class="built_in">source</span></span><br><span class="line">git push origin <span class="built_in">source</span></span><br><span class="line">hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
+<p>存为abc.sh将文件赋予执行权限</p>
+<p><code>$ sudo chmod +x abc.sh</code></p>
+<h5 id="每日定时执行脚本"><a class="markdownIt-Anchor" href="#每日定时执行脚本"></a> 每日定时执行脚本</h5>
+<p><code>$ sudo crontab -e</code></p>
+<p>然后编辑，设定</p>
+<figure class="highlight basic"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">0 </span><span class="number">3</span> * * * /absolute_path/<span class="keyword">to</span>/script</span><br></pre></td></tr></table></figure>
+<p>每天早晨三点执行上面更新脚本。参考<a target="_blank" rel="noopener" href="https://blog.csdn.net/xingyue0422/article/details/83012000">博客</a>和<a target="_blank" rel="noopener" href="https://blog.csdn.net/iteye_4528/article/details/82033239">博客</a>。为了防止某次提交出现网络问题，可以设置每隔10分钟执行。本地测试举例：</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">*<span class="regexp">/10 * * * * /</span>bin<span class="regexp">/bash /</span>Users<span class="regexp">/alpha/</span>abc<span class="regexp">/abc.sh 2&gt;LOG_FILE &gt; /</span>Users<span class="regexp">/alpha/</span>abc/abc.txt</span><br></pre></td></tr></table></figure>
+<p><code>/bin/bash</code>是使用bash执行脚本。crontab默认使用<code>/bin/sh</code>执行脚本。如果使用默认的shell，可以这样配置：</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">*<span class="regexp">/10 * * * * /</span>Users<span class="regexp">/alpha/</span>abc<span class="regexp">/abc.sh 2&gt;LOG_FILE &gt; /</span>Users<span class="regexp">/alpha/</span>abc/abc.txt</span><br></pre></td></tr></table></figure>
+<p><code>2&gt;LOG_FILE &gt; /Users/alpha/abc/abc.txt</code>是记录脚本执行输出内容，方便查看脚本是否执行，执行的情况。</p>
+<p><strong>注意:</strong></p>
+<ul>
+<li>脚本路径需要是绝对路径，脚本内的路径可以设定PATH，但是如无必要，建议使用绝对路径。</li>
+<li>脚本里的<code>HOME, LOGNAME, PATH, LANG, SHELL, PWD</code>需要设定。不设定的话，后面的<code>hexo</code>相关的命令不会执行，即只能将源码推到资源库，但是没法更新网站。</li>
+<li>执行计划任务时电脑不可以是sleep或关机。</li>
+<li>脚本可能会有时不时无法将源码推到资源库的情况，有可能是执行<code>git pull</code>时出错，检查网络或者<code>.git/config</code>。也可能是执行<code>git push</code>出错，检查当前git用户是否有权限向资源库推送，必要时在github资源库上添加Collaborator。</li>
+</ul>
+<h5 id="hexo-server可以启动多个服务"><a class="markdownIt-Anchor" href="#hexo-server可以启动多个服务"></a> Hexo server可以启动多个服务</h5>
+<p>指定另外一个端口即可，使用命令：</p>
+<p><code>hexo s -p 4001</code></p>
+<h5 id="hexo-admin插件可以设置登录账号密码"><a class="markdownIt-Anchor" href="#hexo-admin插件可以设置登录账号密码"></a> hexo-admin插件可以设置登录账号密码</h5>
+<p>在Settings里，输入值后可以贴到_config.yml里，每次访问就需要登录。在家用不着，如果你想把hexo server部署到服务器，可以发布出去，在任意浏览器访问后台发布内容，这个功能就很有必要。</p>
+<ul>
+<li>还可以使用路由器申请DDNS，申请一个二级域名，如果有个人域名可以指向该域名。然后再开启虚拟服务器，就可以访问域名加端口，访问本机的应用，当然也可以访问到hexo-admin。省去租服务器的钱了。但是要注意，偶尔用用可以，如果做涉及到广告商业或者其他用途，被宽带商监测到会发函警告的，我见网上有人被发函了，理由就是私自架设Web服务。</li>
+</ul>
+<h5 id="comment"><a class="markdownIt-Anchor" href="#comment"></a> Comment</h5>
+<p>评论功能我以前没开启，后来想开启，大概看了有几种方式:</p>
+<ol>
+<li>第三方评论服务（Disqus，有言，多说等，优点是可注册授权，缺点是服务不稳定。）</li>
+<li>Staticman（以pull request的方式在github的资源库创建issues，好处是不需要注册登录，可手动审核评论，坏处是没法注册登录。本想使用这种方式，但是配置时官方服务失效，作罢。）</li>
+<li>git issues（有gitment, ghpages-ghcomments等，在github的资源库创建issues。其他人评论则以comment的形式出现，没有验证博主是否有权利删除他人评论。需要注册登录github。）</li>
+<li><a target="_blank" rel="noopener" href="https://valine.js.org/">Valine</a>（使用<a target="_blank" rel="noopener" href="https://leancloud.cn/">LeanCloud</a>作为数据库存储。好处是不需要注册，绝大多数Hexo主题都已支持，可以直接启动配置项即可。另外建议结合<a target="_blank" rel="noopener" href="https://github.com/DesertsP/Valine-Admin">Valine-Admin</a>一起使用，可视化管理评论。）</li>
+</ol>
+<ul>
+<li>禁用某个文章评论功能，在文章头部添加<code>comments: false</code>即可。</li>
+</ul>
+
+        </div>
+        <!--
+        <div class="article-entry" id="busuanzi_container_page_pv">
+            阅读<span id="busuanzi_value_page_pv"></span>次
+        </div>
+        -->
+        <footer class="article-footer">
+            
+
+
+
+        </footer>
+    </div>
+</article>
+
+    <section id="comments">
+    
+    </section>
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>follow:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github-alt" href="https://github.com/bejondshao" target="_blank">
+                        <i class="icon fa fa-github-alt"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="linkedin-square" href="https://www.linkedin.com/in/bejondshao" target="_blank">
+                        <i class="icon fa fa-linkedin-square"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="music" href="https://y.qq.com/n/yqq/playlist/1609817696.html" target="_blank">
+                        <i class="icon fa fa-music"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="wechat" href="/about/wechat.html" target="_blank">
+                        <i class="icon fa fa-wechat"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2017/11/01/Keycloak%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">newer</strong>
+        <p class="article-nav-title">
+        
+            Keycloak开发环境搭建
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/2017/10/27/1%E5%AE%89%E8%A3%85ubuntu%E5%90%8E%E9%9C%80%E8%A6%81%E5%81%9A%E7%9A%84%E4%BA%8B/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">安装ubuntu后需要做的事</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">recents</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2020/05/05/How-to-make-mac-run-shell-on-startup/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Linux/">Linux</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Linux/Mac/">Mac</a></p>
+                            <p class="item-title"><a href="/2020/05/05/How-to-make-mac-run-shell-on-startup/" class="title">How to make mac run shell on startup</a></p>
+                            <p class="item-date"><time datetime="2020-05-05T14:21:00.000Z" itemprop="datePublished">2020-05-05</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2020/03/22/%E6%97%A5%E5%86%85%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/2020/03/22/%E6%97%A5%E5%86%85%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5/1.png)" alt="日内交易策略 " class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E8%82%A1%E7%A5%A8/">股票</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%AD%96%E7%95%A5/">策略</a></p>
+                            <p class="item-title"><a href="/2020/03/22/%E6%97%A5%E5%86%85%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5/" class="title">日内交易策略 </a></p>
+                            <p class="item-date"><time datetime="2020-03-21T18:44:00.000Z" itemprop="datePublished">2020-03-22</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2020/02/25/%E8%82%A1%E7%A5%A8%E4%BA%A4%E6%98%93%E6%89%80%E6%80%9D/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E8%82%A1%E7%A5%A8/">股票</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E8%82%A1%E7%A5%A8/%E6%80%9D%E8%80%83/">思考</a></p>
+                            <p class="item-title"><a href="/2020/02/25/%E8%82%A1%E7%A5%A8%E4%BA%A4%E6%98%93%E6%89%80%E6%80%9D/" class="title">股票交易所思</a></p>
+                            <p class="item-date"><time datetime="2020-02-25T14:52:00.000Z" itemprop="datePublished">2020-02-25</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2020/02/12/SVN-Issues/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Tools/">Tools</a></p>
+                            <p class="item-title"><a href="/2020/02/12/SVN-Issues/" class="title">SVN Issues</a></p>
+                            <p class="item-date"><time datetime="2020-02-12T09:08:00.000Z" itemprop="datePublished">2020-02-12</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2020/02/04/%E5%85%B3%E4%BA%8E%E8%82%A1%E5%B8%82%E7%9A%84%E6%80%9D%E8%80%83/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E8%82%A1%E7%A5%A8/">股票</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E8%82%A1%E7%A5%A8/%E6%80%9D%E8%80%83/">思考</a></p>
+                            <p class="item-title"><a href="/2020/02/04/%E5%85%B3%E4%BA%8E%E8%82%A1%E5%B8%82%E7%9A%84%E6%80%9D%E8%80%83/" class="title">关于股市的思考</a></p>
+                            <p class="item-date"><time datetime="2020-02-04T02:46:00.000Z" itemprop="datePublished">2020-02-04</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">categories</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/DevOps/">DevOps</a><span class="category-list-count">22</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/DevOps/Keycloak/">Keycloak</a><span class="category-list-count">14</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Java/">Java</a><span class="category-list-count">35</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Java/Liferay/">Liferay</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Java/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a><span class="category-list-count">2</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">9</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/CentOS/">CentOS</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/Mac/">Mac</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/Ubuntu/">Ubuntu</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Others/">Others</a><span class="category-list-count">18</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Others/Hexo/">Hexo</a><span class="category-list-count">4</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tools/">Tools</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%82%A1%E7%A5%A8/">股票</a><span class="category-list-count">8</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E6%80%9D%E8%80%83/">思考</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%90%86%E8%AE%BA/">理论</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%9F%A5%E8%AF%86/">知识</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%AD%96%E7%95%A5/">策略</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E9%80%89%E8%82%A1/">选股</a><span class="category-list-count">2</span></li></ul></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">tag cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/Active-Directory/" style="font-size: 10px;">Active Directory</a> <a href="/tags/Backport/" style="font-size: 10px;">Backport</a> <a href="/tags/CentOS/" style="font-size: 10px;">CentOS</a> <a href="/tags/Centos/" style="font-size: 10px;">Centos</a> <a href="/tags/Command/" style="font-size: 10px;">Command</a> <a href="/tags/Consul/" style="font-size: 10px;">Consul</a> <a href="/tags/Database/" style="font-size: 11.11px;">Database</a> <a href="/tags/DevOps/" style="font-size: 17.78px;">DevOps</a> <a href="/tags/Docker/" style="font-size: 11.11px;">Docker</a> <a href="/tags/Elasticsearch/" style="font-size: 10px;">Elasticsearch</a> <a href="/tags/Encoding/" style="font-size: 10px;">Encoding</a> <a href="/tags/Firefox/" style="font-size: 10px;">Firefox</a> <a href="/tags/Google/" style="font-size: 12.22px;">Google</a> <a href="/tags/Grafana/" style="font-size: 10px;">Grafana</a> <a href="/tags/Hexo/" style="font-size: 13.33px;">Hexo</a> <a href="/tags/Hosts/" style="font-size: 11.11px;">Hosts</a> <a href="/tags/Hueman/" style="font-size: 10px;">Hueman</a> <a href="/tags/IP/" style="font-size: 10px;">IP</a> <a href="/tags/Identity-Management/" style="font-size: 10px;">Identity Management</a> <a href="/tags/Intellij/" style="font-size: 11.11px;">Intellij</a> <a href="/tags/Istio/" style="font-size: 10px;">Istio</a> <a href="/tags/JVM/" style="font-size: 14.44px;">JVM</a> <a href="/tags/Java/" style="font-size: 20px;">Java</a> <a href="/tags/Java-8/" style="font-size: 10px;">Java 8</a> <a href="/tags/Jenkins/" style="font-size: 10px;">Jenkins</a> <a href="/tags/Keycloak/" style="font-size: 18.89px;">Keycloak</a> <a href="/tags/Keycloak-proxy/" style="font-size: 10px;">Keycloak proxy</a> <a href="/tags/Kibana/" style="font-size: 10px;">Kibana</a> <a href="/tags/LDAP/" style="font-size: 13.33px;">LDAP</a> <a href="/tags/Liferay/" style="font-size: 16.67px;">Liferay</a> <a href="/tags/Linux/" style="font-size: 15.56px;">Linux</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/Maven/" style="font-size: 10px;">Maven</a> <a href="/tags/Metric-names/" style="font-size: 10px;">Metric names</a> <a href="/tags/Mybatis/" style="font-size: 11.11px;">Mybatis</a> <a href="/tags/Mysql/" style="font-size: 10px;">Mysql</a> <a href="/tags/Netty/" style="font-size: 14.44px;">Netty</a> <a href="/tags/Prometheus/" style="font-size: 10px;">Prometheus</a> <a href="/tags/Proxy/" style="font-size: 10px;">Proxy</a> <a href="/tags/Python/" style="font-size: 10px;">Python</a> <a href="/tags/SCIM/" style="font-size: 10px;">SCIM</a> <a href="/tags/SSL/" style="font-size: 10px;">SSL</a> <a href="/tags/SVN/" style="font-size: 10px;">SVN</a> <a href="/tags/Security/" style="font-size: 10px;">Security</a> <a href="/tags/Spring-cloud/" style="font-size: 10px;">Spring cloud</a> <a href="/tags/Theme/" style="font-size: 10px;">Theme</a> <a href="/tags/Threads/" style="font-size: 10px;">Threads</a> <a href="/tags/Ubuntu/" style="font-size: 10px;">Ubuntu</a> <a href="/tags/Wildfly/" style="font-size: 14.44px;">Wildfly</a> <a href="/tags/grape/" style="font-size: 11.11px;">grape</a> <a href="/tags/iPhone/" style="font-size: 10px;">iPhone</a> <a href="/tags/mac/" style="font-size: 10px;">mac</a> <a href="/tags/maven/" style="font-size: 10px;">maven</a> <a href="/tags/pandas/" style="font-size: 10px;">pandas</a> <a href="/tags/resteasy-jaxrs/" style="font-size: 10px;">resteasy-jaxrs</a> <a href="/tags/wildfly/" style="font-size: 10px;">wildfly</a> <a href="/tags/%E4%BA%A4%E6%98%93/" style="font-size: 10px;">交易</a> <a href="/tags/%E8%82%A1%E7%A5%A8/" style="font-size: 15.56px;">股票</a> <a href="/tags/%E9%80%89%E8%82%A1/" style="font-size: 10px;">选股</a>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+                </div>
+            </div>
+        </div>
+        <!-- 不蒜子游客统计 -->
+<!--
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+-->
+<footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2015 - 2023 Bejond Shao Contact Me: <a href="mailto:bejond.shao@gmail.com">bejond.shao@gmail.com</a>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a>
+                	<!--
+                	<span id="busuanzi_container_site_pv">
+    					总访问量<span id="busuanzi_value_site_pv"></span>次
+					</span>
+        			<span id="busuanzi_container_site_uv">
+		  				你是本站第<span id="busuanzi_value_site_uv"></span>位访客
+					</span>
+					-->
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+        
+
+
+    
+        
+<script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-share.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-video.min.js"></script>
+
+    
+    
+        
+<script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
+    
+    
+
+
+
+<!-- Custom Scripts -->
+
+<script src="/js/main.js"></script>
+
+
+    </div>
+</body>
+</html>

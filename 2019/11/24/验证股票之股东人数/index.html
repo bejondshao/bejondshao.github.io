@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>验证股票之股东人数 | Bejond IO</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="股票,选股" />
+    
+    <meta name="description" content="写文章最好的方式是立即下笔写提纲，逐渐丰富调整。没有人能在脑中构思完整的内容并一气呵成。 股价和股性没有决定性关系，没有人能百分百断定一家公司是优质的，正如我们无法百分百确定一个人是优秀的人一样。其所形成的投资理由无非是比较规律化的基本面，未来预期，财务报表，近期新闻公告，笼统的市场分析等，即便实地考察也容易被蒙蔽双眼，因为公司都尽可能的向股东展示其好的一面。所以股价和股民分析的结果往往大相径庭，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="验证股票之股东人数">
+<meta property="og:url" content="http://bejondshao.github.io/2019/11/24/%E9%AA%8C%E8%AF%81%E8%82%A1%E7%A5%A8%E4%B9%8B%E8%82%A1%E4%B8%9C%E4%BA%BA%E6%95%B0/index.html">
+<meta property="og:site_name" content="Bejond IO">
+<meta property="og:description" content="写文章最好的方式是立即下笔写提纲，逐渐丰富调整。没有人能在脑中构思完整的内容并一气呵成。 股价和股性没有决定性关系，没有人能百分百断定一家公司是优质的，正如我们无法百分百确定一个人是优秀的人一样。其所形成的投资理由无非是比较规律化的基本面，未来预期，财务报表，近期新闻公告，笼统的市场分析等，即便实地考察也容易被蒙蔽双眼，因为公司都尽可能的向股东展示其好的一面。所以股价和股民分析的结果往往大相径庭，">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://bejondshao.github.io/2019/11/24/%E9%AA%8C%E8%AF%81%E8%82%A1%E7%A5%A8%E4%B9%8B%E8%82%A1%E4%B8%9C%E4%BA%BA%E6%95%B0/%E4%B8%9C%E6%96%B9%E9%9B%A8%E8%99%B9002271_3.png">
+<meta property="article:published_time" content="2019-11-24T06:10:00.000Z">
+<meta property="article:modified_time" content="2023-03-02T03:26:34.266Z">
+<meta property="article:author" content="Bejond Shao">
+<meta property="article:tag" content="股票">
+<meta property="article:tag" content="选股">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://bejondshao.github.io/2019/11/24/%E9%AA%8C%E8%AF%81%E8%82%A1%E7%A5%A8%E4%B9%8B%E8%82%A1%E4%B8%9C%E4%BA%BA%E6%95%B0/%E4%B8%9C%E6%96%B9%E9%9B%A8%E8%99%B9002271_3.png">
+    
+
+    
+
+    
+        <link rel="icon" href="/favicon2.png" />
+    
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/libs/titillium-web/styles.css">
+
+    
+<link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+<script src="/libs/jquery/2.0.3/jquery.min.js"></script>
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+
+    
+    
+    
+
+
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Bejond IO" type="application/atom+xml">
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">Home</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/DevOps/">DevOps</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/DevOps/Keycloak/">Keycloak</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Java/">Java</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Java/Liferay/">Liferay</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Java/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Linux/">Linux</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Linux/CentOS/">CentOS</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Linux/Mac/">Mac</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Linux/Ubuntu/">Ubuntu</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Others/">Others</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Others/Hexo/">Hexo</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Python/">Python</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Tools/">Tools</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E8%82%A1%E7%A5%A8/">股票</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E6%80%9D%E8%80%83/">思考</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%90%86%E8%AE%BA/">理论</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%9F%A5%E8%AF%86/">知识</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%AD%96%E7%95%A5/">策略</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E9%80%89%E8%82%A1/">选股</a></li></ul></li></ul>
+                                    
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" target="_blank" rel="noopener" href="http://bejond.github.io">侧聆</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/index.html">About</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/%E8%82%A1%E7%A5%A8/">股票</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%90%86%E8%AE%BA/">理论</a>
+    </h1>
+</div>
+                        <div class="main-body-content">
+                            <article id="post-验证股票之股东人数" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        验证股票之股东人数
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2019/11/24/%E9%AA%8C%E8%AF%81%E8%82%A1%E7%A5%A8%E4%B9%8B%E8%82%A1%E4%B8%9C%E4%BA%BA%E6%95%B0/" class="article-date">
+            <time datetime="2019-11-24T06:10:00.000Z" itemprop="datePublished">2019-11-24</time>
+        </a>
+    </div>
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/%E8%82%A1%E7%A5%A8/" rel="tag">股票</a>, <a class="tag-link-link" href="/tags/%E9%80%89%E8%82%A1/" rel="tag">选股</a>
+    </div>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <p><em>写文章最好的方式是立即下笔写提纲，逐渐丰富调整。没有人能在脑中构思完整的内容并一气呵成。</em></p>
+<p>股价和股性没有决定性关系，没有人能百分百断定一家公司是优质的，正如我们无法百分百确定一个人是优秀的人一样。其所形成的投资理由无非是比较规律化的基本面，未来预期，财务报表，近期新闻公告，笼统的市场分析等，即便实地考察也容易被蒙蔽双眼，因为公司都尽可能的向股东展示其好的一面。所以股价和股民分析的结果往往大相径庭，股民眼中的优质公司，股价却连连走低，于是利空消息就被人所知了。而普通甚至账面一塌糊涂的公司股价却节节攀升，进而概念和利好就出来了。发现规律没？利好利空理论上会影响股价，但是这些消息往往是根据股价来产生的，这就很有趣，有点本末倒置的感觉。</p>
+<p><strong>那么股价是受什么影响的呢？归根结底就一个因素：资金。</strong> 股票就像锅里的石子，资金就像外部加热的柴火，外部加热，则每个石子温度都上升；倘若抽走柴火，那么所有的石子都会很快冷却。锅里的石子总量没有变化（即使石子数量变多也只是大石子分裂，石子总量没变），只是温度降低了。倘若没有外部加热，石子也会缓慢冷却，这是因为散热消耗，即交易手续费和印花税。分红则是将每个石子切下小部分拿走分给股东，与主题无关，这里不再赘述。</p>
+<p>既然决定股价上升的因素是涌入资金，那么这个资金势必是要从某些人的口袋里掏出来的。起带头作用的，往往是拥有大量资金的机构，散户则是根据股价的走势也好，根据财报或新闻也好，为已经拉升的股票投入更多的资金，借公司未来发展为由，期以股价攀升。投机就是如此，但凡以某个价格买入，都是认为当前价格是最便宜的，看好后市。倘若有人说，他看好一个公司是以投资的心态来买入股票的，股价越跌越买。你要远离这样的人，起码也要远离他的思想。这是在别人抽离柴火时他往上续火，与市场作对的人没有好下场，即便若干年后他等来的新的柴火，但是这段时间的资金时间损失和内心的煎熬所带来的的影响是无法用金钱衡量的。<strong>永远不要尝试抄底，永远不要左侧交易。</strong> 尝试抄底无疑和单纯女孩遇到渣男，天真的认为她会是他最后一个女人一样愚蠢。</p>
+<p>如果在交易中因追高而导致亏损，这时就需要判断是调整还是已经进入左侧。这个并没有明确的准则，只能靠个人的经验和分析来判断（这是另外一个话题，在此不方便详细论述，但是一个十分重要的话题）。但有一点可以肯定：<strong>一旦判断为左侧，不论收益或亏损多少，都要立刻出局。</strong> 这里同样有个准则：永远不要看到股票在高位下跌一些甚至下跌很多而买入。因为你不清楚是回调还是别人在出局。</p>
+<p>现在我们把精力放在找资金上。如何判断该股票现在有正在流入的资金，这不是每日在手机APP上查看某个股票当日资金流入还是流出来判断的，一是这种方式不准确；二是某一天的资金方向，甚至某一大段时间的资金方向并不能说明总体趋势（这种资金趋势是机构之间的博弈结果，到底谁输谁赢还真无法断定）；三是股票太多，每天统计太耗费精力，即便是程序量化统计，结果大概猜测也不会有什么用处。我的意思是，资金的动向，不能简单的靠量化来分析，而是通过建模，拆分为不同的特征来分析。</p>
+<p><em>注意：特征表明是可明确观察的表象。这里我使用特征一词，着重强调可观察。而到底我们观察的指标是资金流入的结果还是资金流入的原因，详细分辨还是可以得到答案的，但是指标定性并没有我们关注的资金方向重要，因此统一使用特征代替。</em></p>
+<p>那么有哪些特征表明资金正处在流入方向呢？</p>
+<h4 id="理性人股东人数变化指标偏滞后"><a class="markdownIt-Anchor" href="#理性人股东人数变化指标偏滞后"></a> 理性人股东人数变化(指标偏滞后)</h4>
+<p>受到<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/7KD_g1zYiNGqxdz13cHHGw">《理性人-股东人数的变化与股价走势》</a>一文的启发，从机构和散户的角度思考股价规律。<br />
+参考我截取的部分股东和股价规律截图：</p>
+<ul>
+<li>东方雨虹002271</li>
+</ul>
+<img src="/2019/11/24/%E9%AA%8C%E8%AF%81%E8%82%A1%E7%A5%A8%E4%B9%8B%E8%82%A1%E4%B8%9C%E4%BA%BA%E6%95%B0/%E4%B8%9C%E6%96%B9%E9%9B%A8%E8%99%B9002271_3.png" class="东方雨虹002271">
+<p>可以看到股东人数和股价呈横着的数字<code>8</code>的样式，<code>∞</code>，即股东人数多了，股价就下降。股价上升，股东人数就少。可以理解为在股价由低位到高位的过程中，机构不断吸筹，这其中出手的散户包括之前被套牢解套，包括小赚而离场的。因此股东数量变少，股价攀升。当股价到达高位时，散户从各个渠道（论坛，公众号，股吧评论，各大群，各大v推荐）发现强势股票进而介入，此时机构慢慢出货，股价进一步拉升。在出货过程中，不同机构也有不同的策略，毕竟机构人员的投机观念也不同，因此往往会形成对冲。所以就存在股价呈波浪形上扬。到达最高位，各大机构开始出货，没有那么多散户接手，因此股价暴跌。聪明的机构会通过拉高出货的方式，使股价缓慢回落。在回落过程中，总有散户看股价较最高点回落好多，以为捡到便宜而买入，这就是套牢的开始。在回落的过程中，越来越多的散户发现股票。左侧交易的人，判断股票是否值得买入一是根据最高点判断，二是根据估值判断。不论哪种判断他们都忽略了重要一点：<strong>谁也不知道股票的底在哪里，即便股票到底部也要盘整好长一段时间才会有下一次牛市。因此但凡没有启动牛市的股票，都是不值得投机的。</strong></p>
+<p>要知道，股价的推动是随着机构收集筹码而抬高股价的，这是自然规律，其实机构倒是希望以最少的价钱买最多的股票。这个时候随着机构不断收集筹码，散户不断卖出筹码，导致股票集中，甚至后来机构高度控盘，市场上已经没有多少卖出力量了，那么根据杰西 · 利弗莫尔的”阻力最小方向运动规律”，股票自然就很容易拉升了，甚至到后来没有筹码卖出，就以涨停开盘或收盘。往往到后期拉升时，会有很多散户看到股票价格稳步攀升而预测后市，不惜冒被套牢的风险追高。他们并不是投机，这是在赌博，赌自己不是最后一棒。</p>
+<p>再列出其他具有代表性的股东人数和股价的关系图：</p>
+<ul>
+<li>双汇发展000895</li>
+</ul>
+<img src="/2019/11/24/%E9%AA%8C%E8%AF%81%E8%82%A1%E7%A5%A8%E4%B9%8B%E8%82%A1%E4%B8%9C%E4%BA%BA%E6%95%B0/%E5%8F%8C%E6%B1%87%E5%8F%91%E5%B1%95000895_3.png" class="双汇发展000895">
+<p>这个票更是完美诠释了股东人数与股价变化的规律。</p>
+<ul>
+<li>东旭蓝天000040</li>
+</ul>
+<img src="/2019/11/24/%E9%AA%8C%E8%AF%81%E8%82%A1%E7%A5%A8%E4%B9%8B%E8%82%A1%E4%B8%9C%E4%BA%BA%E6%95%B0/%E4%B8%9C%E6%97%AD%E8%93%9D%E5%A4%A9000040_10.png" class="东旭蓝天000040">
+<ul>
+<li>众泰汽车000980</li>
+</ul>
+<img src="/2019/11/24/%E9%AA%8C%E8%AF%81%E8%82%A1%E7%A5%A8%E4%B9%8B%E8%82%A1%E4%B8%9C%E4%BA%BA%E6%95%B0/%E4%BC%97%E6%B3%B0%E6%B1%BD%E8%BD%A6000980_5.png" class="众泰汽车000980">
+<p>为什么股价连创新低，并且市净率已经远小于1了，股价还不拉升呢？哈哈，看到右上角股东人数了吗？有6万散户也是像你这么想的。都想不劳而获，那么谁出资金拉升呢？机构吗？机构在释放筹码，当然不会拉升。所以这只股票的下一个牛市，难以预料。</p>
+<ul>
+<li>供销大集000564</li>
+</ul>
+<img src="/2019/11/24/%E9%AA%8C%E8%AF%81%E8%82%A1%E7%A5%A8%E4%B9%8B%E8%82%A1%E4%B8%9C%E4%BA%BA%E6%95%B0/%E4%BE%9B%E9%94%80%E5%A4%A7%E9%9B%86000564_10.png" class="供销大集000564">
+<ul>
+<li>海航基础600515</li>
+</ul>
+<img src="/2019/11/24/%E9%AA%8C%E8%AF%81%E8%82%A1%E7%A5%A8%E4%B9%8B%E8%82%A1%E4%B8%9C%E4%BA%BA%E6%95%B0/%E6%B5%B7%E8%88%AA%E5%9F%BA%E7%A1%80600515_3.png" class="海航基础600515">
+<ul>
+<li>石基信息002153</li>
+</ul>
+<img src="/2019/11/24/%E9%AA%8C%E8%AF%81%E8%82%A1%E7%A5%A8%E4%B9%8B%E8%82%A1%E4%B8%9C%E4%BA%BA%E6%95%B0/%E7%9F%B3%E5%9F%BA%E4%BF%A1%E6%81%AF002153_10.png" class="石基信息002153">
+<ul>
+<li>贵州茅台600519</li>
+</ul>
+<img src="/2019/11/24/%E9%AA%8C%E8%AF%81%E8%82%A1%E7%A5%A8%E4%B9%8B%E8%82%A1%E4%B8%9C%E4%BA%BA%E6%95%B0/%E8%B4%B5%E5%B7%9E%E8%8C%85%E5%8F%B0600519_10.png" class="贵州茅台600519">
+<p>这个股东人数指标比较落后于股价，因此需要将股票提前放到关注池里，在是否值得买入时作为一个重要参考条件，甚至可以算作必要条件。因为机构在没有足够筹码时会缓慢吸筹，而缓慢吸筹的过程走势就很不明朗，也有可能底部吸筹然后埋伏而不拉升。因为在拉升的过程中，如果散户过多，解套的人过多，阻力太大。股价下跌也很常见，并不是说机构就是很厉害，他们大多是分散投机，有的甚至也深套割肉。没有哪个机构敢保证买了股票就能赚钱。</p>
+<p><strong>注意：这个指标只能用作验证买入条件是否达到，而不能用作买入的充分条件，我可以举出好多不符合这个关系的股票，甚至好多股票已经集中但是仍在在底部，这都是很常见的。</strong></p>
+<p><strong>投机的唯一准则就是：找到右侧股票，用多个验证标准来确定该股票是右侧，再买入。否则，就继续等待。</strong></p>
+<p><strong>要有空仓的定力，在机会未到时，一定要沉住气。当买入亏损时，一定要及时止损，保存实力。</strong></p>
+<p>需要注意的是，机构持股占有量与股价没有关系。我们很容易以为机构持有量增加，股价就会上扬，这只是形成记忆效应而已。机构也是人，他们的思维也只是在投机，只不过策略因人而异。因此机构买入股票并不能代表什么，股票价格是由资金方向决定的。机构有多种方式通过打压股价来吸筹。因此机构持有量增加可以作为投机的一个标的，但权重不宜过大。机构的资金量大，可以买入埋伏。而我们跟进的话就是漫长的盘整，对于投机客来说，这就是在犯错误。</p>
+<h4 id="次新股的第二牛"><a class="markdownIt-Anchor" href="#次新股的第二牛"></a> 次新股的第二牛</h4>
+<p>次新股指的是最近半年到一年半上市的股票。我们知道新股上市后往往会涨停数天，拉升很高，然后打开涨停板。股价慢慢回落，这个过程就是不断有散户进入，以为捡到便宜。的确有部分股票在打开涨停板后，盘整几天又继续拉升。但是这第二次拉升，在我看来是火中取栗，完全是在赌。新股大部分股票由机构认购，散户只是一小部分。因此打开涨停板，全国各大机构首要任务就是清仓套现，收益都在一倍以上，甚至三四倍。所以不论股价如何跌，收益率都是相当高的。处在这个时期的股票一旦下跌，少则5个点，多则数个跌停才能打开跌停板，风险实在太大。因此这几天后的拉升在我看来不是牛市，而是搏傻。一切这个时期进入的股民都是接盘侠，等待他们的将是无尽的深套。</p>
+<p>我所指的第二牛，是次新股经过数个月甚至一年的缓慢下跌，盘整，进而拉升的情形。如果开盘连连涨停算第一次牛市的话，那么这次就是第二次牛市。这第二牛是有规律可循且好掌握的。有如下几个特点：</p>
+<ol>
+<li>股票经过几个月下跌，市值比较小，通常在百亿以下，股价较发行价差距不大。</li>
+<li>刚上市股票限售股占比极大，流通股占比少。比例在5：1到9：1之间。市场流通股少，机构收集筹码就容易，可操作性更高。</li>
+<li>持股机构较少，前十股东占比大，拉升意向统一，更容易稳定进入牛市。</li>
+<li>一般一个股票牛市周期两到三年，次新股由于机构持股多，周期较短。</li>
+</ol>
+<p>选取几个样例：</p>
+<ul>
+<li>江苏新能603693</li>
+</ul>
+<img src="/2019/11/24/%E9%AA%8C%E8%AF%81%E8%82%A1%E7%A5%A8%E4%B9%8B%E8%82%A1%E4%B8%9C%E4%BA%BA%E6%95%B0/%E6%B1%9F%E8%8B%8F%E6%96%B0%E8%83%BD603693cx.png" class="">
+<p>现在处在历史最低点，十大流通股东控盘近50%，只需要加入观察池等待拉升。</p>
+<ul>
+<li>天风证券601162</li>
+</ul>
+<img src="/2019/11/24/%E9%AA%8C%E8%AF%81%E8%82%A1%E7%A5%A8%E4%B9%8B%E8%82%A1%E4%B8%9C%E4%BA%BA%E6%95%B0/%E5%A4%A9%E9%A3%8E%E8%AF%81%E5%88%B8601162cx.png" class="">
+<p>该股票在19年1月份到19年3月份进行了第二牛。目前在最低位置，等待拉升。</p>
+<ul>
+<li>密尔克卫603713</li>
+</ul>
+<img src="/2019/11/24/%E9%AA%8C%E8%AF%81%E8%82%A1%E7%A5%A8%E4%B9%8B%E8%82%A1%E4%B8%9C%E4%BA%BA%E6%95%B0/%E5%AF%86%E5%B0%94%E5%85%8B%E5%8D%AB603713cx.png" class="">
+<p>该股票在上市后6个月开启第二牛。目前位置一般，看似有第三牛的样子，但获利空间不大。</p>
+<ul>
+<li>捷佳伟创300724</li>
+</ul>
+<img src="/2019/11/24/%E9%AA%8C%E8%AF%81%E8%82%A1%E7%A5%A8%E4%B9%8B%E8%82%A1%E4%B8%9C%E4%BA%BA%E6%95%B0/%E6%8D%B7%E4%BD%B3%E4%BC%9F%E5%88%9B300724cx.png" class="">
+<p>该股上市后四个月就开启第二牛。涨幅超过100%。目前局势不明朗。</p>
+<ul>
+<li>明德生物002932</li>
+</ul>
+<img src="/2019/11/24/%E9%AA%8C%E8%AF%81%E8%82%A1%E7%A5%A8%E4%B9%8B%E8%82%A1%E4%B8%9C%E4%BA%BA%E6%95%B0/%E6%98%8E%E5%BE%B7%E7%94%9F%E7%89%A9002932cx.png" class="">
+<p>历史低位，流通股3000万，中度控盘，值得关注。</p>
+<ul>
+<li>江苏新能603693</li>
+</ul>
+<img src="/2019/11/24/%E9%AA%8C%E8%AF%81%E8%82%A1%E7%A5%A8%E4%B9%8B%E8%82%A1%E4%B8%9C%E4%BA%BA%E6%95%B0/%E6%B1%9F%E8%8B%8F%E6%96%B0%E8%83%BD603693cx.png" class="">
+<p>历史低位，中度控盘，值得关注。</p>
+<ul>
+<li>长飞光纤601869</li>
+</ul>
+<img src="/2019/11/24/%E9%AA%8C%E8%AF%81%E8%82%A1%E7%A5%A8%E4%B9%8B%E8%82%A1%E4%B8%9C%E4%BA%BA%E6%95%B0/%E9%95%BF%E9%A3%9E%E5%85%89%E7%BA%A4601869cx.png" class="">
+<p>历史低位，注意前十大股东，武汉瑞图，武汉瑞腾，武汉瑞鸿，明显的分散持股，拉升意图明显，重点关注。</p>
+<p>以上总结两种关于股东人数与股价的关系的案例，目的是验证股票的右侧真伪。投机就要右侧交易，我们应该借着机构抬轿子的机会，坐轿子。不应过早介入，也不要贪图最后的收益，我认为最好的卖出时机在高位的拉高出货，换手率尤其高的时候。为了保险起见，确定买入时，先拿一小部分资金试水（由于A股T+1机制，不要一天两次买入，因为买入无法当天割肉，更不要第一次就全仓买入。）。当股价上涨后，第二天再小部分资金买入。买入的手续费很少，因为不舍得浪费那5元手续费而大笔买入，是相当愚蠢的行为。</p>
+<p><strong>保住本金，机会遍地都是，缺的是发现机会的眼睛。不要碰到只股票就以为是机会，很有可能是陷阱。</strong></p>
+<p><em>本文编辑于2019年11月24日</em></p>
+
+        </div>
+        <!--
+        <div class="article-entry" id="busuanzi_container_page_pv">
+            阅读<span id="busuanzi_value_page_pv"></span>次
+        </div>
+        -->
+        <footer class="article-footer">
+            
+
+
+
+        </footer>
+    </div>
+</article>
+
+    <section id="comments">
+    
+    </section>
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>follow:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github-alt" href="https://github.com/bejondshao" target="_blank">
+                        <i class="icon fa fa-github-alt"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="linkedin-square" href="https://www.linkedin.com/in/bejondshao" target="_blank">
+                        <i class="icon fa fa-linkedin-square"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="music" href="https://y.qq.com/n/yqq/playlist/1609817696.html" target="_blank">
+                        <i class="icon fa fa-music"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="wechat" href="/about/wechat.html" target="_blank">
+                        <i class="icon fa fa-wechat"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2020/01/05/grape%E8%82%A1%E7%A5%A8%E5%88%97%E8%A1%A8-2020/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">newer</strong>
+        <p class="article-nav-title">
+        
+            grape股票列表-2020
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/2019/11/17/%E8%82%A1%E7%A5%A8%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">股票基本概念</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">recents</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2020/05/05/How-to-make-mac-run-shell-on-startup/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Linux/">Linux</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Linux/Mac/">Mac</a></p>
+                            <p class="item-title"><a href="/2020/05/05/How-to-make-mac-run-shell-on-startup/" class="title">How to make mac run shell on startup</a></p>
+                            <p class="item-date"><time datetime="2020-05-05T14:21:00.000Z" itemprop="datePublished">2020-05-05</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2020/03/22/%E6%97%A5%E5%86%85%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/2020/03/22/%E6%97%A5%E5%86%85%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5/1.png)" alt="日内交易策略 " class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E8%82%A1%E7%A5%A8/">股票</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%AD%96%E7%95%A5/">策略</a></p>
+                            <p class="item-title"><a href="/2020/03/22/%E6%97%A5%E5%86%85%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5/" class="title">日内交易策略 </a></p>
+                            <p class="item-date"><time datetime="2020-03-21T18:44:00.000Z" itemprop="datePublished">2020-03-22</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2020/02/25/%E8%82%A1%E7%A5%A8%E4%BA%A4%E6%98%93%E6%89%80%E6%80%9D/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E8%82%A1%E7%A5%A8/">股票</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E8%82%A1%E7%A5%A8/%E6%80%9D%E8%80%83/">思考</a></p>
+                            <p class="item-title"><a href="/2020/02/25/%E8%82%A1%E7%A5%A8%E4%BA%A4%E6%98%93%E6%89%80%E6%80%9D/" class="title">股票交易所思</a></p>
+                            <p class="item-date"><time datetime="2020-02-25T14:52:00.000Z" itemprop="datePublished">2020-02-25</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2020/02/12/SVN-Issues/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Tools/">Tools</a></p>
+                            <p class="item-title"><a href="/2020/02/12/SVN-Issues/" class="title">SVN Issues</a></p>
+                            <p class="item-date"><time datetime="2020-02-12T09:08:00.000Z" itemprop="datePublished">2020-02-12</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2020/02/04/%E5%85%B3%E4%BA%8E%E8%82%A1%E5%B8%82%E7%9A%84%E6%80%9D%E8%80%83/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E8%82%A1%E7%A5%A8/">股票</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E8%82%A1%E7%A5%A8/%E6%80%9D%E8%80%83/">思考</a></p>
+                            <p class="item-title"><a href="/2020/02/04/%E5%85%B3%E4%BA%8E%E8%82%A1%E5%B8%82%E7%9A%84%E6%80%9D%E8%80%83/" class="title">关于股市的思考</a></p>
+                            <p class="item-date"><time datetime="2020-02-04T02:46:00.000Z" itemprop="datePublished">2020-02-04</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">categories</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/DevOps/">DevOps</a><span class="category-list-count">22</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/DevOps/Keycloak/">Keycloak</a><span class="category-list-count">14</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Java/">Java</a><span class="category-list-count">35</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Java/Liferay/">Liferay</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Java/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a><span class="category-list-count">2</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">9</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/CentOS/">CentOS</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/Mac/">Mac</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/Ubuntu/">Ubuntu</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Others/">Others</a><span class="category-list-count">18</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Others/Hexo/">Hexo</a><span class="category-list-count">4</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tools/">Tools</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%82%A1%E7%A5%A8/">股票</a><span class="category-list-count">8</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E6%80%9D%E8%80%83/">思考</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%90%86%E8%AE%BA/">理论</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%9F%A5%E8%AF%86/">知识</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%AD%96%E7%95%A5/">策略</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E9%80%89%E8%82%A1/">选股</a><span class="category-list-count">2</span></li></ul></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">tag cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/Active-Directory/" style="font-size: 10px;">Active Directory</a> <a href="/tags/Backport/" style="font-size: 10px;">Backport</a> <a href="/tags/CentOS/" style="font-size: 10px;">CentOS</a> <a href="/tags/Centos/" style="font-size: 10px;">Centos</a> <a href="/tags/Command/" style="font-size: 10px;">Command</a> <a href="/tags/Consul/" style="font-size: 10px;">Consul</a> <a href="/tags/Database/" style="font-size: 11.11px;">Database</a> <a href="/tags/DevOps/" style="font-size: 17.78px;">DevOps</a> <a href="/tags/Docker/" style="font-size: 11.11px;">Docker</a> <a href="/tags/Elasticsearch/" style="font-size: 10px;">Elasticsearch</a> <a href="/tags/Encoding/" style="font-size: 10px;">Encoding</a> <a href="/tags/Firefox/" style="font-size: 10px;">Firefox</a> <a href="/tags/Google/" style="font-size: 12.22px;">Google</a> <a href="/tags/Grafana/" style="font-size: 10px;">Grafana</a> <a href="/tags/Hexo/" style="font-size: 13.33px;">Hexo</a> <a href="/tags/Hosts/" style="font-size: 11.11px;">Hosts</a> <a href="/tags/Hueman/" style="font-size: 10px;">Hueman</a> <a href="/tags/IP/" style="font-size: 10px;">IP</a> <a href="/tags/Identity-Management/" style="font-size: 10px;">Identity Management</a> <a href="/tags/Intellij/" style="font-size: 11.11px;">Intellij</a> <a href="/tags/Istio/" style="font-size: 10px;">Istio</a> <a href="/tags/JVM/" style="font-size: 14.44px;">JVM</a> <a href="/tags/Java/" style="font-size: 20px;">Java</a> <a href="/tags/Java-8/" style="font-size: 10px;">Java 8</a> <a href="/tags/Jenkins/" style="font-size: 10px;">Jenkins</a> <a href="/tags/Keycloak/" style="font-size: 18.89px;">Keycloak</a> <a href="/tags/Keycloak-proxy/" style="font-size: 10px;">Keycloak proxy</a> <a href="/tags/Kibana/" style="font-size: 10px;">Kibana</a> <a href="/tags/LDAP/" style="font-size: 13.33px;">LDAP</a> <a href="/tags/Liferay/" style="font-size: 16.67px;">Liferay</a> <a href="/tags/Linux/" style="font-size: 15.56px;">Linux</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/Maven/" style="font-size: 10px;">Maven</a> <a href="/tags/Metric-names/" style="font-size: 10px;">Metric names</a> <a href="/tags/Mybatis/" style="font-size: 11.11px;">Mybatis</a> <a href="/tags/Mysql/" style="font-size: 10px;">Mysql</a> <a href="/tags/Netty/" style="font-size: 14.44px;">Netty</a> <a href="/tags/Prometheus/" style="font-size: 10px;">Prometheus</a> <a href="/tags/Proxy/" style="font-size: 10px;">Proxy</a> <a href="/tags/Python/" style="font-size: 10px;">Python</a> <a href="/tags/SCIM/" style="font-size: 10px;">SCIM</a> <a href="/tags/SSL/" style="font-size: 10px;">SSL</a> <a href="/tags/SVN/" style="font-size: 10px;">SVN</a> <a href="/tags/Security/" style="font-size: 10px;">Security</a> <a href="/tags/Spring-cloud/" style="font-size: 10px;">Spring cloud</a> <a href="/tags/Theme/" style="font-size: 10px;">Theme</a> <a href="/tags/Threads/" style="font-size: 10px;">Threads</a> <a href="/tags/Ubuntu/" style="font-size: 10px;">Ubuntu</a> <a href="/tags/Wildfly/" style="font-size: 14.44px;">Wildfly</a> <a href="/tags/grape/" style="font-size: 11.11px;">grape</a> <a href="/tags/iPhone/" style="font-size: 10px;">iPhone</a> <a href="/tags/mac/" style="font-size: 10px;">mac</a> <a href="/tags/maven/" style="font-size: 10px;">maven</a> <a href="/tags/pandas/" style="font-size: 10px;">pandas</a> <a href="/tags/resteasy-jaxrs/" style="font-size: 10px;">resteasy-jaxrs</a> <a href="/tags/wildfly/" style="font-size: 10px;">wildfly</a> <a href="/tags/%E4%BA%A4%E6%98%93/" style="font-size: 10px;">交易</a> <a href="/tags/%E8%82%A1%E7%A5%A8/" style="font-size: 15.56px;">股票</a> <a href="/tags/%E9%80%89%E8%82%A1/" style="font-size: 10px;">选股</a>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+                </div>
+            </div>
+        </div>
+        <!-- 不蒜子游客统计 -->
+<!--
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+-->
+<footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2015 - 2023 Bejond Shao Contact Me: <a href="mailto:bejond.shao@gmail.com">bejond.shao@gmail.com</a>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a>
+                	<!--
+                	<span id="busuanzi_container_site_pv">
+    					总访问量<span id="busuanzi_value_site_pv"></span>次
+					</span>
+        			<span id="busuanzi_container_site_uv">
+		  				你是本站第<span id="busuanzi_value_site_uv"></span>位访客
+					</span>
+					-->
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+        
+
+
+    
+        
+<script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-share.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-video.min.js"></script>
+
+    
+    
+        
+<script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
+    
+    
+
+
+
+<!-- Custom Scripts -->
+
+<script src="/js/main.js"></script>
+
+
+    </div>
+</body>
+</html>

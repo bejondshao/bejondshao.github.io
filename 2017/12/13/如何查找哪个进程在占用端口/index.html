@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>如何查找哪个进程在占用端口 | Bejond IO</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="Linux,Command" />
+    
+    <meta name="description" content="原文  netstat: 展示网络连接，路由表，网络接口数据。 fuser: 标识占用文件或端口的进程。 lsof: 展示被打开的文件以及占用文件的进程。 &#x2F;proc&#x2F;$pid&#x2F;: Note: 普通用户只能查询到当前用户运行的进程，建议以root用户执行。   netstat $ netstat -tulpn 部分结果： 1234567891011bejond@bejond-HP:~$ netst">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何查找哪个进程在占用端口">
+<meta property="og:url" content="http://bejondshao.github.io/2017/12/13/%E5%A6%82%E4%BD%95%E6%9F%A5%E6%89%BE%E5%93%AA%E4%B8%AA%E8%BF%9B%E7%A8%8B%E5%9C%A8%E5%8D%A0%E7%94%A8%E7%AB%AF%E5%8F%A3/index.html">
+<meta property="og:site_name" content="Bejond IO">
+<meta property="og:description" content="原文  netstat: 展示网络连接，路由表，网络接口数据。 fuser: 标识占用文件或端口的进程。 lsof: 展示被打开的文件以及占用文件的进程。 &#x2F;proc&#x2F;$pid&#x2F;: Note: 普通用户只能查询到当前用户运行的进程，建议以root用户执行。   netstat $ netstat -tulpn 部分结果： 1234567891011bejond@bejond-HP:~$ netst">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2017-12-13T11:11:22.000Z">
+<meta property="article:modified_time" content="2023-03-02T03:26:34.237Z">
+<meta property="article:author" content="Bejond Shao">
+<meta property="article:tag" content="Linux">
+<meta property="article:tag" content="Command">
+<meta name="twitter:card" content="summary">
+    
+
+    
+
+    
+        <link rel="icon" href="/favicon2.png" />
+    
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/libs/titillium-web/styles.css">
+
+    
+<link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+<script src="/libs/jquery/2.0.3/jquery.min.js"></script>
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+
+    
+    
+    
+
+
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Bejond IO" type="application/atom+xml">
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">Home</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/DevOps/">DevOps</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/DevOps/Keycloak/">Keycloak</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Java/">Java</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Java/Liferay/">Liferay</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Java/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Linux/">Linux</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Linux/CentOS/">CentOS</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Linux/Mac/">Mac</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Linux/Ubuntu/">Ubuntu</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Others/">Others</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Others/Hexo/">Hexo</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Python/">Python</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Tools/">Tools</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E8%82%A1%E7%A5%A8/">股票</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E6%80%9D%E8%80%83/">思考</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%90%86%E8%AE%BA/">理论</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%9F%A5%E8%AF%86/">知识</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%AD%96%E7%95%A5/">策略</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E9%80%89%E8%82%A1/">选股</a></li></ul></li></ul>
+                                    
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" target="_blank" rel="noopener" href="http://bejond.github.io">侧聆</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/index.html">About</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/Linux/">Linux</a>
+    </h1>
+</div>
+                        <div class="main-body-content">
+                            <article id="post-如何查找哪个进程在占用端口" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        如何查找哪个进程在占用端口
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2017/12/13/%E5%A6%82%E4%BD%95%E6%9F%A5%E6%89%BE%E5%93%AA%E4%B8%AA%E8%BF%9B%E7%A8%8B%E5%9C%A8%E5%8D%A0%E7%94%A8%E7%AB%AF%E5%8F%A3/" class="article-date">
+            <time datetime="2017-12-13T11:11:22.000Z" itemprop="datePublished">2017-12-13</time>
+        </a>
+    </div>
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/Command/" rel="tag">Command</a>, <a class="tag-link-link" href="/tags/Linux/" rel="tag">Linux</a>
+    </div>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <p><a target="_blank" rel="noopener" href="https://www.cyberciti.biz/faq/what-process-has-open-linux-port/">原文</a></p>
+<ul>
+<li><strong>netstat</strong>: 展示网络连接，路由表，网络接口数据。</li>
+<li><strong>fuser</strong>: 标识占用文件或端口的进程。</li>
+<li><strong>lsof</strong>: 展示被打开的文件以及占用文件的进程。</li>
+<li><strong>/proc/$pid/</strong>:<br />
+Note: 普通用户只能查询到当前用户运行的进程，建议以root用户执行。</li>
+</ul>
+<h5 id="netstat"><a class="markdownIt-Anchor" href="#netstat"></a> netstat</h5>
+<p><code>$ netstat -tulpn</code><br />
+部分结果：</p>
+<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">bejond@bejond-HP:~$ netstat -tulpn</span><br><span class="line">(<span class="keyword">Not</span> <span class="keyword">all</span> processes could be identified, non-<span class="keyword">owned</span> process <span class="keyword">info</span></span><br><span class="line"> will <span class="keyword">not</span> be shown, you would have <span class="keyword">to</span> be root <span class="keyword">to</span> see it <span class="keyword">all</span>.)</span><br><span class="line">Active Internet connections (<span class="keyword">only</span> servers)</span><br><span class="line">Proto Recv-Q Send-Q <span class="keyword">Local</span> Address           <span class="keyword">Foreign</span> Address         State       PID/Program <span class="type">name</span>    </span><br><span class="line">tcp        <span class="number">0</span>      <span class="number">0</span> <span class="number">0.0</span><span class="number">.0</span><span class="number">.0</span>:<span class="number">35421</span>           <span class="number">0.0</span><span class="number">.0</span><span class="number">.0</span>:*               <span class="keyword">LISTEN</span>      <span class="number">12779</span>/java          </span><br><span class="line">tcp        <span class="number">0</span>      <span class="number">0</span> <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span>:<span class="number">19645</span>         <span class="number">0.0</span><span class="number">.0</span><span class="number">.0</span>:*               <span class="keyword">LISTEN</span>      <span class="number">1277</span>/python         </span><br><span class="line">tcp        <span class="number">0</span>      <span class="number">0</span> <span class="number">0.0</span><span class="number">.0</span><span class="number">.0</span>:<span class="number">445</span>             <span class="number">0.0</span><span class="number">.0</span><span class="number">.0</span>:*               <span class="keyword">LISTEN</span>      -                   </span><br><span class="line">tcp        <span class="number">0</span>      <span class="number">0</span> <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span>:<span class="number">6942</span>          <span class="number">0.0</span><span class="number">.0</span><span class="number">.0</span>:*               <span class="keyword">LISTEN</span>      <span class="number">12779</span>/java          </span><br><span class="line">tcp        <span class="number">0</span>      <span class="number">0</span> <span class="number">0.0</span><span class="number">.0</span><span class="number">.0</span>:<span class="number">34303</span>           <span class="number">0.0</span><span class="number">.0</span><span class="number">.0</span>:*               <span class="keyword">LISTEN</span>      <span class="number">12779</span>/java          </span><br><span class="line">tcp        <span class="number">0</span>      <span class="number">0</span> <span class="number">0.0</span><span class="number">.0</span><span class="number">.0</span>:<span class="number">8643</span>            <span class="number">0.0</span><span class="number">.0</span><span class="number">.0</span>:*               <span class="keyword">LISTEN</span>      <span class="number">16031</span>/java          </span><br></pre></td></tr></table></figure>
+<p>可以使用<code>grep</code>过滤：<br />
+<code>$ netstat -tulpn | grep 8643</code></p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">bejond@bejond-HP:~$ netstat -tulpn | <span class="keyword">grep</span> <span class="number">8643</span></span><br><span class="line">(Not <span class="keyword">all</span> processes could <span class="keyword">be</span> identified, non-owned process info</span><br><span class="line"> will not <span class="keyword">be</span> shown, you would have <span class="keyword">to</span> <span class="keyword">be</span> root <span class="keyword">to</span> see it <span class="keyword">all</span>.)</span><br><span class="line">tcp        <span class="number">0</span>      <span class="number">0</span> <span class="number">0.0</span>.<span class="number">0.0</span>:<span class="number">8643</span>            <span class="number">0.0</span>.<span class="number">0.0</span>:*               LISTEN      <span class="number">16031</span>/java</span><br></pre></td></tr></table></figure>
+<p>TCP端口8643正在执行java程序，进程号为16031,可以通过<code>$ ls -l /proc/16031/exe</code>验证。</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">bejond@bejond-HP:~$ ls -l <span class="regexp">/proc/</span><span class="number">16031</span>/exe</span><br><span class="line">lrwxrwxrwx <span class="number">1</span> bejond bejond <span class="number">0</span> <span class="number">12</span>月 <span class="number">13</span> <span class="number">17</span>:<span class="number">52</span> <span class="regexp">/proc/</span><span class="number">16031</span><span class="regexp">/exe -&gt; /</span>home<span class="regexp">/bejond/</span>tools<span class="regexp">/java-tools/</span>jdk1.<span class="number">8.0</span>_121<span class="regexp">/bin/</span>java</span><br></pre></td></tr></table></figure>
+<p>可以通过<code>$ man java</code>或<code>$ whatis java</code>了解java是什么程序。</p>
+<h5 id="fuser"><a class="markdownIt-Anchor" href="#fuser"></a> fuser</h5>
+<p>查找哪个进程占用8643端口：<br />
+<code>$ fuser 8643/tcp</code></p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">bejond<span class="variable">@bejond</span>-<span class="variable constant_">HP</span><span class="symbol">:~</span><span class="variable">$ </span>fuser <span class="number">8643</span>/tcp</span><br><span class="line"><span class="number">8643</span>/<span class="symbol">tcp:</span>            <span class="number">16031</span></span><br></pre></td></tr></table></figure>
+<p>如果要查找哪里的程序创建进程16031及其工作组：<br />
+<code>$ ls -l /proc/16031/cwd</code></p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">bejond</span>@bejond-HP:~$ ls -l /proc/<span class="number">16031</span>/cwd</span><br><span class="line"><span class="attribute">lrwxrwxrwx</span> <span class="number">1</span> bejond bejond <span class="number">0</span> <span class="number">12</span>月 <span class="number">13</span> <span class="number">19</span>:<span class="number">08</span> /proc/<span class="number">16031</span>/cwd -&gt; /home/bejond/code/server/wildfly-<span class="number">10</span>.<span class="number">0</span>.<span class="number">0</span>.Final_v5/bin</span><br></pre></td></tr></table></figure>
+<p>或者直接输入<code>$ pwdx 16031</code></p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">bejond@bejond-HP:~$ pwdx <span class="number">16031</span></span><br><span class="line"><span class="number">16031</span>: <span class="regexp">/home/</span>bejond<span class="regexp">/code/</span>server<span class="regexp">/wildfly-10.0.0.Final_v5/</span>bin</span><br></pre></td></tr></table></figure>
+<p>如何查找进程的拥有者：<br />
+<code>$ ps aux</code><br />
+部分结果：</p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">bejond</span>@bejond-HP:~$ ps aux</span><br><span class="line"><span class="attribute">USER</span>       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND</span><br><span class="line"><span class="attribute">root</span>         <span class="number">1</span>  <span class="number">0</span>.<span class="number">0</span>  <span class="number">0</span>.<span class="number">0</span> <span class="number">154936</span>  <span class="number">6832</span> ?        Ss   <span class="number">15</span>:<span class="number">28</span>   <span class="number">0</span>:<span class="number">01</span> /sbin/init splash</span><br><span class="line"><span class="attribute">root</span>         <span class="number">2</span>  <span class="number">0</span>.<span class="number">0</span>  <span class="number">0</span>.<span class="number">0</span>      <span class="number">0</span>     <span class="number">0</span> ?        S    <span class="number">15</span>:<span class="number">28</span>   <span class="number">0</span>:<span class="number">00</span><span class="meta"> [kthreadd]</span></span><br><span class="line"><span class="attribute">root</span>         <span class="number">4</span>  <span class="number">0</span>.<span class="number">0</span>  <span class="number">0</span>.<span class="number">0</span>      <span class="number">0</span>     <span class="number">0</span> ?        S&lt;   <span class="number">15</span>:<span class="number">28</span>   <span class="number">0</span>:<span class="number">00</span><span class="meta"> [kworker/0:0H]</span></span><br><span class="line"><span class="attribute">root</span>         <span class="number">6</span>  <span class="number">0</span>.<span class="number">0</span>  <span class="number">0</span>.<span class="number">0</span>      <span class="number">0</span>     <span class="number">0</span> ?        S&lt;   <span class="number">15</span>:<span class="number">28</span>   <span class="number">0</span>:<span class="number">00</span><span class="meta"> [mm_percpu_wq]</span></span><br><span class="line"><span class="attribute">root</span>         <span class="number">7</span>  <span class="number">0</span>.<span class="number">0</span>  <span class="number">0</span>.<span class="number">0</span>      <span class="number">0</span>     <span class="number">0</span> ?        S    <span class="number">15</span>:<span class="number">28</span>   <span class="number">0</span>:<span class="number">01</span><span class="meta"> [ksoftirqd/0]</span></span><br><span class="line"><span class="attribute">root</span>         <span class="number">8</span>  <span class="number">0</span>.<span class="number">0</span>  <span class="number">0</span>.<span class="number">0</span>      <span class="number">0</span>     <span class="number">0</span> ?        S    <span class="number">15</span>:<span class="number">28</span>   <span class="number">0</span>:<span class="number">10</span><span class="meta"> [rcu_sched]</span></span><br><span class="line"><span class="attribute">root</span>         <span class="number">9</span>  <span class="number">0</span>.<span class="number">0</span>  <span class="number">0</span>.<span class="number">0</span>      <span class="number">0</span>     <span class="number">0</span> ?        S    <span class="number">15</span>:<span class="number">28</span>   <span class="number">0</span>:<span class="number">00</span><span class="meta"> [rcu_bh]</span></span><br><span class="line"><span class="attribute">root</span>        <span class="number">10</span>  <span class="number">0</span>.<span class="number">0</span>  <span class="number">0</span>.<span class="number">0</span>      <span class="number">0</span>     <span class="number">0</span> ?        S    <span class="number">15</span>:<span class="number">28</span>   <span class="number">0</span>:<span class="number">00</span><span class="meta"> [migration/0]</span></span><br><span class="line"><span class="attribute">root</span>        <span class="number">11</span>  <span class="number">0</span>.<span class="number">0</span>  <span class="number">0</span>.<span class="number">0</span>      <span class="number">0</span>     <span class="number">0</span> ?        S    <span class="number">15</span>:<span class="number">28</span>   <span class="number">0</span>:<span class="number">00</span><span class="meta"> [watchdog/0]</span></span><br><span class="line"><span class="attribute">root</span>        <span class="number">12</span>  <span class="number">0</span>.<span class="number">0</span>  <span class="number">0</span>.<span class="number">0</span>      <span class="number">0</span>     <span class="number">0</span> ?        S    <span class="number">15</span>:<span class="number">28</span>   <span class="number">0</span>:<span class="number">00</span><span class="meta"> [cpuhp/0]</span></span><br><span class="line"><span class="attribute">root</span>        <span class="number">13</span>  <span class="number">0</span>.<span class="number">0</span>  <span class="number">0</span>.<span class="number">0</span>      <span class="number">0</span>     <span class="number">0</span> ?        S    <span class="number">15</span>:<span class="number">28</span>   <span class="number">0</span>:<span class="number">00</span><span class="meta"> [cpuhp/1]</span></span><br><span class="line"><span class="attribute">root</span>        <span class="number">14</span>  <span class="number">0</span>.<span class="number">0</span>  <span class="number">0</span>.<span class="number">0</span>      <span class="number">0</span>     <span class="number">0</span> ?        S    <span class="number">15</span>:<span class="number">28</span>   <span class="number">0</span>:<span class="number">00</span><span class="meta"> [watchdog/1]</span></span><br></pre></td></tr></table></figure>
+<p>使用<code>grep</code>过滤：<br />
+<code>$ ps aux | grep 16031</code></p>
+<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">bejond@bejond-HP:~$ ps aux | <span class="keyword">grep</span> <span class="number">16031</span></span><br><span class="line">bejond   <span class="number">16031</span>  <span class="number">2.5</span> <span class="number">11.4</span> <span class="number">4537864</span> <span class="number">920976</span> pts<span class="regexp">/6  Sl+  17:52   2:40 /</span>home<span class="regexp">/bejond/</span>tools<span class="regexp">/java-tools/</span>jdk1.<span class="number">8.0</span>_121<span class="regexp">/bin/</span>java -D[Standalone] -server -Xms64m -Xmx512m -XX:MetaspaceSize=<span class="number">96</span>M -XX:MaxMetaspaceSize=<span class="number">256</span>m -Djava.net.preferIPv4Stack=<span class="keyword">true</span> -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=<span class="keyword">true</span> -agentlib:jdwp=transport=dt_socket,address=<span class="number">8787</span>,server=y,suspend=n -Dorg.jboss.boot.log.<span class="keyword">file</span>=<span class="regexp">/home/</span>bejond<span class="regexp">/code/</span>server<span class="regexp">/wildfly-10.0.0.Final_v5/</span>standalone<span class="regexp">/log/</span>server.log -Dlogging.configuration=<span class="keyword">file</span>:<span class="regexp">/home/</span>bejond<span class="regexp">/code/</span>server<span class="regexp">/wildfly-10.0.0.Final_v5/</span>standalone<span class="regexp">/configuration/</span>logging.properties -jar <span class="regexp">/home/</span>bejond<span class="regexp">/code/</span>server<span class="regexp">/wildfly-10.0.0.Final_v5/</span>jboss-modules.jar -mp <span class="regexp">/home/</span>bejond<span class="regexp">/code/</span>server<span class="regexp">/wildfly-10.0.0.Final_v5/m</span>odules org.jboss.as.standalone -Djboss.home.dir=<span class="regexp">/home/</span>bejond<span class="regexp">/code/</span>server<span class="regexp">/wildfly-10.0.0.Final_v5 -Djboss.server.base.dir=/</span>home<span class="regexp">/bejond/</span>code<span class="regexp">/server/</span>wildfly-<span class="number">10.0</span>.<span class="number">0</span>.Final_v5/standalone</span><br><span class="line">bejond   <span class="number">17481</span>  <span class="number">0.0</span>  <span class="number">0.0</span>  <span class="number">16112</span>  <span class="number">1080</span> pts/<span class="number">7</span>    S+   <span class="number">19</span>:<span class="number">36</span>   <span class="number">0</span>:<span class="number">00</span> <span class="keyword">grep</span> --color=auto <span class="number">16031</span></span><br></pre></td></tr></table></figure>
+<p>尝试执行如下命令：<br />
+<code>$ ps -eo pid,user,group,args,etime,lstart | grep '16031'</code></p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">bejond</span>@bejond-HP:~$ ps -eo pid,user,group,args,etime,lstart | grep &#x27;<span class="number">16031</span>&#x27;</span><br><span class="line"><span class="attribute">16031</span> bejond   bejond   /home/bejond/tools/java-too    <span class="number">01</span>:<span class="number">47</span>:<span class="number">04</span> Wed Dec <span class="number">13</span> <span class="number">17</span>:<span class="number">52</span>:<span class="number">52</span> <span class="number">2017</span></span><br><span class="line"><span class="attribute">17510</span> bejond   bejond   grep --color=auto <span class="number">16031</span>           <span class="number">00</span>:<span class="number">00</span> Wed Dec <span class="number">13</span> <span class="number">19</span>:<span class="number">39</span>:<span class="number">56</span> <span class="number">2017</span></span><br></pre></td></tr></table></figure>
+<p>想要看到更多信息？另一个方式是<code>$ cat /proc/16031/environ</code>:</p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">bejond</span>@bejond-HP:~$ cat /proc/<span class="number">16031</span>/environ</span><br><span class="line"><span class="attribute">LESSOPEN</span>=| /usr/bin/lesspipe %sUSER=bejondLANGUAGE=en_USLC_TIME=zh_CN.UTF-<span class="number">8</span>XDG_SEAT=seat0SSH_AGENT_PID=<span class="number">1211</span>XDG_SESSION_TYPE=x11SHLVL=<span class="number">1</span>QT4_IM_MODULE=fcitxHOME=/home/bejondDESKTOP_SESSION=xubuntuJRE_HOME=/home/bejond/tools/java-tools/jdk1.<span class="number">8</span>.<span class="number">0</span>_45/jreSMARTGITHG_MAX_HEAP_SIZE=<span class="number">4096</span>mXDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0LC_MONETARY=zh_CN.UTF-<span class="number">8</span>DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/<span class="number">1000</span>/busANT_OPTS=-Xmx4g -XX:MaxPermSize=<span class="number">2</span>gJBOSS_HOME=/home/bejond/code/server/wildfly-<span class="number">10</span>.<span class="number">0</span>.<span class="number">0</span>.Final_v5COLORTERM=truecolorGLADE_MODULE_PATH=:MANDATORY_PATH=/usr/share/gconf/xubuntu.mandatory.pathQT_QPA_PLATFORMTHEME=gtk2LOGNAME=bejondGTK_IM_MODULE=fcitxWINDOWID=<span class="number">75510244</span>_=./standalone.shDEFAULTS_PATH=/usr/share/gconf/xubuntu.default.pathGTK_OVERLAY_SCROLLING=<span class="number">0</span>XDG_SESSION_ID=c1CLUTTER_BACKEND=x11TERM=xterm-<span class="number">256</span>colorRBENV_SHELL=bashPATH=/home/bejond/anaconda3/bin:/home/bejond/anaconda2/bin:/home/bejond/.rbenv/plugins/ruby-build/bin:/home/bejond/.rbenv/shims:/home/bejond/.rbenv/bin:/home/bejond/bin:/home/bejond/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/bejond/tools/java-tools/jdk1.<span class="number">8</span>.<span class="number">0</span>_121/bin:/home/bejond/tools/java-tools/apache-ant-<span class="number">1</span>.<span class="number">9</span>.<span class="number">5</span>/bin:/home/bejond/tools/rar:/home/bejond/tools:/home/bejond/tools/java-tools/jdk1.<span class="number">8</span>.<span class="number">0</span>_45/jre/bin:/home/bejond/tools/Sublime_Text_2:/home/bejond/tools/smartgithg-<span class="number">4</span>_6_3/bin:/home/bejond/tools/eclipse:/home/bejond/tools/FileZilla3/bin:/home/bejond/tools/navicat110_mysql_en:/home/bejond/tools/git-tools:/home/bejond/tools/giteye:/home/bejond/tools/scripts:/home/bejond/tools/jd:/home/bejond/tools/idea-IU-<span class="number">139</span>.<span class="number">659</span>.<span class="number">2</span>/bin:/home/bejond/tools/apache-cxf-<span class="number">3</span>.<span class="number">1</span>.<span class="number">11</span>/bin:/home/bejond/tools/apache-maven-<span class="number">3</span>.<span class="number">5</span>.<span class="number">0</span>/bin:/home/bejond/tools/java-tools/jdk1.<span class="number">8</span>.<span class="number">0</span>_121/bin:/home/bejond/tools/java-tools/jdk1.<span class="number">8</span>.<span class="number">0</span>_45/jre/binGDM_LANG=en_USGLADE_PIXMAP_PATH=:ANT_HOME=/home/bejond/tools/java-tools/apache-ant-<span class="number">1</span>.<span class="number">9</span>.<span class="number">5</span>SESSION_MANAGER=local/bejond-HP:@/tmp/.ICE-unix/<span class="number">1236</span>,unix/bejond-HP:/tmp/.ICE-unix/<span class="number">1236</span>XDG_MENU_PREFIX=xfce-LC_ADDRESS=zh_CN.UTF-<span class="number">8</span>XDG_RUNTIME_DIR=/run/user/<span class="number">1000</span>XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0DISPLAY=:<span class="number">0</span>.<span class="number">0</span>LANG=en_US.UTF-<span class="number">8</span>XDG_CURRENT_DESKTOP=XFCELC_TELEPHONE=zh_CN.UTF-<span class="number">8</span>LS_COLORS=rs=<span class="number">0</span>:di=<span class="number">01</span>;<span class="number">34</span>:ln=<span class="number">01</span>;<span class="number">36</span>:mh=<span class="number">00</span>:pi=<span class="number">40</span>;<span class="number">33</span>:so=<span class="number">01</span>;<span class="number">35</span>:do=<span class="number">01</span>;<span class="number">35</span>:bd=<span class="number">40</span>;<span class="number">33</span>;<span class="number">01</span>:cd=<span class="number">40</span>;<span class="number">33</span>;<span class="number">01</span>:or=<span class="number">40</span>;<span class="number">31</span>;<span class="number">01</span>:mi=<span class="number">00</span>:su=<span class="number">37</span>;<span class="number">41</span>:sg=<span class="number">30</span>;<span class="number">43</span>:ca=<span class="number">30</span>;<span class="number">41</span>:tw=<span class="number">30</span>;<span class="number">42</span>:ow=<span class="number">34</span>;<span class="number">42</span>:st=<span class="number">37</span>;<span class="number">44</span>:ex=<span class="number">01</span>;<span class="number">32</span>:*.tar=<span class="number">01</span>;<span class="number">31</span>:*.tgz=<span class="number">01</span>;<span class="number">31</span>:*.arc=<span class="number">01</span>;<span class="number">31</span>:*.arj=<span class="number">01</span>;<span class="number">31</span>:*.taz=<span class="number">01</span>;<span class="number">31</span>:*.lha=<span class="number">01</span>;<span class="number">31</span>:*.lz4=<span class="number">01</span>;<span class="number">31</span>:*.lzh=<span class="number">01</span>;<span class="number">31</span>:*.lzma=<span class="number">01</span>;<span class="number">31</span>:*.tlz=<span class="number">01</span>;<span class="number">31</span>:*.txz=<span class="number">01</span>;<span class="number">31</span>:*.tzo=<span class="number">01</span>;<span class="number">31</span>:*.t7z=<span class="number">01</span>;<span class="number">31</span>:*.zip=<span class="number">01</span>;<span class="number">31</span>:*.z=<span class="number">01</span>;<span class="number">31</span>:*.Z=<span class="number">01</span>;<span class="number">31</span>:*.dz=<span class="number">01</span>;<span class="number">31</span>:*.gz=<span class="number">01</span>;<span class="number">31</span>:*.lrz=<span class="number">01</span>;<span class="number">31</span>:*.lz=<span class="number">01</span>;<span class="number">31</span>:*.lzo=<span class="number">01</span>;<span class="number">31</span>:*.xz=<span class="number">01</span>;<span class="number">31</span>:*.zst=<span class="number">01</span>;<span class="number">31</span>:*.tzst=<span class="number">01</span>;<span class="number">31</span>:*.bz2=<span class="number">01</span>;<span class="number">31</span>:*.bz=<span class="number">01</span>;<span class="number">31</span>:*.tbz=<span class="number">01</span>;<span class="number">31</span>:*.tbz2=<span class="number">01</span>;<span class="number">31</span>:*.tz=<span class="number">01</span>;<span class="number">31</span>:*.deb=<span class="number">01</span>;<span class="number">31</span>:*.rpm=<span class="number">01</span>;<span class="number">31</span>:*.jar=<span class="number">01</span>;<span class="number">31</span>:*.war=<span class="number">01</span>;<span class="number">31</span>:*.ear=<span class="number">01</span>;<span class="number">31</span>:*.sar=<span class="number">01</span>;<span class="number">31</span>:*.rar=<span class="number">01</span>;<span class="number">31</span>:*.alz=<span class="number">01</span>;<span class="number">31</span>:*.ace=<span class="number">01</span>;<span class="number">31</span>:*.zoo=<span class="number">01</span>;<span class="number">31</span>:*.cpio=<span class="number">01</span>;<span class="number">31</span>:*.<span class="number">7</span>z=<span class="number">01</span>;<span class="number">31</span>:*.rz=<span class="number">01</span>;<span class="number">31</span>:*.cab=<span class="number">01</span>;<span class="number">31</span>:*.jpg=<span class="number">01</span>;<span class="number">35</span>:*.jpeg=<span class="number">01</span>;<span class="number">35</span>:*.mjpg=<span class="number">01</span>;<span class="number">35</span>:*.mjpeg=<span class="number">01</span>;<span class="number">35</span>:*.gif=<span class="number">01</span>;<span class="number">35</span>:*.bmp=<span class="number">01</span>;<span class="number">35</span>:*.pbm=<span class="number">01</span>;<span class="number">35</span>:*.pgm=<span class="number">01</span>;<span class="number">35</span>:*.ppm=<span class="number">01</span>;<span class="number">35</span>:*.tga=<span class="number">01</span>;<span class="number">35</span>:*.xbm=<span class="number">01</span>;<span class="number">35</span>:*.xpm=<span class="number">01</span>;<span class="number">35</span>:*.tif=<span class="number">01</span>;<span class="number">35</span>:*.tiff=<span class="number">01</span>;<span class="number">35</span>:*.png=<span class="number">01</span>;<span class="number">35</span>:*.svg=<span class="number">01</span>;<span class="number">35</span>:*.svgz=<span class="number">01</span>;<span class="number">35</span>:*.mng=<span class="number">01</span>;<span class="number">35</span>:*.pcx=<span class="number">01</span>;<span class="number">35</span>:*.mov=<span class="number">01</span>;<span class="number">35</span>:*.mpg=<span class="number">01</span>;<span class="number">35</span>:*.mpeg=<span class="number">01</span>;<span class="number">35</span>:*.m2v=<span class="number">01</span>;<span class="number">35</span>:*.mkv=<span class="number">01</span>;<span class="number">35</span>:*.webm=<span class="number">01</span>;<span class="number">35</span>:*.ogm=<span class="number">01</span>;<span class="number">35</span>:*.mp4=<span class="number">01</span>;<span class="number">35</span>:*.m4v=<span class="number">01</span>;<span class="number">35</span>:*.mp4v=<span class="number">01</span>;<span class="number">35</span>:*.vob=<span class="number">01</span>;<span class="number">35</span>:*.qt=<span class="number">01</span>;<span class="number">35</span>:*.nuv=<span class="number">01</span>;<span class="number">35</span>:*.wmv=<span class="number">01</span>;<span class="number">35</span>:*.asf=<span class="number">01</span>;<span class="number">35</span>:*.rm=<span class="number">01</span>;<span class="number">35</span>:*.rmvb=<span class="number">01</span>;<span class="number">35</span>:*.flc=<span class="number">01</span>;<span class="number">35</span>:*.avi=<span class="number">01</span>;<span class="number">35</span>:*.fli=<span class="number">01</span>;<span class="number">35</span>:*.flv=<span class="number">01</span>;<span class="number">35</span>:*.gl=<span class="number">01</span>;<span class="number">35</span>:*.dl=<span class="number">01</span>;<span class="number">35</span>:*.xcf=<span class="number">01</span>;<span class="number">35</span>:*.xwd=<span class="number">01</span>;<span class="number">35</span>:*.yuv=<span class="number">01</span>;<span class="number">35</span>:*.cgm=<span class="number">01</span>;<span class="number">35</span>:*.emf=<span class="number">01</span>;<span class="number">35</span>:*.ogv=<span class="number">01</span>;<span class="number">35</span>:*.ogx=<span class="number">01</span>;<span class="number">35</span>:*.aac=<span class="number">00</span>;<span class="number">36</span>:*.au=<span class="number">00</span>;<span class="number">36</span>:*.flac=<span class="number">00</span>;<span class="number">36</span>:*.m4a=<span class="number">00</span>;<span class="number">36</span>:*.mid=<span class="number">00</span>;<span class="number">36</span>:*.midi=<span class="number">00</span>;<span class="number">36</span>:*.mka=<span class="number">00</span>;<span class="number">36</span>:*.mp3=<span class="number">00</span>;<span class="number">36</span>:*.mpc=<span class="number">00</span>;<span class="number">36</span>:*.ogg=<span class="number">00</span>;<span class="number">36</span>:*.ra=<span class="number">00</span>;<span class="number">36</span>:*.wav=<span class="number">00</span>;<span class="number">36</span>:*.oga=<span class="number">00</span>;<span class="number">36</span>:*.opus=<span class="number">00</span>;<span class="number">36</span>:*.spx=<span class="number">00</span>;<span class="number">36</span>:*.xspf=<span class="number">00</span>;<span class="number">36</span>:XDG_SESSION_DESKTOP=xubuntuXMODIFIERS=@im=fcitxXAUTHORITY=/home/bejond/.XauthoritySSH_AUTH_SOCK=/run/user/<span class="number">1000</span>/keyring/sshGLADE_CATALOG_PATH=:XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/bejondLC_NAME=zh_CN.UTF-<span class="number">8</span>SHELL=/bin/bashQT_ACCESSIBILITY=<span class="number">1</span>GDMSESSION=xubuntuLESSCLOSE=/usr/bin/lesspipe %s %sLC_MEASUREMENT=zh_CN.UTF-<span class="number">8</span>CLASSPATH=.:/home/bejond/tools/java-tools/jdk1.<span class="number">8</span>.<span class="number">0</span>_121/lib:/home/bejond/tools/java-tools/jdk1.<span class="number">8</span>.<span class="number">0</span>_121/lib:.:/home/bejond/tools/java-tools/jdk1.<span class="number">8</span>.<span class="number">0</span>_121/lib:/home/bejond/tools/java-tools/jdk1.<span class="number">8</span>.<span class="number">0</span>_121/jre/libLC_IDENTIFICATION=zh_CN.UTF-<span class="number">8</span>XDG_VTNR=<span class="number">7</span>QT_IM_MODULE=fcitxJAVA_HOME=/home/bejond/tools/java-tools/jdk1.<span class="number">8</span>.<span class="number">0</span>_121PWD=/home/bejond/code/server/wildfly-<span class="number">10</span>.<span class="number">0</span>.<span class="number">0</span>.Final_v5/binCLUTTER_IM_MODULE=ximXDG_DATA_DIRS=/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/var/lib/snapd/desktop:/usr/shareXDG_CONFIG_DIRS=/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdgLC_NUMERIC=zh_CN.UTF-<span class="number">8</span>LC_PAPER=zh_CN.UTF-<span class="number">8</span>VTE_VERSION=<span class="number">4804</span></span><br></pre></td></tr></table></figure>
+<h5 id="lsof"><a class="markdownIt-Anchor" href="#lsof"></a> lsof</h5>
+<p>可以用如下几种方式，第一种即可。<br />
+<code>$ lsof -i :8643</code><br />
+<code>$ lsof -i tcp:8643</code><br />
+<code>$ lsof -i :8643 | grep LISTEN</code><br />
+结果：</p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">bejond</span>@bejond-HP:~$ lsof -i :<span class="number">8643</span></span><br><span class="line"><span class="attribute">COMMAND</span>   PID   USER   FD   TYPE  DEVICE SIZE/<span class="literal">OFF</span> NODE NAME</span><br><span class="line"><span class="attribute">java</span>    <span class="number">16031</span> bejond  <span class="number">382</span>u  IPv4 <span class="number">2396178</span>      <span class="number">0</span>t0  TCP *:<span class="number">8643</span> (LISTEN)</span><br></pre></td></tr></table></figure>
+<h6 id="附"><a class="markdownIt-Anchor" href="#附"></a> 附:</h6>
+<ul>
+<li>如果知道占用端口进程是java进程，可以使用<code>jps [-v]</code>命令查看，但是没法通过端口查询。</li>
+<li>如果想杀掉进程，可以使用<code>$ kill -9 16031</code>，当然还有根据程序名关闭<code>$ killall java</code>，可以关闭所有java进程，不推荐这么用，风险极大🌚。</li>
+</ul>
+
+        </div>
+        <!--
+        <div class="article-entry" id="busuanzi_container_page_pv">
+            阅读<span id="busuanzi_value_page_pv"></span>次
+        </div>
+        -->
+        <footer class="article-footer">
+            
+
+
+
+        </footer>
+    </div>
+</article>
+
+    <section id="comments">
+    
+    </section>
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>follow:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github-alt" href="https://github.com/bejondshao" target="_blank">
+                        <i class="icon fa fa-github-alt"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="linkedin-square" href="https://www.linkedin.com/in/bejondshao" target="_blank">
+                        <i class="icon fa fa-linkedin-square"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="music" href="https://y.qq.com/n/yqq/playlist/1609817696.html" target="_blank">
+                        <i class="icon fa fa-music"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="wechat" href="/about/wechat.html" target="_blank">
+                        <i class="icon fa fa-wechat"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2017/12/14/Netty%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">newer</strong>
+        <p class="article-nav-title">
+        
+            Netty开发环境搭建
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/2017/12/12/Mybatis%E6%8F%90%E7%A4%BAIO-Error%EF%BC%9ABroken-pipe%E6%88%96No-more-data-to-read-from-socket%E9%94%99%E8%AF%AF/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">Mybatis提示IO Error：Broken pipe或No more data to read from socket错误</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">recents</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2020/05/05/How-to-make-mac-run-shell-on-startup/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Linux/">Linux</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Linux/Mac/">Mac</a></p>
+                            <p class="item-title"><a href="/2020/05/05/How-to-make-mac-run-shell-on-startup/" class="title">How to make mac run shell on startup</a></p>
+                            <p class="item-date"><time datetime="2020-05-05T14:21:00.000Z" itemprop="datePublished">2020-05-05</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2020/03/22/%E6%97%A5%E5%86%85%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/2020/03/22/%E6%97%A5%E5%86%85%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5/1.png)" alt="日内交易策略 " class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E8%82%A1%E7%A5%A8/">股票</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%AD%96%E7%95%A5/">策略</a></p>
+                            <p class="item-title"><a href="/2020/03/22/%E6%97%A5%E5%86%85%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5/" class="title">日内交易策略 </a></p>
+                            <p class="item-date"><time datetime="2020-03-21T18:44:00.000Z" itemprop="datePublished">2020-03-22</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2020/02/25/%E8%82%A1%E7%A5%A8%E4%BA%A4%E6%98%93%E6%89%80%E6%80%9D/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E8%82%A1%E7%A5%A8/">股票</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E8%82%A1%E7%A5%A8/%E6%80%9D%E8%80%83/">思考</a></p>
+                            <p class="item-title"><a href="/2020/02/25/%E8%82%A1%E7%A5%A8%E4%BA%A4%E6%98%93%E6%89%80%E6%80%9D/" class="title">股票交易所思</a></p>
+                            <p class="item-date"><time datetime="2020-02-25T14:52:00.000Z" itemprop="datePublished">2020-02-25</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2020/02/12/SVN-Issues/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Tools/">Tools</a></p>
+                            <p class="item-title"><a href="/2020/02/12/SVN-Issues/" class="title">SVN Issues</a></p>
+                            <p class="item-date"><time datetime="2020-02-12T09:08:00.000Z" itemprop="datePublished">2020-02-12</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2020/02/04/%E5%85%B3%E4%BA%8E%E8%82%A1%E5%B8%82%E7%9A%84%E6%80%9D%E8%80%83/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/%E8%82%A1%E7%A5%A8/">股票</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E8%82%A1%E7%A5%A8/%E6%80%9D%E8%80%83/">思考</a></p>
+                            <p class="item-title"><a href="/2020/02/04/%E5%85%B3%E4%BA%8E%E8%82%A1%E5%B8%82%E7%9A%84%E6%80%9D%E8%80%83/" class="title">关于股市的思考</a></p>
+                            <p class="item-date"><time datetime="2020-02-04T02:46:00.000Z" itemprop="datePublished">2020-02-04</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">categories</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/DevOps/">DevOps</a><span class="category-list-count">22</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/DevOps/Keycloak/">Keycloak</a><span class="category-list-count">14</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Java/">Java</a><span class="category-list-count">35</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Java/Liferay/">Liferay</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Java/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a><span class="category-list-count">2</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">9</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/CentOS/">CentOS</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/Mac/">Mac</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/Ubuntu/">Ubuntu</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Others/">Others</a><span class="category-list-count">18</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Others/Hexo/">Hexo</a><span class="category-list-count">4</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tools/">Tools</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%82%A1%E7%A5%A8/">股票</a><span class="category-list-count">8</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E6%80%9D%E8%80%83/">思考</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%90%86%E8%AE%BA/">理论</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%9F%A5%E8%AF%86/">知识</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E7%AD%96%E7%95%A5/">策略</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%82%A1%E7%A5%A8/%E9%80%89%E8%82%A1/">选股</a><span class="category-list-count">2</span></li></ul></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">tag cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/Active-Directory/" style="font-size: 10px;">Active Directory</a> <a href="/tags/Backport/" style="font-size: 10px;">Backport</a> <a href="/tags/CentOS/" style="font-size: 10px;">CentOS</a> <a href="/tags/Centos/" style="font-size: 10px;">Centos</a> <a href="/tags/Command/" style="font-size: 10px;">Command</a> <a href="/tags/Consul/" style="font-size: 10px;">Consul</a> <a href="/tags/Database/" style="font-size: 11.11px;">Database</a> <a href="/tags/DevOps/" style="font-size: 17.78px;">DevOps</a> <a href="/tags/Docker/" style="font-size: 11.11px;">Docker</a> <a href="/tags/Elasticsearch/" style="font-size: 10px;">Elasticsearch</a> <a href="/tags/Encoding/" style="font-size: 10px;">Encoding</a> <a href="/tags/Firefox/" style="font-size: 10px;">Firefox</a> <a href="/tags/Google/" style="font-size: 12.22px;">Google</a> <a href="/tags/Grafana/" style="font-size: 10px;">Grafana</a> <a href="/tags/Hexo/" style="font-size: 13.33px;">Hexo</a> <a href="/tags/Hosts/" style="font-size: 11.11px;">Hosts</a> <a href="/tags/Hueman/" style="font-size: 10px;">Hueman</a> <a href="/tags/IP/" style="font-size: 10px;">IP</a> <a href="/tags/Identity-Management/" style="font-size: 10px;">Identity Management</a> <a href="/tags/Intellij/" style="font-size: 11.11px;">Intellij</a> <a href="/tags/Istio/" style="font-size: 10px;">Istio</a> <a href="/tags/JVM/" style="font-size: 14.44px;">JVM</a> <a href="/tags/Java/" style="font-size: 20px;">Java</a> <a href="/tags/Java-8/" style="font-size: 10px;">Java 8</a> <a href="/tags/Jenkins/" style="font-size: 10px;">Jenkins</a> <a href="/tags/Keycloak/" style="font-size: 18.89px;">Keycloak</a> <a href="/tags/Keycloak-proxy/" style="font-size: 10px;">Keycloak proxy</a> <a href="/tags/Kibana/" style="font-size: 10px;">Kibana</a> <a href="/tags/LDAP/" style="font-size: 13.33px;">LDAP</a> <a href="/tags/Liferay/" style="font-size: 16.67px;">Liferay</a> <a href="/tags/Linux/" style="font-size: 15.56px;">Linux</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/Maven/" style="font-size: 10px;">Maven</a> <a href="/tags/Metric-names/" style="font-size: 10px;">Metric names</a> <a href="/tags/Mybatis/" style="font-size: 11.11px;">Mybatis</a> <a href="/tags/Mysql/" style="font-size: 10px;">Mysql</a> <a href="/tags/Netty/" style="font-size: 14.44px;">Netty</a> <a href="/tags/Prometheus/" style="font-size: 10px;">Prometheus</a> <a href="/tags/Proxy/" style="font-size: 10px;">Proxy</a> <a href="/tags/Python/" style="font-size: 10px;">Python</a> <a href="/tags/SCIM/" style="font-size: 10px;">SCIM</a> <a href="/tags/SSL/" style="font-size: 10px;">SSL</a> <a href="/tags/SVN/" style="font-size: 10px;">SVN</a> <a href="/tags/Security/" style="font-size: 10px;">Security</a> <a href="/tags/Spring-cloud/" style="font-size: 10px;">Spring cloud</a> <a href="/tags/Theme/" style="font-size: 10px;">Theme</a> <a href="/tags/Threads/" style="font-size: 10px;">Threads</a> <a href="/tags/Ubuntu/" style="font-size: 10px;">Ubuntu</a> <a href="/tags/Wildfly/" style="font-size: 14.44px;">Wildfly</a> <a href="/tags/grape/" style="font-size: 11.11px;">grape</a> <a href="/tags/iPhone/" style="font-size: 10px;">iPhone</a> <a href="/tags/mac/" style="font-size: 10px;">mac</a> <a href="/tags/maven/" style="font-size: 10px;">maven</a> <a href="/tags/pandas/" style="font-size: 10px;">pandas</a> <a href="/tags/resteasy-jaxrs/" style="font-size: 10px;">resteasy-jaxrs</a> <a href="/tags/wildfly/" style="font-size: 10px;">wildfly</a> <a href="/tags/%E4%BA%A4%E6%98%93/" style="font-size: 10px;">交易</a> <a href="/tags/%E8%82%A1%E7%A5%A8/" style="font-size: 15.56px;">股票</a> <a href="/tags/%E9%80%89%E8%82%A1/" style="font-size: 10px;">选股</a>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+                </div>
+            </div>
+        </div>
+        <!-- 不蒜子游客统计 -->
+<!--
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+-->
+<footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2015 - 2023 Bejond Shao Contact Me: <a href="mailto:bejond.shao@gmail.com">bejond.shao@gmail.com</a>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a>
+                	<!--
+                	<span id="busuanzi_container_site_pv">
+    					总访问量<span id="busuanzi_value_site_pv"></span>次
+					</span>
+        			<span id="busuanzi_container_site_uv">
+		  				你是本站第<span id="busuanzi_value_site_uv"></span>位访客
+					</span>
+					-->
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+        
+
+
+    
+        
+<script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-share.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-video.min.js"></script>
+
+    
+    
+        
+<script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
+    
+    
+
+
+
+<!-- Custom Scripts -->
+
+<script src="/js/main.js"></script>
+
+
+    </div>
+</body>
+</html>
